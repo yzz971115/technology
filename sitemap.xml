@@ -54,6 +54,12 @@
     </url>
         
     <url>
+     <loc>https://opensciencegrid.github.io/technology/software/quilt/</loc>
+     <lastmod>2017-10-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>https://opensciencegrid.github.io/technology/software/upcoming-to-main/</loc>
      <lastmod>2017-10-18</lastmod>
      <changefreq>daily</changefreq>
@@ -113,6 +119,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://opensciencegrid.github.io/technology/software/pki-overview/</loc>
+     <lastmod>2017-10-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/technology/software/ipv6-testing/</loc>
+     <lastmod>2017-10-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -160,7 +178,13 @@
     </url>
         
     <url>
-     <loc>https://opensciencegrid.github.io/technology/release/testing-vo-package/</loc>
+     <loc>https://opensciencegrid.github.io/technology/release/empty-pkgs/</loc>
+     <lastmod>2017-10-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/technology/release/acceptance-testing/</loc>
      <lastmod>2017-10-18</lastmod>
      <changefreq>daily</changefreq>
     </url>

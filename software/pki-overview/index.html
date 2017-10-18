@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>PKI Overview - OSG Technology Area</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PKI Overview";
+    var mkdocs_page_input_path = "software/pki-overview.md";
+    var mkdocs_page_url = "/software/pki-overview/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> OSG Technology Area</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+  
+    <a class="" href="../..">Home</a>
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Software</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../development-process/">Development Process</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../markdown-migration/">Migrating Documents to Markdown</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../koji-workflow/">Koji Workflow</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../new-team-member/">New Team Member</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../repository-management/">Repository Management</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../ce-test-scaling/">CE Scale Testing</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../rpm-development-guide/">RPM Development Guide</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../quilt/">Using Quilt</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../upcoming-to-main/">Upcoming to Main</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/software-support/">Software Support</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../effort-tracking/">Effort Tracking</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../release-planning/">Release Planning</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../globus-mass-update-procedure/">Globus Mass Update Procedure</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../git-software-development/">Git Software Development Process</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../osg-build-tools/">OSG Build Tools</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../resurrecting-epel-packages/">Resurrecting Epel Packages</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../koji-mass-rebuilds/">Koji Mass Rebuilds</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../create-vo-client/">Creating the VO Client Package</a>
+  
+        </li>
+        <li class=" current">
+          
+  
+    <a class="current" href="./">PKI Overview</a>
+  
+  <ul class="subnav">
+      
+    <li class="toctree-l3"><a href="#osg-pki-overview">OSG PKI Overview</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#about-this-doc">About this Doc</a></li>
+        
+            <li><a class="toctree-l4" href="#overview">Overview</a></li>
+        
+            <li><a class="toctree-l4" href="#resources">Resources</a></li>
+        
+        </ul>
+    
+
+  </ul>
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../ipv6-testing/">IPv6 Testing</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Release</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../release/cut-sw-release/">How to Cut a Release</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/cut-data-release/">How to Cut a Data Release</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/release-policy/">Release Policy</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/release-schedule/">Release Schedule</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/new-release-series/">New Release Series</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/old-release-removal/">Old Release Series Removal</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/condor-itb-testing/">HTCondor Prerelease Testing</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/empty-pkgs/">Empty Packages</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../release/acceptance-testing/">Acceptance Testing</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Policy</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../policy/gums-retire/">GUMS Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/bestman2-retire/">BeStMan2 Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/voms-admin-retire/">VOMS Admin Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/release-series/">Release Series Support</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/globus-toolkit/">Globus Toolkit Support</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Infrastructure</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-restore-recipe/">Koji Restore Recipe</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-hub-setup/">Koji-Hub Setup</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-inf-overview/">Koji Infrastructure Overview</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-policy-writing/">Koji Policy Writing</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/madison-itb/">Madison ITB</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Documentation</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../documentation/writing-documentation/">Writing Documentation</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Historical Information</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-initial-install/">Koji Initial Install</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Historical Transitions</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../projects/sha2-support/">SHA-2 Support</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">OSG Technology Area</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Software &raquo;</li>
+        
+      
+    
+    <li>PKI Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/pki-overview.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="osg-pki-overview">OSG PKI Overview<a class="headerlink" href="#osg-pki-overview" title="Permanent link">&para;</a></h1>
+<h2 id="about-this-doc">About this Doc<a class="headerlink" href="#about-this-doc" title="Permanent link">&para;</a></h2>
+<p>This document serves as a high-level overview of how users can interact with OIM and in turn, how OIM manages and forwards those interactions to OSG's CILogon CA.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h3 id="clients">Clients<a class="headerlink" href="#clients" title="Permanent link">&para;</a></h3>
+<p>OIM provides a <a href="http://confluence.grid.iu.edu/display/CENTRAL/OIM+Rest+API+Guide">REST API</a> that users can interact with through the <a href="http://oim.opensciencegrid.org">web interface</a>, the <a href="http://oim-itb.grid.iu.edu">ITB web interface</a>, or the <a href="https://github.com/opensciencegrid/osg-pki-tools">OSG PKI tools</a> (henceforth referred to as <em>clients</em>). Clients are responsible for sending properly formatted calls to the API and handling the responses.</p>
+<p>If the client sends an improperly formatted call (i.e. a bug), OIM should return a failure response.</p>
+<h3 id="oim">OIM<a class="headerlink" href="#oim" title="Permanent link">&para;</a></h3>
+<p>OIM acts as the filter for incoming client calls: it verifies client calls (e.g. VO must be specified for host cert requests for domains that support multiple VOs ) and ensures sufficient authorization (e.g. Does the user have GridAdmin privileges for the requested domain to approve the certificate?). Certificate issuances or revocations are forwarded onto CILogon while all other calls are used to manage certificates within OIM.</p>
+<h3 id="osg-gridadmin-cert-request">osg-gridadmin-cert-request<a class="headerlink" href="#osg-gridadmin-cert-request" title="Permanent link">&para;</a></h3>
+<p><code>osg-gridadmin-cert-request</code> serves as the Grid Admin's tool of choice for acquiring host certificates: it requests, approves, and retrieves certificates with a single command. Grid Admins are able to request certificates for single hosts or a series of hosts, up to 50 at a time.</p>
+<p>The command-line tool performs its own argument verification, obtains the user's SSL credentials, and ensures that the user is below quota for the request they are making. After input is verified <code>osg-gridadmin-cert-request</code> generates CSRs for each host and submits them to OIM.</p>
+<p>If the requesting user is authenticated as a Grid Admin for the requested domain and VO (which must be specified on the command-line if multiple VOs can issue certs for the requested domain), OIM approves the request and sends the <code>Request ID#</code> back to <code>osg-gridadmin-cert-request</code>.</p>
+<p>Upon successful request, <code>osg-gridadmin-cert-request</code> sends an approval of the certificate to OIM, which is authenticatd and authorized as before, and OIM turns around and sends a request to CILogon. CILogon issues the certificate(s), sending it back to OIM, and OIM tells <code>osg-gridadmin-cert-request</code> that the certificate has been issued successfully.</p>
+<p>At this point, <code>osg-gridadmin-cert-request</code> sends a retrieval request and OIM sends the certificate(s) back to the client.</p>
+<p><img alt="osg-gridadmin-cert-request" src="../../images/osg-gridadmin-cert-request.png" /></p>
+<h3 id="osg-cert-request">osg-cert-request<a class="headerlink" href="#osg-cert-request" title="Permanent link">&para;</a></h3>
+<p><code>osg-cert-request</code> is a tool for non-Grid Admin users to request host certificates, one at a time. The user can provide their own CSR or a hostname, for which a CSR is generated and forwarded to OIM with the rest of the request. OIM responds with the <code>Request ID#</code>, creates a ticket, and sends e-mails to the user and the Grid Admins of the requested domain + VO.</p>
+<p><img alt="osg-cert-request" src="../../images/osg-cert-request.png" /></p>
+<h3 id="osg-cert-retrieve">osg-cert-retrieve<a class="headerlink" href="#osg-cert-retrieve" title="Permanent link">&para;</a></h3>
+<p><code>osg-cert-retrieve</code> is used to retrieve host certificates associated with a specific <code>Request ID#</code> that have been issued (i.e. approved certificate request) by a Grid Admin. OIM responds to the retrieval request with the certificate(s) of the specified <code>Request ID#</code>.</p>
+<p><img alt="osg-cert-retrieve" src="../../images/osg-cert-retrieve.png" /></p>
+<h3 id="osg-cert-revoke">osg-cert-revoke<a class="headerlink" href="#osg-cert-revoke" title="Permanent link">&para;</a></h3>
+<p><code>osg-cert-revoke</code> is a tool for Grid Admins to revoke user or host certificates. With either a <code>Request ID#</code> or certificate serial number, the tool obtains the user's SSL credentials and sends the revocation request to OIM. OIM authenticates the user's request and if authorized, sends a revocation request to CILogon. If CILogon has successfully received the request, a successful response is forwarded to OIM, which is then forwarded back to the client tool. Revocation requests themselves are handled manually by CILogon CA administrators within one business day.</p>
+<p><img alt="osg-cert-revoke" src="../../images/osg-cert-revoke.png" /></p>
+<h3 id="osg-user-cert-renew">osg-user-cert-renew<a class="headerlink" href="#osg-user-cert-renew" title="Permanent link">&para;</a></h3>
+<p><code>osg-user-cert-renew</code> is used to expiring certificates. The user provides either the certificate serial number or <code>Request ID#</code> and the password that's used to encrypt their new private key. The tool combines those inputs with the user's SSL credentials to generate the renewal request that is sent to OIM, which is forwarded onto CILogon as a user cert request. If successful, OIM responds with the <code>Request ID#</code> and <code>osg-user-cert-renew</code> sends a retrieval request to OIM. If the retrieval request succeeds, OIM responds with requested certificate.</p>
+<p><img alt="osg-user-cert-renew" src="../../images/osg-user-cert-renew.png" /></p>
+<h3 id="osg-user-cert-revoke">osg-user-cert-revoke<a class="headerlink" href="#osg-user-cert-revoke" title="Permanent link">&para;</a></h3>
+<p><code>osg-user-cert-revoke</code> is a simple wrapper that calls <code>osg-cert-revoke --user</code>.</p>
+<p><img alt="osg-user-cert-revoke" src="../../images/osg-user-cert-revoke.png" /></p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://confluence.grid.iu.edu/display/CENTRAL/OIM+Rest+API+Guide">OIM REST API</a></li>
+<li><a href="https://docs.google.com/document/d/1wGyV_P-oH3A26YvCtVwVYjW1suovjighCz6XN5VidJM/edit#">CILogon OSG CA Design Doc</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ipv6-testing/" class="btn btn-neutral float-right" title="IPv6 Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../create-vo-client/" class="btn btn-neutral" title="Creating the VO Client Package"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/opensciencegrid/technology" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../create-vo-client/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ipv6-testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

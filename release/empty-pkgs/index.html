@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Empty Packages - OSG Technology Area</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Empty Packages";
+    var mkdocs_page_input_path = "release/empty-pkgs.md";
+    var mkdocs_page_url = "/release/empty-pkgs/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> OSG Technology Area</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+  
+    <a class="" href="../..">Home</a>
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Software</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../software/development-process/">Development Process</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/markdown-migration/">Migrating Documents to Markdown</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/koji-workflow/">Koji Workflow</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/new-team-member/">New Team Member</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/repository-management/">Repository Management</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/ce-test-scaling/">CE Scale Testing</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/rpm-development-guide/">RPM Development Guide</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/quilt/">Using Quilt</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/upcoming-to-main/">Upcoming to Main</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/software-support/">Software Support</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/effort-tracking/">Effort Tracking</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/release-planning/">Release Planning</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/globus-mass-update-procedure/">Globus Mass Update Procedure</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/git-software-development/">Git Software Development Process</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/osg-build-tools/">OSG Build Tools</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/resurrecting-epel-packages/">Resurrecting Epel Packages</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/koji-mass-rebuilds/">Koji Mass Rebuilds</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/create-vo-client/">Creating the VO Client Package</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/pki-overview/">PKI Overview</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../software/ipv6-testing/">IPv6 Testing</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Release</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../cut-sw-release/">How to Cut a Release</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../cut-data-release/">How to Cut a Data Release</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../release-policy/">Release Policy</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../release-schedule/">Release Schedule</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../new-release-series/">New Release Series</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../old-release-removal/">Old Release Series Removal</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../condor-itb-testing/">HTCondor Prerelease Testing</a>
+  
+        </li>
+        <li class=" current">
+          
+  
+    <a class="current" href="./">Empty Packages</a>
+  
+  <ul class="subnav">
+      
+    <li class="toctree-l3"><a href="#procedure-for-updating-empty-42-packages">Procedure for updating empty-* packages</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#background">Background</a></li>
+        
+            <li><a class="toctree-l4" href="#procedure">Procedure</a></li>
+        
+        </ul>
+    
+
+  </ul>
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../acceptance-testing/">Acceptance Testing</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Policy</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../policy/gums-retire/">GUMS Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/bestman2-retire/">BeStMan2 Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/voms-admin-retire/">VOMS Admin Retirement</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/release-series/">Release Series Support</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../policy/globus-toolkit/">Globus Toolkit Support</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Infrastructure</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-restore-recipe/">Koji Restore Recipe</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-hub-setup/">Koji-Hub Setup</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-inf-overview/">Koji Infrastructure Overview</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-policy-writing/">Koji Policy Writing</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/madison-itb/">Madison ITB</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Documentation</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../documentation/writing-documentation/">Writing Documentation</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Historical Information</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../infrastructure/koji-initial-install/">Koji Initial Install</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  <span class="caption-text">Historical Transitions</span>
+  <ul class="subnav">
+        <li class="">
+          
+  
+    <a class="" href="../../projects/sha2-support/">SHA-2 Support</a>
+  
+        </li>
+  </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+            <li class="toctree-l1">
+		
+  
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">OSG Technology Area</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Release &raquo;</li>
+        
+      
+    
+    <li>Empty Packages</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/release/empty-pkgs.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="procedure-for-updating-empty-42-packages">Procedure for updating empty-* packages<a class="headerlink" href="#procedure-for-updating-empty-42-packages" title="Permanent link">&para;</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>The <code>empty-*</code> packages were introduced a workaround for sites that install certain software (for example HTCondor or CA certs) from tarballs or other means that do not involve Yum/RPM.</p>
+<p>The packages contain no files, and exist merely to satisfy RPM dependencies so that other packages can be installed. It is the admin's responsibility to make sure that whatever component they installed the empty package for is functional.</p>
+<p>The empty packages are kept in a separate repository to prevent them from being accidentally installed instead of the component they claim to provide. Because of this, they do not go through the normal release process of development to testing to prerelease to release, but are <em>moved</em> straight from <code>osg-development</code> into <code>osg-empty</code> after developer testing. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is important to untag the packages from <code>osg-development</code> immediately after promotion to <code>osg-empty</code></p>
+</div>
+<h2 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Prepare the package update, but do not build yet.</li>
+<li>Coordinate with the Software and Release Managers to set aside a good time to update the package. An empty package should not remain in the development repos for longer than a few hours.</li>
+<li>Build into development.</li>
+<li>Test out of development. <em>Be thorough</em>, as there is no separate acceptance testing for empty packages.</li>
+<li>In the JIRA ticket, document your testing procedure and request permission from <em>both</em> the Software and the Release Managers. (Since there is no acceptance testing, both of them have to sign off on the new build).</li>
+<li>After receiving permission, tag the builds into the <code>osg-empty</code> tags, and untag them from the <code>osg-development</code> tags. Then regenerate the <code>osg-empty</code> repos. <pre class="screen"></li>
+</ol>
+<div class="codehilite"><pre><span></span>osg-koji move-pkg osg-3.3-el6-development osg-3.3-el6-empty &lt;EL6_BUILD_NVR&gt;
+osg-koji move-pkg osg-3.3-el7-development osg-3.3-el7-empty &lt;EL7_BUILD_NVR&gt;
+osg-koji regen-repo --nowait osg-3.3-el6-empty
+osg-koji regen-repo --nowait osg-3.3-el7-empty
+</pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../acceptance-testing/" class="btn btn-neutral float-right" title="Acceptance Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../condor-itb-testing/" class="btn btn-neutral" title="HTCondor Prerelease Testing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/opensciencegrid/technology" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../condor-itb-testing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../acceptance-testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
