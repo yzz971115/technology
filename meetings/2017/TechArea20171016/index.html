@@ -619,6 +619,8 @@
 <li>JINR (BrianL) - blahp failures due to some issue with ASCII chars</li>
 <li>LBNL (BrianL) - issues with the blahp may have been due to misconfiguration</li>
 <li>Taiwan (BrianL) - idle jobs on CE, likely a basic configuration issue</li>
+<li>GLOW (Derek, Edgar) - GLOW isn't running on many OSG sites we would expect.  Edgar is leading the investigation.</li>
+<li>CMS / NERSC (Derek) - Add userspace StashCache for CMS data caching.  Ongoing.</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <ul>
@@ -711,15 +713,19 @@
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <h3 id="last-week">Last Week<a class="headerlink" href="#last-week" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Worked on cleaning up GRACC data</li>
-<li>Comparing cleaned GRACC Data</li>
-<li>More work on writable stashcache, still waiting on bugfix</li>
+<li>Worked on cleaning up GRACC data.</li>
+<li>Major update of GRACC-APEL reports to reflect non-zero CpuDuration in <a href="https://accounting.egi.eu/tier2/country/USA/sumcpu_days/SITE/DATE/2017/3/2017/9/lhc/onlyinfrajobs/">WLCG reports</a></li>
+<li>Worked on getting data from GRACC for press release (requested by BrianB/FKW)</li>
+<li>More work on writable stashcache.  </li>
+<li>Installed CMS data cache at NERSC in userspace.  Will cache CMS data destined at NERSC.</li>
+<li>Lots of CVMFS changes on OSG hosted repos (except oasis).</li>
 </ul>
 <h3 id="this-week">This Week<a class="headerlink" href="#this-week" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Finalizing GRACC changes</li>
-<li>Hope to have writeable StashCache avail. for early testers; waiting for Condor bugfix</li>
-<li>OSG - CVMFS focus day to improve the <code>*.osgstorage</code> and <code>singularity.opensciencegrid.org</code> repo stability.</li>
+<li>Draft GRACC SLA proposal</li>
+<li>Writable StashCache. Enabling access for initial testers.</li>
+<li>Improve CMS cache at NERSC, productionize</li>
 </ul>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
