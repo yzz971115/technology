@@ -601,32 +601,26 @@ track the work.</p>
 </li>
 <li>
 <p>Edit <code>tarball-client</code>:</p>
-</li>
-<li>
-<p>Remove bundles from <code>bundles.ini</code>.</p>
-</li>
+<ul>
+<li>Remove bundles from <code>bundles.ini</code>.</li>
 <li>Remove patch and other files that were used only by those bundles.</li>
-<li>
-<p>Test that the current bundles didn't get broken by your changes.</p>
+<li>Test that the current bundles didn't get broken by your changes.</li>
+</ul>
 </li>
 <li>
 <p>Edit <code>osg-build</code>:</p>
-</li>
-<li>
-<p>Remove the promotion routes from <code>promoter.ini</code>.</p>
-</li>
+<ul>
+<li>Remove the promotion routes from <code>promoter.ini</code>.</li>
 <li>Remove references in <code>constants.py</code>.</li>
-<li>
-<p>Test your changes; also run the unit tests.</p>
+<li>Test your changes; also run the unit tests.</li>
+</ul>
 </li>
 <li>
 <p>Remove things from Koji:</p>
-</li>
-<li>
-<p>All targets referencing the series.</p>
-</li>
-<li>
-<p>All tags referencing the series.</p>
+<ul>
+<li>All targets referencing the series.</li>
+<li>All tags referencing the series.</li>
+</ul>
 </li>
 <li>
 <p>Remove references to the series from <code>opensciencegrid/docker-osg-wn-scripts</code>
