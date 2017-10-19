@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Release Series Support - OSG Technology Area</title>
+  <title>OASIS Repository Mirroring - OSG Technology Area</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Release Series Support";
-    var mkdocs_page_input_path = "policy/release-series.md";
-    var mkdocs_page_url = "/policy/release-series/";
+    var mkdocs_page_name = "OASIS Repository Mirroring";
+    var mkdocs_page_input_path = "policy/external-oasis-repos.md";
+    var mkdocs_page_url = "/policy/external-oasis-repos/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -265,23 +265,11 @@
     <a class="" href="../voms-admin-retire/">VOMS Admin Retirement</a>
   
         </li>
-        <li class=" current">
+        <li class="">
           
   
-    <a class="current" href="./">Release Series Support</a>
+    <a class="" href="../release-series/">Release Series Support</a>
   
-  <ul class="subnav">
-      
-    <li class="toctree-l3"><a href="#osg-software-release-series-support-policy">OSG Software Release Series Support Policy</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#life-cycle-dates">Life-cycle Dates</a></li>
-        
-        </ul>
-    
-
-  </ul>
         </li>
         <li class="">
           
@@ -289,11 +277,27 @@
     <a class="" href="../globus-toolkit/">Globus Toolkit Support</a>
   
         </li>
-        <li class="">
+        <li class=" current">
           
   
-    <a class="" href="../external-oasis-repos/">OASIS Repository Mirroring</a>
+    <a class="current" href="./">OASIS Repository Mirroring</a>
   
+  <ul class="subnav">
+      
+    <li class="toctree-l3"><a href="#policy-for-osg-mirroring-of-external-cvmfs-repositories">Policy for OSG Mirroring of External CVMFS repositories</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#introduction">Introduction</a></li>
+        
+            <li><a class="toctree-l4" href="#osg-responsibilities">OSG Responsibilities</a></li>
+        
+            <li><a class="toctree-l4" href="#vo-responsibilities">VO Responsibilities</a></li>
+        
+        </ul>
+    
+
+  </ul>
         </li>
   </ul>
 	    </li>
@@ -535,10 +539,10 @@
         
       
     
-    <li>Release Series Support</li>
+    <li>OASIS Repository Mirroring</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/release-series.md"
+        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/external-oasis-repos.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -548,48 +552,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="osg-software-release-series-support-policy">OSG Software Release Series Support Policy<a class="headerlink" href="#osg-software-release-series-support-policy" title="Permanent link">&para;</a></h1>
-<p>This document describes the OSG policy for managing its software releases. Use this policy to help plan when to perform major OSG software updates at your site.</p>
-<p>OSG software releases are organized into <strong>release series</strong>, with the intent that software updates within a series do not take long to perform, cause significant downtime, or break dependent software. New series can be more disruptive, allowing OSG to add, substantially change, and remove software components. Releases are assigned versions, such as "OSG 3.2.1", where the first two numbers designate the release series and the third number increments within the series. Changes to the first number are infrequent and indicate sweeping changes to the way in which OSG software is distributed.</p>
-<p>OSG supports at most two concurrent release series, <strong>current</strong> and <strong>previous</strong>, where the goal is to begin a new release series about every 18 months. Once a new series starts, OSG will support the previous series for at least 12 months and will announce its end-of-life date at least 6 months in advance. During the first 6 months of a series, OSG will endeavor to apply backward-compatible changes to the previous series as well; afterward, OSG will apply only critical bug and security fixes. When support ends for a release series, it means that OSG no longer updates the software, fixes issues, or troubleshoots installations for releases within the series. The plan is to maintain interoperability between supported series, but there is no guarantee that unsupported series will continue to function in OSG.</p>
-<p>OSG Operations will handle deviations from this policy, in consultation with OSG Technology and stakeholders.</p>
-<h2 id="life-cycle-dates">Life-cycle Dates<a class="headerlink" href="#life-cycle-dates" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th align="center">Release Series</th>
-<th>Initial Release</th>
-<th>End of Regular Support</th>
-<th>End of Critical Bug/Security Support</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">3.4</td>
-<td>June 2017</td>
-<td>Not set</td>
-<td>Not set</td>
-</tr>
-<tr>
-<td align="center">3.3</td>
-<td>August 2015</td>
-<td>December 2017</td>
-<td>May 2018</td>
-</tr>
-<tr>
-<td align="center">3.2</td>
-<td>November 2013</td>
-<td>February 2016</td>
-<td>August 2016</td>
-</tr>
-<tr>
-<td align="center">3.1</td>
-<td>April 2012</td>
-<td>October 2014</td>
-<td>April 2015</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="policy-for-osg-mirroring-of-external-cvmfs-repositories">Policy for OSG Mirroring of External CVMFS repositories<a class="headerlink" href="#policy-for-osg-mirroring-of-external-cvmfs-repositories" title="Permanent link">&para;</a></h1>
+<p>12 October 2017</p>
+<p>This document provides an overview of the policies and security understanding with regards to OSG mirroring of CVMFS
+repositories of external organizations.  It aims to help external repositories and OSG VOs understand what OSG is
+attempting to achieve with the mirroring service.
+This is not a service-level agreement but rather a statement of responsibilities.</p>
+<p>!!! note:
+    To actually understand the technical procedure for mirroring a repository, <a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/OasisExternalRepositories">see the following page</a>.  This document solely covers the policy aspects.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The OSG provides a network of CVMFS Stratum-1 servers for mirroring content of externally-managed repositories.  These repositories are often
+hosted by large HEP or physics VOs for the purpose of distributing software for high-throughput computing jobs.  Additionally, OSG provides a
+repository (<oasis.opensciencegrid.org>) for smaller VOs; this is not covered here.</p>
+<p>OSG will include additional repositories into the content distribution network (CDN) at the request of an OSG-affiliated VO.  These repositories
+are meant to help the OSG-affiliated VO accomplish their domain science.</p>
+<p>The goal of this mirroring provides an improved quality-of-service for the VO end-users running at OSG sites.  OSG does not provide support
+for use of the software in external repositories, but will help end-users contact the VO for help as necessary.</p>
+<h2 id="osg-responsibilities">OSG Responsibilities<a class="headerlink" href="#osg-responsibilities" title="Permanent link">&para;</a></h2>
+<ul>
+<li>OSG will provide the Stratum-1 server network according to <a href="https://opensciencegrid.github.io/operations/SLA/oasis-replica/">the OASIS SLA</a></li>
+<li>OSG will provide a best-effort mirror of the full contents of the external repo.  We will attempt to provide best-effort integrity of the
+  object contents, but assume users of the Stratum-1 will do further integrity checking.  No SLA is provided covering potential data corruptions.</li>
+<li>OSG will provide best-effort notification to the mirrored repository in case OSG detects a service outage of the external repo.</li>
+<li>In the event of a reported security incident, OSG will replace the repository contents with an empty directory, signed by an OSG-managed key.
+  This will be done under the direction of the security team.</li>
+<li>Once the external repository is approved, OSG will distribute the corresponding repository signing keys in a valid whitelist.  The whitelist
+  will be signed by the OSG Stratum-0.  This whitelist attests to the authenticity of the key, but not a statement about repository contents.</li>
+</ul>
+<h2 id="vo-responsibilities">VO Responsibilities<a class="headerlink" href="#vo-responsibilities" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The individual responsible on behalf of the VO will be registered with the OASIS Manager role in OIM.</li>
+<li>The requesting VO should only include targeted repositories they need to support their science.</li>
+<li>The VO should understand that in the event of a reported security incident, the contents of this repository may be replaced with an
+  empty directory and signed by the OSG repository key.  Depending on the OSG Security team's evaluation of the severity and urgency
+  of the incident, the blanking may be done immediately without VO notification or after some notification period.</li>
+<li>In the case of a security incident, the VO and OSG Security team will need to mutually agree that the incident is resolved before the
+  repository is unblanked.</li>
+<li>The VO is ultimately responsible for the contents of the repository.  OSG provides a mirror.</li>
+<li>If the external repository is <em>not</em> operated by the VO, OSG may work directly with the external repository maintainers.  This is done for
+  ease of operations and may be limited to day-to-day, non-security-related support.</li>
+</ul>
               
             </div>
           </div>
@@ -597,10 +599,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../globus-toolkit/" class="btn btn-neutral float-right" title="Globus Toolkit Support">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../infrastructure/koji-restore-recipe/" class="btn btn-neutral float-right" title="Koji Restore Recipe">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../voms-admin-retire/" class="btn btn-neutral" title="VOMS Admin Retirement"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../globus-toolkit/" class="btn btn-neutral" title="Globus Toolkit Support"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -628,10 +630,10 @@
           <a href="https://github.com/opensciencegrid/technology" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../voms-admin-retire/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../globus-toolkit/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../globus-toolkit/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../infrastructure/koji-restore-recipe/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
