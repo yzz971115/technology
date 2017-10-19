@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>SHA-2 Support - OSG Technology Area</title>
+  <title>Flexible Release Model - OSG Technology Area</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "SHA-2 Support";
-    var mkdocs_page_input_path = "projects/sha2-support.md";
-    var mkdocs_page_url = "/projects/sha2-support/";
+    var mkdocs_page_name = "Flexible Release Model";
+    var mkdocs_page_input_path = "policy/flexible-release-model.md";
+    var mkdocs_page_url = "/policy/flexible-release-model/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -116,7 +116,7 @@
         <li class="">
           
   
-    <a class="" href="../../policy/software-support/">Software Support</a>
+    <a class="" href="../software-support/">Software Support</a>
   
         </li>
         <li class="">
@@ -250,44 +250,58 @@
         <li class="">
           
   
-    <a class="" href="../../policy/gums-retire/">GUMS Retirement</a>
+    <a class="" href="../gums-retire/">GUMS Retirement</a>
   
         </li>
         <li class="">
           
   
-    <a class="" href="../../policy/bestman2-retire/">BeStMan2 Retirement</a>
+    <a class="" href="../bestman2-retire/">BeStMan2 Retirement</a>
   
         </li>
         <li class="">
           
   
-    <a class="" href="../../policy/voms-admin-retire/">VOMS Admin Retirement</a>
+    <a class="" href="../voms-admin-retire/">VOMS Admin Retirement</a>
   
         </li>
         <li class="">
           
   
-    <a class="" href="../../policy/release-series/">Release Series Support</a>
+    <a class="" href="../release-series/">Release Series Support</a>
   
         </li>
         <li class="">
           
   
-    <a class="" href="../../policy/globus-toolkit/">Globus Toolkit Support</a>
+    <a class="" href="../globus-toolkit/">Globus Toolkit Support</a>
   
         </li>
         <li class="">
           
   
-    <a class="" href="../../policy/external-oasis-repos/">OASIS Repository Mirroring</a>
+    <a class="" href="../external-oasis-repos/">OASIS Repository Mirroring</a>
   
         </li>
-        <li class="">
+        <li class=" current">
           
   
-    <a class="" href="../../policy/flexible-release-model/">Flexible Release Model</a>
+    <a class="current" href="./">Flexible Release Model</a>
   
+  <ul class="subnav">
+      
+    <li class="toctree-l3"><a href="#osg-software-flexible-release-model">OSG Software Flexible Release Model</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#rationale">Rationale</a></li>
+        
+            <li><a class="toctree-l4" href="#proposal">Proposal</a></li>
+        
+        </ul>
+    
+
+  </ul>
         </li>
   </ul>
 	    </li>
@@ -359,17 +373,11 @@
 		
   <span class="caption-text">Historical Transitions</span>
   <ul class="subnav">
-        <li class=" current">
+        <li class="">
           
   
-    <a class="current" href="./">SHA-2 Support</a>
+    <a class="" href="../../projects/sha2-support/">SHA-2 Support</a>
   
-  <ul class="subnav">
-      
-    <li class="toctree-l3"><a href="#sha-2-compliance">SHA-2 Compliance</a></li>
-    
-
-  </ul>
         </li>
   </ul>
 	    </li>
@@ -531,14 +539,14 @@
     
       
         
-          <li>Historical Transitions &raquo;</li>
+          <li>Policy &raquo;</li>
         
       
     
-    <li>SHA-2 Support</li>
+    <li>Flexible Release Model</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/projects/sha2-support.md"
+        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/flexible-release-model.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -548,62 +556,33 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="sha-2-compliance">SHA-2 Compliance<a class="headerlink" href="#sha-2-compliance" title="Permanent link">&para;</a></h1>
-<p>When a certificate authority signs a certificate, it uses one of several possible hash algorithms. 
-Historically, the most popular algorithms were MD5 (now retired due to security issues) and the SHA-1 family.
-SHA-1 certificates are being phased out due to perceived weaknesses — as of February 2017, a practical attack for generating collisions was demonstrated by <a href="https://shattered.io/static/shattered.pdf">Google researchers</a>.
- These days, the preferred hash algorithm family is SHA-2.</p>
-<p>The certificate authorities (CAs), which issue host and user certificates used widely in the OSG, defaulted to SHA-2-based certificates on 1 October 2013; all sites will need to make sure that their software supports certificates using the SHA-2 algorithms. All supported OSG releases support SHA-2.</p>
-<p>The table below denotes indicates the minimum releases necessary to support SHA-2 certificates.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Component</th>
-<th align="left">Version</th>
-<th align="left">In Release</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">BeStMan 2</td>
-<td align="left">bestman2-2.3.0-9.osg</td>
-<td align="left">3.1.13</td>
-<td align="left">SHA-2 support; also see jGlobus, below</td>
-</tr>
-<tr>
-<td align="left">dCache SRM client</td>
-<td align="left">dcache-srmclient-2.2.11.1-2.osg</td>
-<td align="left">3.1.22</td>
-<td align="left">Major update includes SHA-2 support</td>
-</tr>
-<tr>
-<td align="left">Globus GRAM</td>
-<td align="left">globus-gram-job-manager-13.45-1.2.osg, globus-gram-job-manager-condor-1.0-13.1.osg, globus-gram-job-manager-pbs-1.6-1.1.osg</td>
-<td align="left">3.1.9</td>
-<td align="left">Critical bug fixes (not SHA-2 specific)</td>
-</tr>
-<tr>
-<td align="left">GUMS</td>
-<td align="left">gums-1.3.18.009-15.2.osg</td>
-<td align="left">3.1.13</td>
-<td align="left">Switched to jGlobus 2 with SHA-2 support; also see jGlobus, below</td>
-</tr>
-<tr>
-<td align="left">jGlobus (for BeStMan 2)</td>
-<td align="left">jglobus-2.0.5-3.osg</td>
-<td align="left">3.1.18</td>
-<td align="left">Fixed CRL refresh bug (not SHA-2 specific)</td>
-</tr>
-<tr>
-<td align="left">VOMS</td>
-<td align="left">voms-2.0.8-1.5.osg</td>
-<td align="left">3.1.17</td>
-<td align="left">SHA-2 fix for voms-proxy-init</td>
-</tr>
-</tbody>
-</table>
-<p>If a component does not appear in the above table, it already has SHA-2 support.</p>
+                <h1 id="osg-software-flexible-release-model">OSG Software Flexible Release Model<a class="headerlink" href="#osg-software-flexible-release-model" title="Permanent link">&para;</a></h1>
+<h2 id="rationale">Rationale<a class="headerlink" href="#rationale" title="Permanent link">&para;</a></h2>
+<p>Currently, the OSG software stack is released on the second Tuesday of each month, except in the case of urgent releases, which are infrequent. This schedule has been in place since early 2013. Since then, conditions within and outside of the Software team have changed, and now seems like an appropriate time to adjust the release schedule and associated processes.</p>
+<p>The current release model has the recurring problem of a "release crunch," where it is difficult to find the effort required to test large changes before the deadline is passed. Sometimes the lack of timely effort leads to software being pushed to the next release (a month later), because there was insufficient testing time.</p>
+<p>Based on software support tickets, we notice that many sites follow a local update schedule that is independent of the OSG Release team schedule; some sites upgrade every few months, skipping interim releases, other sites upgrade individual packages as needed. In addition,upstream software developers do not follow our release schedule either, releasing software on their own development timelines. As a result, some site administrators would prefer to have OSG software updates more often, closer to when they become available, rather than tied to a monthly cycle.</p>
+<p>For these reasons, we propose a new release model.</p>
+<h2 id="proposal">Proposal<a class="headerlink" href="#proposal" title="Permanent link">&para;</a></h2>
+<p>The OSG Release team will release batches of integrated, tested software on an ad hoc basis, with the process outlined below (changes from the old process are highlighted):</p>
+<ol>
+<li>
+<p>Software and Release Team members develop packages and mark them for testing</p>
+</li>
+<li>
+<p>Software and Release Team members test the packages, possibly with help from the community</p>
+</li>
+<li>
+<p>Once adequate testing is complete and successful, the Release Manager approves packages for release</p>
+</li>
+<li>
+<p><strong>Weekly, the Release Manager evaluates packages that are ready for release; when a sufficient number of important packages are ready</strong>[1]<strong>, the Release Manager schedules a release date and announces it. For urgent changes, the Release Manager evaluates the packages as soon as they are tested</strong></p>
+</li>
+<li>
+<p>The Software and Release Team perform pre-release testing, release the packages, and announce the release</p>
+</li>
+</ol>
+<p>Note: The release dates of parallel release series (e.g., 3.3 and 3.4) will not have to coincide, as they have in the past.</p>
+<p>[1] The threshold for “sufficient number of important packages” will be determined by the Release Manager, with input from the other Technology Area leaders.</p>
               
             </div>
           </div>
@@ -611,10 +590,10 @@ SHA-1 certificates are being phased out due to perceived weaknesses — as of Fe
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../meetings/2017/TechArea20170227/" class="btn btn-neutral float-right" title="February 27, 2017">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../infrastructure/koji-restore-recipe/" class="btn btn-neutral float-right" title="Koji Restore Recipe">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../infrastructure/koji-initial-install/" class="btn btn-neutral" title="Koji Initial Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../external-oasis-repos/" class="btn btn-neutral" title="OASIS Repository Mirroring"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -642,10 +621,10 @@ SHA-1 certificates are being phased out due to perceived weaknesses — as of Fe
           <a href="https://github.com/opensciencegrid/technology" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../infrastructure/koji-initial-install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../external-oasis-repos/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../meetings/2017/TechArea20170227/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../infrastructure/koji-restore-recipe/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
