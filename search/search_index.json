@@ -5147,12 +5147,12 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/", 
-            "text": "OSG Technology Area Meeting, 11 November 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n\n\nAnnouncements\n\n\nBrianL out Thu-Mon (11/2-11/6)\n\n\nTriage Duty\n\n\n\n\nThis week: Suchandra\n\n\nNext week: TimT\n\n\n6 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n151\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n37\n\n\n+11\n\n\nIn Progress\n\n\n\n\n\n\n11\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nRelease Schedule\n\n\n\n\n\n\n\n\nName\n\n\nVersion\n\n\nDevelopment Freeze\n\n\nPackage Freeze\n\n\nRelease\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nNovember\n\n\n3.4.5, 3.3.30\n\n\n2017-10-30\n\n\n2017-11-06\n\n\n2017-11-14\n\n\n5 week cycle\n\n\n\n\n\n\n\n\nNotes: Additional \u201curgent\u201d releases may be scheduled for the 4th Tuesday of each month. The Testing date is when acceptance testing will be scheduled for releasable packages; if a package is added after this date, it may not be possible to schedule adequate testing time, thereby forcing it into the next release.\n\n\nOSG Software Team\n\n\n\n\n\n\nNumber of 3.4.5/3.3.30 still open or in progress\n\n\n\n\n\n\n\n\nOwner\n\n\n# not RFT\n\n\n\n\n\n\n\n\n\n\nBrianL\n\n\n13\n\n\n\n\n\n\nMat\n\n\n6\n\n\n\n\n\n\nEdgar\n\n\n6\n\n\n\n\n\n\nCarl\n\n\n4\n\n\n\n\n\n\nMarian\n\n\n1\n\n\n\n\n\n\nDaveD\n\n\n1\n\n\n\n\n\n\n\n\n\n\n\n\nFlexible releases\n mean no more dev/testing deadlines. To make sure your assigned tickets are progressing, please use the \nstale Software ticket filter\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nSupport Update\n\n\n\n\nCTSC (BrianL) - Assisted Sanjay with writing submit files that he could use to submit to his test CE\n\n\nJINR (BrianL) - fixed blahp failures (use StringIO.StringIO vs io.StringIO in Python2)\n\n\n\n\nOSG Release Team\n\n\n\n\nSuchandra Thapa will handle the November Release\n\n\n\n\n\n\n\n\n\n\n3.3.30\n\n\n\n\nBoth\n\n\n\n\n3.4.5\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n-1\n\n\n0\n\n\n-5\n\n\n0\n\n\n-1\n\n\n9\n\n\n-7\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-1\n\n\n0\n\n\n-20\n\n\n0\n\n\n-3\n\n\n0\n\n\n-24\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+2\n\n\n31\n\n\n+23\n\n\n3\n\n\n+1\n\n\n38\n\n\n+26\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\n1\n\n\n+1\n\n\n2\n\n\n+2\n\n\n4\n\n\n+4\n\n\nReady for Release\n\n\n\n\n\n\n4\n\n\n+1\n\n\n32\n\n\n-1\n\n\n5\n\n\n-1\n\n\n42\n\n\n-1\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth\n\n\nDefault to authenticated request and retrieval of certificates\n\n\nDrop PKI tool quota verification\n\n\n\n\n\n\nCVMFS 2.4.2\n\n\nXRootD 4.7.1\n\n\nUpdate osg-system profiler\n\n\nglobus-gridftp-server-control 6.0\n\n\nlcmaps-plugins-voms manpage and docs w/ all-fqans/first-fqun options\n\n\nDrop SOFTWARE-1853 patch from globus-ftp-client\n\n\nFix EPSV response for IPv4-mapped IPv6 addresses\n\n\ngratia probes updates\n\n\nBug fixes for BLAHP: Slurm memory parsing, Unicode decode error\n\n\nRSV: CRL freshness fix; drop atla.xrootd probe; dummy out osg.version, vo-supported\n\n\nMaintenance on osg-test\n\n\n\n\n\n\n3.4.5\n\n\nosg-configure 2.2.2\n\n\ntweak comments in 10-misc.ini\n\n\n\n\n\n\n3.3.30\n\n\nosg-configure 1.10.2\n\n\nGridFTP-HDFS 1.1\n\n\nGUMS: software.grid.iu.edu -\n repo.grid.iu.edu\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\nLast Week\n\n\n\n\nInstalled CMS data cache at NERSC in userspace.  Will cache CMS data destined at NERSC.\n\n\nXRootD v4.7.1-rc2 packaging for StashCache testing\n\n\nEnabled Starter and StartD logs for GRACC.  Caused issues at factories, but now figured out.\n\n\n\n\nThis Week\n\n\n\n\nFinalizing GRACC changes\n\n\nGRACC-reporting tweaks\n\n\nfully automated ES backups\n\n\n\n\n\n\nDraft GRACC SLA proposal\n\n\nWritable StashCache. Enabling access for initial testers.\n\n\nFinalize XRootD v4.7.1-rc2 packaging and deploy at Nebraska\n\n\nGRACC focus day on Friday.\n\n\nPuppetizing\n\n\nOPS across various services\n\n\ncheck_mk improvements\n\n\n\n\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 11 November 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Brian B, Carl, Derek, Edgar, Marian, Mat, Suchandra, Tim C, Tim T\n\n\nAnnouncements\n\n\nBrianL out Thu-Mon (11/2-11/6)\n\n\nTriage Duty\n\n\n\n\nThis week: Suchandra\n\n\nNext week: TimT\n\n\n6 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n151\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n37\n\n\n+11\n\n\nIn Progress\n\n\n\n\n\n\n11\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nRelease Schedule\n\n\n\n\n\n\n\n\nName\n\n\nVersion\n\n\nDevelopment Freeze\n\n\nPackage Freeze\n\n\nRelease\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nNovember\n\n\n3.4.5, 3.3.30\n\n\n2017-10-30\n\n\n2017-11-06\n\n\n2017-11-14\n\n\n5 week cycle\n\n\n\n\n\n\n\n\n3.4.5 and 3.3.30 will be the last releases on the regular schedule.  Subsequent releases will use the \nflexible release schedule\n.\n\n\nOSG Software Team\n\n\nDiscussions\n\n\nXRootd 4.7.1 has a bug that affects StashCache servers, but is not user-facing\n\n\nSupport Update\n\n\n\n\nUCSD Tier 2 (Edgar) - GPU jobs from IceCube wre causing GPU nodes to lock up and crash.\n    Might be hardware issue since we haven't seen anything like that at Nebraska.\n\n\n\n\nOSG Release Team\n\n\n\n\nSuchandra Thapa will handle the November Release\n\n\n\n\n\n\n\n\n\n\n3.3.30\n\n\n\n\nBoth\n\n\n\n\n3.4.5\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n-1\n\n\n0\n\n\n-5\n\n\n0\n\n\n-1\n\n\n9\n\n\n-7\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-1\n\n\n0\n\n\n-20\n\n\n0\n\n\n-3\n\n\n0\n\n\n-24\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+2\n\n\n31\n\n\n+23\n\n\n3\n\n\n+1\n\n\n38\n\n\n+26\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\n1\n\n\n+1\n\n\n2\n\n\n+2\n\n\n4\n\n\n+4\n\n\nReady for Release\n\n\n\n\n\n\n4\n\n\n+1\n\n\n32\n\n\n-1\n\n\n5\n\n\n-1\n\n\n42\n\n\n-1\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth\n\n\nDefault to authenticated request and retrieval of certificates\n\n\nDrop PKI tool quota verification\n\n\n\n\n\n\nCVMFS 2.4.2\n\n\nXRootD 4.7.1\n\n\nUpdate osg-system profiler\n\n\nglobus-gridftp-server-control 6.0\n\n\nlcmaps-plugins-voms manpage and docs w/ all-fqans/first-fqun options\n\n\nDrop SOFTWARE-1853 patch from globus-ftp-client\n\n\nFix EPSV response for IPv4-mapped IPv6 addresses\n\n\ngratia probes updates\n\n\nBug fixes for BLAHP: Slurm memory parsing, Unicode decode error\n\n\nRSV: CRL freshness fix; drop atla.xrootd probe; dummy out osg.version, vo-supported\n\n\nMaintenance on osg-test\n\n\n\n\n\n\n3.4.5\n\n\nosg-configure 2.2.2\n\n\ntweak comments in 10-misc.ini\n\n\n\n\n\n\n3.3.30\n\n\nosg-configure 1.10.2\n\n\nGridFTP-HDFS 1.1\n\n\nGUMS: software.grid.iu.edu -\n repo.grid.iu.edu\n\n\n\n\n\n\n\n\nDiscussions\n\n\n\n\nNeed testing help\n\n\n\n\nOSG Investigations Team\n\n\nLast Week\n\n\n\n\nGRACC changes; some services moving to the cloud\n\n\nChanges to dashboard based on comments from e.g. LIGO and Minerva\n\n\n\n\n\n\nStashCache changes\n\n\n\n\nThis Week\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "November 6, 2017"
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#osg-technology-area-meeting-11-november-2017", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  Brian B, Carl, Derek, Edgar, Marian, Mat, Suchandra, Tim C, Tim T", 
             "title": "OSG Technology Area Meeting, 11 November 2017"
         }, 
         {
@@ -5172,22 +5172,22 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#release-schedule", 
-            "text": "Name  Version  Development Freeze  Package Freeze  Release  Notes      November  3.4.5, 3.3.30  2017-10-30  2017-11-06  2017-11-14  5 week cycle     Notes: Additional \u201curgent\u201d releases may be scheduled for the 4th Tuesday of each month. The Testing date is when acceptance testing will be scheduled for releasable packages; if a package is added after this date, it may not be possible to schedule adequate testing time, thereby forcing it into the next release.", 
+            "text": "Name  Version  Development Freeze  Package Freeze  Release  Notes      November  3.4.5, 3.3.30  2017-10-30  2017-11-06  2017-11-14  5 week cycle     3.4.5 and 3.3.30 will be the last releases on the regular schedule.  Subsequent releases will use the  flexible release schedule .", 
             "title": "Release Schedule"
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#osg-software-team", 
-            "text": "Number of 3.4.5/3.3.30 still open or in progress     Owner  # not RFT      BrianL  13    Mat  6    Edgar  6    Carl  4    Marian  1    DaveD  1       Flexible releases  mean no more dev/testing deadlines. To make sure your assigned tickets are progressing, please use the  stale Software ticket filter", 
+            "text": "", 
             "title": "OSG Software Team"
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#discussions", 
-            "text": "None this week", 
+            "text": "XRootd 4.7.1 has a bug that affects StashCache servers, but is not user-facing", 
             "title": "Discussions"
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#support-update", 
-            "text": "CTSC (BrianL) - Assisted Sanjay with writing submit files that he could use to submit to his test CE  JINR (BrianL) - fixed blahp failures (use StringIO.StringIO vs io.StringIO in Python2)", 
+            "text": "UCSD Tier 2 (Edgar) - GPU jobs from IceCube wre causing GPU nodes to lock up and crash.\n    Might be hardware issue since we haven't seen anything like that at Nebraska.", 
             "title": "Support Update"
         }, 
         {
@@ -5197,7 +5197,7 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#discussions_1", 
-            "text": "None this week", 
+            "text": "Need testing help", 
             "title": "Discussions"
         }, 
         {
@@ -5207,12 +5207,12 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#last-week", 
-            "text": "Installed CMS data cache at NERSC in userspace.  Will cache CMS data destined at NERSC.  XRootD v4.7.1-rc2 packaging for StashCache testing  Enabled Starter and StartD logs for GRACC.  Caused issues at factories, but now figured out.", 
+            "text": "GRACC changes; some services moving to the cloud  Changes to dashboard based on comments from e.g. LIGO and Minerva    StashCache changes", 
             "title": "Last Week"
         }, 
         {
             "location": "/meetings/2017/TechArea20171106/#this-week", 
-            "text": "Finalizing GRACC changes  GRACC-reporting tweaks  fully automated ES backups    Draft GRACC SLA proposal  Writable StashCache. Enabling access for initial testers.  Finalize XRootD v4.7.1-rc2 packaging and deploy at Nebraska  GRACC focus day on Friday.  Puppetizing  OPS across various services  check_mk improvements", 
+            "text": "", 
             "title": "This Week"
         }, 
         {

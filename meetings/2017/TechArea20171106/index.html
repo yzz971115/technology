@@ -575,7 +575,7 @@
               
                 <h1 id="osg-technology-area-meeting-11-november-2017">OSG Technology Area Meeting, 11 November 2017<a class="headerlink" href="#osg-technology-area-meeting-11-november-2017" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a>
-<strong>Attending:</strong></p>
+<strong>Attending:</strong> Brian B, Carl, Derek, Edgar, Marian, Mat, Suchandra, Tim C, Tim T</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <p>BrianL out Thu-Mon (11/2-11/6)</p>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
@@ -639,56 +639,14 @@
 </tr>
 </tbody>
 </table>
-<p>Notes: Additional “urgent” releases may be scheduled for the 4th Tuesday of each month. The Testing date is when acceptance testing will be scheduled for releasable packages; if a package is added after this date, it may not be possible to schedule adequate testing time, thereby forcing it into the next release.</p>
+<p>3.4.5 and 3.3.30 will be the last releases on the regular schedule.  Subsequent releases will use the <a href="https://opensciencegrid.github.io/technology/policy/flexible-release-model/">flexible release schedule</a>.</p>
 <h2 id="osg-software-team">OSG Software Team<a class="headerlink" href="#osg-software-team" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Number of 3.4.5/3.3.30 still open or in progress</p>
-<table>
-<thead>
-<tr>
-<th>Owner</th>
-<th># not RFT</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BrianL</td>
-<td>13</td>
-</tr>
-<tr>
-<td>Mat</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Edgar</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Carl</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Marian</td>
-<td>1</td>
-</tr>
-<tr>
-<td>DaveD</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p><a href="https://opensciencegrid.github.io/technology/policy/flexible-release-model/">Flexible releases</a> mean no more dev/testing deadlines. To make sure your assigned tickets are progressing, please use the <a href="https://jira.opensciencegrid.org/issues/?filter=16356">stale Software ticket filter</a></p>
-</li>
-</ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
-<p>None this week</p>
+<p>XRootd 4.7.1 has a bug that affects StashCache servers, but is not user-facing</p>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
-<li>CTSC (BrianL) - Assisted Sanjay with writing submit files that he could use to submit to his test CE</li>
-<li>JINR (BrianL) - fixed blahp failures (use StringIO.StringIO vs io.StringIO in Python2)</li>
+<li>UCSD Tier 2 (Edgar) - GPU jobs from IceCube wre causing GPU nodes to lock up and crash.
+    Might be hardware issue since we haven't seen anything like that at Nebraska.</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <ul>
@@ -798,31 +756,19 @@
 </li>
 </ul>
 <h3 id="discussions_1">Discussions<a class="headerlink" href="#discussions_1" title="Permanent link">&para;</a></h3>
-<p>None this week</p>
+<ul>
+<li>Need testing help</li>
+</ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <h3 id="last-week">Last Week<a class="headerlink" href="#last-week" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Installed CMS data cache at NERSC in userspace.  Will cache CMS data destined at NERSC.</li>
-<li>XRootD v4.7.1-rc2 packaging for StashCache testing</li>
-<li>Enabled Starter and StartD logs for GRACC.  Caused issues at factories, but now figured out.</li>
+<li>GRACC changes; some services moving to the cloud<ul>
+<li>Changes to dashboard based on comments from e.g. LIGO and Minerva</li>
+</ul>
+</li>
+<li>StashCache changes</li>
 </ul>
 <h3 id="this-week">This Week<a class="headerlink" href="#this-week" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Finalizing GRACC changes<ul>
-<li>GRACC-reporting tweaks</li>
-<li>fully automated ES backups</li>
-</ul>
-</li>
-<li>Draft GRACC SLA proposal</li>
-<li>Writable StashCache. Enabling access for initial testers.</li>
-<li>Finalize XRootD v4.7.1-rc2 packaging and deploy at Nebraska</li>
-<li>GRACC focus day on Friday.<ul>
-<li>Puppetizing</li>
-<li>OPS across various services</li>
-<li>check_mk improvements</li>
-</ul>
-</li>
-</ul>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://jira.opensciencegrid.org/projects/GRACC/">GRACC Project</a></li>
