@@ -294,6 +294,8 @@
         
             <li><a class="toctree-l4" href="#vo-responsibilities">VO Responsibilities</a></li>
         
+            <li><a class="toctree-l4" href="#operational-policies">Operational Policies</a></li>
+        
         </ul>
     
 
@@ -613,6 +615,17 @@ for use of the software in external repositories, but will help end-users contac
 <li>If the external repository is <em>not</em> operated by the VO, OSG may work directly with the external repository maintainers.  This is done for
   ease of operations and may be limited to day-to-day, non-security-related support.</li>
 </ul>
+<h2 id="operational-policies">Operational Policies<a class="headerlink" href="#operational-policies" title="Permanent link">&para;</a></h2>
+<p>To help us provide the best operational setup possible, we have a few additional replication policies:</p>
+<ol>
+<li>OSG Operations only hosts the shared <code>oasis.opensciencegrid.org</code> repository; VO-dedicated software respositories
+    (such as <code>nova.opensciencegrid.org</code> for the NoVA VO) should be operated by the VO.</li>
+<li>VOs are asked to either run their own repository or utilize the shared repository, but not both.</li>
+<li>There is a finite amount of high-performance storage on the CDN.   A minimum of 100 GB per repository is guaranteed.
+    Larger limits may be requested.</li>
+<li>VOs may ask the OSG to replicate their repositories to the European Grid Infrastructure (EGI); however, this can
+    only be done if the repository name ends in <code>.opensciencegrid.org</code>.</li>
+</ol>
               
             </div>
           </div>
