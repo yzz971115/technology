@@ -687,6 +687,17 @@ repositories by adding command-line options to the <code>yum update</code> comma
 
 </li>
 <li>
+<p>Read the Yum output carefully, and follow up on any warnings, etc.</p>
+</li>
+<li>
+<p>If the <code>osg-configure</code> package was updated on any host(s), run the <code>osg-configure</code> command on the host(s):</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible testing -i inventory -bK -f 20 -m command -a &#39;osg-configure -v&#39; -l [HOST(S)]</span>
+<span class="go">ansible testing -i inventory -bK -f 20 -m command -a &#39;osg-configure -c&#39; -l [HOST(S)]</span>
+</pre></div>
+
+
+</li>
+<li>
 <p>Verify OSG software updates by inspecting the Yum output carefully or examining specific package versions:</p>
 <div class="codehilite"><pre><span></span><span class="go">ansible current -i inventory -f 20 -o -m command -a &#39;rpm -q osg-wn-client&#39;</span>
 </pre></div>
