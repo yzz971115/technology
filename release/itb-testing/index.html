@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>HTCondor Prerelease Testing - OSG Technology Area</title>
+  <title>ITB Prerelease Testing - OSG Technology Area</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "HTCondor Prerelease Testing";
-    var mkdocs_page_input_path = "release/condor-itb-testing.md";
-    var mkdocs_page_url = "/release/condor-itb-testing/";
+    var mkdocs_page_name = "ITB Prerelease Testing";
+    var mkdocs_page_input_path = "release/itb-testing.md";
+    var mkdocs_page_url = "/release/itb-testing/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -225,21 +225,23 @@
         <li class=" current">
           
   
-    <a class="current" href="./">HTCondor Prerelease Testing</a>
+    <a class="current" href="./">ITB Prerelease Testing</a>
   
   <ul class="subnav">
       
-    <li class="toctree-l3"><a href="#testing-htcondor-prereleases-on-the-madison-itb-site">Testing HTCondor Prereleases on the Madison ITB Site</a></li>
+    <li class="toctree-l3"><a href="#testing-osg-software-prereleases-on-the-madison-itb-site">Testing OSG Software Prereleases on the Madison ITB Site</a></li>
     
         <ul>
         
             <li><a class="toctree-l4" href="#prerequisites">Prerequisites</a></li>
         
-            <li><a class="toctree-l4" href="#gather-information">Gather Information</a></li>
+            <li><a class="toctree-l4" href="#gathering-information">Gathering Information</a></li>
         
-            <li><a class="toctree-l4" href="#install-htcondor-prerelease">Install HTCondor Prerelease</a></li>
+            <li><a class="toctree-l4" href="#installing-htcondor-prerelease">Installing HTCondor Prerelease</a></li>
         
-            <li><a class="toctree-l4" href="#run-tests">Run Tests</a></li>
+            <li><a class="toctree-l4" href="#installing-a-prerelease-of-the-osg-software-stack">Installing a Prerelease of the OSG Software Stack</a></li>
+        
+            <li><a class="toctree-l4" href="#running-tests">Running Tests</a></li>
         
         </ul>
     
@@ -562,10 +564,10 @@
         
       
     
-    <li>HTCondor Prerelease Testing</li>
+    <li>ITB Prerelease Testing</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/release/condor-itb-testing.md"
+        <a href="https://github.com/opensciencegrid/technology/edit/master/docs/release/itb-testing.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -575,8 +577,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="testing-htcondor-prereleases-on-the-madison-itb-site">Testing HTCondor Prereleases on the Madison ITB Site<a class="headerlink" href="#testing-htcondor-prereleases-on-the-madison-itb-site" title="Permanent link">&para;</a></h1>
-<p>This document contains a basic recipe for testing an HTCondor prerelease build on the Madison ITB site.</p>
+                <h1 id="testing-osg-software-prereleases-on-the-madison-itb-site">Testing OSG Software Prereleases on the Madison ITB Site<a class="headerlink" href="#testing-osg-software-prereleases-on-the-madison-itb-site" title="Permanent link">&para;</a></h1>
+<p>This document contains basic recipes for testing a OSG software prereleases on the Madison ITB site, which includes
+HTCondor prerelease builds and full OSG software stack prereleases from Yum.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>The following items are known prerequisites to using this recipe.  If you are not running the Ansible commands from
 osghost, there are almost certainly other prerequisites that are not listed below.  And even using osghost for Ansible
@@ -586,7 +589,7 @@ other prerequisites as they are identified!</p>
 <li>A checkout of the osgitb directory from our local git instance (not GitHub)</li>
 <li>Your X.509 DN in the <code>osgitb/unmanaged/htcondor-ce/grid-mapfile</code> file and (via Ansible) on <code>itb-ce1</code> and <code>itb-ce2</code></li>
 </ul>
-<h2 id="gather-information">Gather Information<a class="headerlink" href="#gather-information" title="Permanent link">&para;</a></h2>
+<h2 id="gathering-information">Gathering Information<a class="headerlink" href="#gathering-information" title="Permanent link">&para;</a></h2>
 <p>Technically skippable, this section is about checking on the state of the ITB machines before making changes.  The plan
 is to keep the ITB machines generally up-to-date independently, so those steps are not listed here.  And honestly, the
 steps below are just some ideas; do whatever makes sense for the given update.</p>
@@ -600,42 +603,50 @@ steps below are just some ideas; do whatever makes sense for the given update.</
 
 </li>
 <li>
-<p>Check HTCondor versions for all HTCondor hosts:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible condor -i inventory -f 20 -o -m command -a &#39;rpm -q condor&#39;</span>
+<p>Check the date and time on all hosts (in case NTP stops working):</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible current -i inventory -f 20 -o -m command -a &#39;date&#39;</span>
 </pre></div>
 
 
 </li>
 <li>
-<p>Obtain the NVR of the HTCondor prerelease build from OSG to test.  Do this by talking to Tim&nbsp;T. and checking
-   Koji.  The expectation is that the HTCondor prerelease build will be in the development repository (or
-   upcoming-development).</p>
+<p>Check software versions for certain hosts (e.g., for the <code>condor</code> package on hosts in the <code>workers</code> group):</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible workers -i inventory -f 20 -o -m command -a &#39;rpm -q condor&#39;</span>
+</pre></div>
+
+
 </li>
 </ol>
-<h2 id="install-htcondor-prerelease">Install HTCondor Prerelease<a class="headerlink" href="#install-htcondor-prerelease" title="Permanent link">&para;</a></h2>
+<h2 id="installing-htcondor-prerelease">Installing HTCondor Prerelease<a class="headerlink" href="#installing-htcondor-prerelease" title="Permanent link">&para;</a></h2>
+<p>Use this section to install a new version of HTCondor, specifically a prerelease build from the development or
+upcoming-development repository, on the test hosts.</p>
 <ol>
 <li>
+<p>Obtain the NVR of the HTCondor prerelease build from OSG to test.  Do this by talking to Tim&nbsp;T. and checking
+   Koji.</p>
+</li>
+<li>
 <p>Shut down HTCondor and HTCondor-CE on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible condordev -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=stopped&#39; -l &#39;itb-ce*&#39;</span>
-<span class="go">ansible condordev -i inventory -bK -f 20 -m service -a &#39;name=condor state=stopped&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=stopped&#39;</span>
+<span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=stopped&#39;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Install new version of HTCondor on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible condordev -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes update condor&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes update condor&#39;</span>
 </pre></div>
 
 
 <p>or, if you need to install an NVR that is “earlier” (in the RPM sense) than what is currently installed:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible condordev -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes downgrade condor condor-classads condor-python condor-procd blahp&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes downgrade condor condor-classads condor-python condor-procd blahp&#39;</span>
 </pre></div>
 
 
 </li>
 <li>
-<p>Verify installation of correct RPM version:</p>
+<p>Verify correct RPM versions across the site:</p>
 <div class="codehilite"><pre><span></span><span class="go">ansible condor -i inventory -f 20 -o -m command -a &#39;rpm -q condor&#39;</span>
 </pre></div>
 
@@ -643,17 +654,46 @@ steps below are just some ideas; do whatever makes sense for the given update.</
 </li>
 <li>
 <p>Restart HTCondor and HTCondor-CE on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible condordev -i inventory -bK -f 20 -m service -a &#39;name=condor state=started&#39;</span>
-<span class="go">ansible condordev -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=started&#39; -l &#39;itb-ce*&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=started&#39;</span>
+<span class="go">ansible &#39;testing:&amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=started&#39;</span>
 </pre></div>
 
 
 </li>
 </ol>
-<h2 id="run-tests">Run Tests<a class="headerlink" href="#run-tests" title="Permanent link">&para;</a></h2>
+<h2 id="installing-a-prerelease-of-the-osg-software-stack">Installing a Prerelease of the OSG Software Stack<a class="headerlink" href="#installing-a-prerelease-of-the-osg-software-stack" title="Permanent link">&para;</a></h2>
+<p>Use this section to install new versions of all OSG software from a prerelease repository in Yum.</p>
+<ol>
+<li>
+<p>Check with the Release Manager to make sure that the prerelease repository has been populated with the desired
+   package versions.</p>
+</li>
+<li>
+<p>Make sure that software is generally up-to-date on the hosts&nbsp;— see
+   <a href="../../infrastructure/madison-itb">the MadisonITB page</a> for more details</p>
+<p>It may be desirable to update only non-OSG software at this stage, in which case one could simply disable the OSG
+repositories by adding command-line options to the <code>yum update</code> commands.</p>
+</li>
+<li>
+<p>Install new software on prerelease hosts:</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible testing -i inventory -bK -f 20 -m command -a &#39;yum --enablerepo=osg-prerelease --assumeyes update&#39;</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Verify OSG software updates by inspecting the Yum output carefully or examining specific package versions:</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible current -i inventory -f 20 -o -m command -a &#39;rpm -q osg-wn-client&#39;</span>
+</pre></div>
+
+
+<p>Use an inventory group and package names that best fit the situation.</p>
+</li>
+</ol>
+<h2 id="running-tests">Running Tests<a class="headerlink" href="#running-tests" title="Permanent link">&para;</a></h2>
 <p>For the first two test workflows, use your personal space on <code>itb-submit</code>.  Copy or checkout the <code>osgitb/htcondor-tests</code>
 directory to get the test directories.</p>
-<h3 id="submitting-jobs-directly">Submitting jobs directly<a class="headerlink" href="#submitting-jobs-directly" title="Permanent link">&para;</a></h3>
+<h3 id="part-i-submitting-jobs-directly">Part Ⅰ: Submitting jobs directly<a class="headerlink" href="#part-i-submitting-jobs-directly" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Change into the <code>1-direct-jobs</code> subdirectory</p>
@@ -694,7 +734,7 @@ watch out for a case in which no jobs run on the newly updated hosts (at the tim
    target to remove all workflow-generated files (plus Emacs backup files).</p>
 </li>
 </ol>
-<h3 id="submitting-jobs-using-htcondor-c">Submitting jobs using HTCondor-C<a class="headerlink" href="#submitting-jobs-using-htcondor-c" title="Permanent link">&para;</a></h3>
+<h3 id="part-ii-submitting-jobs-using-htcondor-c">Part Ⅱ: Submitting jobs using HTCondor-C<a class="headerlink" href="#part-ii-submitting-jobs-using-htcondor-c" title="Permanent link">&para;</a></h3>
 <p>If direct submissions fail, there is probably no point to doing this step.</p>
 <ol>
 <li>
@@ -742,7 +782,7 @@ trying steps 2 and 3 until you get a clean run (or one or more HTCondor bug tick
 <p>(Optional) Clean up, using the <code>make clean</code> or <code>make distclean</code> commands.</p>
 </li>
 </ol>
-<h3 id="submitting-jobs-from-a-glideinwms-vo-frontend">Submitting jobs from a GlideinWMS VO Frontend<a class="headerlink" href="#submitting-jobs-from-a-glideinwms-vo-frontend" title="Permanent link">&para;</a></h3>
+<h3 id="part-iii-submitting-jobs-from-a-glideinwms-vo-frontend">Part Ⅲ: Submitting jobs from a GlideinWMS VO Frontend<a class="headerlink" href="#part-iii-submitting-jobs-from-a-glideinwms-vo-frontend" title="Permanent link">&para;</a></h3>
 <p>For this workflow, use your personal space on <code>glidein3.chtc.wisc.edu</code>.  Copy or checkout the <code>osgitb/htcondor-tests</code>
 directory to get the test directories.  Again, if previous steps fail, do not bother with this step.</p>
 <ol>
