@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
+            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n20 November 2017\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#recent-notes", 
-            "text": "13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
+            "text": "20 November 2017  13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
             "title": "Recent Notes"
         }, 
         {
@@ -5302,6 +5302,71 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171113/#discussions_2", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/", 
+            "text": "OSG Technology Area Meeting, 20 November 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n   \n\n\nAnnouncements\n\n\nThanksgiving on Thursday\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n5 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n161\n\n\n-19\n\n\nOpen\n\n\n\n\n\n\n26\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n5\n\n\n+4\n\n\nReady for Testing\n\n\n\n\n\n\n2\n\n\n-41\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nDocumentation focus afternoon 12/14\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nCTSC (BrianL): Force GSI authentication for locally submitted jobs\n\n\nTaiwan (BrianL): Assisted with job router misconfiguration\n\n\n\n\nOSG Release Team\n\n\n\n\nSuchandra Thapa will handle the November Release\n\n\n\n\n\n\n\n\n\n\n3.3.30\n\n\n\n\nBoth\n\n\n\n\n3.4.5\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n-4\n\n\n0\n\n\n-31\n\n\n0\n\n\n-3\n\n\n0\n\n\n-38\n\n\nReady for Testing\n\n\n\n\n\n\n5\n\n\n+4\n\n\n33\n\n\n+32\n\n\n5\n\n\n+3\n\n\n43\n\n\n+39\n\n\nReady for Release\n\n\n\n\n\n\n5\n\n\n+0\n\n\n33\n\n\n+1\n\n\n5\n\n\n+0\n\n\n43\n\n\n+1\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth  \n\n\nDefault to authenticated request and retrieval of certificates  \n\n\nDrop PKI tool quota verification\n\n\n\n\n\n\nCVMFS 2.4.2\n\n\nXRootD 4.7.1\n\n\nUpdate osg-system profiler\n\n\nglobus-gridftp-server-control 6.0\n\n\nlcmaps-plugins-voms manpage and docs w/ all-fqans/first-fqun options\n\n\nDrop SOFTWARE-1853 patch from globus-ftp-client\n\n\nFix EPSV response for IPv4-mapped IPv6 addresses\n\n\ngratia probes updates\n\n\nBug fixes for BLAHP: Slurm memory parsing, Unicode decode error\n\n\nRSV: CRL freshness fix; drop atla.xrootd probe; dummy out osg.version, vo-supported\n\n\nMaintenance on osg-test\n\n\n\n\n\n\n3.4.5  \n\n\nosg-configure 2.2.2\n\n\ntweak comments in 10-misc.ini\n\n\n\n\n\n\n3.3.30  \n\n\nosg-configure 1.10.2\n\n\nGridFTP-HDFS 1.1\n\n\nGUMS: software.grid.iu.edu -\n repo.grid.iu.edu\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\nTechnology area out at conferences  \n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "title": "November 20, 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#osg-technology-area-meeting-20-november-2017", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:", 
+            "title": "OSG Technology Area Meeting, 20 November 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#announcements", 
+            "text": "Thanksgiving on Thursday", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#triage-duty", 
+            "text": "This week: BrianL  Next week: Carl  5 (-1) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#jira", 
+            "text": "# of tickets   State      161  -19  Open    26  +3  In Progress    5  +4  Ready for Testing    2  -41  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#osg-software-team", 
+            "text": "Documentation focus afternoon 12/14", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#discussions", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#support-update", 
+            "text": "CTSC (BrianL): Force GSI authentication for locally submitted jobs  Taiwan (BrianL): Assisted with job router misconfiguration", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#osg-release-team", 
+            "text": "Suchandra Thapa will handle the November Release      3.3.30   Both   3.4.5   Total   Status      0  +0  0  +0  0  +0  0  +0  Open    0  +0  0  +0  0  +0  0  +0  In Progress    0  -4  0  -31  0  -3  0  -38  Ready for Testing    5  +4  33  +32  5  +3  43  +39  Ready for Release    5  +0  33  +1  5  +0  43  +1  Total      Both    Default to authenticated request and retrieval of certificates    Drop PKI tool quota verification    CVMFS 2.4.2  XRootD 4.7.1  Update osg-system profiler  globus-gridftp-server-control 6.0  lcmaps-plugins-voms manpage and docs w/ all-fqans/first-fqun options  Drop SOFTWARE-1853 patch from globus-ftp-client  Fix EPSV response for IPv4-mapped IPv6 addresses  gratia probes updates  Bug fixes for BLAHP: Slurm memory parsing, Unicode decode error  RSV: CRL freshness fix; drop atla.xrootd probe; dummy out osg.version, vo-supported  Maintenance on osg-test    3.4.5    osg-configure 2.2.2  tweak comments in 10-misc.ini    3.3.30    osg-configure 1.10.2  GridFTP-HDFS 1.1  GUMS: software.grid.iu.edu -  repo.grid.iu.edu", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#discussions_1", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#osg-investigations-team", 
+            "text": "Technology area out at conferences", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#ongoing", 
+            "text": "GRACC Project  StashCache Project (New URL!)", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171120/#discussions_2", 
             "text": "None this week", 
             "title": "Discussions"
         }
