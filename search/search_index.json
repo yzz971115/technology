@@ -5372,12 +5372,12 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/", 
-            "text": "OSG Technology Area Meeting, 27 November 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: BrianL\n\n\n5 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n156\n\n\n-5\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-2\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nXRootD 4.8.0 release candidate available\n\n\nDon't forget to update your \nstale software tickets\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nPurdue (BrianL): condor_ce_trace fails for IPv6-enabled hosts\n\n\nTaiwan (BrianL): Continued assistance with job router misconfiguration\n\n\n\n\nOSG Release Team\n\n\n\n\nData Release this week (IGTF 1.88) w/ SHA2 checksum (may take a little longer)\n\n\n\n\n\n\n\n\n\n\n3.3\n\n\n\n\nBoth\n\n\n\n\n3.4\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n15\n\n\n-5\n\n\n7\n\n\n+2\n\n\n22\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n1\n\n\n+0\n\n\n12\n\n\n+3\n\n\n5\n\n\n+1\n\n\n18\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+0\n\n\n5\n\n\n+4\n\n\n0\n\n\n-1\n\n\n6\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n2\n\n\n+0\n\n\n32\n\n\n+2\n\n\n12\n\n\n+2\n\n\n46\n\n\n+4\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth  \n\n\nRelease Glideinwms v3.2.20+\n\n\nDrop globus-gram-client-tools requirement from glideinwms\n\n\nInclude the gfal2 http plugins as part of the osg-wn-client\n\n\nInclude cvmfs upstream bug fix for losing singularity bind mounts\n\n\nAllow tarballs to be updated by different users\n\n\n\n\n\n\n3.4.6  \n\n\nNothing yet\n\n\n\n\n\n\n3.3.31  \n\n\nRelease GridFTP-HDFS 1.1.1\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\n\n\nGRACC Updates.  Better data!\n\n\nStashCache writes implemented in production on OSG-Connect, more or less\n\n\nLogging for CVMFS-Singularity-Sync now going into GRACC (need to implement removal of old logs)\n\n\nOSG BIBM workshop was a success! \nhttp://sbbi-panda.unl.edu/bibm2017/program.html\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 27 November 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n BrianB, BrianL, Carl, Derek, Edgar, Marian, Mat, Suchandra, TimC, TimT\n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Suchandra\n\n\n5 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n156\n\n\n-5\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-2\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nXRootD 4.8.0 release candidate available. Mainly bug fixes, can go directly into the release repo.\n\n\nDon't forget to update your \nstale software tickets\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nIceCube (Derek): GPU code wasn't working due to GLOW defaulting to running in Singularity containers\n\n\nNERSC (Derek): Continued work to set up non-root XRootD caching for CMS workflow\n\n\nPurdue (BrianL): condor_ce_trace fails for IPv6-enabled hosts\n\n\nTaiwan (BrianL): Continued assistance with job router misconfiguration\n\n\nSyracuse (Edgar): Glideins couldn't find Singularity in their expected path\n\n\n\n\nOSG Release Team\n\n\n\n\nData Release this week (IGTF 1.88) w/ SHA2 checksum (may take a little longer)\n\n\n\n\n\n\n\n\n\n\n3.3\n\n\n\n\nBoth\n\n\n\n\n3.4\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n15\n\n\n-5\n\n\n7\n\n\n+2\n\n\n22\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n1\n\n\n+0\n\n\n12\n\n\n+3\n\n\n5\n\n\n+1\n\n\n18\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+0\n\n\n5\n\n\n+4\n\n\n0\n\n\n-1\n\n\n6\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n2\n\n\n+0\n\n\n32\n\n\n+2\n\n\n12\n\n\n+2\n\n\n46\n\n\n+4\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth  \n\n\nRelease Glideinwms v3.2.20+\n\n\nDrop globus-gram-client-tools requirement from glideinwms\n\n\nInclude the gfal2 http plugins as part of the osg-wn-client\n\n\nInclude cvmfs upstream bug fix for losing singularity bind mounts\n\n\nAllow tarballs to be updated by different users\n\n\n\n\n\n\n3.4.6  \n\n\nNothing yet\n\n\n\n\n\n\n3.3.31  \n\n\nRelease GridFTP-HDFS 1.1.1\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\n\n\nGRACC Updates.  Better data!\n\n\nStashCache writes implemented in production on OSG-Connect, more or less\n\n\nLogging for CVMFS-Singularity-Sync now going into GRACC (need to implement removal of old logs)\n\n\nOSG BIBM workshop was a success! \nhttp://sbbi-panda.unl.edu/bibm2017/program.html\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "November 27, 2017"
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/#osg-technology-area-meeting-27-november-2017", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:  BrianB, BrianL, Carl, Derek, Edgar, Marian, Mat, Suchandra, TimC, TimT", 
             "title": "OSG Technology Area Meeting, 27 November 2017"
         }, 
         {
@@ -5387,7 +5387,7 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/#triage-duty", 
-            "text": "This week: Carl  Next week: BrianL  5 (+0) open tickets", 
+            "text": "This week: Carl  Next week: Suchandra  5 (+0) open tickets", 
             "title": "Triage Duty"
         }, 
         {
@@ -5397,7 +5397,7 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/#osg-software-team", 
-            "text": "XRootD 4.8.0 release candidate available  Don't forget to update your  stale software tickets", 
+            "text": "XRootD 4.8.0 release candidate available. Mainly bug fixes, can go directly into the release repo.  Don't forget to update your  stale software tickets", 
             "title": "OSG Software Team"
         }, 
         {
@@ -5407,7 +5407,7 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/#support-update", 
-            "text": "Purdue (BrianL): condor_ce_trace fails for IPv6-enabled hosts  Taiwan (BrianL): Continued assistance with job router misconfiguration", 
+            "text": "IceCube (Derek): GPU code wasn't working due to GLOW defaulting to running in Singularity containers  NERSC (Derek): Continued work to set up non-root XRootD caching for CMS workflow  Purdue (BrianL): condor_ce_trace fails for IPv6-enabled hosts  Taiwan (BrianL): Continued assistance with job router misconfiguration  Syracuse (Edgar): Glideins couldn't find Singularity in their expected path", 
             "title": "Support Update"
         }, 
         {
