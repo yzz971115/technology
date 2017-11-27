@@ -117,6 +117,8 @@
         
             <li><a class="toctree-l4" href="#packaging-for-multiple-distro-versions">Packaging for Multiple Distro Versions</a></li>
         
+            <li><a class="toctree-l4" href="#renaming-or-removing-packages">Renaming or Removing Packages</a></li>
+        
         </ul>
     
 
@@ -966,6 +968,56 @@
 
 <p>(There does not seem to be an <code>%elseif</code>).</p>
 <p>The syntax <code>%{?el6}</code> expands to the value of the <code>%el6</code> macro if it is defined, and to the empty string if not; the <code>0</code> is there to keep the condition from being empty in the <code>%if</code> statement if the macro is not defined.</p>
+<h2 id="renaming-or-removing-packages">Renaming or Removing Packages<a class="headerlink" href="#renaming-or-removing-packages" title="Permanent link">&para;</a></h2>
+<p>Occasionally we want to cause a package to be removed on update, or replaced by a package with a different name.</p>
+<p>For the most part, the <a href="https://fedoraproject.org/wiki/Packaging:Guidelines#Renaming.2FReplacing_Existing_Packages">Fedora Packaging Guidelines page on renames</a> shows how to do that.
+The exception is that we do not have the equivalent of a <code>fedora-obsolete-packages</code> package, so in order to force the removal of an entire package (not a subpackage), we have to dummy out the package instead -- see below.
+(This should be a rare situation.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After doing a rename or a removal, you must update all the packages and subpackages that require the package being removed or renamed, and change or remove the requirements as appropriate.</p>
+</div>
+<p>To find packages that require the old package at run time, set up a host with the OSG repos and install the <code>yum-utils</code> RPM.
+Then, run:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> repoquery --plugins --whatrequires <span class="nv">$OLDPACKAGE</span>
+</pre></div>
+
+
+<p>To find packages that require the old package at build time, install <code>osg-build</code>, and do this from a checkout of the OSG repos:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> osg-build prebuild *
+<span class="gp">$</span> <span class="k">for</span> srpm in */_final_srpm_contents/*.src.rpm<span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
+    <span class="nb">echo</span> <span class="s2">&quot;***** </span><span class="nv">$srpm</span><span class="s2"> *****&quot;</span><span class="p">;</span> <span class="se">\</span>
+    rpm -q --requires -p <span class="nv">$srpm</span> <span class="p">|</span> grep -w <span class="nv">$OLDPACKAGE</span><span class="p">;</span> <span class="se">\</span>
+  <span class="k">done</span>
+</pre></div>
+
+
+<p>(examine the output to avoid false matches)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Carefully test these changes, including places where the old package may be brought in indirectly.</p>
+</div>
+<h3 id="dummying-out-a-package">Dummying out a package<a class="headerlink" href="#dummying-out-a-package" title="Permanent link">&para;</a></h3>
+<p>In order to forcibly remove an entire package with no replacement, you have to replace the package with one that does nothing.
+This is because there is no package that will "obsolete" the old package.</p>
+<p>Do the following for the main package and any subpackages it may have:</p>
+<ul>
+<li>Change the Summary to "Dummy package"</li>
+<li>
+<p>Change the %description to:</p>
+<blockquote>
+<p>This is an empty package created for <span style="color:red">$</span>.
+It may safely be removed.</p>
+</blockquote>
+</li>
+<li>
+<p>Remove all Requires and Obsoletes lines</p>
+</li>
+<li>Do not remove Provides lines</li>
+<li>Remove %pre and %post scriptlets</li>
+<li>Unless there is a good reason not to, remove %preun and %postun scriptlets</li>
+<li>Empty the %files section</li>
+</ul>
               
             </div>
           </div>
