@@ -742,41 +742,58 @@ git clone https://github.com/opensciencegrid/release-tools.git
 </pre></div>
 
 
-<p>You should get up to 8 tarballs for each version (excluding upcoming), 25-55 megs each and they should all have the version number in the name.</p>
 <h3 id="step-5-briefly-test-the-client-tarballs">Step 5: Briefly test the client tarballs<a class="headerlink" href="#step-5-briefly-test-the-client-tarballs" title="Permanent link">&para;</a></h3>
 <p>As an <strong>unprivileged user</strong>, extract each tarball into a separate directory. Make sure osg-post-install works. Make sure <code>osgrun osg-version</code> works by running the following tests, replacing <code>&lt;NON-UPCOMING VERSION(S)</code> with the appropriate version numbers:</p>
 <div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span>&lt;NON-UPCOMING VERSION<span class="o">(</span>S<span class="o">)</span>&gt;
 
 dotest <span class="o">()</span> <span class="o">{</span>
     <span class="nv">file</span><span class="o">=</span><span class="nv">$dir</span>/<span class="nv">$client</span>-<span class="nv">$ver</span>-1.<span class="nv">$rhel</span>.<span class="nv">$arch</span>.tar.gz
-    mkdir -p <span class="nv">$rhel</span>-<span class="nv">$arch</span>
-    <span class="nb">pushd</span> <span class="nv">$rhel</span>-<span class="nv">$arch</span>
-    tar xzf ../<span class="nv">$file</span>
-    <span class="nv">$client</span>/osg/osg-post-install
-    <span class="nv">$client</span>/osgrun osg-version
-    <span class="nb">popd</span>
-    rm -rf <span class="nv">$rhel</span>-<span class="nv">$arch</span>
+    <span class="k">if</span> <span class="o">[</span> -e <span class="nv">$file</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Testing </span><span class="nv">$client</span><span class="s2">-</span><span class="nv">$ver</span><span class="s2">-1.</span><span class="nv">$rhel</span><span class="s2">.</span><span class="nv">$arch</span><span class="s2">...&quot;</span>
+        <span class="nv">size</span><span class="o">=</span><span class="k">$(</span>du -m <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="p">|</span> cut -f <span class="m">1</span><span class="k">)</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$size</span> -gt <span class="nv">$max_size</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nb">echo</span> -e <span class="s2">&quot;\e[1;33mWARNING: </span><span class="nv">$client</span><span class="s2">-</span><span class="nv">$ver</span><span class="s2">-1.</span><span class="nv">$rhel</span><span class="s2">.</span><span class="nv">$arch</span><span class="s2"> is too big. Check with release manager.\e[0m&quot;</span>
+        <span class="k">fi</span>
+        mkdir -p <span class="nv">$rhel</span>-<span class="nv">$arch</span>
+        <span class="nb">pushd</span> <span class="nv">$rhel</span>-<span class="nv">$arch</span>
+        tar xzf ../<span class="nv">$file</span>
+        <span class="nv">$client</span>/osg/osg-post-install
+        <span class="nv">$client</span>/osgrun osg-version
+        <span class="nb">popd</span>
+        rm -rf <span class="nv">$rhel</span>-<span class="nv">$arch</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> -e <span class="s2">&quot;\e[1;31mERROR: </span><span class="nv">$client</span><span class="s2">-</span><span class="nv">$ver</span><span class="s2">-1.</span><span class="nv">$rhel</span><span class="s2">.</span><span class="nv">$arch</span><span class="s2"> tarball is missing.\e[0m&quot;</span>
+    <span class="k">fi</span>
 <span class="o">}</span>
 
 <span class="nb">pushd</span> /tmp
 
-<span class="k">for</span> client in osg-afs-client osg-wn-client<span class="p">;</span> <span class="k">do</span>
-    <span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-        <span class="k">for</span> rhel in el6 el7<span class="p">;</span> <span class="k">do</span>
-            <span class="nv">arch</span><span class="o">=</span>x86_64
-            <span class="nv">dir</span><span class="o">=</span>tarballs/<span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span>/<span class="nv">$arch</span>
-            dotest
+<span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nv">major_version</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="nv">clients</span><span class="o">=</span><span class="s2">&quot;osg-wn-client&quot;</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$major_version</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;3.4&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">clients</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$clients</span><span class="s2"> osg-afs-client&quot;</span>
+    <span class="k">fi</span>
+    <span class="k">for</span> client in <span class="nv">$clients</span><span class="p">;</span> <span class="k">do</span>
+        <span class="nv">rhels</span><span class="o">=</span><span class="s2">&quot;el6 el7&quot;</span>
+        <span class="k">for</span> rhel in <span class="nv">$rhels</span><span class="p">;</span> <span class="k">do</span>
+            <span class="nv">max_size</span><span class="o">=</span><span class="m">24</span>
+            <span class="k">if</span> <span class="o">[</span> <span class="nv">$rhel</span> <span class="o">=</span> <span class="s2">&quot;el7&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nv">max_size</span><span class="o">=</span><span class="m">32</span>
+            <span class="k">fi</span>
+            <span class="nv">archs</span><span class="o">=</span><span class="s2">&quot;x86_64&quot;</span>
+            <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$major_version</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;3.3&quot;</span> -a <span class="nv">$rhel</span> <span class="o">=</span> <span class="s2">&quot;el6&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nv">archs</span><span class="o">=</span><span class="s2">&quot;i386 </span><span class="nv">$archs</span><span class="s2">&quot;</span>
+            <span class="k">fi</span>
+            <span class="k">for</span> arch in <span class="nv">$archs</span><span class="p">;</span> <span class="k">do</span>
+                <span class="nv">dir</span><span class="o">=</span>tarballs/<span class="nv">$major_version</span>/<span class="nv">$arch</span>
+                dotest
+            <span class="k">done</span>
         <span class="k">done</span>
     <span class="k">done</span>
 <span class="k">done</span>
 
-<span class="nv">client</span><span class="o">=</span>osg-wn-client
-<span class="nv">arch</span><span class="o">=</span>i386
-<span class="nv">rhel</span><span class="o">=</span>el6
-<span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">dir</span><span class="o">=</span>tarballs/<span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span>/<span class="nv">$arch</span>
-    dotest
-<span class="k">done</span>
+<span class="nb">popd</span>
 </pre></div>
 
 
