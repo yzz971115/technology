@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n27 November 2017\n\n\n20 November 2017\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
+            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n4 December 2017\n\n\n27 November 2017\n\n\n20 November 2017\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#recent-notes", 
-            "text": "27 November 2017  20 November 2017  13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
+            "text": "4 December 2017  27 November 2017  20 November 2017  13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
             "title": "Recent Notes"
         }, 
         {
@@ -5442,6 +5442,71 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171127/#discussions_2", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/", 
+            "text": "OSG Technology Area Meeting,  4 December 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Suchandra\n\n\nNext week: Mat\n\n\n7 (+2) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n154\n\n\n-2\n\n\nOpen\n\n\n\n\n\n\n25\n\n\n-4\n\n\nIn Progress\n\n\n\n\n\n\n12\n\n\n+6\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nSpoke with XRootD team about static analysis (they run coverity). They were open to making static analysis part of their release process.\n\n\nDoc Focus Afternoon  \n\n\nDoc priority list\n \n JIRA tickets incoming\n\n\nYou may have noticed shuffling ticket ownership for doc tickets, I'm just balancing plates for the upcoming afternoon\n\n\n\n\n\n\n\n\nDon't forget to update your \nstale software tickets\n  \n\n\n\n\n\n\n\n\nAssignee\n\n\n# of stale tickets\n\n\n\n\n\n\n\n\n\n\nMat\n\n\n7\n\n\n\n\n\n\nBrianL\n\n\n3\n\n\n\n\n\n\nCarl\n\n\n3\n\n\n\n\n\n\nTimT\n\n\n1\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nIceCube (Derek): GPU code wasn't working due to GLOW defaulting to running in Singularity containers\n\n\nNERSC (Derek): Continued work to set up non-root XRootD caching for CMS workflow\n\n\nSyracuse (Edgar): Glideins couldn't find Singularity in their expected path\n\n\n\n\nOSG Release Team\n\n\n\n\nData Release this week (IGTF 1.88) w/ SHA2 checksum (may take a little longer)\n\n\n\n\n\n\n\n\n\n\n3.3\n\n\n\n\nBoth\n\n\n\n\n3.4\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n20\n\n\n+20\n\n\n5\n\n\n+5\n\n\n25\n\n\n+25\n\n\nOpen\n\n\n\n\n\n\n1\n\n\n+1\n\n\n9\n\n\n+9\n\n\n4\n\n\n+4\n\n\n14\n\n\n+14\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+1\n\n\n1\n\n\n+1\n\n\n1\n\n\n+1\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n5\n\n\n+0\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n2\n\n\n+2\n\n\n30\n\n\n+30\n\n\n10\n\n\n+10\n\n\n42\n\n\n+2\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth  \n\n\nRelease Glideinwms v3.2.20+\n\n\nDrop globus-gram-client-tools requirement from glideinwms\n\n\nInclude the gfal2 http plugins as part of the osg-wn-client\n\n\nInclude cvmfs upstream bug fix for losing singularity bind mounts\n\n\nAllow tarballs to be updated by different users\n\n\n\n\n\n\n3.4.6  \n\n\nNothing yet\n\n\n\n\n\n\n3.3.31  \n\n\nRelease GridFTP-HDFS 1.1.1\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\n\n\nGRACC is now using a hosted RabbitMQ service. Better alarms\n\n\nPerfSonar data now flowing through hosted RabbitMQ  \n\n\nBug fixes in perfsonar data collection\n\n\n\n\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "title": "December 4, 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#osg-technology-area-meeting-4-december-2017", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:", 
+            "title": "OSG Technology Area Meeting,  4 December 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#announcements", 
+            "text": "", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#triage-duty", 
+            "text": "This week: Suchandra  Next week: Mat  7 (+2) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#jira", 
+            "text": "# of tickets   State      154  -2  Open    25  -4  In Progress    12  +6  Ready for Testing    0  +0  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#osg-software-team", 
+            "text": "Spoke with XRootD team about static analysis (they run coverity). They were open to making static analysis part of their release process.  Doc Focus Afternoon    Doc priority list    JIRA tickets incoming  You may have noticed shuffling ticket ownership for doc tickets, I'm just balancing plates for the upcoming afternoon     Don't forget to update your  stale software tickets        Assignee  # of stale tickets      Mat  7    BrianL  3    Carl  3    TimT  1", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#discussions", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#support-update", 
+            "text": "IceCube (Derek): GPU code wasn't working due to GLOW defaulting to running in Singularity containers  NERSC (Derek): Continued work to set up non-root XRootD caching for CMS workflow  Syracuse (Edgar): Glideins couldn't find Singularity in their expected path", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#osg-release-team", 
+            "text": "Data Release this week (IGTF 1.88) w/ SHA2 checksum (may take a little longer)      3.3   Both   3.4   Total   Status      0  +0  20  +20  5  +5  25  +25  Open    1  +1  9  +9  4  +4  14  +14  In Progress    1  +1  1  +1  1  +1  3  +3  Ready for Testing    0  +0  0  +0  5  +0  0  +0  Ready for Release    2  +2  30  +30  10  +10  42  +2  Total      Both    Release Glideinwms v3.2.20+  Drop globus-gram-client-tools requirement from glideinwms  Include the gfal2 http plugins as part of the osg-wn-client  Include cvmfs upstream bug fix for losing singularity bind mounts  Allow tarballs to be updated by different users    3.4.6    Nothing yet    3.3.31    Release GridFTP-HDFS 1.1.1", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#discussions_1", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#osg-investigations-team", 
+            "text": "GRACC is now using a hosted RabbitMQ service. Better alarms  PerfSonar data now flowing through hosted RabbitMQ    Bug fixes in perfsonar data collection", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#ongoing", 
+            "text": "GRACC Project  StashCache Project (New URL!)", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171204/#discussions_2", 
             "text": "None this week", 
             "title": "Discussions"
         }
