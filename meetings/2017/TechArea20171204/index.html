@@ -688,16 +688,20 @@
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Data Release this week (IGTF 1.88) w/ SHA2 checksum (may take a little longer)</li>
+<li>VO Package Release expected this week (VO Package v77)</li>
+<li>Release estimated to go out week of December 18th<ul>
+<li>Better aligns with XRootD 4.8.0 release</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>3.3</th>
+<th>3.3.31</th>
 <th>&Delta;</th>
 <th>Both</th>
 <th>&Delta;</th>
-<th>3.4</th>
+<th>3.4.6</th>
 <th>&Delta;</th>
 <th>Total</th>
 <th>&Delta;</th>
@@ -706,36 +710,36 @@
 </thead>
 <tbody>
 <tr>
-<td>0</td>
-<td>+0</td>
-<td>20</td>
-<td>+20</td>
+<td>1</td>
+<td>+1</td>
+<td>7</td>
+<td>-8</td>
 <td>5</td>
-<td>+5</td>
-<td>25</td>
-<td>+25</td>
+<td>-2</td>
+<td>13</td>
+<td>-9</td>
 <td>Open</td>
 </tr>
 <tr>
-<td>1</td>
+<td>0</td>
+<td>-1</td>
+<td>11</td>
+<td>-1</td>
+<td>8</td>
+<td>+3</td>
+<td>19</td>
 <td>+1</td>
-<td>9</td>
-<td>+9</td>
-<td>4</td>
-<td>+4</td>
-<td>14</td>
-<td>+14</td>
 <td>In Progress</td>
 </tr>
 <tr>
 <td>1</td>
-<td>+1</td>
-<td>1</td>
-<td>+1</td>
-<td>1</td>
-<td>+1</td>
-<td>3</td>
-<td>+3</td>
+<td>+0</td>
+<td>10</td>
+<td>+5</td>
+<td>0</td>
+<td>+0</td>
+<td>11</td>
+<td>+5</td>
 <td>Ready for Testing</td>
 </tr>
 <tr>
@@ -743,7 +747,7 @@
 <td>+0</td>
 <td>0</td>
 <td>+0</td>
-<td>5</td>
+<td>0</td>
 <td>+0</td>
 <td>0</td>
 <td>+0</td>
@@ -751,24 +755,34 @@
 </tr>
 <tr>
 <td>2</td>
-<td>+2</td>
-<td>30</td>
-<td>+30</td>
-<td>10</td>
-<td>+10</td>
-<td>42</td>
-<td>+2</td>
+<td>+0</td>
+<td>28</td>
+<td>-4</td>
+<td>12</td>
+<td>+1</td>
+<td>43</td>
+<td>-3</td>
 <td>Total</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li>Both  <ul>
-<li>Release Glideinwms v3.2.20+</li>
+<li>Release Glideinwms v3.2.20+<ul>
 <li>Drop globus-gram-client-tools requirement from glideinwms</li>
+</ul>
+</li>
 <li>Include the gfal2 http plugins as part of the osg-wn-client</li>
+<li>OSG PKI Tools<ul>
+<li>Default to using HTTPS</li>
+<li>Updated help information</li>
+<li>Leave old keys in place if new keys cannot be fetched</li>
+</ul>
+</li>
+<li>osg-gridftp: add osg-configure-gratia</li>
+<li>Minor bug fix to BLAHP</li>
 <li>Include cvmfs upstream bug fix for losing singularity bind mounts</li>
-<li>Allow tarballs to be updated by different users</li>
+<li>Allow tarballs to be updated by different users (internal)</li>
 </ul>
 </li>
 <li>3.4.6  <ul>
@@ -776,12 +790,14 @@
 </ul>
 </li>
 <li>3.3.31  <ul>
-<li>Release GridFTP-HDFS 1.1.1</li>
+<li>GridFTP-HDFS: fix potential crash related to CVMFS checksums</li>
 </ul>
 </li>
 </ul>
 <h3 id="discussions_1">Discussions<a class="headerlink" href="#discussions_1" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>We will go back to labeling for the specific release to better track work</li>
+</ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <ul>
 <li>GRACC is now using a hosted RabbitMQ service. Better alarms.</li>
