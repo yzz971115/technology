@@ -894,7 +894,7 @@ Disallow: /
 <h4 id="fixing-config-files-if-newdb-was-renamed">Fixing config files if <em>newdb</em> was renamed<a class="headerlink" href="#fixing-config-files-if-newdb-was-renamed" title="Permanent link">&para;</a></h4>
 <p>The only change that's needed if <em>newdb</em> was renamed is to <code>/etc/koji-hub/hub.conf</code>. Edit that file and change the DBHost line to point to the new hostname. After editing, make sure <code>hub.conf</code> is owned by <code>root:apache</code> and chmodded 0640.</p>
 <h4 id="installing-new-certkey-pairs-for-newkoji">Installing new cert/key pairs for <em>newkoji</em><a class="headerlink" href="#installing-new-certkey-pairs-for-newkoji" title="Permanent link">&para;</a></h4>
-<p>You will need two cert/key pairs: one for the host, and one for the kojira service. Run <code>dos2unix</code> on all cert and key files before using them. Define the shell function <code>makepem</code>, listed below. <code>makepem</code> combines a public and private keypair to make a .pem file that the koji services use.</p>
+<p>You will need a cert/key pair for the new hostname. Run <code>dos2unix</code> on all cert and key files before using them. Define the shell function <code>makepem</code>, listed below. <code>makepem</code> combines a public and private keypair to make a .pem file that the Koji services use.</p>
 <p>Usage: <code>makepem &lt;CERTFILE&gt; &lt;KEYFILE&gt; &lt;OUTPUT_FILE&gt;</code></p>
 <div class="codehilite"><pre><span></span>makepem <span class="o">()</span> <span class="o">{</span>
     <span class="nv">certfile</span><span class="o">=</span><span class="nv">$1</span>
@@ -933,23 +933,12 @@ Disallow: /
 <td>host key</td>
 <td><code>/root/hostkey.pem</code></td>
 </tr>
-<tr>
-<td>kojira cert</td>
-<td><code>/root/kojiracert.pem</code></td>
-</tr>
-<tr>
-<td>kojira key</td>
-<td><code>/root/kojirakey.pem</code></td>
-</tr>
 </tbody>
 </table>
 <p>Then use <code>makepem</code> to combine the certs and put them in the proper locations.</p>
 <div class="codehilite"><pre><span></span><span class="gp">[root@newkoji]#</span> makepem /root/hostcert.pem /root/hostkey.pem <span class="se">\</span>
    /etc/pki/tls/private/kojiweb.pem
-<span class="gp">[root@newkoji]#</span> makepem /root/kojiracert.pem /root/kojirakey.pem <span class="se">\</span>
-   /etc/pki/tls/private/kojira.pem
 <span class="gp">[root@newkoji]#</span> chown apache:apache /etc/pki/tls/private/kojiweb.pem
-<span class="gp">[root@newkoji]#</span> chown root:root /etc/pki/tls/private/kojira.pem
 </pre></div>
 
 
