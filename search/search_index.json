@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n4 December 2017\n\n\n27 November 2017\n\n\n20 November 2017\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
+            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area! This is currently a work in progress as we migrate our TWiki documentation to GitHub. If you are looking for our full documentation, please visit the \nTWiki\n.\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (35%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nSlack channel\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n11 December 2017\n\n\n4 December 2017\n\n\n27 November 2017\n\n\n20 November 2017\n\n\n13 November 2017\n\n\n6 November 2017\n\n\n30 October 2017\n\n\n23 October 2017\n\n\n16 October 2017\n\n\n9 October 2017\n\n\n2 October 2017\n\n\n25 September 2017\n\n\n18 September 2017\n\n\n11 September 2017\n\n\n5 September 2017\n\n\n28 August 2017\n\n\n21 August 2017 - Canceled\n\n\n14 August 2017\n\n\n7 August 2017\n\n\n31 July 2017\n\n\n24 July 2017\n\n\n17 July 2017\n\n\n10 July 2017\n\n\n3 July 2017\n\n\n26 June 2017\n\n\n19 June 2017\n\n\n12 June 2017\n\n\n5 June 2017\n\n\n30 May 2017\n - Memorial Day\n\n\n22 May 2017\n\n\n15 May 2017\n\n\n8 May 2017\n\n\n1 May 2017\n\n\n24 April 2017\n\n\n17 April 2017\n\n\n10 April 2017\n\n\n3 April 2017\n\n\n27 March 2017\n\n\n20 March 2017\n\n\n13 March 2017\n\n\n27 February 2017\n\n\n\n\nMeeting note archives older than February 27, 2017 can be found \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#recent-notes", 
-            "text": "4 December 2017  27 November 2017  20 November 2017  13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
+            "text": "11 December 2017  4 December 2017  27 November 2017  20 November 2017  13 November 2017  6 November 2017  30 October 2017  23 October 2017  16 October 2017  9 October 2017  2 October 2017  25 September 2017  18 September 2017  11 September 2017  5 September 2017  28 August 2017  21 August 2017 - Canceled  14 August 2017  7 August 2017  31 July 2017  24 July 2017  17 July 2017  10 July 2017  3 July 2017  26 June 2017  19 June 2017  12 June 2017  5 June 2017  30 May 2017  - Memorial Day  22 May 2017  15 May 2017  8 May 2017  1 May 2017  24 April 2017  17 April 2017  10 April 2017  3 April 2017  27 March 2017  20 March 2017  13 March 2017  27 February 2017   Meeting note archives older than February 27, 2017 can be found  here .", 
             "title": "Recent Notes"
         }, 
         {
@@ -5507,6 +5507,71 @@
         }, 
         {
             "location": "/meetings/2017/TechArea20171204/#discussions_2", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/", 
+            "text": "OSG Technology Area Meeting, 11 December 2017\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Mat\n\n\nNext week: Edgar\n\n\n7 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n148\n\n\n-6\n\n\nOpen\n\n\n\n\n\n\n34\n\n\n+9\n\n\nIn Progress\n\n\n\n\n\n\n13\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nAll tickets for the December release must be RFR by the end of the week\n\n\nDoc Focus Afternoon (Thursday 12/14 1PM Central)  \n\n\nWork list\n  \n\n\nPlease review tickets assigned to you in the sprint before Thursday\n\n\nTackle items assigned to you in the sprint\n\n\nIf you finish items assigned to you in the sprint, pick up items from the backlog (organized in priority order) and move them into the sprint.\n\n\n\n\n\n\nUse the #osg-software slack channel for discussions\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nGRACC (Carl, Derek, Edgar): site gratia probe timeouts due to RSV perfsonar clogging up the hosted RabbitMQ (problem seen at NET2, \nGOC-35513\n)\n\n\nNERSC (Derek, Marian): Continued work to set up non-root XRootD caching for CMS workflow, deploying service certificate to manage data access\n\n\nSyracuse (Edgar): path issue turned out to be a CE configuration issue (\nSOFTWARE-3035\n)\n\n\nTexas A\nM (Carl): PBS probe reprocesses empty logs, causing slowdowns\n\n\n\n\nOSG Release Team\n\n\n\n\nVO Package Release expected this week (VO Package v77)\n\n\nRelease estimated to go out week of December 18th  \n\n\nBetter aligns with XRootD 4.8.0 release\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.3.31\n\n\n\n\nBoth\n\n\n\n\n3.4.6\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n1\n\n\n+1\n\n\n7\n\n\n-8\n\n\n5\n\n\n-2\n\n\n13\n\n\n-9\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-1\n\n\n11\n\n\n-1\n\n\n8\n\n\n+3\n\n\n19\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+0\n\n\n10\n\n\n+5\n\n\n0\n\n\n+0\n\n\n11\n\n\n+5\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n2\n\n\n+0\n\n\n28\n\n\n-4\n\n\n12\n\n\n+1\n\n\n43\n\n\n-3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nBoth  \n\n\nRelease Glideinwms v3.2.20+  \n\n\nDrop globus-gram-client-tools requirement from glideinwms\n\n\n\n\n\n\nInclude the gfal2 http plugins as part of the osg-wn-client\n\n\nOSG PKI Tools  \n\n\nDefault to using HTTPS\n\n\nUpdated help information\n\n\nLeave old keys in place if new keys cannot be fetched\n\n\n\n\n\n\nosg-gridftp: add osg-configure-gratia\n\n\nMinor bug fix to BLAHP\n\n\nInclude cvmfs upstream bug fix for losing singularity bind mounts\n\n\nAllow tarballs to be updated by different users (internal)\n\n\n\n\n\n\n3.4.6  \n\n\nNothing yet\n\n\n\n\n\n\n3.3.31  \n\n\nGridFTP-HDFS: fix potential crash related to CVMFS checksums\n\n\n\n\n\n\n\n\nDiscussions\n\n\nWe will go back to labeling for the specific release to better track work  \n\n\nOSG Investigations Team\n\n\n\n\nGRACC is now using a hosted RabbitMQ service. Better alarms\n\n\nRC1 release of XRootD v4.8.0 in `osg-development` (StashCache at Nebrasking under testing)\n\n\nworking on new GRACC FE to replace current one (lot of updates during migration to new ES version for services like prometheus and grafana)\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "title": "December 11, 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#osg-technology-area-meeting-11-december-2017", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:", 
+            "title": "OSG Technology Area Meeting, 11 December 2017"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#announcements", 
+            "text": "", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#triage-duty", 
+            "text": "This week: Mat  Next week: Edgar  7 (+0) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#jira", 
+            "text": "# of tickets   State      148  -6  Open    34  +9  In Progress    13  +1  Ready for Testing    3  +3  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#osg-software-team", 
+            "text": "All tickets for the December release must be RFR by the end of the week  Doc Focus Afternoon (Thursday 12/14 1PM Central)    Work list     Please review tickets assigned to you in the sprint before Thursday  Tackle items assigned to you in the sprint  If you finish items assigned to you in the sprint, pick up items from the backlog (organized in priority order) and move them into the sprint.    Use the #osg-software slack channel for discussions", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#discussions", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#support-update", 
+            "text": "GRACC (Carl, Derek, Edgar): site gratia probe timeouts due to RSV perfsonar clogging up the hosted RabbitMQ (problem seen at NET2,  GOC-35513 )  NERSC (Derek, Marian): Continued work to set up non-root XRootD caching for CMS workflow, deploying service certificate to manage data access  Syracuse (Edgar): path issue turned out to be a CE configuration issue ( SOFTWARE-3035 )  Texas A M (Carl): PBS probe reprocesses empty logs, causing slowdowns", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#osg-release-team", 
+            "text": "VO Package Release expected this week (VO Package v77)  Release estimated to go out week of December 18th    Better aligns with XRootD 4.8.0 release        3.3.31   Both   3.4.6   Total   Status      1  +1  7  -8  5  -2  13  -9  Open    0  -1  11  -1  8  +3  19  +1  In Progress    1  +0  10  +5  0  +0  11  +5  Ready for Testing    0  +0  0  +0  0  +0  0  +0  Ready for Release    2  +0  28  -4  12  +1  43  -3  Total      Both    Release Glideinwms v3.2.20+    Drop globus-gram-client-tools requirement from glideinwms    Include the gfal2 http plugins as part of the osg-wn-client  OSG PKI Tools    Default to using HTTPS  Updated help information  Leave old keys in place if new keys cannot be fetched    osg-gridftp: add osg-configure-gratia  Minor bug fix to BLAHP  Include cvmfs upstream bug fix for losing singularity bind mounts  Allow tarballs to be updated by different users (internal)    3.4.6    Nothing yet    3.3.31    GridFTP-HDFS: fix potential crash related to CVMFS checksums", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#discussions_1", 
+            "text": "We will go back to labeling for the specific release to better track work", 
+            "title": "Discussions"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#osg-investigations-team", 
+            "text": "GRACC is now using a hosted RabbitMQ service. Better alarms  RC1 release of XRootD v4.8.0 in `osg-development` (StashCache at Nebrasking under testing)  working on new GRACC FE to replace current one (lot of updates during migration to new ES version for services like prometheus and grafana)", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#ongoing", 
+            "text": "GRACC Project  StashCache Project (New URL!)", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2017/TechArea20171211/#discussions_2", 
             "text": "None this week", 
             "title": "Discussions"
         }
