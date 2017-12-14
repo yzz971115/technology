@@ -69,12 +69,6 @@
         <li class="">
           
   
-    <a class="" href="../../software/markdown-migration/">Migrating Documents to Markdown</a>
-  
-        </li>
-        <li class="">
-          
-  
     <a class="" href="../../software/koji-workflow/">Koji Workflow</a>
   
         </li>
@@ -341,16 +335,38 @@
   
   <ul class="subnav">
       
-    <li class="toctree-l3"><a href="#tips-for-writing-software-documentation">Tips for Writing Software Documentation</a></li>
+    <li class="toctree-l3"><a href="#writing-osg-software-documentation">Writing OSG Software Documentation</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#writing-procedural-step-by-step-instructions">Writing Procedural (Step-by-Step) Instructions</a></li>
+            <li><a class="toctree-l4" href="#document-layout">Document Layout</a></li>
+        
+            <li><a class="toctree-l4" href="#tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions</a></li>
+        
+            <li><a class="toctree-l4" href="#contributing-documentation">Contributing Documentation</a></li>
         
         </ul>
     
 
   </ul>
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../reviewing-documentation/">Reviewing Documentation</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../style-guide/">Markdown Style Guide</a>
+  
+        </li>
+        <li class="">
+          
+  
+    <a class="" href="../markdown-migration/">Migrating Documents to Markdown</a>
+  
         </li>
   </ul>
 	    </li>
@@ -595,8 +611,35 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="tips-for-writing-software-documentation">Tips for Writing Software Documentation<a class="headerlink" href="#tips-for-writing-software-documentation" title="Permanent link">&para;</a></h1>
-<h2 id="writing-procedural-step-by-step-instructions">Writing Procedural (Step-by-Step) Instructions<a class="headerlink" href="#writing-procedural-step-by-step-instructions" title="Permanent link">&para;</a></h2>
+                <h1 id="writing-osg-software-documentation">Writing OSG Software Documentation<a class="headerlink" href="#writing-osg-software-documentation" title="Permanent link">&para;</a></h1>
+<p>OSG software documentation is written in <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>, built using <a href="http://www.mkdocs.org/">MkDocs</a>, and served via <a href="https://pages.github.com/">GitHub Pages</a>. To contribute documentation, submit a pull request to the relevant github repository:</p>
+<ul>
+<li><a href="https://github.com/opensciencegrid/docs/">Site administrator documentation</a></li>
+<li><a href="https://github.com/opensciencegrid/technology/">Internal OSG Technology Area documentation</a>.</li>
+</ul>
+<p>This document contains instructions, recommendations, and guidelines for writing OSG Software documentatation.</p>
+<h2 id="document-layout">Document Layout<a class="headerlink" href="#document-layout" title="Permanent link">&para;</a></h2>
+<p>This section contains suggested layouts of externally-facing, site administrator documentation. The introduction is the only layout requirement for documents except for installation guides.</p>
+<h3 id="introductions">Introductions<a class="headerlink" href="#introductions" title="Permanent link">&para;</a></h3>
+<p>All documents should start with an introduction that explains <strong>what</strong> the document contains, <strong>what</strong> the product does, and <strong>why</strong> someone may want to use it. In the past, document introductions were included in <code>About this...</code> sections due to the layout of the table of contents. Since the table of contents is included in the sidebar, introductions should go directly below the title header.</p>
+<p>The <a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a> is an example that meet all of the above criteria.</p>
+<h3 id="installation-guides">Installation guides<a class="headerlink" href="#installation-guides" title="Permanent link">&para;</a></h3>
+<p>In addition to the introduction above, installation documents should have the following sections:</p>
+<ul>
+<li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should do or consider before proceeding with the installation (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#before-starting">example</a>).</li>
+<li><strong>Installation:</strong> The (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#installing-htcondor-ce">example</a>)</li>
+<li><strong>Validation:</strong> How does the user make sure their installation is functional?</li>
+<li><strong>Help:</strong> Often just a link to the relevant <a href="http://opensciencegrid.github.io/docs/common/help/">help document</a> as well as contact information for specific support groups, if applicable.</li>
+</ul>
+<p>Optionally, the following sections should be included as necessary.</p>
+<ul>
+<li><strong>Overview:</strong> if the introduction becomes large and unwieldy, extract the details of <strong>what</strong> the product does into an overview section</li>
+<li><strong>Configuration:</strong> required configuration steps (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#configuring-htcondor-ce">example</a>) as well as a sub-section for optional configurations. For long optional configuration sections, consider creating a list of contents at the top of the sub-section (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#optional-configuration">example</a>).</li>
+<li><strong>Troubleshooting:</strong> common issues that users encounter and their fixes</li>
+<li><strong>Reference:</strong> Details about configuration and log files, unix users, certificates, networking, links to relevant upstream documentation, etc. (<a href="https://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#reference">example</a>)</li>
+</ul>
+<p>If any of the sections become too large, consider separating them out and linking to the new documents (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
+<h2 id="tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions<a class="headerlink" href="#tips-for-writing-procedural-instructions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>Title the procedure with the user goal, usually starting with a gerund; e.g.:</p>
@@ -631,6 +674,26 @@
 <p>Avoid pronouns when writing technical articles or documentation e.g., <code>install foo</code> rather than <code>install it</code>.</p>
 </li>
 </ul>
+<h2 id="contributing-documentation">Contributing Documentation<a class="headerlink" href="#contributing-documentation" title="Permanent link">&para;</a></h2>
+<p>To contribute a new document:</p>
+<ol>
+<li>Name the document. Document file names should be lowercase, <code>-</code> delimited, and concise but descriptive, e.g. <code>markdown-migration.md</code> or <code>cutting-release.md</code></li>
+<li>Place it in the relevant sub-folder of the <code>docs/</code> directory. If you are unsure of the appropriate location, note that in the description of the pull request.</li>
+<li>Add the document to the <code>pages:</code> section of <code>mkdocs.yml</code> in <a href="http://titlecase.com/">title case</a>, e.g. <code>- Migrating Documents to Markdown: 'software/markdown-migration.md'</code></li>
+<li>Submit your changes as a pull request to the <a href="#contributing-documntation">appropriate upstream repository</a></li>
+</ol>
+<h3 id="deploying-itb-documentation">Deploying ITB documentation<a class="headerlink" href="#deploying-itb-documentation" title="Permanent link">&para;</a></h3>
+<p>If you are a member of the OSG software and release team, you can preview large changes to the <a href="https://opensciencegrid.github.io/docs-itb/">ITB docs</a> by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo. For example:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git remote add upstream https://github.com/opensciencegrid/docs.git
+<span class="gp">$</span> git checkout new_docs
+<span class="gp">$</span> git push upstream new_docs:itb.new_docs
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since there is only one ITB docs area, simultaneous new commits to different <code>itb.*</code> branches will overwrite each other's changes. To re-deploy your changes, find your <a href="https://travis-ci.org/opensciencegrid/docs/branches">Travis-CI build</a> and restart it <strong>BUT</strong> coordinate with the author of the other commits to avoid conflicts.</p>
+</div>
               
             </div>
           </div>
@@ -638,7 +701,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../infrastructure/koji-initial-install/" class="btn btn-neutral float-right" title="Koji Initial Install">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../reviewing-documentation/" class="btn btn-neutral float-right" title="Reviewing Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../infrastructure/madison-itb/" class="btn btn-neutral" title="Madison ITB"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -672,7 +735,7 @@
         <span><a href="../../infrastructure/madison-itb/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../infrastructure/koji-initial-install/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../reviewing-documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
