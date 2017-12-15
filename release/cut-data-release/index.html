@@ -677,7 +677,7 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 
 
 <h3 id="step-3-verify-the-vo-package-andor-ca-certificates">Step 3: Verify the VO Package and/or CA certificates<a class="headerlink" href="#step-3-verify-the-vo-package-andor-ca-certificates" title="Permanent link">&para;</a></h3>
-<p>Wait for the CA certificates to be propagated to the web server on <code>repo.grid.iu.edu</code>. The repository is checked every 10 minutes for update CA certificates. Then, run the following command to update the VO Package and/or CA certificates in the tarball installations and verify that the version of the VO Package and/or CA certificates match the version that was promoted to release.</p>
+<p>Wait for the CA certificates to be propagated to the web server on <code>repo.opensciencegrid.org</code>. The repository is checked every 10 minutes for update CA certificates. Then, run the following command to update the VO Package and/or CA certificates in the tarball installations and verify that the version of the VO Package and/or CA certificates match the version that was promoted to release.</p>
 <div class="codehilite"><pre><span></span>/p/vdt/workspace/tarball-client/current/amd64_rhel6/osgrun osg-update-data
 /p/vdt/workspace/tarball-client/current/amd64_rhel7/osgrun osg-update-data
 </pre></div>
@@ -720,7 +720,7 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 <li>
 <p>The release manager emails the announcement to <code>vdt-discuss@opensciencegrid.org</code></p>
 </li>
-<li>The release manager asks the GOC to distribute the announcement by <a href="https://ticket.grid.iu.edu/goc/other">opening a ticket</a></li>
+<li>The release manager asks the GOC to distribute the announcement by <a href="https://ticket.opensciencegrid.org/goc/other">opening a ticket</a></li>
 <li>The release manager closes the tickets marked 'Ready for Release' in the release's JIRA filter using the 'bulk change' function. Uncheck the box that reads "Send mail for this update"</li>
 <li>The release manager updates the recent/scheduled release tables on the Software/Release <a href="https://twiki.opensciencegrid.org/bin/view/SoftwareTeam/WebHome">homepage</a></li>
 </ol>

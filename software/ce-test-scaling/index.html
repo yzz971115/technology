@@ -617,7 +617,7 @@
               
                 <h1 id="how-to-run-scalability-tests-on-a-ce">How to Run Scalability Tests on a CE<a class="headerlink" href="#how-to-run-scalability-tests-on-a-ce" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>This document is intended as a general overview of the process for scalability testing of an OSG CE (Compute Element). All examples are for testing an <a href="https://twiki.grid.iu.edu/bin/view/Trash/Trash/Sandbox/HTCondorCEScaleTests">HTCondor-CE</a>, but they should be applicable for other CE software.</p>
+<p>This document is intended as a general overview of the process for scalability testing of an OSG CE (Compute Element). All examples are for testing an <a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/">HTCondor-CE</a>, but they should be applicable for other CE software.</p>
 <p>The focus of testing a CE is on the number of concurrent running jobs the CE can sustain as well as the ramp-up rate when many jobs are queued.</p>
 <h2 id="sleeper-pool">Sleeper Pool<a class="headerlink" href="#sleeper-pool" title="Permanent link">&para;</a></h2>
 <p>With the focus on the CE, actual job payloads can be minimal – simple long sleep jobs are fine. Thus, then can run on nearly any resources, and it is even possible to allow far more of these jobs to run on a single resource than would be sensible for real jobs.</p>
