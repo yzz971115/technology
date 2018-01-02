@@ -2877,17 +2877,17 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/", 
-            "text": "OSG Technology Area Meeting,  2 January 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n \n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl (?)\n\n\n7 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n153\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n37\n\n\n+7\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n-21\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-16\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nAddress PR comments from last month's doc focus\n\n\nExpect an e-mail this week about the January doc focus frenzy\n\n\n\n\nDiscussions\n\n\nNone this week  \n\n\nSupport Update\n\n\nNone this week  \n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.7\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n13\n\n\n+13\n\n\nOpen\n\n\n\n\n\n\n22\n\n\n+22\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n38\n\n\n+38\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.7\n\n\nosg-ca-generator 1.3.0\n\n\nbackups should be created if using --force\n\n\nGenerate LSC file\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\n\n\nGRACC caught up from the backlog.\n\n\nPerfsonar data now flowing smoothly through the message broker.\n\n\nNERSC using CMS XRootD Cache.\n\n\nLook for changes in the gratia probe for GPU detection.\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project (New URL!)\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting,  2 January 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Brian L, Marian, Mat, Suchandra, Tim C, Tim T\n\n\nAnnouncements\n\n\nPlease look at triage schedule and see if it works for you.\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl (?)\n\n\n7 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n153\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n37\n\n\n+7\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n-21\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-16\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nAddress PR comments from last month's doc focus\n\n\nExpect an e-mail this week about the January doc focus frenzy\n\n\n\n\nDiscussions\n\n\n\n\nGCT build system stuff waiting for PR review\n\n\nXRootD: \n/var/run/xrootd\n not created in reboot\n\n\n\n\nSupport Update\n\n\nNone this week\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.7\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n13\n\n\n+13\n\n\nOpen\n\n\n\n\n\n\n22\n\n\n+22\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n38\n\n\n+38\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.7\n\n\nosg-ca-generator 1.3.0\n\n\nbackups should be created if using --force\n\n\nGenerate LSC file\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\nNone this week\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "January 2, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/#osg-technology-area-meeting-2-january-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin    Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  Brian L, Marian, Mat, Suchandra, Tim C, Tim T", 
             "title": "OSG Technology Area Meeting,  2 January 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/#announcements", 
-            "text": "", 
+            "text": "Please look at triage schedule and see if it works for you.", 
             "title": "Announcements"
         }, 
         {
@@ -2907,7 +2907,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/#discussions", 
-            "text": "None this week", 
+            "text": "GCT build system stuff waiting for PR review  XRootD:  /var/run/xrootd  not created in reboot", 
             "title": "Discussions"
         }, 
         {
@@ -2927,12 +2927,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/#osg-investigations-team", 
-            "text": "GRACC caught up from the backlog.  Perfsonar data now flowing smoothly through the message broker.  NERSC using CMS XRootD Cache.  Look for changes in the gratia probe for GPU detection.", 
+            "text": "None this week", 
             "title": "OSG Investigations Team"
         }, 
         {
             "location": "/meetings/2018/TechArea20180102/#ongoing", 
-            "text": "GRACC Project  StashCache Project (New URL!)", 
+            "text": "GRACC Project  StashCache Project", 
             "title": "Ongoing"
         }, 
         {
