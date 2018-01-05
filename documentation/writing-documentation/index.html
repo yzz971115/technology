@@ -1641,12 +1641,18 @@
 </li>
 </ul>
 <h2 id="contributing-documentation">Contributing Documentation<a class="headerlink" href="#contributing-documentation" title="Permanent link">&para;</a></h2>
-<p>To contribute a new document:</p>
+<p>We use the GitHub pull request model for accepting document contributions. To contribute to the OSG documentation, follow these steps:</p>
 <ol>
-<li><a href="https://help.github.com/articles/fork-a-repo/">Fork and clone</a> the GitHub repository that you'd like to contribue to</li>
+<li><a href="https://help.github.com/articles/fork-a-repo/">Fork and clone</a> the GitHub repository and choose one of the following:<ul>
+<li>If you are making changes to an existing document, make changes in your local clone and push them to your fork.</li>
+<li>If you are contributing a new document:<ol>
 <li>Name the document. Document file names should be lowercase, <code>-</code> delimited, and concise but descriptive, e.g. <code>markdown-migration.md</code> or <code>cutting-release.md</code></li>
-<li>Place it in the relevant sub-folder of the <code>docs/</code> directory. If you are unsure of the appropriate location, note that in the description of the pull request.</li>
+<li>Place the document in the relevant sub-folder of the <code>docs/</code> directory. If you are unsure of the appropriate location, note that in the description of the pull request.</li>
 <li>Add the document to the <code>pages:</code> section of <code>mkdocs.yml</code> in <a href="http://titlecase.com/">title case</a>, e.g. <code>- Migrating Documents to Markdown: 'software/markdown-migration.md'</code></li>
+</ol>
+</li>
+</ul>
+</li>
 <li>Submit your changes as a pull request to the <a href="#contributing-documntation">appropriate upstream repository</a></li>
 </ol>
 <h3 id="deploying-itb-documentation">Deploying ITB documentation<a class="headerlink" href="#deploying-itb-documentation" title="Permanent link">&para;</a></h3>
