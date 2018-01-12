@@ -31,7 +31,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.2.6">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.4.0">
     
     
       
@@ -39,7 +39,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.6525f7f6.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.7fb6a6f0.css">
       
     
     
@@ -106,11 +106,13 @@
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -868,6 +870,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meta" title="Meta" class="md-nav__link">
+    Meta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#headers" title="Headers" class="md-nav__link">
     Headers
   </a>
@@ -1534,6 +1543,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meta" title="Meta" class="md-nav__link">
+    Meta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#headers" title="Headers" class="md-nav__link">
     Headers
   </a>
@@ -1620,6 +1636,9 @@
                 
                 <h1 id="markdown-style-guide">Markdown Style Guide<a class="headerlink" href="#markdown-style-guide" title="Permanent link">&para;</a></h1>
 <p>This document contains markdown conventions that are used in OSG Software documentation.</p>
+<h2 id="meta">Meta<a class="headerlink" href="#meta" title="Permanent link">&para;</a></h2>
+<p>Wherever possible, prose should be limited to 120 characters wide.
+In addition, using one line for each sentence is recommended since it makes update diffs easier to review.</p>
 <h2 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h2>
 <p>Use the following conventions for headers:</p>
 <ol>
@@ -1630,9 +1649,13 @@
 <li>Use Title Case for level 1 and level 2 headings. Only capitalize the first word for all other headings.</li>
 </ol>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
-<p>Use site-relative (<code>/software/development-process</code>) instead of document-relative (<code>../software/development-process.md</code>) links. This will allow us to easily search for links and move documents around in the future.</p>
+<p>Use site-relative (<code>/software/development-process</code>) instead of document-relative (<code>../software/development-process.md</code>)
+links. This will allow us to easily search for links and move documents around in the future.</p>
 <h3 id="section-links">Section links<a class="headerlink" href="#section-links" title="Permanent link">&para;</a></h3>
-<p>To link sections within a page, lowercase the entire section name and replace spaces with dashes. If there are multiple sections with the same name you can link the subsequent sections by appending <code>_N</code> where <code>N</code> is the section's ordinal number minus one, e.g. append <code>_1</code> for the second section. For example, if you have three sections named "Optional Configuration", link them like so:</p>
+<p>To link sections within a page, lowercase the entire section name and replace spaces with dashes. If there are multiple
+sections with the same name you can link the subsequent sections by appending <code>_N</code> where <code>N</code> is the section's ordinal
+number minus one, e.g. append <code>_1</code> for the second section. For example, if you have three sections named "Optional
+Configuration", link them like so:</p>
 <div class="codehilite"><pre><span></span>[1st section](#optional-configuration)
 [2nd section](#optional-configuration_1)
 [3rd section](#optional-configuration_2)
@@ -1640,23 +1663,28 @@
 
 
 <h2 id="command-blocks-and-file-snippets">Command blocks and file snippets<a class="headerlink" href="#command-blocks-and-file-snippets" title="Permanent link">&para;</a></h2>
-<p>Command blocks and file snippets outside of lists should be wrapped in three back-ticks (```) followed by an optional code highlighting format:</p>
+<p>Command blocks and file snippets outside of lists should be wrapped in three back-ticks (```) followed by an optional
+code highlighting format:</p>
 <div class="codehilite"><pre><span></span>```console
 # stuff
 ```
 </pre></div>
 
 
-<p>For command blocks and file snippets that inside of a list should use the appropriate number of spaces before three colons followed by an optional code highlighting format:</p>
+<p>For command blocks and file snippets that inside of a list should use the appropriate number of spaces before three
+colons followed by an optional code highlighting format:</p>
 <div class="codehilite"><pre><span></span><span class="go">::: console</span>
 <span class="gp">#</span> stuff
 </pre></div>
 
 
 <p>See the <a href="#lists">lists section</a> for details on properly formatting command blocks within a list.</p>
-<p>We use the <a href="http://pygments.org/">Pygments</a> highlighting library for syntax; it knows about 100 different languages.  The Pygments website contains a live renderer if you want to see how your text will come out.  Please use the <code>console</code> language for shell sessions.</p>
+<p>We use the <a href="http://pygments.org/">Pygments</a> highlighting library for syntax; it knows about 100 different languages.
+The Pygments website contains a live renderer if you want to see how your text will come out.  Please use the <code>console</code>
+language for shell sessions.</p>
 <h3 id="root-and-user-prompts">Root and user prompts<a class="headerlink" href="#root-and-user-prompts" title="Permanent link">&para;</a></h3>
-<p>When specifying instructions for the command-line, indicate to users whether the commands can be run as root (<code>root@host #</code>) or as an unprivileged user (<code>user@host $</code>). </p>
+<p>When specifying instructions for the command-line, indicate to users whether the commands can be run as root 
+(<code>root@host #</code>) or as an unprivileged user (<code>user@host $</code>).</p>
 <p>For example:</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> useradd -m osguser
 <span class="gp">root@host #</span> su - osguser
@@ -1666,7 +1694,8 @@
 
 
 <h3 id="highlighting-user-input">Highlighting user input<a class="headerlink" href="#highlighting-user-input" title="Permanent link">&para;</a></h3>
-<p>Use descriptive, all-caps text wrapped in angle brackets to to highlight areas that users would have to insert text specific to their site. You may also use TWiki-style color highlighting. For example:</p>
+<p>Use descriptive, all-caps text wrapped in angle brackets to to highlight areas that users would have to insert text
+specific to their site. You may also use TWiki-style color highlighting. For example:</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_ce_trace -d <span style="color:red">&lt;CE HOSTNAME&gt;</span>
 </pre></div>
 
@@ -1675,9 +1704,15 @@
 <p>When constructing lists, use the following guidelines:</p>
 <ul>
 <li>Use <code>1.</code> for each item in a numbered list</li>
-<li>To make sure the contents of code blocks, file snippets, and subsequent paragraphs are indented properly, use the following formatting:<ul>
-<li>For code blocks or file snippets, add an empty line after any regular text, then insert <code>(N+1)*4</code> spaces at the beginning of each line, where N is the level of the item in the list. To apply code highlighting, start the code block with <code>:::&lt;FORMAT&gt;</code>; see <a href="http://squidfunk.github.io/mkdocs-material/extensions/codehilite/">this page</a> for details, including possible highlighting formats.  For an example of formatting a code section inside a list, see <a href="https://github.com/opensciencegrid/docs/blob/master/docs/release/release_series.md">the release series document</a>.</li>
-<li>For additional text (i.e. after a code block), insert <code>N*4</code> spaces at the beginning of each line, where N is the level of the item in the list.</li>
+<li>To make sure the contents of code blocks, file snippets, and subsequent paragraphs are indented properly, use the
+  following formatting:<ul>
+<li>For code blocks or file snippets, add an empty line after any regular text, then insert <code>(N+1)*4</code> spaces at the
+  beginning of each line, where N is the level of the item in the list. To apply code highlighting, start the code
+  block with <code>:::&lt;FORMAT&gt;</code>; see <a href="http://squidfunk.github.io/mkdocs-material/extensions/codehilite/">this page</a> for
+  details, including possible highlighting formats.  For an example of formatting a code section inside a list, see
+  <a href="https://github.com/opensciencegrid/docs/blob/master/docs/release/release_series.md">the release series document</a>.</li>
+<li>For additional text (i.e. after a code block), insert <code>N*4</code> spaces at the beginning of each line, where N is the
+  level of the item in the list.</li>
 </ul>
 </li>
 </ul>
@@ -1699,7 +1734,9 @@
 </pre></div>
 
 
-<p>There are 12 spaces and 8 spaces in front of the command block and text associated with <code>Bar</code>, respectively; 4 spaces in front of the text associated with <code>Foo</code>; and 8 spaces in front of the file snippet associated with <code>Baz</code>.  The above block is rendered below:</p>
+<p>There are 12 spaces and 8 spaces in front of the command block and text associated with <code>Bar</code>, respectively; 4 spaces in
+front of the text associated with <code>Foo</code>; and 8 spaces in front of the file snippet associated with <code>Baz</code>.  The above
+block is rendered below:</p>
 <ol>
 <li>
 <p>Foo</p>
@@ -1724,7 +1761,8 @@ SNIPPET
 </li>
 </ol>
 <h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<p>To catch the user's attention for important items or pitfalls, we used <code>%NOTE%</code> TWiki macros, these can be replaced with admonition-style notes and warnings:</p>
+<p>To catch the user's attention for important items or pitfalls, we used <code>%NOTE%</code> TWiki macros, these can be replaced with
+admonition-style notes and warnings:</p>
 <div class="codehilite"><pre><span></span>!!! note
     things to note
 </pre></div>
@@ -1737,16 +1775,11 @@ SNIPPET
 
 
 <p>The above blocks are rendered below as an example.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>things to note</p>
-</div>
+<p>!!! note things to note</p>
 <p>and</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>if a user doesn't do this thing, bad stuff will happen</p>
-</div>
-<p>For a full list of admonition styles, see the documentation <a href="https://squidfunk.github.io/mkdocs-material/extensions/admonition/">here</a>.</p>
+<p>!!! warning if a user doesn't do this thing, bad stuff will happen</p>
+<p>For a full list of admonition styles, see the documentation
+<a href="https://squidfunk.github.io/mkdocs-material/extensions/admonition/">here</a>.</p>
                 
                   
                 
@@ -1816,7 +1849,7 @@ SNIPPET
       
     </div>
     
-      <script src="../../assets/javascripts/application.cae2244d.js"></script>
+      <script src="../../assets/javascripts/application.ce2ab4bf.js"></script>
       
       <script>app.initialize({version:"0.17.1",url:{base:"../.."}})</script>
       
