@@ -30,7 +30,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.5.2">
     
     
@@ -1683,22 +1683,22 @@
 <p>If the requesting user is authenticated as a Grid Admin for the requested domain and VO (which must be specified on the command-line if multiple VOs can issue certs for the requested domain), OIM approves the request and sends the <code>Request ID#</code> back to <code>osg-gridadmin-cert-request</code>.</p>
 <p>Upon successful request, <code>osg-gridadmin-cert-request</code> sends an approval of the certificate to OIM, which is authenticatd and authorized as before, and OIM turns around and sends a request to CILogon. CILogon issues the certificate(s), sending it back to OIM, and OIM tells <code>osg-gridadmin-cert-request</code> that the certificate has been issued successfully.</p>
 <p>At this point, <code>osg-gridadmin-cert-request</code> sends a retrieval request and OIM sends the certificate(s) back to the client.</p>
-<p><img alt="osg-gridadmin-cert-request" src="../../images/osg-gridadmin-cert-request.png" /></p>
+<p><img alt="osg-gridadmin-cert-request" src="../../img/osg-gridadmin-cert-request.png" /></p>
 <h3 id="osg-cert-request">osg-cert-request<a class="headerlink" href="#osg-cert-request" title="Permanent link">&para;</a></h3>
 <p><code>osg-cert-request</code> is a tool for non-Grid Admin users to request host certificates, one at a time. The user can provide their own CSR or a hostname, for which a CSR is generated and forwarded to OIM with the rest of the request. OIM responds with the <code>Request ID#</code>, creates a ticket, and sends e-mails to the user and the Grid Admins of the requested domain + VO.</p>
-<p><img alt="osg-cert-request" src="../../images/osg-cert-request.png" /></p>
+<p><img alt="osg-cert-request" src="../../img/osg-cert-request.png" /></p>
 <h3 id="osg-cert-retrieve">osg-cert-retrieve<a class="headerlink" href="#osg-cert-retrieve" title="Permanent link">&para;</a></h3>
 <p><code>osg-cert-retrieve</code> is used to retrieve host certificates associated with a specific <code>Request ID#</code> that have been issued (i.e. approved certificate request) by a Grid Admin. OIM responds to the retrieval request with the certificate(s) of the specified <code>Request ID#</code>.</p>
-<p><img alt="osg-cert-retrieve" src="../../images/osg-cert-retrieve.png" /></p>
+<p><img alt="osg-cert-retrieve" src="../../img/osg-cert-retrieve.png" /></p>
 <h3 id="osg-cert-revoke">osg-cert-revoke<a class="headerlink" href="#osg-cert-revoke" title="Permanent link">&para;</a></h3>
 <p><code>osg-cert-revoke</code> is a tool for Grid Admins to revoke user or host certificates. With either a <code>Request ID#</code> or certificate serial number, the tool obtains the user's SSL credentials and sends the revocation request to OIM. OIM authenticates the user's request and if authorized, sends a revocation request to CILogon. If CILogon has successfully received the request, a successful response is forwarded to OIM, which is then forwarded back to the client tool. Revocation requests themselves are handled manually by CILogon CA administrators within one business day.</p>
-<p><img alt="osg-cert-revoke" src="../../images/osg-cert-revoke.png" /></p>
+<p><img alt="osg-cert-revoke" src="../../img/osg-cert-revoke.png" /></p>
 <h3 id="osg-user-cert-renew">osg-user-cert-renew<a class="headerlink" href="#osg-user-cert-renew" title="Permanent link">&para;</a></h3>
 <p><code>osg-user-cert-renew</code> is used to expiring certificates. The user provides either the certificate serial number or <code>Request ID#</code> and the password that's used to encrypt their new private key. The tool combines those inputs with the user's SSL credentials to generate the renewal request that is sent to OIM, which is forwarded onto CILogon as a user cert request. If successful, OIM responds with the <code>Request ID#</code> and <code>osg-user-cert-renew</code> sends a retrieval request to OIM. If the retrieval request succeeds, OIM responds with requested certificate.</p>
-<p><img alt="osg-user-cert-renew" src="../../images/osg-user-cert-renew.png" /></p>
+<p><img alt="osg-user-cert-renew" src="../../img/osg-user-cert-renew.png" /></p>
 <h3 id="osg-user-cert-revoke">osg-user-cert-revoke<a class="headerlink" href="#osg-user-cert-revoke" title="Permanent link">&para;</a></h3>
 <p><code>osg-user-cert-revoke</code> is a simple wrapper that calls <code>osg-cert-revoke --user</code>.</p>
-<p><img alt="osg-user-cert-revoke" src="../../images/osg-user-cert-revoke.png" /></p>
+<p><img alt="osg-user-cert-revoke" src="../../img/osg-user-cert-revoke.png" /></p>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://confluence.grid.iu.edu/display/CENTRAL/OIM+Rest+API+Guide">OIM REST API</a></li>
