@@ -1764,21 +1764,24 @@
 <li>15 tickets will be opened with edg-mkgridmap/GUMS sites to transition to LCMAPS VOMS authentication  <ul>
 <li>There are already instructions for edg-mkgridmap to transition.<br />
     The timeline we'd like to see is that edg-mkgridmap sites transition by the end of March.</li>
-<li>GUMS sites are trickier:  <ul>
+<li>GUMS sites are trickier:<ul>
 <li>If they attach their GUMS config, MAKE SURE THEIR DB USERNAME/PASS ARE REDACTED</li>
-<li>Find out what GUMS clients they may have: CE, gridftp, xrootd, dcache, bestman.<br />
-    The first three all support LCMAPS VOMS auth, dcache and bestman2 do not.<br />
-    They cannot turn off their GUMS until they transition off of dcache/bestman2.</li>
+<li>Find out what GUMS clients they may have: CE, gridftp, xrootd, dcache, bestman. The first three all support LCMAPS VOMS auth, dcache and bestman2 do not. They cannot turn off their GUMS until they transition off of dcache/bestman2.</li>
 <li>Let Carl know of any attached GUMS configs and the output of `rpm -q osg-gums-config`.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>GCT: Frank Scheiner registered Gitbook/ReadTheDocs orgs but hasn't worked on the documentation other than that.<br />
-    Let's get started on making the transition from Globus to GCF/GCT. I can help setup GitHub docs.</li>
+<li>GCT: Frank Scheiner registered Gitbook/ReadTheDocs orgs but hasn't worked on the documentation other than that. Let's get started on making the transition from Globus to GCF/GCT. I can help setup GitHub docs.</li>
 <li>OSG 3.4.7  <ul>
 <li>HDFS tested at Nebraska, looks good over the weekend</li>
 <li>Can we sneak HTCondor into this release?</li>
+</ul>
+</li>
+<li>GOC tickets should be closed in favor of JIRA tickets (if the user agrees to it):<ul>
+<li>https://ticket.grid.iu.edu/34406</li>
+<li>https://ticket.grid.iu.edu/35448</li>
+<li>https://ticket.grid.iu.edu/35735</li>
 </ul>
 </li>
 <li>Doc Focus 2 is scheduled for 1pm CST on Feb 1</li>
