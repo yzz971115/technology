@@ -481,6 +481,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#creating-custom-koji-areas" title="Creating custom koji areas" class="md-nav__link">
+    Creating custom koji areas
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1825,6 +1832,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#creating-custom-koji-areas" title="Creating custom koji areas" class="md-nav__link">
+    Creating custom koji areas
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2041,6 +2055,15 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p><code>osg-promote</code> will promote both the el6 and el7 builds of a package. After promoting, copy and paste the JIRA code <code>osg-promote</code> produces into the JIRA ticket that you are working on.</p>
 <p>For <code>osg-promote</code>, you may omit the <code>.osg34.el6</code> or <code>.osg34.el7</code>; the script will add the appropriate disttag on.</p>
 <p>See <a href="../osg-build-tools">OSG Building Tools</a> for full details on <code>osg-promote</code>.</p>
+<h3 id="creating-custom-koji-areas">Creating custom koji areas<a class="headerlink" href="#creating-custom-koji-areas" title="Permanent link">&para;</a></h3>
+<p>Occasionally you may want to make builds of a package (or packages) which you
+do not yet want to go into the main development repos.  In this case, you can
+create a set of custom koji tags and build targets for these builds.  We have
+a script in our
+<a href="https://github.com/opensciencegrid/osg-next-tools/">osg-next-tools</a> repo
+called
+<a href="https://github.com/opensciencegrid/osg-next-tools/blob/master/koji/new-koji-area">new-koji-area</a>
+that facilitates this set up.</p>
 <h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Official Koji documentation: <a href="https://docs.pagure.org/koji/">https://docs.pagure.org/koji/</a></li>
