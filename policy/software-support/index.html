@@ -35,7 +35,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.6.2">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.6.3">
     
     
       
@@ -1626,6 +1626,38 @@
 <li>The Software team member who will handle the ticket</li>
 </ol>
 <p>Inasmuch as possible, you should strive to handle the easier tickets and not pass them off to other people. For reference, see our <a href="https://opensciencegrid.github.io/docs/">troubleshooting documents</a>.</p>
+</li>
+</ol>
+<h3 id="lcmaps-voms-transition">LCMAPS VOMS Transition<a class="headerlink" href="#lcmaps-voms-transition" title="Permanent link">&para;</a></h3>
+<p>This section contains the process for helping sites transition from edg-mkgridmap or GUMS to the LCMAPS VOMS plugin as
+part of the <a href="../../policy/voms-admin-retire">VOMS Admin Server retirement</a>.</p>
+<ol>
+<li>
+<p>Ask if the site is using edg-mkgridmap or GUMS. If they're using GUMS, find out what GUMS clients they have at their 
+   site. Possibilities include:</p>
+<ul>
+<li>HTCondor-CE</li>
+<li>GridFTP</li>
+<li>XRootD: if an ATLAS site, they use vomsxrd/xrootd-voms-plugin</li>
+<li>dCache: if an ATLAS site, encourage them to consult US-ATLAS mailing lists</li>
+<li>BeStMan: encourage the site to transition to GridFTP, as they cannot retire GUMS until BeStMan doesn't depend on it.
+  If CMS/ATLAS, encourage them to consult their US-ATLAS/US-CMS mailing lists for assistance.</li>
+</ul>
+</li>
+<li>
+<p>Ask them to follow the relevant instructions for their authorization solution </p>
+<ul>
+<li><a href="http://opensciencegrid.github.io/docs/security/lcmaps-voms-authentication/#migrating-from-edg-mkgridmap">edg-mkgridmap</a></li>
+<li><a href="http://opensciencegrid.github.io/docs/security/lcmaps-voms-authentication/#migrating-from-gums">GUMS</a></li>
+</ul>
+</li>
+<li>
+<p>After they've completed the above instructions, verify that they're still getting pilots:</p>
+<ol>
+<li>Add factory ops to the ticket under <code>OSG Support Centers</code></li>
+<li>Verify that the site's <a href="http://gfactory-1.t2.ucsd.edu/factory/monitor/factoryStatus.html?entry=OSG_US_UConn_gluskap&amp;frontend=OSG_Flock_frontend&amp;infoGroup=running&amp;elements=StatusRunning,ClientGlideRunning,ClientGlideIdle,&amp;rra=0&amp;wi">pilot numbers</a>
+   are non-zero.</li>
+</ol>
 </li>
 </ol>
 <h3 id="updating-the-triage-calendar">Updating the triage calendar<a class="headerlink" href="#updating-the-triage-calendar" title="Permanent link">&para;</a></h3>
