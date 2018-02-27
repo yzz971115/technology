@@ -1799,7 +1799,7 @@
 
 <ul>
 <li>In a separate directory, unpack the <em>old</em> vo-client tarball (from the upstream source cache)</li>
-<li>diff the two directories, and compare the changes to the changelog posted at <a href="https://twiki.opensciencegrid.org/bin/view/Operations/PackageV44">https://twiki.opensciencegrid.org/bin/view/Operations/PackageV44</a> (replace '44' with the current version)</li>
+<li>diff the two directories, and compare the changes to the expected changes listed in the JIRA ticket for this VO Client package release</li>
 </ul>
 <!-- -->
 
@@ -1847,7 +1847,7 @@
 <li><code>upstream/release_tarball.source</code> - This file contains the relative path of the tarball within the <a href="../rpm-development-guide#upstream-source-cache">upstream source cache</a>. Since the tarball file name will change with every new RPM version, this file has to be changed accordingly.</li>
 </ul>
 <h2 id="rpm-building">RPM building<a class="headerlink" href="#rpm-building" title="Permanent link">&para;</a></h2>
-<p>After installing the <a href="https://twiki.opensciencegrid.org/bin/view/SoftwareTeam/VDTRPMBuildBox">osg-build tools</a>, check out a clean copy from svn, then:</p>
+<p>After installing the <a href="../osg-build-tools">osg-build tools</a>, check out a clean copy from svn, then:</p>
 <ul>
 <li><code>osg-build prebuild .</code></li>
 <li>Once there are no errors, run <code>osg-build koji . --scratch</code> This can be done without making any permanent change.</li>
