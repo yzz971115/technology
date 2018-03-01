@@ -491,9 +491,112 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        IPv6 Testing
+      </label>
+    
     <a href="./" title="IPv6 Testing" class="md-nav__link md-nav__link--active">
       IPv6 Testing
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-document" title="About this Document" class="md-nav__link">
+    About this Document
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-ipv6" title="Enabling IPV6" class="md-nav__link">
+    Enabling IPV6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-ipv6-connectivity" title="Testing IPv6 connectivity" class="md-nav__link">
+    Testing IPv6 connectivity
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifying-ssh-over-ipv6" title="Verifying SSH over IPv6" class="md-nav__link">
+    Verifying SSH over IPv6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-ipv4" title="Disabling IPv4" class="md-nav__link">
+    Disabling IPv4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-ipv6" title="Disabling IPv6" class="md-nav__link">
+    Disabling IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-in-mixed-mode" title="Testing in mixed mode" class="md-nav__link">
+    Testing in mixed mode
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enforcing-communication-over-ipv6" title="Enforcing communication over IPv6" class="md-nav__link">
+    Enforcing communication over IPv6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1605,6 +1708,96 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-document" title="About this Document" class="md-nav__link">
+    About this Document
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-ipv6" title="Enabling IPV6" class="md-nav__link">
+    Enabling IPV6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-ipv6-connectivity" title="Testing IPv6 connectivity" class="md-nav__link">
+    Testing IPv6 connectivity
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifying-ssh-over-ipv6" title="Verifying SSH over IPv6" class="md-nav__link">
+    Verifying SSH over IPv6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-ipv4" title="Disabling IPv4" class="md-nav__link">
+    Disabling IPv4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-ipv6" title="Disabling IPv6" class="md-nav__link">
+    Disabling IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-in-mixed-mode" title="Testing in mixed mode" class="md-nav__link">
+    Testing in mixed mode
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enforcing-communication-over-ipv6" title="Enforcing communication over IPv6" class="md-nav__link">
+    Enforcing communication over IPv6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1619,12 +1812,14 @@
                 
                 
                 <h1 id="testing-software-with-ipv6">Testing Software with IPv6<a class="headerlink" href="#testing-software-with-ipv6" title="Permanent link">&para;</a></h1>
-<h1 id="about-this-document">About this Document<a class="headerlink" href="#about-this-document" title="Permanent link">&para;</a></h1>
+<h2 id="about-this-document">About this Document<a class="headerlink" href="#about-this-document" title="Permanent link">&para;</a></h2>
 <p>This document provides instructions on setting up a host with an IPv6 address for testing the OSG software stack. The plan is to be able to spin up special Fermicloud VM’s that have corresponding public IPv6 addresses meaning that there will be a limit of ~15 VM’s at one time.</p>
 <p>For more information on IPv6, consult <a href="http://en.wikipedia.org/wiki/IPv6">Wikipedia</a>.</p>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<p>1 Be familiar with your institute's network policy and firewall configuration 1 <em>Root</em> access is required to configure <code>iptables</code></p>
-<h2 id="enabling-ipv6">Enabling IPV6<a class="headerlink" href="#enabling-ipv6" title="Permanent link">&para;</a></h2>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Be familiar with your institute's network policy and firewall configuration 1 <em>Root</em> access is required to configure <code>iptables</code></li>
+</ol>
+<h3 id="enabling-ipv6">Enabling IPV6<a class="headerlink" href="#enabling-ipv6" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Determine the public IPv6 address of your host (highlighted in <span style="color:red">red<span class="twiki-macro ENDCOLOR">): </p>
@@ -1665,7 +1860,7 @@ IPV6_DEFAULTGW=&quot;The IPV6 Default Gateway&quot;
 
 </li>
 </ol>
-<h2 id="testing-ipv6-connectivity">Testing IPv6 connectivity<a class="headerlink" href="#testing-ipv6-connectivity" title="Permanent link">&para;</a></h2>
+<h3 id="testing-ipv6-connectivity">Testing IPv6 connectivity<a class="headerlink" href="#testing-ipv6-connectivity" title="Permanent link">&para;</a></h3>
 <p>To verify that the VM is capable of IPv6 we will be using the <code>ping6</code> command between the test VM and another IPv6 capable machine</p>
 <ol>
 <li>
@@ -1688,7 +1883,7 @@ IPV6_DEFAULTGW=&quot;The IPV6 Default Gateway&quot;
 
 </li>
 </ol>
-<h3 id="verifying-ssh-over-ipv6">Verifying SSH over IPv6<a class="headerlink" href="#verifying-ssh-over-ipv6" title="Permanent link">&para;</a></h3>
+<h4 id="verifying-ssh-over-ipv6">Verifying SSH over IPv6<a class="headerlink" href="#verifying-ssh-over-ipv6" title="Permanent link">&para;</a></h4>
 <p>Make sure you can login to your VM over IPv6. Currently, Fermilab's kerberos does not support SSH over IPv6.</p>
 <ol>
 <li>
@@ -1709,7 +1904,7 @@ PubkeyAuthentication yes
 
 </li>
 </ol>
-<h2 id="disabling-ipv4">Disabling IPv4<a class="headerlink" href="#disabling-ipv4" title="Permanent link">&para;</a></h2>
+<h3 id="disabling-ipv4">Disabling IPv4<a class="headerlink" href="#disabling-ipv4" title="Permanent link">&para;</a></h3>
 <p>If you were able to log into your VM over IPv6, you can disable IPv4 and try to communicate exclusively over IPv6.</p>
 <ol>
 <li>
@@ -1742,7 +1937,7 @@ IPV6ADDR=&quot;2607:f720:1700:1b30::9b&quot;
 
 </li>
 </ol>
-<h2 id="disabling-ipv6">Disabling IPv6<a class="headerlink" href="#disabling-ipv6" title="Permanent link">&para;</a></h2>
+<h3 id="disabling-ipv6">Disabling IPv6<a class="headerlink" href="#disabling-ipv6" title="Permanent link">&para;</a></h3>
 <p>In your testing, you may find the need to disable IPv6.</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> sysctl -w net.ipv6.conf.all.disable_ipv6<span class="o">=</span><span class="m">1</span>
 <span class="gp">root@host #</span> service network restart
@@ -1756,10 +1951,10 @@ IPV6ADDR=&quot;2607:f720:1700:1b30::9b&quot;
 </pre></div>
 
 
-<h2 id="testing-in-mixed-mode">Testing in mixed mode<a class="headerlink" href="#testing-in-mixed-mode" title="Permanent link">&para;</a></h2>
+<h3 id="testing-in-mixed-mode">Testing in mixed mode<a class="headerlink" href="#testing-in-mixed-mode" title="Permanent link">&para;</a></h3>
 <p>To test IPv6 in mixed mode, you can use the <code>ntop</code> tool to monitor traffic over IPv6. <code>ntop</code> is installed on all the test machines and you can access the web interface at <em>hostname:3000</em>. To see a table that displays network traffic between your VM and another host by going to <em>All Protocols</em> -&gt; <em>Traffic</em> and looking at the IPv6 column.</p>
 <p><img alt="NTP-web" src="../../img/ipv6-testing.png" /></p>
-<h3 id="enforcing-communication-over-ipv6">Enforcing communication over IPv6<a class="headerlink" href="#enforcing-communication-over-ipv6" title="Permanent link">&para;</a></h3>
+<h4 id="enforcing-communication-over-ipv6">Enforcing communication over IPv6<a class="headerlink" href="#enforcing-communication-over-ipv6" title="Permanent link">&para;</a></h4>
 <p>If you want to enforce IPv6 over mixed mode you can try using the IPv6 address for whatever software that you are testing. For example with xrdcp:</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> xrdcp -d <span class="m">1</span> /tmp/first_test root://<span class="o">[</span><span class="m">2607</span>:f720:1700:1b30::a4<span class="o">]</span>:1094//tmp/first_test_8
 <span class="go">[19B/19B][100%][==================================================][0B/s] </span>
@@ -1767,37 +1962,6 @@ IPV6ADDR=&quot;2607:f720:1700:1b30::9b&quot;
 
 
 <p>Notice that the IPv6 address follows <a href="http://www.ietf.org/rfc/rfc2732.txt">RFC2732</a>.</p>
-<table>
-<thead>
-<tr>
-<th align="right">Node</th>
-<th align="right">Owner</th>
-<th align="left">Last Verified</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="right">cabinet-10-10-1.t2.ucsd.edu</td>
-<td align="right">Edgar</td>
-<td align="left">23-Jan-2014</td>
-</tr>
-<tr>
-<td align="right">cabinet-10-10-4.t2.ucsd.edu</td>
-<td align="right">Edgar</td>
-<td align="left">23-Jan-2014</td>
-</tr>
-<tr>
-<td align="right">ipv6vm002.fnal.gov</td>
-<td align="right">Edgar</td>
-<td align="left">23-Jan-2014</td>
-</tr>
-<tr>
-<td align="right">ipv6vm004.fnal.gov</td>
-<td align="right">Edgar</td>
-<td align="left">23-Jan-2014</td>
-</tr>
-</tbody>
-</table>
                 
                   
                 
