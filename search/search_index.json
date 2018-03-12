@@ -2932,17 +2932,17 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/", 
-            "text": "OSG Technology Area Meeting, 12 March 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n  \n\n\nAnnouncements\n\n\n\n\nOSG All Hands\n next week!\n\n\nNext two meetings canceled, resuming on 2018-04-02\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Suchandra\n\n\nNext week: TimT\n\n\n11 (+2) open tickets\n\n\n36 (+9) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n114\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n41\n\n\n+7\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n-9\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-5\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG All Hands\n\n\nSoftware training session on Thursday morning\n\n\nSplit up between CMS/ATLAS/FIFE on Monday\n\n\n\n\n\n\nEnthusiastic LCMAPS VOMS transition support: let's aim for \n 24 hr response times and pinging users at least twice a week\n\n\nDoc focus wrap-up:\n\n\nReview the hadoop overview document\n (BrianL to review)\n\n\nUpdate current documentation to reflect current release practice\n (TimT to address review comments)\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nSupport Update\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.10\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n27\n\n\n+27\n\n\nOpen\n\n\n\n\n\n\n21\n\n\n+21\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n49\n\n\n+49\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.10\n\n\nReady for Testing\n\n\nxrootd-hdfs 2.0.1\n\n\n\n\n\n\nReady for Release\n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nOSG Investigations Team\n\n\nLast Week\n\n\n\n\nStarted better monitoring for StashCache, per directory monitoring.  Still much to do to make it production.  \n\n\nhttps://gracc.opensciencegrid.org/kibana/app/kibana#/dashboard/AWG5ztK58IKqxDdAglqh\n (it broke over the weekend.  see not production)\n\n\nNeed to debug GEO-Location of StashCache CVMFS. Some numebrs don't add up.\n\n\n\n\n\n\nPerfsonar data import is ongoing.\n\n\nCVMFS Stratum 1 backup at Nebraska is growing very fast, need to allocate more storage\n working on it.\n\n\n(ongoing) Fix GRACC bug with projects. \nhttps://ticket.opensciencegrid.org/35943\n\n\n(ongoing) Help push belle2 usage to EGI / APEL.  \nhttps://ticket.opensciencegrid.org/35943\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 12 March 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Mat, Suchandra, TimC, TimT\n\n\nAnnouncements\n\n\n\n\nOSG All Hands\n next week!\n\n\nNext two meetings canceled, resuming on 2018-04-02\n\n\nMarian on vacation this week\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Suchandra\n\n\nNext week: TimT\n\n\n11 (+2) open tickets\n\n\n36 (+9) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n114\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n41\n\n\n+7\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n-9\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-5\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG All Hands\n\n\nSoftware training session on Thursday morning\n\n\nSplit up between CMS/ATLAS/FIFE on Monday\n\n\n\n\n\n\nEnthusiastic LCMAPS VOMS transition support: let's aim for \n 24 hr response times and pinging users at least twice a week\n\n\nDoc focus wrap-up:\n\n\nReview the hadoop overview document\n (BrianL to review)\n\n\nUpdate current documentation to reflect current release practice\n (TimT to address review comments)\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nSupport Update\n\n\nNone this week\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.10\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n27\n\n\n+27\n\n\nOpen\n\n\n\n\n\n\n21\n\n\n+21\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n49\n\n\n+49\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.10\n\n\nReady for Testing\n\n\nxrootd-hdfs 2.0.1\n\n\n\n\n\n\nReady for Release\n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nReview of the flexible release model will happen some time after the All Hands Meeting\n\n\nOSG Investigations Team\n\n\nNo updates: investigations team unavailable\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "March 12, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#osg-technology-area-meeting-12-march-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Mat, Suchandra, TimC, TimT", 
             "title": "OSG Technology Area Meeting, 12 March 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#announcements", 
-            "text": "OSG All Hands  next week!  Next two meetings canceled, resuming on 2018-04-02", 
+            "text": "OSG All Hands  next week!  Next two meetings canceled, resuming on 2018-04-02  Marian on vacation this week", 
             "title": "Announcements"
         }, 
         {
@@ -2967,7 +2967,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#support-update", 
-            "text": "", 
+            "text": "None this week", 
             "title": "Support Update"
         }, 
         {
@@ -2977,18 +2977,13 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#discussions", 
-            "text": "", 
+            "text": "Review of the flexible release model will happen some time after the All Hands Meeting", 
             "title": "Discussions"
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#osg-investigations-team", 
-            "text": "", 
+            "text": "No updates: investigations team unavailable", 
             "title": "OSG Investigations Team"
-        }, 
-        {
-            "location": "/meetings/2018/TechArea20180312/#last-week", 
-            "text": "Started better monitoring for StashCache, per directory monitoring.  Still much to do to make it production.    https://gracc.opensciencegrid.org/kibana/app/kibana#/dashboard/AWG5ztK58IKqxDdAglqh  (it broke over the weekend.  see not production)  Need to debug GEO-Location of StashCache CVMFS. Some numebrs don't add up.    Perfsonar data import is ongoing.  CVMFS Stratum 1 backup at Nebraska is growing very fast, need to allocate more storage  working on it.  (ongoing) Fix GRACC bug with projects.  https://ticket.opensciencegrid.org/35943  (ongoing) Help push belle2 usage to EGI / APEL.   https://ticket.opensciencegrid.org/35943", 
-            "title": "Last Week"
         }, 
         {
             "location": "/meetings/2018/TechArea20180312/#ongoing", 
