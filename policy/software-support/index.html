@@ -1860,12 +1860,24 @@ part of the <a href="../../policy/voms-admin-retire">VOMS Admin Server retiremen
 </ul>
 </li>
 <li>
-<p>After they've completed the above instructions, verify that they're still getting pilots:</p>
-<ol>
+<p>After they've completed the above instructions, use one of the following methods (in order of preference) to verify that
+    they're getting pilots:</p>
+<ul>
+<li>
+<p>Query their CE directly:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> condor_q -name &lt;CE HOSTNAME&gt; -pool &lt;CE HOSTNAME&gt;:9619
+</pre></div>
+
+
+<p>This may not work if the site has a strict firewall or do not run an HTCondor-CE.</p>
+</li>
+<li>
+<p>If they are an ATLAS-only site, ask the admin if they are receiving new pilots.</p>
+</li>
 <li>Add factory ops to the ticket under <code>OSG Support Centers</code></li>
 <li>Verify that the site's <a href="http://gfactory-1.t2.ucsd.edu/factory/monitor/factoryStatus.html?entry=OSG_US_UConn_gluskap&amp;frontend=OSG_Flock_frontend&amp;infoGroup=running&amp;elements=StatusRunning,ClientGlideRunning,ClientGlideIdle,&amp;rra=0&amp;wi">pilot numbers</a>
    are non-zero.</li>
-</ol>
+</ul>
 </li>
 </ol>
 <h3 id="updating-the-triage-calendar">Updating the triage calendar<a class="headerlink" href="#updating-the-triage-calendar" title="Permanent link">&para;</a></h3>
