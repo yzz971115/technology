@@ -2097,7 +2097,7 @@ test [params] [&amp;&amp; test [params] ...] !! action-if-false
 <li><code>win-admin</code></li>
 <li><code>appliance</code></li>
 </ul>
-<p>As far as I can tell, additional permissions have to be manually added into the 'permissions' table in postgres.</p>
+<p>Additional permissions can be added with <code>grant-permission --new</code>, see below.</p>
 <p>The following permissions are checked by name in the koji command-line utility (i.e. policies are not used):</p>
 <ul>
 <li>
@@ -2119,12 +2119,13 @@ test [params] [&amp;&amp; test [params] ...] !! action-if-false
 </ul>
 <p>I haven't found out where some of the other permissions are used.</p>
 <h3 id="adding-permissions">Adding permissions<a class="headerlink" href="#adding-permissions" title="Permanent link">&para;</a></h3>
-<p>Go into postgres and run</p>
-<div class="codehilite"><pre><span></span>insert into permissions values ((select nextval(&#39;permissions_id_seq&#39;)), &#39;NAME&#39;);
+<p>You can give someone a permission that doesn't exist by doing:</p>
+<div class="codehilite"><pre><span></span>osg-koji grant-permission --new &lt;PERMISSION&gt; &quot;&lt;USER&gt;&quot;
 </pre></div>
 
 
-<p>where NAME is the name of the permission you want to create. You may now grant people that permission and use that name in policies.</p>
+<p>Doing so creates the permission as a side effect.
+I'm not aware of a way to create the permission without granting it, other than with database hackery.</p>
 <h3 id="where-policies-are-used-and-what-policy-data-is-passed-on">Where policies are used and what policy data is passed on:<a class="headerlink" href="#where-policies-are-used-and-what-policy-data-is-passed-on" title="Permanent link">&para;</a></h3>
 <h4 id="build95from95srpm">build_from_srpm<a class="headerlink" href="#build95from95srpm" title="Permanent link">&para;</a></h4>
 <p><strong>source:</strong></p>
