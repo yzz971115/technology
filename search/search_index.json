@@ -2932,12 +2932,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180402/", 
-            "text": "OSG Technology Area Meeting,  2 April 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: BrianL\n\n\n11 (+0) open tickets\n\n\n27 (-9) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n107\n\n\n-1\n\n\nOpen\n\n\n\n\n\n\n44\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n15\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nNew vo-client package incoming\n\n\nXRootD and GlideinWMS still don't have release builds\n\n\nDoc focus:  \n\n\nNext doc focus this month\n\n\nReview the hadoop overview document\n (Suchandra to address review comments)\n\n\nUpdate current documentation to reflect current release practice\n (TimT to address review comments)\n\n\n\n\n\n\nLCMAPS VOMS transition: ~2/3 of sites have completed or effectively completed the transition\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\nNone this week  \n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.10\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n27\n\n\n+27\n\n\nOpen\n\n\n\n\n\n\n21\n\n\n+21\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n49\n\n\n+49\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.10  \n\n\nReady for Testing  \n\n\nxrootd-hdfs 2.0.1\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nReview of the flexible release model will happen some time after the All Hands Meeting  \n\n\nOSG Investigations Team\n\n\n\n\nlot of code updates (xrootd) to StashCache for better monitoring, testing xrootd RC3 candidate as well as newer build in HCC repo with latest code changes\n\n\nwork with perfSonar team sending data from ps-collectors also to GRACC Elasticsearch\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting,  2 April 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Edgar, Marian, Mat, Suchandra, TimT\n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: BrianL\n\n\n11 (+0) open tickets\n\n\n27 (-9) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n107\n\n\n-1\n\n\nOpen\n\n\n\n\n\n\n44\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n15\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nNew vo-client package incoming\n\n\nXRootD and GlideinWMS still don't have release builds\n\n\nDoc focus:  \n\n\nNext doc focus this month\n\n\nReview the hadoop overview document\n (Suchandra to address review comments)\n\n\nUpdate current documentation to reflect current release practice\n (TimT to address review comments)\n\n\n\n\n\n\nLCMAPS VOMS transition: ~2/3 of sites have completed or effectively completed the transition\n\n\n\n\nDiscussion\n\n\nData release and possibly a software release yet this week\n\n\nSupport Update\n\n\n\n\nWicsonsin (Marian) - HTTPS transfer to XRootD causes it to crash\n\n\nMWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete\n\n\nVanderbilt (BrianL) - Routed gridmanager jobs still remain. New versions of HTCondor (available in testing) may fix this\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.10\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n27\n\n\n+27\n\n\nOpen\n\n\n\n\n\n\n21\n\n\n+21\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n49\n\n\n+49\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\n3.4.10  \n\n\nReady for Testing  \n\n\nxrootd-hdfs 2.0.1\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussions\n\n\nReview of the flexible release model will happen some time after the All Hands Meeting  \n\n\nOSG Investigations Team\n\n\n\n\nlot of code updates (xrootd) to StashCache for better monitoring, testing xrootd RC3 candidate as well as newer build in HCC repo with latest code changes\n\n\nwork with perfSonar team sending data from ps-collectors also to GRACC Elasticsearch\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "April 2, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180402/#osg-technology-area-meeting-2-april-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Carl, Edgar, Marian, Mat, Suchandra, TimT", 
             "title": "OSG Technology Area Meeting,  2 April 2018"
         }, 
         {
@@ -2962,12 +2962,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180402/#discussion", 
-            "text": "None this week", 
+            "text": "Data release and possibly a software release yet this week", 
             "title": "Discussion"
         }, 
         {
             "location": "/meetings/2018/TechArea20180402/#support-update", 
-            "text": "None this week", 
+            "text": "Wicsonsin (Marian) - HTTPS transfer to XRootD causes it to crash  MWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete  Vanderbilt (BrianL) - Routed gridmanager jobs still remain. New versions of HTCondor (available in testing) may fix this", 
             "title": "Support Update"
         }, 
         {
