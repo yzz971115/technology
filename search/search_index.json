@@ -2932,12 +2932,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180409/", 
-            "text": "OSG Technology Area Meeting,  9 April 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Mat\n\n\n10 (+0) open tickets\n\n\n21 (-6) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n107\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n45\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n9\n\n\n-6\n\n\nReady for Testing\n\n\n\n\n\n\n10\n\n\n+9\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nServices being retired or transitioned at IU\n\n\nVOMS install failures on EL6? \nhttp://vdt.cs.wisc.edu/tests/20180408-0423/results.html\n\n\nSingularity 2.4.6 built, needs testing\n\n\nNext doc focus 2018-04-19 1-5pm Central\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nWicsonsin (Marian) - HTTPS transfer to XRootD causes it to crash\n\n\nMWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete\n\n\nVanderbilt (BrianL) - Routed gridmanager jobs still remain. New versions of HTCondor (available in testing) may fix this\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.3.34\n\n\n\n\nBoth\n\n\n\n\n3.4.10\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n13\n\n\n-1\n\n\n13\n\n\n-1\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n-1\n\n\n24\n\n\n+2\n\n\n25\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n+0\n\n\n7\n\n\n-6\n\n\n8\n\n\n-6\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n+1\n\n\n9\n\n\n+8\n\n\n10\n\n\n+9\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\n3\n\n\n+0\n\n\n53\n\n\n+3\n\n\n56\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nReady for Testing  \n\n\nBLAHP  \n\n\nSave debugging dir when blahp job submission fails\n\n\nVerify input existance\n\n\n\n\n\n\nxrootd-hdfs 2.0.1\n\n\nUpdate Internet2 packages\n\n\nPackage maintenance  \n\n\nfold osg-gridftp-hdfs into osg-gridftp\n\n\nosg-se-hadoop\n\n\n\n\n\n\nAdd cigetcert to AFS tarball\n\n\n\n\n\n\nReady for Release  \n\n\nHTCondor 8.6.10\n\n\nUpcoming: HTCondor 8.7.7\n\n\nRelease cigetcert in OSG (from fermi)\n\n\nosg-build - internal tool maintenance\n\n\n\n\n\n\n\n\nDiscussions\n\n\nOSG Investigations Team\n\n\n\n\nlot of code updates (xrootd) to StashCache for better monitoring, testing xrootd RC3 candidate as well as newer build in HCC repo with latest code changes\n\n\nwork with perfSonar team sending data from ps-collectors also to GRACC Elasticsearch\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting,  9 April 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Derek, Marian, Mat, Suchandra, TimC, TimT\n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Mat\n\n\n10 (+0) open tickets\n\n\n21 (-6) open LCMAPS VOMS tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n107\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n45\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n9\n\n\n-6\n\n\nReady for Testing\n\n\n\n\n\n\n10\n\n\n+9\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nServices being retired or transitioned at IU\n\n\nVOMS install failures on EL6? \nhttp://vdt.cs.wisc.edu/tests/20180408-0423/results.html\n\n\nSingularity 2.4.6 built, needs testing\n\n\nNo word on GlideinWMS/XRootD updates\n\n\nNext doc focus 2018-04-19 1-5pm Central\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nWicsonsin (Marian) - they're happy with the testing versions of xrootd-hdfs and xrootd-lcmaps\n\n\nMWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.3.34\n\n\n\n\nBoth\n\n\n\n\n3.4.10\n\n\n\n\nTotal\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\n0\n\n\n+0\n\n\n13\n\n\n-1\n\n\n13\n\n\n-1\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n-1\n\n\n24\n\n\n+2\n\n\n25\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n+0\n\n\n7\n\n\n-6\n\n\n8\n\n\n-6\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\n1\n\n\n+1\n\n\n9\n\n\n+8\n\n\n10\n\n\n+9\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\n3\n\n\n+0\n\n\n53\n\n\n+3\n\n\n56\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nReady for Testing  \n\n\nBLAHP  \n\n\nSave debugging dir when blahp job submission fails\n\n\nVerify input existance\n\n\n\n\n\n\nxrootd-hdfs 2.0.1\n\n\nUpdate Internet2 packages\n\n\nPackage maintenance  \n\n\nfold osg-gridftp-hdfs into osg-gridftp\n\n\nosg-se-hadoop\n\n\n\n\n\n\nAdd cigetcert to AFS tarball\n\n\n\n\n\n\nReady for Release  \n\n\nHTCondor 8.6.10\n\n\nUpcoming: HTCondor 8.7.7\n\n\nRelease cigetcert in OSG (from fermi)\n\n\nosg-build - internal tool maintenance\n\n\n\n\n\n\n\n\nDiscussions\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\n\n\nlot of code updates (xrootd) to StashCache for better monitoring, testing xrootd RC3 candidate as well as newer build in HCC repo with latest code changes\n\n\nwork with perfSonar team sending data from ps-collectors also to GRACC Elasticsearch\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "April 9, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180409/#osg-technology-area-meeting-9-april-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Derek, Marian, Mat, Suchandra, TimC, TimT", 
             "title": "OSG Technology Area Meeting,  9 April 2018"
         }, 
         {
@@ -2957,7 +2957,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180409/#osg-software-team", 
-            "text": "Services being retired or transitioned at IU  VOMS install failures on EL6?  http://vdt.cs.wisc.edu/tests/20180408-0423/results.html  Singularity 2.4.6 built, needs testing  Next doc focus 2018-04-19 1-5pm Central", 
+            "text": "Services being retired or transitioned at IU  VOMS install failures on EL6?  http://vdt.cs.wisc.edu/tests/20180408-0423/results.html  Singularity 2.4.6 built, needs testing  No word on GlideinWMS/XRootD updates  Next doc focus 2018-04-19 1-5pm Central", 
             "title": "OSG Software Team"
         }, 
         {
@@ -2967,7 +2967,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180409/#support-update", 
-            "text": "Wicsonsin (Marian) - HTTPS transfer to XRootD causes it to crash  MWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete  Vanderbilt (BrianL) - Routed gridmanager jobs still remain. New versions of HTCondor (available in testing) may fix this", 
+            "text": "Wicsonsin (Marian) - they're happy with the testing versions of xrootd-hdfs and xrootd-lcmaps  MWT2 (Suchandra) - still need to transition dCache to turn off GUMS, transition effectively complete", 
             "title": "Support Update"
         }, 
         {
@@ -2977,7 +2977,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180409/#discussions", 
-            "text": "", 
+            "text": "None this week", 
             "title": "Discussions"
         }, 
         {
