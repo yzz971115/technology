@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://opensciencegrid.github.io/technology//</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -25,25 +25,25 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/software-support/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//software/effort-tracking/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//software/release-planning/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//software/new-team-member/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,55 +53,55 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/cut-sw-release/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/cut-data-release/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/release-policy/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/release-schedule/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/new-release-series/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/old-release-removal/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/itb-testing/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/empty-pkgs/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//release/acceptance-testing/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,43 +111,43 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/gums-retire/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/bestman2-retire/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/voms-admin-retire/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/release-series/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/globus-toolkit/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/external-oasis-repos/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//policy/flexible-release-model/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -157,31 +157,31 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-restore-recipe/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-hub-setup/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-inf-overview/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-policy-writing/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/madison-itb/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -191,31 +191,31 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//documentation/writing-documentation/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//documentation/reviewing-documentation/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//documentation/style-guide/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//documentation/new-doc-area/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//documentation/markdown-migration/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -225,7 +225,7 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-initial-install/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -235,7 +235,7 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//projects/sha2-support/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -244,290 +244,296 @@
     
         
     <url>
+     <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180416/</loc>
+     <lastmod>2018-04-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180409/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180402/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180312/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180305/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180226/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180219/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180212/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180205/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180129/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180122/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180108/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2018/TechArea20180102/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171218/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171211/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171204/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171127/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171120/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171113/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171106/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171030/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171023/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171016/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171009/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20171002/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170925/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170918/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170911/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170905/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170828/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170814/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170807/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170731/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170724/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170717/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170710/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170703/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170626/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170619/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170612/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170605/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170530/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170522/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170515/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170508/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170501/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170424/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170417/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://opensciencegrid.github.io/technology//meetings/2017/TechArea20170227/</loc>
-     <lastmod>2018-04-13</lastmod>
+     <lastmod>2018-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
