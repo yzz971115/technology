@@ -180,6 +180,12 @@
     </url>
         
     <url>
+     <loc>https://opensciencegrid.github.io/technology//infrastructure/koji-user-management/</loc>
+     <lastmod>2018-04-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>https://opensciencegrid.github.io/technology//infrastructure/madison-itb/</loc>
      <lastmod>2018-04-17</lastmod>
      <changefreq>daily</changefreq>
