@@ -2019,7 +2019,7 @@
 <th>&Delta;</th>
 <th>Both</th>
 <th>&Delta;</th>
-<th>3.4.10</th>
+<th>3.4.11</th>
 <th>&Delta;</th>
 <th>Total</th>
 <th>&Delta;</th>
@@ -2032,94 +2032,90 @@
 <td>+0</td>
 <td>0</td>
 <td>+0</td>
-<td>1</td>
-<td>-12</td>
-<td>1</td>
-<td>-12</td>
+<td>18</td>
+<td>+18</td>
+<td>18</td>
+<td>+18</td>
 <td>Open</td>
 </tr>
 <tr>
+<td>0</td>
+<td>-1</td>
 <td>1</td>
-<td>+1</td>
-<td>1</td>
-<td>-0</td>
+<td>+0</td>
 <td>9</td>
-<td>-15</td>
-<td>11</td>
-<td>-14</td>
+<td>+9</td>
+<td>10</td>
+<td>+8</td>
 <td>In Progress</td>
 </tr>
 <tr>
 <td>0</td>
 <td>+0</td>
 <td>0</td>
-<td>-1</td>
-<td>2</td>
-<td>-5</td>
-<td>2</td>
-<td>-6</td>
+<td>+0</td>
+<td>8</td>
+<td>+8</td>
+<td>8</td>
+<td>+8</td>
 <td>Ready for Testing</td>
 </tr>
 <tr>
 <td>0</td>
 <td>+0</td>
 <td>3</td>
-<td>+2</td>
-<td>24</td>
-<td>+15</td>
-<td>27</td>
-<td>+17</td>
+<td>+0</td>
+<td>0</td>
+<td>+0</td>
+<td>3</td>
+<td>+0</td>
 <td>Ready for Release</td>
 </tr>
 <tr>
-<td>1</td>
-<td>+1</td>
+<td>0</td>
+<td>-1</td>
 <td>4</td>
-<td>+1</td>
-<td>36</td>
-<td>-17</td>
-<td>41</td>
-<td>-15</td>
+<td>+0</td>
+<td>35</td>
+<td>+35</td>
+<td>39</td>
+<td>+34</td>
 <td>Total</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li>Ready for Testing  <ul>
-<li>Singularity 2.4.6 (waiting on 2.4.7)</li>
-<li>Adding cigetcert to tarball (waiting on tarball build)</li>
+<li>OSG 3.4.11<ul>
+<li>GlideinWMS 3.2.22<ul>
+<li>Remove broken dependencies</li>
+<li>proxy renewal script properly process with the default FQAN</li>
+</ul>
+</li>
+<li>Gratia probes<ul>
+<li>Fixed Slurm bugs found at UFL</li>
+<li>HTCondor probe: projectname case insensitive comparison</li>
+<li>PBS probe: Handle raw seconds as well as hh:mm:ss for durations</li>
+<li>Drop GRAM and glexec probe</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Ready for Release  <ul>
-<li>HTCondor 8.6.10</li>
-<li>xrootd-lcmaps fix crashes on EL6 with HTTPS requests</li>
-<li>xrootd-hdfs improved write support</li>
-<li>Upcoming: HTCondor 8.7.7</li>
-<li>Release cigetcert in OSG (from fermi)</li>
-<li>BLAHP  <ul>
-<li>Save debugging dir when blahp job submission fails</li>
-<li>Verify input existance</li>
+<li>OSG 3.3.34<ul>
+<li>xrootd-lcmaps 1.2.1-3: fixed crashes on Enterprise Linux 6 when request were made using HTTPS</li>
+<li>frontier-squid: fixed startup problem under SELinux</li>
+<li>xrootd-hdfs 2.0.2: improved write support</li>
 </ul>
 </li>
-<li>xrootd-hdfs 2.0.1</li>
-<li>Fix SELinux configuration for frontier-squid</li>
-<li>Update Internet2 packages</li>
-<li>HTCondor CE - Accept InCommon certificates in default mapfile</li>
-<li>osg-configure - varies small fixes</li>
-<li>Package maintenance  <ul>
-<li>fold osg-gridftp-hdfs into osg-gridftp</li>
-<li>osg-se-hadoop</li>
-</ul>
-</li>
-<li>osg-build - internal tool maintenance</li>
 </ul>
 </li>
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>(Action item: TimT) Assign gWMS testing to Edgar. Edgar will try to test it against new/old versions of Singularity</li>
-<li>(Action item: Derek) S&amp;R team members need access to the new repo host. Each S&amp;R member will need to send their SSH public keys to Derek for access.</li>
-<li>(Action item: Carl) Some work still needs to be done in osg-test to fix the EL7 3.3 failures</li>
+<li>OSG 3.3 VMU tests?</li>
 </ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <p>GOC Transition is going to dominate the Investigations Team's time over the next couple of weeks.   I want to give general status of the transitions we are participating in.  So, I will give a couple of states:  </p>
