@@ -743,6 +743,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#on-a-cs-machine_1" title="On a CS machine" class="md-nav__link">
+    On a CS machine
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2044,6 +2051,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#on-a-cs-machine_1" title="On a CS machine" class="md-nav__link">
+    On a CS machine
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2114,6 +2128,7 @@
 <li>An account on UW CS machines (e.g. <code>library</code>, <code>ingwe</code>) to access UW's AFS</li>
 <li><code>release-tools</code> scripts in your <code>PATH</code> (<a href="https://github.com/opensciencegrid/release-tools">GitHub</a>)</li>
 <li><code>osg-build</code> scripts in your <code>PATH</code> (installed via OSG yum repos or <a href="https://github.com/opensciencegrid/osg-build">source</a>)</li>
+<li>Access to the tarball repository at UNL (osgcollab@hcc-osg-software.unl.edu)</li>
 </ul>
 <h2 id="pick-the-version-number">Pick the Version Number<a class="headerlink" href="#pick-the-version-number" title="Permanent link">&para;</a></h2>
 <p>The rest of this document makes references to <code>&lt;VERSION(S)&gt;</code> and <code>&lt;NON-UPCOMING VERSIONS(S)&gt;</code>, which refer to a space-delimited list of OSG version(s) and that same list minus <code>upcoming</code> (e.g. <code>3.3.28 3.4.3 upcoming</code> and <code>3.3.28 3.4.3</code>). If you are unsure about either the version or revision, please consult the release manager.</p>
@@ -2366,7 +2381,7 @@ Do not start this process after 2 PM Eastern time unless you check with Operatio
 
 
 <div class="codehilite"><pre><span></span><span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="sb">`</span>sed <span class="s1">&#39;s/.[0-9]*$//&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="nv">$ver</span><span class="sb">`</span>
+    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="nb">cd</span> /p/vdt/public/html/tarball-client
     ssh jump.grid.iu.edu mkdir /tmp/<span class="nv">$ver</span>/
     scp -p <span class="nv">$major_ver</span>/*/osg-wn-client-<span class="nv">$ver</span>*gz jump.grid.iu.edu:/tmp/<span class="nv">$ver</span>/
@@ -2398,15 +2413,37 @@ Do not start this process after 2 PM Eastern time unless you check with Operatio
 
 
 <div class="codehilite"><pre><span></span><span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="sb">`</span>sed <span class="s1">&#39;s/.[0-9]*$//&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="nv">$ver</span><span class="sb">`</span>
+    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
     mv /tmp/<span class="nv">$ver</span> /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/
     rm -f /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/*latest*
 <span class="k">done</span>
 /root/mk-sims.sh
 <span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="sb">`</span>sed <span class="s1">&#39;s/.[0-9]*$//&#39;</span> <span class="o">&lt;&lt;&lt;</span> <span class="nv">$ver</span><span class="sb">`</span>
+    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
     ls -l /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/*latest* <span class="c1"># verify the symlinks are correct</span>
 <span class="k">done</span>
+</pre></div>
+
+
+<p>Upload the tarballs with the following procedure:</p>
+<h4 id="on-a-cs-machine_1">On a CS machine<a class="headerlink" href="#on-a-cs-machine_1" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="nb">pushd</span> /p/vdt/public/html/tarball-client
+<span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
+    ssh osgcollab@hcc-osg-software.unl.edu mkdir -p /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
+    scp -p <span class="nv">$major_ver</span>/*/osg-wn-client-<span class="nv">$ver</span>*gz osgcollab@hcc-osg-software.unl.edu:/usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
+<span class="k">done</span>
+<span class="nb">popd</span>
+ssh osgcollab@hcc-osg-software.unl.edu bin/mk-sims.sh
+<span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
+    ssh osgcollab@hcc-osg-software.unl.edu <span class="s2">&quot;cd /usr/local/repo/tarball-install; ls -l </span><span class="nv">$major_ver</span><span class="s2">/*latest*&quot;</span>
+<span class="k">done</span>
+<span class="c1"># verify the &quot;latest&quot; symlinks point to the version(s) just installed</span>
 </pre></div>
 
 
