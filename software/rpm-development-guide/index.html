@@ -362,8 +362,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-hosted-upstream-files" title="Git Hosted Upstream Files" class="md-nav__link">
-    Git Hosted Upstream Files
+  <a href="#gitgithub-hosted-upstream-files" title="Git/GitHub Hosted Upstream Files" class="md-nav__link">
+    Git/GitHub Hosted Upstream Files
   </a>
   
 </li>
@@ -433,14 +433,28 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-repos-osg-build-1112" title="Git repos (OSG-Build 1.11.2+)" class="md-nav__link">
-    Git repos (OSG-Build 1.11.2+)
+  <a href="#git-repos" title="Git repos" class="md-nav__link">
+    Git repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-repos" title="GitHub repos" class="md-nav__link">
+    GitHub repos
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features-for-git-and-github-repos" title="Advanced features for Git and GitHub repos" class="md-nav__link">
+    Advanced features for Git and GitHub repos
+  </a>
   
 </li>
         
@@ -2076,8 +2090,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-hosted-upstream-files" title="Git Hosted Upstream Files" class="md-nav__link">
-    Git Hosted Upstream Files
+  <a href="#gitgithub-hosted-upstream-files" title="Git/GitHub Hosted Upstream Files" class="md-nav__link">
+    Git/GitHub Hosted Upstream Files
   </a>
   
 </li>
@@ -2147,14 +2161,28 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-repos-osg-build-1112" title="Git repos (OSG-Build 1.11.2+)" class="md-nav__link">
-    Git repos (OSG-Build 1.11.2+)
+  <a href="#git-repos" title="Git repos" class="md-nav__link">
+    Git repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-repos" title="GitHub repos" class="md-nav__link">
+    GitHub repos
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features-for-git-and-github-repos" title="Advanced features for Git and GitHub repos" class="md-nav__link">
+    Advanced features for Git and GitHub repos
+  </a>
   
 </li>
         
@@ -2427,11 +2455,11 @@
 <li>If you have access to a UW–Madison CSL machine, you can scp the source files directly into the AFS locations using that machine</li>
 <li>If you do not have such access, write to the osg-software list to find someone who will post the files for you</li>
 </ul>
-<h4 id="git-hosted-upstream-files">Git Hosted Upstream Files<a class="headerlink" href="#git-hosted-upstream-files" title="Permanent link">&para;</a></h4>
-<p>As of OSG-Build 1.11.2, it is possible to pull sources and spec files from a remote Git repo instead of our source cache.
+<h4 id="gitgithub-hosted-upstream-files">Git/GitHub Hosted Upstream Files<a class="headerlink" href="#gitgithub-hosted-upstream-files" title="Permanent link">&para;</a></h4>
+<p>It is also possible to pull sources and spec files from remote Git or GitHub repos instead of our source cache.
 See the <a href="#upstream">upstream dir info</a> for more information.</p>
 <h3 id="revision-control-system">Revision Control System<a class="headerlink" href="#revision-control-system" title="Permanent link">&para;</a></h3>
-<p>All packages that the OSG Software Team releases are checked into our revision control system (currently Subversion but with the option to change at a later date).</p>
+<p>All packages that the OSG Software Team releases are checked into our Subversion repository.</p>
 <h4 id="subversion-access">Subversion Access<a class="headerlink" href="#subversion-access" title="Permanent link">&para;</a></h4>
 <p>Our Subversion repository is located at:</p>
 <blockquote>
@@ -2580,12 +2608,21 @@ It is useful to add the source of the upstream file into a comment.</p>
 
 
 </div>
-<h6 id="git-repos-osg-build-1112">Git repos (OSG-Build 1.11.2+)<a class="headerlink" href="#git-repos-osg-build-1112" title="Permanent link">&para;</a></h6>
+<h6 id="git-repos">Git repos<a class="headerlink" href="#git-repos" title="Permanent link">&para;</a></h6>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>OSG software policy requires that all Git repos used for building software have mirrors at the UW.
+<p>OSG software policy requires that all Git and GitHub repos used for building software have mirrors at the UW.
 Many software repos under the <a href="https://github.com/opensciencegrid">opensciencegrid GitHub organization</a> are already mirrored.
 If you are uncertain, or have a new project that you want mirrored, send email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;">&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature requires OSG-Build 1.11.2 or later.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use a shorter syntax for GitHub repos -- see below.</p>
+<p>See also <a href="#advanced-features-for-git-and-github-repos">advanced features for Git and GitHub repos</a>.</p>
 </div>
 <p>To reference tags in Git repos, use the following syntax (all on one line):</p>
 <blockquote>
@@ -2639,7 +2676,118 @@ If you are uncertain, or have a new project that you want mirrored, send email t
 </div>
 <p>In addition, if the repository contains a file called <code>rpm/&lt;NAME&gt;.spec</code>, it will be used as the spec file for the build
 (unless overridden in the <code>osg</code> directory).</p>
-<p>OSG-Build 1.11.2 or later is required to use this feature.</p>
+<h6 id="github-repos">GitHub repos<a class="headerlink" href="#github-repos" title="Permanent link">&para;</a></h6>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>OSG software policy requires that all Git and GitHub repos used for building software have mirrors at the UW.
+Many software repos under the <a href="https://github.com/opensciencegrid">opensciencegrid GitHub organization</a> are already mirrored.
+If you are uncertain, or have a new project that you want mirrored, send email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;">&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature requires OSG-Build 1.12.2 or later.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See also <a href="#advanced-features-for-git-and-github-repos">advanced features for Git and GitHub repos</a>.</p>
+</div>
+<p>To reference tags in GitHub repos, use the following syntax (all on one line):</p>
+<blockquote>
+<p><code>type=github repo=&lt;OWNER&gt;/&lt;PROJECT&gt; tag=&lt;TAG&gt; hash=&lt;HASH&gt;</code></p>
+</blockquote>
+<p>where:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Symbol</th>
+<th align="left">Definition</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>&lt;OWNER&gt;</code></td>
+<td align="left">Owner of the GitHub repo</td>
+<td align="left"><code>opensciencegrid</code></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;PROJECT&gt;</code></td>
+<td align="left">Name of the project</td>
+<td align="left"><code>osg-build</code></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;TAG&gt;</code></td>
+<td align="left">Git tag to use</td>
+<td align="left"><code>v1.12.2</code></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;HASH&gt;</code></td>
+<td align="left">Full 40-char Git hash of the tag</td>
+<td align="left"><code>cff50ffe812282552cedae81f3809d3cf7087a3e</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The tarball will be called <code>&lt;PROJECT&gt;-&lt;VERSION&gt;.tar.gz</code> where <code>&lt;VERSION&gt;</code> is <code>&lt;TAG&gt;</code> without the <code>v</code> prefix (if there is one).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>You can refer to the 1.12.2 release of osg-build with this line:</p>
+<div class="codehilite"><pre><span></span>type=github repo=opensciencegrid/osg-build tag=v1.12.2 hash=cff50ffe812282552cedae81f3809d3cf7087a3e
+</pre></div>
+
+
+<p>This results in a tarball named <code>osg-build-1.12.2.tar.gz</code>.</p>
+</div>
+<p>In addition, if the repository contains a file called <code>rpm/&lt;PROJECT&gt;.spec</code>, it will be used as the spec file for the build
+(unless overridden in the <code>osg</code> directory).</p>
+<h5 id="advanced-features-for-git-and-github-repos">Advanced features for Git and GitHub repos<a class="headerlink" href="#advanced-features-for-git-and-github-repos" title="Permanent link">&para;</a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These features require OSG-Build 1.12.2 or later.</p>
+</div>
+<p>The following features make software development in Git and GitHub more convenient:</p>
+<ul>
+<li>
+<p>Support for RPM release numbers in Git tags:</p>
+<p>If the tag for the software contains a dash, as in <code>v1.12.2-1</code>,
+it is assumed that the text after the dash is the RPM release instead of the software version.
+The RPM release is not included in the tarball.
+That is, the project <code>osg-build</code> with the tag <code>v1.12.2-1</code> will result in a tarball named <code>osg-build-1.12.1.tar.gz</code>,
+not <code>osg-build-1.12.1-1.tar.gz</code>.</p>
+</li>
+<li>
+<p>Can specify tarball name in the .source file:</p>
+<p>The new <code>tarball</code> attribute allows you to specify the name of the tarball and directory that the repo contents will be put into.
+The syntax is <code>tarball=&lt;NAME&gt;.tar.gz</code>.
+The extension must be <code>.tar.gz</code>, no other archive formats are supported.
+The directory inside the tarball will then be <code>&lt;NAME&gt;/</code>.</p>
+</li>
+<li>
+<p>Can specify hash and tarball instead of tag (scratch and local builds only):</p>
+<p>For local builds (rpmbuild and mock tasks) and Koji scratch builds,
+you can omit the <code>tag</code> attribute and use only the hash to determine what to check out.
+You <em>must</em> specify the <code>tarball</code> attribute in this case.
+Non-scratch Koji builds will still require a tag.</p>
+</li>
+<li>
+<p>Can ignore hash mismatch (scratch and local builds only):</p>
+<p>For local builds (rpmbuild and mock tasks) and Koji scratch builds, a hash mismatch will result in a warning.
+Non-scratch Koji builds will still consider it an error.</p>
+</li>
+<li>
+<p>Can use a branch as the tag:</p>
+<p>The <code>tag</code> attribute can refer to a branch instead of a tag, e.g. <code>tag=master</code>.</p>
+</li>
+</ul>
+<p>Combining the last two features can really speed up package development.
+For example, you can use this to make scratch builds of the current master:</p>
+<div class="codehilite"><pre><span></span>type=github repo=&lt;OWNER&gt;/&lt;PROJECT&gt; tarball=&lt;PROJECT&gt;-&lt;VERSION&gt;.tar.gz tag=master hash=0
+</pre></div>
+
+
+<p>This might also be useful as part of a continuous integration scheme (e.g. Travis-CI).</p>
 <h5 id="osg">osg<a class="headerlink" href="#osg" title="Permanent link">&para;</a></h5>
 <p>The <code>osg</code> directory contains files that are owned by the OSG Software Team and that are used to create the final, released source package. It may contain a variety of development files:</p>
 <ul>
@@ -2835,7 +2983,7 @@ This is because there is no package that will "obsolete" the old package.</p>
 <li>
 <p>Change the %description to:</p>
 <blockquote>
-<p>This is an empty package created for <span style="color:red">$</span>.
+<p>This is an empty package created for <span style="color:red">$REASONS</span>.
 It may safely be removed.</p>
 </blockquote>
 </li>
