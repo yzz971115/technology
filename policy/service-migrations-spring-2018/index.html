@@ -35,7 +35,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.7.2">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.7.3">
     
     
       
@@ -774,6 +774,13 @@
           <li class="md-nav__item">
   <a href="#gracc-accounting-and-wlcg-accounting" title="GRACC Accounting and WLCG Accounting" class="md-nav__link">
     GRACC Accounting and WLCG Accounting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticket" title="Ticket" class="md-nav__link">
+    Ticket
   </a>
   
 </li>
@@ -1858,6 +1865,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ticket" title="Ticket" class="md-nav__link">
+    Ticket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#oasis-and-cvmfs" title="OASIS and CVMFS" class="md-nav__link">
     OASIS and CVMFS
   </a>
@@ -2020,6 +2034,11 @@ Therefore, to extend the window for transitioning to any new CA service, we have
 If you experience any problems with the OSG CA service, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="software-repository">Software Repository<a class="headerlink" href="#software-repository" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Migration of the software repository is planned for May 1, 2018.
+Retirement of the old host, <code>repo.grid.iu.edu</code>, will be annnounced but will occur no earlier than May 15, 2018.</p>
+</div>
 <p>The OSG Software repository includes the YUM repositories, client tarballs, and CA tarballs.
 The physical hosting location of this service will be changing; no other changes are planned.
 To ensure a smooth transition at your site, verify that the OSG repository files are up to date on all of your OSG hosts:</p>
@@ -2049,8 +2068,7 @@ To ensure a smooth transition at your site, verify that the OSG repository files
 </li>
 </ul>
 </div>
-<p>The exact date for moving the physical hosting location will be announced.
-If you experience any problems with the OSG Software repository, please contact us at
+<p>If you experience any problems with the OSG Software repository, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="myosg-and-oim">MyOSG and OIM<a class="headerlink" href="#myosg-and-oim" title="Permanent link">&para;</a></h3>
 <p>The <a href="https://my.opensciencegrid.org/about">MyOSG</a> service provides web and REST interfaces to access information about
@@ -2080,6 +2098,34 @@ If you experience any problems with the OSG Software repository, please contact 
 <p>No changes are planned for the <a href="https://gracc.opensciencegrid.org/dashboard/db/gracc-home?orgId=1">GRACC accounting</a>
 service at this time.  The integration of OSG with WLCG accounting should see no interruption.
 If you experience any problems with GRACC accounting, please contact us at
+<a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
+<h3 id="ticket">Ticket<a class="headerlink" href="#ticket" title="Permanent link">&para;</a></h3>
+<p>The Footprints ticketing system at <a href="https://ticket.opensciencegrid.org">https://ticket.opensciencegrid.org</a> is used to track support and security issues as
+well as certificate and membership requests.
+This service will be retired in favor of two different ticketing systems, depending on the VOs you support at your site:</p>
+<table>
+<thead>
+<tr>
+<th>If your site primarily supports...</th>
+<th>Submit new tickets to...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LHC VOs</td>
+<td><a href="https://ggus.eu">GGUS</a></td>
+</tr>
+<tr>
+<td>Anyone else</td>
+<td><a href="https://support.opensciencegrid.org">Freshdesk</a></td>
+</tr>
+</tbody>
+</table>
+<p>Throughout this migration, <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a> will be available for all
+support requests or inquiries.
+We do not expect this migration to require site administator action.</p>
+<p>The retirement of the Footprints ticketing system will occur no later than May 31, 2018. The exact date will be announced.
+If you experience any problems with ticketing, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="oasis-and-cvmfs">OASIS and CVMFS<a class="headerlink" href="#oasis-and-cvmfs" title="Permanent link">&para;</a></h3>
 <p>The OASIS (OSG Application and Software Installation Service) is a service used to distribute common applications and
