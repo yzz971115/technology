@@ -634,6 +634,26 @@
     Day 1: Verify Pre-Release
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-generate-the-release-list" title="Step 1: Generate the release list" class="md-nav__link">
+    Step 1: Generate the release list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-test-the-pre-release-on-the-madison-itb-site" title="Step 2: Test the Pre-Release on the Madison ITB site" class="md-nav__link">
+    Step 2: Test the Pre-Release on the Madison ITB site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -674,6 +694,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-3-update-the-itb" title="Day 3: Update the ITB" class="md-nav__link">
+    Day 3: Update the ITB
+  </a>
   
 </li>
       
@@ -1819,6 +1846,26 @@
     Day 1: Verify Pre-Release
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-generate-the-release-list" title="Step 1: Generate the release list" class="md-nav__link">
+    Step 1: Generate the release list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-test-the-pre-release-on-the-madison-itb-site" title="Step 2: Test the Pre-Release on the Madison ITB site" class="md-nav__link">
+    Step 2: Test the Pre-Release on the Madison ITB site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1862,6 +1909,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#day-3-update-the-itb" title="Day 3: Update the ITB" class="md-nav__link">
+    Day 3: Update the ITB
+  </a>
+  
+</li>
+      
       
       
       
@@ -1883,10 +1937,10 @@
                 
                 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are performing a software release, please follow the instructions <a href="../cut-sw-release">here</a></p>
+<p>If you are performing a software release, please follow the instructions <a href="../../release/cut-sw-release/">here</a></p>
 </div>
 <h1 id="how-to-cut-a-data-release">How to Cut a Data Release<a class="headerlink" href="#how-to-cut-a-data-release" title="Permanent link">&para;</a></h1>
-<p>This document details the process for releasing new OSG Data Release version(s). This document does NOT discuss the policy for deciding what goes into a release, which can be found <a href="../release-policy/">here</a>.</p>
+<p>This document details the process for releasing new OSG Data Release version(s). This document does NOT discuss the policy for deciding what goes into a release, which can be found <a href="../../release/release-policy/">here</a>.</p>
 <p>Due to the length of time that this process takes, it is recommended to do the release over three or more days to allow for errors to be corrected and tests to be run.</p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1912,6 +1966,7 @@
 
 <h2 id="day-1-verify-pre-release">Day 1: Verify Pre-Release<a class="headerlink" href="#day-1-verify-pre-release" title="Permanent link">&para;</a></h2>
 <p>This section is to be performed 1-2 days before the release (as designated by the release manager) to perform last checks of the release.</p>
+<h3 id="step-1-generate-the-release-list">Step 1: Generate the release list<a class="headerlink" href="#step-1-generate-the-release-list" title="Permanent link">&para;</a></h3>
 <p>Compare the list of packages already in pre-release to the final list for the release put together by the OSG Release Coordinator (who should have updated <code>release-list</code> in git). To do this, run the <code>1-verify-prerelease</code> script from git:</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;&lt;VERSION(S)&gt;&#39;</span>
 </pre></div>
@@ -1922,6 +1977,8 @@
 
 
 <p>If there are any discrepancies consult the release manager. You may have to tag packages with the <code>osg-koji</code> tool.</p>
+<h3 id="step-2-test-the-pre-release-on-the-madison-itb-site">Step 2: Test the Pre-Release on the Madison ITB site<a class="headerlink" href="#step-2-test-the-pre-release-on-the-madison-itb-site" title="Permanent link">&para;</a></h3>
+<p>Test the pre-release on the Madison ITB by following the <a href="../../release/itb-testing/">ITB pre-release testing instructions</a>.</p>
 <h2 id="day-2-pushing-the-release">Day 2: Pushing the Release<a class="headerlink" href="#day-2-pushing-the-release" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1929,7 +1986,8 @@
 Do not start this process after 2 PM Eastern time unless you check with Operations (specifically Kyle Gross) first.</p>
 </div>
 <h3 id="step-1-push-from-pre-release-to-release">Step 1: Push from pre-release to release<a class="headerlink" href="#step-1-push-from-pre-release-to-release" title="Permanent link">&para;</a></h3>
-<p>This script moves the packages into release, clones releases into new version-specific release repos, locks the repos and regenerates them. Afterwards, it produces <code>*release-note*</code> files that should be used to update the release note pages. Clone it from the github repo and run the script:</p>
+<p>This script moves the packages into release, clones releases into new version-specific release repos,
+locks the repos and regenerates them.</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;VERSION(S)&gt;&#39;</span>
 <span class="nv">REVISION</span><span class="o">=</span>&lt;REVISION&gt;
 </pre></div>
@@ -1956,7 +2014,11 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 
 
 <h3 id="step-3-verify-the-vo-package-andor-ca-certificates">Step 3: Verify the VO Package and/or CA certificates<a class="headerlink" href="#step-3-verify-the-vo-package-andor-ca-certificates" title="Permanent link">&para;</a></h3>
-<p>Wait for the CA certificates to be propagated to the web server on <code>repo.opensciencegrid.org</code>. The repository is checked every 10 minutes for update CA certificates. Then, run the following command to update the VO Package and/or CA certificates in the tarball installations and verify that the version of the VO Package and/or CA certificates match the version that was promoted to release.</p>
+<p>Wait for the <a href="https://repo.opensciencegrid.org/cadist/">CA certificates</a> to be updated.
+It may take a while for the updates to reach the mirror used to update the web site.
+The repository is checked hourly for updated CA certificates.
+Once the web page is updated, run the following command to update the VO Package and/or CA certificates in the tarball installations and
+verify that the version of the VO Package and/or CA certificates match the version that was promoted to release.</p>
 <div class="codehilite"><pre><span></span>/p/vdt/workspace/tarball-client/current/amd64_rhel6/osgrun osg-update-data
 /p/vdt/workspace/tarball-client/current/amd64_rhel7/osgrun osg-update-data
 </pre></div>
@@ -1966,31 +2028,36 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 <p>The following instructions are meant for the release manager (or interim release manager). If you are not the release manager, let the release manager know that they can announce the release.</p>
 <ol>
 <li>
-<p>The release manager writes the release announcement and send it out.
-    Here is a sample, replace <code>&lt;BRACKETED TEXT&gt;</code> with the appropriate values.
+<p>The release manager writes the a release announcement for each version and sends it out.
+    The announcement should mention a handful of the most important updates.
+    Due to downstream formatting issues, each major change should end at column 76 or earlier.
+    Here is a sample, replace <code>&lt;BRACKETED TEXT&gt;</code> with the appropriate values:
     If you are only updating certificates or only updated the VO package, delete the corresponding text:</p>
-<div class="codehilite"><pre><span></span>Subject: Announcing OSG CA Cetificate and VO Package Updates
+<div class="codehilite"><pre><span></span><span class="n">Subject</span><span class="o">:</span> <span class="n">Announcing</span> <span class="n">OSG</span> <span class="n">CA</span> <span class="n">Certificate</span> <span class="n">and</span> <span class="n">VO</span> <span class="n">Package</span> <span class="n">Updates</span>
+<span class="n">Subject</span><span class="o">:</span> <span class="n">Announcing</span> <span class="n">OSG</span> <span class="n">CA</span> <span class="n">Certificate</span> <span class="n">Update</span>
+<span class="n">Subject</span><span class="o">:</span> <span class="n">Announcing</span> <span class="n">VO</span> <span class="n">Package</span> <span class="n">Update</span>
 
-We are pleased to announce a data release for the OSG Software Stack.
-Data releases do not contain any software changes.
+<span class="n">We</span> <span class="n">are</span> <span class="n">pleased</span> <span class="n">to</span> <span class="n">announce</span> <span class="n">a</span> <span class="n">data</span> <span class="n">release</span> <span class="k">for</span> <span class="n">the</span> <span class="n">OSG</span> <span class="n">Software</span> <span class="n">Stack</span><span class="o">.</span>
+<span class="n">Data</span> <span class="n">releases</span> <span class="k">do</span> <span class="n">not</span> <span class="n">contain</span> <span class="n">any</span> <span class="n">software</span> <span class="n">changes</span><span class="o">.</span>
 
-This release contains updated CA Certificates based on IGTF &lt;IGTF VERSION&gt;:
-- &lt;CHANGE 1&gt;
-- &lt;CHANGE 2&gt;
+<span class="n">This</span> <span class="n">release</span> <span class="n">contains</span> <span class="n">updated</span> <span class="n">CA</span> <span class="n">Certificates</span> <span class="n">based</span> <span class="n">on</span> <span class="n">IGTF</span> <span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;:</span>
+<span class="o">-</span> <span class="o">&lt;</span><span class="n">Change</span> <span class="mi">1</span> <span class="n">from</span> <span class="n">IGTF</span> <span class="n">changelog</span><span class="o">&gt;</span>
+<span class="o">-</span> <span class="o">&lt;</span><span class="n">Change</span> <span class="mi">2</span> <span class="n">from</span> <span class="n">IGTF</span> <span class="n">changelog</span><span class="o">&gt;</span>
 
-This release also contains VO Package v&lt;VO PACKAGE VERSION&gt;:
-- &lt;CHANGE 1&gt;
-- &lt;CHANGE 2&gt;
+<span class="n">This</span> <span class="n">release</span> <span class="n">contains</span> <span class="n">VO</span> <span class="n">Package</span> <span class="n">v</span><span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;:</span>
+<span class="n">This</span> <span class="n">release</span> <span class="n">also</span> <span class="n">contains</span> <span class="n">VO</span> <span class="n">Package</span> <span class="n">v</span><span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;:</span>
+<span class="o">-</span> <span class="o">&lt;</span><span class="n">Change</span> <span class="mi">1</span> <span class="n">from</span> <span class="n">VO</span> <span class="n">changelog</span><span class="o">&gt;</span>
+<span class="o">-</span> <span class="o">&lt;</span><span class="n">Change</span> <span class="mi">2</span> <span class="n">from</span> <span class="n">VO</span> <span class="n">changelog</span><span class="o">&gt;</span>
 
-Release notes and pointers to more documentation can be found at:
+<span class="n">Release</span> <span class="n">notes</span> <span class="n">and</span> <span class="n">pointers</span> <span class="n">to</span> <span class="n">more</span> <span class="n">documentation</span> <span class="n">can</span> <span class="n">be</span> <span class="n">found</span> <span class="n">at</span><span class="o">:</span>
 
-&lt;LINK(S) TO RELEASE NOTES&gt;
+<span class="n">http</span><span class="o">://</span><span class="n">opensciencegrid</span><span class="o">.</span><span class="na">github</span><span class="o">.</span><span class="na">io</span><span class="sr">/docs/release/&lt;SERIES.VERSION&gt;/release-&lt;RELEASE-VERSION&gt;/</span>
 
-Need help? Let us know:
+<span class="n">Need</span> <span class="n">help</span><span class="o">?</span> <span class="n">Let</span> <span class="n">us</span> <span class="n">know</span><span class="o">:</span>
 
-http://opensciencegrid.github.io/docs/common/help/
+<span class="n">http</span><span class="o">://</span><span class="n">opensciencegrid</span><span class="o">.</span><span class="na">github</span><span class="o">.</span><span class="na">io</span><span class="sr">/docs/common/help/</span>
 
-We welcome feedback on this release!
+<span class="n">We</span> <span class="n">welcome</span> <span class="n">feedback</span> <span class="n">on</span> <span class="k">this</span> <span class="n">release</span><span class="o">!</span>
 </pre></div>
 
 
@@ -2001,6 +2068,9 @@ We welcome feedback on this release!
 <li>The release manager asks the GOC to distribute the announcement by <a href="https://ticket.opensciencegrid.org/goc/other">opening a ticket</a></li>
 <li>The release manager closes the tickets marked 'Ready for Release' in the release's JIRA filter using the 'bulk change' function. Uncheck the box that reads "Send mail for this update"</li>
 </ol>
+<h2 id="day-3-update-the-itb">Day 3: Update the ITB<a class="headerlink" href="#day-3-update-the-itb" title="Permanent link">&para;</a></h2>
+<p>Now that the release has had a chance to propogate to all the mirrors, update the Madison ITB site by following
+the <a href="../../infrastructure/madison-itb/#doing-yum-updates">yum update section</a> of the Madison ITB document.</p>
                 
                   
                 
