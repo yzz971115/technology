@@ -1971,9 +1971,9 @@
                 
                 <h1 id="osg-technology-area-meeting-7-may-2018">OSG Technology Area Meeting,  7 May 2018<a class="headerlink" href="#osg-technology-area-meeting-7-may-2018" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>  </p>
+<strong>Attending:</strong> BrianL, Carl, Derek, Edgar, Marian, Suchandra, TimT</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
-<p>BrianL out Thursday afternoon and Friday  </p>
+<p>BrianL and Derek out Thursday afternoon and Friday</p>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
 <ul>
 <li>This week: TimT</li>
@@ -2026,88 +2026,19 @@
 <li>Office hours: Tuesdays 2-3pm CDT and Thursdays 10-11am CDT</li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
-<h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
-<p>Caltech (Derek/Marian) - CVMFS is now indexing the new origin.  </p>
-<h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>3.3.34</th>
-<th>&Delta;</th>
-<th>Both</th>
-<th>&Delta;</th>
-<th>3.4.11</th>
-<th>&Delta;</th>
-<th>Total</th>
-<th>&Delta;</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>+0</td>
-<td>0</td>
-<td>+0</td>
-<td>4</td>
-<td>-14</td>
-<td>4</td>
-<td>-14</td>
-<td>Open</td>
-</tr>
-<tr>
-<td>0</td>
-<td>+0</td>
-<td>0</td>
-<td>-1</td>
-<td>2</td>
-<td>-7</td>
-<td>2</td>
-<td>-8</td>
-<td>In Progress</td>
-</tr>
-<tr>
-<td>0</td>
-<td>+0</td>
-<td>2</td>
-<td>+2</td>
-<td>21</td>
-<td>+13</td>
-<td>23</td>
-<td>+15</td>
-<td>Ready for Testing</td>
-</tr>
-<tr>
-<td>3</td>
-<td>+3</td>
-<td>0</td>
-<td>-3</td>
-<td>1</td>
-<td>+1</td>
-<td>4</td>
-<td>+1</td>
-<td>Ready for Release</td>
-</tr>
-<tr>
-<td>3</td>
-<td>+3</td>
-<td>2</td>
-<td>-2</td>
-<td>28</td>
-<td>-7</td>
-<td>33</td>
-<td>-6</td>
-<td>Total</td>
-</tr>
-</tbody>
-</table>
 <ul>
-<li>OSG 3.4.11 - Release Tomorrow  <ul>
-<li>High Priority Release: Singularity 2.5.0</li>
+<li>Derek will test ticket exchange with HCC RT and Freshdesk Tuesday morning</li>
+<li>Suchandra: reverse comment order requires plugins that apply across the board and may break other things. Won't pursue it.</li>
+<li>Action item (BrianL): Look into ticket types for operations/software Freshdesk groups</li>
 </ul>
-</li>
-<li>OSG 3.4.12 - Testing  <ul>
+<h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
+<ul>
+<li>LIGO (Edgar) - XRootD file transfer failed due to OSG proxies being signed with an expired VOMS certificate</li>
+<li>UMD (Suchandra) - Not transitioning off of LCMAPS VOMS until the summer. Should be fine as a CMS T3.</li>
+</ul>
+<h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
+<ul>
+<li>OSG 3.4.12 - Mostly Ready for Release<ul>
 <li>GlideinWMS 3.2.22  <ul>
 <li>proxy renewal script properly process with the default FQAN</li>
 </ul>
@@ -2119,20 +2050,18 @@
 <li>Drop GRAM and glexec probe</li>
 </ul>
 </li>
-<li>XRootD 4.8.2</li>
+<li>XRootD 4.8.3 - in testing</li>
 </ul>
 </li>
-<li>OSG 3.3.34 - Mostly Ready for Release  <ul>
-<li>Eradicate grid.iu.edu references - in testing</li>
+<li>OSG 3.3.34 - Ready for Release<ul>
+<li>Eradicate grid.iu.edu references</li>
 <li>xrootd-lcmaps 1.2.1-3: fixed crashes on Enterprise Linux 6 when request were made using HTTPS</li>
 <li>frontier-squid: fixed startup problem under SELinux</li>
 </ul>
 </li>
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Action Item (BrianL): follow up with Zalak on adding Let's Encrypt to the CA bundle</li>
-</ul>
+<p>None this week</p>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <p>GOC Transition is going to dominate the Investigations Team's time over the next couple of weeks.   I want to give general status of the transitions we are participating in.  So, I will give a couple of states:  </p>
 <ol>
@@ -2191,9 +2120,7 @@
 <li><a href="https://opensciencegrid.github.io/StashCache/">StashCache Project</a></li>
 </ul>
 <h3 id="discussions_1">Discussions<a class="headerlink" href="#discussions_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Action item (TimT): draft an email for host/service cert renewal</li>
-</ul>
+<p>None this week</p>
                 
                   
                 
