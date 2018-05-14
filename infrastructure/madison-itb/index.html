@@ -2299,7 +2299,7 @@ your own login and <code>sudo</code> <em>on the target machine</em>.  For exampl
    Note that only the <code>*key.pem</code> files need to be encrypted, as the <code>*cert.pem</code> files are meant to be public.
    If the (unencrypted) <code>*key.pem</code> file is not getting updated, there is no need to re-encrypt a new copy.</li>
 <li>Verify permissions, contents (you can <code>cat</code> the encrypted files), etc.</li>
-<li>Apply the files with something like <code>ansible-playbook secure.yml -i inventory -bK -f 20 -t certs</code></li>
+<li>Apply the files with something like <code>ansible-playbook secure.yml -i inventory -bK -f 20 -t certs --ask-vault-pass</code></li>
 <li>Commit changes (now or after applying)</li>
 <li>Push changes to origin (<code>gitolite@git.chtc.wisc.edu:osgitb</code>)</li>
 </ol>
