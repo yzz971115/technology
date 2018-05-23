@@ -2062,7 +2062,10 @@
 <li>Perform the standard 4 tests for the <strong>maintenance</strong> series (see below)</li>
 <li>As needed (or directed by the Software manager), perform the cross-series tests (see below)</li>
 </ol>
-<p><strong>Note:</strong> Do not change the RPM Release number in the <strong>maintenance</strong> branch before rebuilding; the %dist tag will differ automatically, and hence the <strong>maintenance</strong> and <strong>current</strong> NVRs will not conflict.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not change the RPM Release number in the <strong>maintenance</strong> branch before rebuilding; the <code>%dist</code> tag will differ automatically, and hence the <strong>maintenance</strong> and <strong>current</strong> NVRs will not conflict.</p>
+</div>
 <!--
 1. Make changes to the *trunk*
 2. Optionally, make and test a scratch build from the *trunk*
