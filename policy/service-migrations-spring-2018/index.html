@@ -2028,6 +2028,10 @@ We will resume office hours on 2018-05-29.</p>
 </ul>
 <h2 id="service-specific-details">Service-specific details<a class="headerlink" href="#service-specific-details" title="Permanent link">&para;</a></h2>
 <h3 id="osg-ca">OSG CA<a class="headerlink" href="#osg-ca" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Retirement of the OSG CA service is planned for May 31, 2018 11:59PM EDT.</p>
+</div>
 <p>The OSG CA service offers certificate request, renewal, and revocation through the <a href="#myosg-and-oim">OIM</a> web interface, 
 the OIM REST API, and the <code>osg-pki-tools</code> command-line tool.
 This service will be retired by May 31 but the OSG CA certificate will remain in the IGTF distribution, so
@@ -2091,14 +2095,13 @@ Please see
 for the security and setup implications of switching to a Let's Encrypt host or service certificate.</p>
 </div>
 <p>New processes for requesting host, service, and user certificates against the aforementioned CAs are forthcoming.</p>
-<p>The exact date for the retirement of the OSG CA service will be announced, but will be around the end of May.
-If you experience any problems with the OSG CA service, please contact us at
+<p>If you experience any problems with the OSG CA service, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="software-repository">Software Repository<a class="headerlink" href="#software-repository" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Migration of the software repository occurred on May 1, 2018.
-Retirement of the old host, <code>repo.grid.iu.edu</code>, is planned for May 23, 2018 10AM EDT.</p>
+Retirement of the old host, <code>repo.grid.iu.edu</code>, occurred on May 23, 2018 10AM EDT.</p>
 </div>
 <p>The OSG Software repository includes the YUM repositories, client tarballs, and CA tarballs.
 The physical hosting location of this service will be changing; no other changes are planned.
@@ -2134,8 +2137,9 @@ To ensure a smooth transition at your site, verify that the OSG repository files
 <h3 id="myosg-and-oim">MyOSG and OIM<a class="headerlink" href="#myosg-and-oim" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Migration of MyOSG and the OIM site topology, project, VO, and downtime data is planned for May 22, 2018 10AM EDT.
-Retirement of the old host, <code>myosg.grid.iu.edu</code>, is planned for May 23, 2018 10AM EDT.</p>
+<p>Migration of MyOSG and the OIM site topology, project, VO, and downtime data is planned for May 24, 2018 10AM EDT.
+Retirement of the old MyOSG host, <code>myosg.grid.iu.edu</code>, is planned for May 30, 2018 10AM EDT.
+Retirement of OIM is planned for May 31, 2018 11:59PM EDT.</p>
 </div>
 <p>The <a href="https://my.opensciencegrid.org/about">MyOSG</a> service provides web and REST interfaces to access information about
 OSG resource topology, projects, and VOs.
@@ -2157,8 +2161,7 @@ Documentation forthcoming.</p>
 <p class="admonition-title">Note</p>
 <p>Please see the <a href="#osg-ca">OSG CA</a> section for information regarding the OIM certificate service.</p>
 </div>
-<p>The exact dates for retiring the MyOSG and OIM web interfaces will be announced.
-If you experience any problems with the OSG Software repository, please contact us at
+<p>If you experience any problems with the OSG Software repository, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="gracc-accounting-and-wlcg-accounting">GRACC Accounting and WLCG Accounting<a class="headerlink" href="#gracc-accounting-and-wlcg-accounting" title="Permanent link">&para;</a></h3>
 <p>No changes are planned for the <a href="https://gracc.opensciencegrid.org/dashboard/db/gracc-home?orgId=1">GRACC accounting</a>
@@ -2189,7 +2192,7 @@ This service will be retired in favor of two different ticketing systems, depend
 </table>
 <p>Throughout this migration, <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a> will be available for all
 support requests or inquiries.
-We do not expect this migration to require site administator action.</p>
+We do not expect this migration to require site administrator action.</p>
 <p>The retirement of the Footprints ticketing system will occur no later than May 31, 2018. The exact date will be announced.
 If you experience any problems with ticketing, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
@@ -2199,13 +2202,12 @@ software to OSG sites via CVMFS.
 The OSG hosts a CVMFS Stratum-0 for keysigning, a repository server, and a CVMFS Stratum-1.
 The physical hosting location of these services will be moved to Nebraska but we do not plan any other changes and do not expect
 this to affect sites.
-The exact date for moving the hosting location will be announced.
 If you experience any problems with OASIS or CVMFS, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="voms-admin-server">VOMS Admin Server<a class="headerlink" href="#voms-admin-server" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Retirement of the OSG VOMS service is planned for May 23, 2018.</p>
+<p>Retirement of the OSG VOMS service occurred on May 23, 2018.</p>
 </div>
 <p>The <a href="https://voms.opensciencegrid.org:8443/voms/osg/user/home.action">OSG VOMS</a> service is used to sign VOMS attributes
 for members of the OSG VO and can respond to queries for a list of VO members.
@@ -2252,12 +2254,22 @@ which uploads status data to the central RSV service:</p>
 <p>If you experience any problems with the central RSV service, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
 <h3 id="collector">Collector<a class="headerlink" href="#collector" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Migration of the central collector occurred on May 21, 2018.
+Retirement of the old central collector occurred on May 23, 2018.</p>
+</div>
 <p>The <a href="http://collector.opensciencegrid.org/">central Collector</a> is a central database service that provides details about
 pilot jobs currently running in the OSG.
 The physical hosting location of the central Collector will be moved but we do not for plan any other changes and do not
 expect this to affect sites. 
-The exact date for moving the hosting location will be announced. If you experience any problems with the central 
-Collector, please contact us at <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
+If you experience any problems with the central Collector, please contact us at
+<a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Action item</p>
+<p>After the transition, run the following command on your HTCondor-CE to report to the migrated collector:</p>
+<p><code>root@htcondor-ce-host # condor_ce_reconfig</code></p>
+</div>
 <h3 id="homepage">Homepage<a class="headerlink" href="#homepage" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
