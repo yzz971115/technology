@@ -2042,7 +2042,12 @@
 <ul>
 <li>Support:  <ul>
 <li><a href="https://ticket.grid.iu.edu/list/open">Footprints</a> host and user cert tickets are a burning priority with the May 31 OSG CA service retirement</li>
-<li>Derek: What were the results of the Freshdesk/HCC RT test?</li>
+<li>Derek: What were the results of the Freshdesk/HCC RT test?<ul>
+<li>Creation: Went well.  Created on Freshdesk side.  No email storm.  1 email on either queue.  +1 email to RT because it's a new user, and freshdesk wants it to register as a user.</li>
+<li>Resolution on FreshDesk: Resolved on freshdesk side worked as expected.  The "resolved" email created a new ticket in RT, didn't link to old ticket (expected, since RT only looks at it's own injected subject line)</li>
+<li>Resolution on RT: Created a small email storm.  Sent new emails to freshdesk, which created new tickets.  Additionally, RT received error mail that it could not send to "user-support@opensciencegrid.org" email list.  There were at least 3 new tickets in freshdesk from this interaction.  And at least 3 more to RT.  I got worried, and started deleting emails as fast as I could.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>OASIS data updater issues last week due to old repo.grid.iu.edu references</li>
@@ -2145,7 +2150,7 @@
 <tbody>
 <tr>
 <td>OIM</td>
-<td>In Development</td>
+<td>Deployed</td>
 </tr>
 <tr>
 <td>OASIS</td>
@@ -2169,14 +2174,16 @@
 </tr>
 <tr>
 <td>OSG Collector</td>
-<td>Ready for testing</td>
+<td>Deployed</td>
 </tr>
 </tbody>
 </table>
 <p>Changes:  </p>
 <ul>
-<li>Will start social compaign to have people restart their CEs to pick up the DNS change for the new collector.</li>
+<li>OSG Collector: Social campaign for the OSG collector has started!  Look for freshdesk tickets.</li>
+<li>OIM: New OIM is up and running.  DNS change was on Thursday, as scheduled.</li>
 </ul>
+<p><strong>Done with transitions!?!</strong></p>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://jira.opensciencegrid.org/projects/GRACC/">GRACC Project</a></li>
