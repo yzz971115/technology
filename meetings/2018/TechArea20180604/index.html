@@ -1171,6 +1171,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#goc-transitions" title="GOC Transitions" class="md-nav__link">
+    GOC Transitions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations" title="Presentations" class="md-nav__link">
+    Presentations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ongoing" title="Ongoing" class="md-nav__link">
     Ongoing
   </a>
@@ -1524,6 +1538,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#goc-transitions" title="GOC Transitions" class="md-nav__link">
+    GOC Transitions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations" title="Presentations" class="md-nav__link">
+    Presentations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ongoing" title="Ongoing" class="md-nav__link">
     Ongoing
   </a>
@@ -1619,7 +1647,9 @@
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
 <p>None this week  </p>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>(Derek) Helped with HTCondor central collector transition.  More ongoing.</li>
+</ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1694,57 +1724,20 @@
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
 <p>None this week</p>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
-<p>GOC Transition is going to dominate the Investigations Team's time over the next couple of weeks.   I want to give general status of the transitions we are participating in.  So, I will give a couple of states:  </p>
-<ol>
-<li>Have not started</li>
-<li>In development - Could be provisioning hardware, adapting software, installing software&#x2026;</li>
-<li>Ready for testing - In a state where it can be tested by the consumers</li>
-<li>Deployed</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Service</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OIM</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>OASIS</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>CVMFS</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>Software Repo</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>OSG Display</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>StashCache Redirector</td>
-<td>Deployed</td>
-</tr>
-<tr>
-<td>OSG Collector</td>
-<td>Deployed</td>
-</tr>
-</tbody>
-</table>
-<p>Changes:  </p>
-<ul>
-<li>OSG Collector: Social campaign for the OSG collector has started!  Look for freshdesk tickets.</li>
-<li>OIM: New OIM is up and running.  DNS change was on Thursday, as scheduled.</li>
-</ul>
+<h3 id="goc-transitions">GOC Transitions<a class="headerlink" href="#goc-transitions" title="Permanent link">&para;</a></h3>
 <p><strong>Done with transitions!?!</strong>  </p>
+<p>We are all but done with the transition of services from IU.  There are still a few items on our list:</p>
+<ul>
+<li>(Ongoing) Getting sites to transition to the new HTCondor collector</li>
+<li>Minor hiccup with OSG-WN tarball in OASIS home directory.  Still investigating.</li>
+</ul>
+<p>And a few longer term goals:</p>
+<ul>
+<li>Most services are in puppet.  Just need to put the finishing touches on it.  For example, the changes made in the last week with all of the OIM, Ticket,... redirections.</li>
+<li>Most services are in check_mk (active monitoring), but need to add specific tests.  For example, we check that HTTP(s) is responding to requests, but we would like to make sure it is responding with correct info.</li>
+</ul>
+<h3 id="presentations">Presentations<a class="headerlink" href="#presentations" title="Permanent link">&para;</a></h3>
+<p>Gave a StashCache presentation at the GPN annual meeting.  Went over very well.  Highlighted the science drivers for StashCache.</p>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://jira.opensciencegrid.org/projects/GRACC/">GRACC Project</a></li>
