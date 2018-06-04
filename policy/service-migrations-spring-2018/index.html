@@ -467,18 +467,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/pki-overview/" title="PKI Overview" class="md-nav__link">
-      PKI Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../software/ipv6-testing/" title="IPv6 Testing" class="md-nav__link">
       IPv6 Testing
     </a>
@@ -1590,7 +1578,7 @@ provide a short outline of the steps sites are recommended to take:</p>
 <li>Sites at institutions with an <a href="https://incommon.org/certificates/subscribers.html">InCommon CA subscription</a>
    should determine their local procedure for obtaining certificates.</li>
 <li>Sites should transition to the
-   <a href="http://opensciencegrid.github.io/docs/security/lcmaps-voms-authentication/">LCMAPS VOMS authentication method</a>
+   <a href="http://www.opensciencegrid.org/docs/security/lcmaps-voms-authentication/">LCMAPS VOMS authentication method</a>
    if they have not done so already.</li>
 </ol>
 <h2 id="office-hours">Office Hours<a class="headerlink" href="#office-hours" title="Permanent link">&para;</a></h2>
@@ -1614,7 +1602,7 @@ provide a short outline of the steps sites are recommended to take:</p>
 <h3 id="osg-ca">OSG CA<a class="headerlink" href="#osg-ca" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The OSG CA service retirement is scheduled for May 31, 2018 11:59PM EDT.</p>
+<p>The OSG CA service was retired on May 31, 2018 11:59PM EDT.</p>
 </div>
 <p>The OSG CA service offers certificate request, renewal, and revocation through the <a href="#myosg-and-oim">OIM</a> web interface, 
 the OIM REST API, and the <code>osg-pki-tools</code> command-line tool.
@@ -1675,7 +1663,7 @@ Therefore, to extend the window for transitioning to any new CA service, we have
 <p class="admonition-title">Note</p>
 <p>The semantics of Let's Encrypt certificates are different from those of previous CAs.
 Please see
-<a href="https://opensciencegrid.github.io/security/LetsEncryptOSGCAbundle/">the security team's position on Let's Encrypt</a>
+<a href="https://www.opensciencegrid.org/security/LetsEncryptOSGCAbundle/">the security team's position on Let's Encrypt</a>
 for the security and setup implications of switching to a Let's Encrypt host or service certificate.</p>
 </div>
 <p>New processes for requesting host, service, and user certificates against the aforementioned CAs are forthcoming.</p>
@@ -1723,7 +1711,7 @@ To ensure a smooth transition at your site, verify that the OSG repository files
 <p class="admonition-title">Note</p>
 <p>The MyOSG and the OIM site topology, project, VO, and downtime data migrations occurred on May 24, 2018 10AM EDT.
 The old MyOSG host, <code>myosg.grid.iu.edu</code>, was retired on May 30, 2018 10AM EDT.
-The OIM retirement is scheduled for May 31, 2018 11:59PM EDT.</p>
+OIM was retired on May 31, 2018 11:59PM EDT.</p>
 </div>
 <p>The MyOSG service provides web and REST interfaces to access information about OSG resource topology, projects, and VOs.
 The MyOSG web interface will be retired but we will continue to offer the same REST interface.
@@ -1731,7 +1719,7 @@ If you run a service that queries MyOSG:</p>
 <div class="admonition info">
 <p class="admonition-title">Action items</p>
 <ul>
-<li>Ensure that the services use <a href="https://my.opensciencegrid.org">https://my.opensciencegrid.org</a> instead of <a href="https://myosg.grid.iu.edu">https://myosg.grid.iu.edu</a></li>
+<li>Ensure that the services use <a href="https://my.opensciencegrid.org">https://my.opensciencegrid.org</a> instead of <code>https://myosg.grid.iu.edu</code></li>
 <li>Let us know what queries you’re making and why you’re making them</li>
 </ul>
 </div>
@@ -1754,7 +1742,7 @@ If you experience any problems with GRACC accounting, please contact us at
 <h3 id="ticket">Ticket<a class="headerlink" href="#ticket" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Footprints ticketing system retirement is scheduled for May 31, 2018 11:59PM EDT</p>
+<p>The Footprints ticketing system was retired on May 31, 2018 11:59PM EDT</p>
 </div>
 <p>The Footprints ticketing system at <a href="https://ticket.opensciencegrid.org">https://ticket.opensciencegrid.org</a> is used to track support and security issues as
 well as certificate and membership requests.
@@ -1802,7 +1790,7 @@ the OSG VOMS servers will be retired as previously planned.</p>
 <div class="admonition info">
 <p class="admonition-title">Action item</p>
 <p>If your site accepts OSG jobs, transition your hosts to 
-<a href="http://opensciencegrid.github.io/docs/security/lcmaps-voms-authentication/">LCMAPS VOMS authentication</a>.</p>
+<a href="http://www.opensciencegrid.org/docs/security/lcmaps-voms-authentication/">LCMAPS VOMS authentication</a>.</p>
 </div>
 <h3 id="rsv">RSV<a class="headerlink" href="#rsv" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
@@ -1813,7 +1801,7 @@ the OSG VOMS servers will be retired as previously planned.</p>
 to provide it.
 It will be retired since there is no longer a need to monitor OSG site status as a whole.
 If you would like to monitor your OSG services, you can access the status page of your local
-<a href="https://opensciencegrid.github.io/docs/monitoring/install-rsv/">RSV</a> instance.</p>
+<a href="https://www.opensciencegrid.org/docs/monitoring/install-rsv/">RSV</a> instance.</p>
 <div class="admonition info">
 <p class="admonition-title">Action item</p>
 <p>Before the retirement, you will need to disable the <code>gratia-consumer</code> on your local RSV host,
@@ -1862,7 +1850,7 @@ If you experience any problems with the central Collector, please contact us at
 <p>The OSG homepage was migrated on May 15, 2018.</p>
 </div>
 <p>The <a href="https://opensciencegrid.org">OSG homepage</a> is a Wordpress instance that will be moved to a static site.
-You can preview the new website at <a href="https://opensciencegrid.github.io">https://opensciencegrid.github.io</a>.
+You can preview the new website at <a href="https://www.opensciencegrid.org">https://www.opensciencegrid.org</a>.
 If you experience any problems with the homepage, please contact us at
 <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a>.</p>
                 

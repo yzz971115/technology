@@ -467,18 +467,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/pki-overview/" title="PKI Overview" class="md-nav__link">
-      PKI Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../software/ipv6-testing/" title="IPv6 Testing" class="md-nav__link">
       IPv6 Testing
     </a>
@@ -2128,10 +2116,10 @@ KeepAlive On
 <h3 id="additional-documentation">Additional Documentation<a class="headerlink" href="#additional-documentation" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://cvmfs.readthedocs.io/en/stable/">CERN's CVMFS Documentation</a></li>
-<li><a href="https://opensciencegrid.github.io/docs/other/install-cvmfs-stratum1/">OSG's CVMFS Replica Server</a></li>
-<li><a href="https://opensciencegrid.github.io/docs/worker-node/install-cvmfs/">OSG's CVMFS Client Documentation</a></li>
+<li><a href="https://www.opensciencegrid.org/docs/other/install-cvmfs-stratum1/">OSG's CVMFS Replica Server</a></li>
+<li><a href="https://www.opensciencegrid.org/docs/worker-node/install-cvmfs/">OSG's CVMFS Client Documentation</a></li>
 <li>
-<p><a href="https://opensciencegrid.github.io/docs/data/external-oasis-repos/">OSG's OASIS Documentation</a></p>
+<p><a href="https://www.opensciencegrid.org/docs/data/external-oasis-repos/">OSG's OASIS Documentation</a></p>
 </li>
 <li>
 <p><a href="../bash_pi.sh">bash_pi.sh</a>: A bash script that uses a simple Monte Carlo method to estimate the value of Pi</p>
@@ -2158,7 +2146,7 @@ KeepAlive On
 <p>To test a fresh installation:</p>
 <ol>
 <li>Spin up two VM's and set up the EPEL/OSG repos on both of them.</li>
-<li>Choose one of the VM's, it will be the server VM. Consult these <a href="https://opensciencegrid.github.io/docs/other/gsissh/">instructions</a> to set up the server.</li>
+<li>Choose one of the VM's, it will be the server VM. Consult these <a href="https://www.opensciencegrid.org/docs/other/gsissh/">instructions</a> to set up the server.</li>
 <li>
 <p>From the other VM (client):</p>
 <ol>
@@ -2225,7 +2213,7 @@ KeepAlive On
 <li>
 <p>Configure your CE using osg-configure</p>
 <ol>
-<li>You should use the <a href="https://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/">HTCondor-CE Install Docs</a> as a reference, although you can skip several of the steps</li>
+<li>You should use the <a href="https://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/">HTCondor-CE Install Docs</a> as a reference, although you can skip several of the steps</li>
 <li>You can skip setting up Squid: set <code>enabled</code> to <code>True</code> and <code>location</code> to <code>UNAVAILABLE</code> in <code>01-squid.ini</code></li>
 <li>Set <code>htcondor_gateway_enabled</code> to <code>True</code> in <code>10-gateway.ini</code></li>
 <li>You probably don't need GUMS, but if you want it, use the Fermi GUMS server (set <code>gums_host</code> to <code>gums.fnal.gov</code> and <code>authorization_method</code> to <code>xacml</code> in 10-misc.ini)</li>
@@ -2401,7 +2389,7 @@ voms-admin --vo <span class="nv">$VO_NAME</span> --host <span class="nv">$HOSTNA
 </ol>
 <h2 id="xrootd-voms-testing">XRootD VOMS Testing<a class="headerlink" href="#xrootd-voms-testing" title="Permanent link">&para;</a></h2>
 <p>This section is intended for OSG Software/Release teams to gather information on testing vomsxrd/xrootd-voms-plugin package. Original plugin named <a href="http://gganis.github.io/vomsxrd/">vomsxrd</a>, similar to lcmaps that extracts information for authorization within xrootd of a proxy's voms extension.</p>
-<p>You need an <a href="https://opensciencegrid.github.io/docs/data/install-xrootd/">xrootd server installation</a></p>
+<p>You need an <a href="https://www.opensciencegrid.org/docs/data/install-xrootd/">xrootd server installation</a></p>
 <p>In the xrootd server yum install the following packages:</p>
 <ul>
 <li>xrootd</li>

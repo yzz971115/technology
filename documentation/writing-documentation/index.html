@@ -467,18 +467,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../software/pki-overview/" title="PKI Overview" class="md-nav__link">
-      PKI Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../software/ipv6-testing/" title="IPv6 Testing" class="md-nav__link">
       IPv6 Testing
     </a>
@@ -1490,23 +1478,23 @@
 <p>This section contains suggested layouts of externally-facing, site administrator documentation. The introduction is the only layout requirement for documents except for installation guides.</p>
 <h3 id="introductions">Introductions<a class="headerlink" href="#introductions" title="Permanent link">&para;</a></h3>
 <p>All documents should start with an introduction that explains <strong>what</strong> the document contains, <strong>what</strong> the product does, and <strong>why</strong> someone may want to use it. In the past, document introductions were included in <code>About this...</code> sections due to the layout of the table of contents. Since the table of contents is included in the sidebar, introductions should go directly below the title header.</p>
-<p>The <a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a> is an example that meet all of the above criteria.</p>
+<p>The <a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a> is an example that meet all of the above criteria.</p>
 <h3 id="installation-guides">Installation guides<a class="headerlink" href="#installation-guides" title="Permanent link">&para;</a></h3>
 <p>In addition to the introduction above, installation documents should have the following sections:</p>
 <ul>
-<li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should do or consider before proceeding with the installation (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#before-starting">example</a>).</li>
-<li><strong>Installation:</strong> The (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#installing-htcondor-ce">example</a>)</li>
+<li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should do or consider before proceeding with the installation (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#before-starting">example</a>).</li>
+<li><strong>Installation:</strong> The (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-htcondor-ce">example</a>)</li>
 <li><strong>Validation:</strong> How does the user make sure their installation is functional?</li>
-<li><strong>Help:</strong> Often just a link to the relevant <a href="http://opensciencegrid.github.io/docs/common/help/">help document</a> as well as contact information for specific support groups, if applicable.</li>
+<li><strong>Help:</strong> Often just a link to the relevant <a href="http://www.opensciencegrid.org/docs/common/help/">help document</a> as well as contact information for specific support groups, if applicable.</li>
 </ul>
 <p>Optionally, the following sections should be included as necessary.</p>
 <ul>
 <li><strong>Overview:</strong> if the introduction becomes large and unwieldy, extract the details of <strong>what</strong> the product does into an overview section</li>
-<li><strong>Configuration:</strong> required configuration steps (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#configuring-htcondor-ce">example</a>) as well as a sub-section for optional configurations. For long optional configuration sections, consider creating a list of contents at the top of the sub-section (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#optional-configuration">example</a>).</li>
+<li><strong>Configuration:</strong> required configuration steps (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#configuring-htcondor-ce">example</a>) as well as a sub-section for optional configurations. For long optional configuration sections, consider creating a list of contents at the top of the sub-section (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#optional-configuration">example</a>).</li>
 <li><strong>Troubleshooting:</strong> common issues that users encounter and their fixes</li>
-<li><strong>Reference:</strong> Details about configuration and log files, unix users, certificates, networking, links to relevant upstream documentation, etc. (<a href="https://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#reference">example</a>)</li>
+<li><strong>Reference:</strong> Details about configuration and log files, unix users, certificates, networking, links to relevant upstream documentation, etc. (<a href="https://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#reference">example</a>)</li>
 </ul>
-<p>If any of the sections become too large, consider separating them out and linking to the new documents (<a href="http://opensciencegrid.github.io/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
+<p>If any of the sections become too large, consider separating them out and linking to the new documents (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
 <h2 id="tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions<a class="headerlink" href="#tips-for-writing-procedural-instructions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -1558,7 +1546,7 @@
 <li>Submit your changes as a pull request to the <a href="#contributing-documntation">appropriate upstream repository</a></li>
 </ol>
 <h3 id="deploying-itb-documentation">Deploying ITB documentation<a class="headerlink" href="#deploying-itb-documentation" title="Permanent link">&para;</a></h3>
-<p>If you are a member of the OSG software and release team, you can preview large changes to the <a href="https://opensciencegrid.github.io/docs-itb/">ITB docs</a> by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo. For example:</p>
+<p>If you are a member of the OSG software and release team, you can preview large changes to the <a href="https://www.opensciencegrid.org/docs-itb/">ITB docs</a> by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo. For example:</p>
 <div class="codehilite"><pre><span></span><span class="gp">$</span> git remote add upstream https://github.com/opensciencegrid/docs.git
 <span class="gp">$</span> git checkout new_docs
 <span class="gp">$</span> git push upstream new_docs:itb.new_docs
