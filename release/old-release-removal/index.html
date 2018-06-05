@@ -659,8 +659,29 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#software-release" title="Software &amp; Release" class="md-nav__link">
+    Software &amp; Release
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undoing" title="Undoing" class="md-nav__link">
+    Undoing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-email" title="Template Email" class="md-nav__link">
+    Template Email
+  </a>
   
 </li>
       
@@ -1375,8 +1396,29 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#software-release" title="Software &amp; Release" class="md-nav__link">
+    Software &amp; Release
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undoing" title="Undoing" class="md-nav__link">
+    Undoing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-email" title="Template Email" class="md-nav__link">
+    Template Email
+  </a>
   
 </li>
       
@@ -1424,31 +1466,45 @@ Operations to remove.</p>
 <li>
 <p>Remove the series from the mash configs on the repo.opensciencegrid.org machines:</p>
 <ul>
-<li>Add the koji tags for the old series to the <code>/usr/local/osg-tags.excluded</code> file:
-```</li>
+<li>
+<p>Add the koji tags for the old series to the <code>/usr/local/osg-tags.excluded</code> file:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /usr/local
+<span class="gp">#</span> fgrep osg-3.1 osg-tags
+<span class="go">osg-3.1-el5-contrib</span>
+<span class="go">osg-3.1-el5-development</span>
+<span class="go">osg-3.1-el5-release</span>
+<span class="go">osg-3.1-el5-testing</span>
+<span class="go">osg-3.1-el6-contrib</span>
+<span class="go">osg-3.1-el6-development</span>
+<span class="go">osg-3.1-el6-release</span>
+<span class="go">osg-3.1-el6-testing</span>
+<span class="gp">#</span> fgrep osg-3.1 osg-tags &gt;&gt; osg-tags.exclude
+</pre></div>
+
+
+</li>
+<li>
+<p>Re-run <code>update_mashfiles.sh</code> to update the mash config files:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> ./update_mashfiles.sh
+</pre></div>
+
+
+</li>
 </ul>
-<h1 id="cd-usrlocal">cd /usr/local<a class="headerlink" href="#cd-usrlocal" title="Permanent link">&para;</a></h1>
-<h1 id="fgrep-osg-31-osg-tags">fgrep osg-3.1 osg-tags<a class="headerlink" href="#fgrep-osg-31-osg-tags" title="Permanent link">&para;</a></h1>
-<p>osg-3.1-el5-contrib
-osg-3.1-el5-development
-osg-3.1-el5-release
-osg-3.1-el5-testing
-osg-3.1-el6-contrib
-osg-3.1-el6-development
-osg-3.1-el6-release
-osg-3.1-el6-testing</p>
-<h1 id="fgrep-osg-31-osg-tags-osg-tagsexclude">fgrep osg-3.1 osg-tags &gt;&gt; osg-tags.exclude<a class="headerlink" href="#fgrep-osg-31-osg-tags-osg-tagsexclude" title="Permanent link">&para;</a></h1>
-<p><code>- Re-run `update_mashfiles.sh` to update the mash config files:</code></p>
-<h1 id="update_mashfilessh">./update_mashfiles.sh<a class="headerlink" href="#update_mashfilessh" title="Permanent link">&para;</a></h1>
-<p>```</p>
 </li>
 <li>
-<p>Remove the appropriate repo directories from <code>/usr/local/repo/osg</code>.
-    <code># rm -rf repo*/osg/3.1/</code></p>
+<p>Remove the appropriate repo directories from <code>/usr/local/repo/osg</code>.</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> rm -rf repo*/osg/3.1/
+</pre></div>
+
+
 </li>
 <li>
-<p>Reclaim space from any cached rpms in the mash cache which are no longer linked elsewhere:
-    <code># find mash/cache/ -name \*.rpm -type f -links 1 -delete</code></p>
+<p>Reclaim space from any cached rpms in the mash cache which are no longer linked elsewhere:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> find mash/cache/ -name <span class="se">\*</span>.rpm -type f -links <span class="m">1</span> -delete
+</pre></div>
+
+
 </li>
 <li>
 <p>Wait for mash to run and verify that the repos are no longer getting
