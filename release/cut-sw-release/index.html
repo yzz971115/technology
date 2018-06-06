@@ -724,27 +724,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#on-jumpgridiuedu" title="On jump.grid.iu.edu" class="md-nav__link">
-    On jump.grid.iu.edu
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-repo1repo2-as-root" title="On repo1/repo2 (as root)" class="md-nav__link">
-    On repo1/repo2 (as root)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-a-cs-machine_1" title="On a CS machine" class="md-nav__link">
-    On a CS machine
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1686,27 +1665,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#on-jumpgridiuedu" title="On jump.grid.iu.edu" class="md-nav__link">
-    On jump.grid.iu.edu
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-repo1repo2-as-root" title="On repo1/repo2 (as root)" class="md-nav__link">
-    On repo1/repo2 (as root)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-a-cs-machine_1" title="On a CS machine" class="md-nav__link">
-    On a CS machine
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2035,59 +1993,8 @@ locks the repos and regenerates them.</p>
 <li>For each release version, use the <code>*release-note*</code> files to update the relevant sections of the release note pages.</li>
 </ol>
 <h3 id="step-2-upload-the-client-tarballs">Step 2: Upload the client tarballs<a class="headerlink" href="#step-2-upload-the-client-tarballs" title="Permanent link">&para;</a></h3>
-<p>Ask Tim Theisen, Brian Lin, or someone with privileges on the <code>opensciencegrid.org</code> repo servers to upload the tarballs with the following procedure:</p>
-<h4 id="on-a-cs-machine">On a CS machine<a class="headerlink" href="#on-a-cs-machine" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
-    <span class="nb">cd</span> /p/vdt/public/html/tarball-client
-    ssh jump.grid.iu.edu mkdir /tmp/<span class="nv">$ver</span>/
-    scp -p <span class="nv">$major_ver</span>/*/osg-wn-client-<span class="nv">$ver</span>*gz jump.grid.iu.edu:/tmp/<span class="nv">$ver</span>/
-<span class="k">done</span>
-</pre></div>
-
-
-<h4 id="on-jumpgridiuedu">On jump.grid.iu.edu<a class="headerlink" href="#on-jumpgridiuedu" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    scp -pr /tmp/<span class="nv">$ver</span> repo1:/tmp/
-    scp -pr /tmp/<span class="nv">$ver</span> repo2:/tmp/
-    rm -rf /tmp/<span class="nv">$ver</span>
-<span class="k">done</span>
-</pre></div>
-
-
-<h4 id="on-repo1repo2-as-root">On repo1/repo2 (as root)<a class="headerlink" href="#on-repo1repo2-as-root" title="Permanent link">&para;</a></h4>
-<p>You can ssh to repo1 and repo2 from jump.grid.iu.edu; you will need to do this procedure on both systems.</p>
-<div class="codehilite"><pre><span></span>sudo su -
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
-    mv /tmp/<span class="nv">$ver</span> /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/
-    rm -f /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/*latest*
-<span class="k">done</span>
-/root/mk-sims.sh
-<span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
-    <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
-    ls -l /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/*latest* <span class="c1"># verify the symlinks are correct</span>
-<span class="k">done</span>
-</pre></div>
-
-
 <p>Upload the tarballs with the following procedure:</p>
-<h4 id="on-a-cs-machine_1">On a CS machine<a class="headerlink" href="#on-a-cs-machine_1" title="Permanent link">&para;</a></h4>
+<h4 id="on-a-cs-machine">On a CS machine<a class="headerlink" href="#on-a-cs-machine" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
 </pre></div>
 
