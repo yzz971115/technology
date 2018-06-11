@@ -1603,7 +1603,7 @@
                 
                 <h1 id="osg-technology-area-meeting-11-june-2018">OSG Technology Area Meeting, 11 June 2018<a class="headerlink" href="#osg-technology-area-meeting-11-june-2018" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>  </p>
+<strong>Attending:</strong> BrianL, Carl, Derek, Edgar, Suchandra, TimC, TimT  </p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Jeff Dost is the new operations lead</li>
@@ -1652,11 +1652,7 @@
 <h2 id="osg-software-team">OSG Software Team<a class="headerlink" href="#osg-software-team" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Doc Focus 6/14 1pm CDT agenda: Freshdesk discussion, <a href="https://opensciencegrid.atlassian.net/secure/RapidBoard.jspa?rapidView=7">doc tickets</a></li>
-<li>Nebraska outage over the weekend affected some services:  <ul>
-<li>How often does the oasis-data-updater run?</li>
-<li><code>condor_ce_info_status</code> appears to be broken but the web UI and querying via <code>condor_status</code> both work</li>
-</ul>
-</li>
+<li>Nebraska outage over the weekend affected some services, e.g. OASIS data updater, software repository mirror</li>
 <li>OSG 3.4.14  <ul>
 <li>GlideinWMS 3.4.0 and <code>glideinwms-switchboard-1.0.0</code> in upcoming-testing both need heavy testing</li>
 <li>Move HDFS 2.6 to production</li>
@@ -1664,9 +1660,18 @@
 </li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>OASIS data updater currently runs every 6 hours</li>
+<li>AI (BrianL): OSG ITB factory is being held up by an HTCondor CNAME bug</li>
+<li>AI (Edgar/Suchandra): Edgar will update his factory to 3.4; Suchandra will test 3.2/3.3/3.4 frontends against Edgar's factory</li>
+<li>AI (BrianL): talk to factory ops about relaxing ITB entries on the prod factory policy</li>
+</ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>Cert requests (TimT): Dealt with some trailing requests</li>
+<li>Support entry points (TimC): All support entry points now lead to Freshdesk (goc@osg.org moved over last week)</li>
+<li>Topology (Mat): Investigated mergingin brown-cms; updated some contact entries</li>
+</ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1740,7 +1745,7 @@
 </ul>
 <h3 id="discussion_1">Discussion<a class="headerlink" href="#discussion_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>AI (TimT): update SW release doc for post-service migrations (SOFTWARE-3276)</li>
+<li>AI (Carl): turn crank on 3.4.13 release</li>
 <li>AI (TimT): copy data release doc to create a basic GOC release doc</li>
 </ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
@@ -1764,7 +1769,7 @@
 <li><a href="https://opensciencegrid.github.io/StashCache/">StashCache Project</a></li>
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
-<p>AI (BrianL, Derek) - Investigate mailing list outage (possibly related to DNS security changes made last week) and announce outage if necessary</p>
+<p>In-depth monitoring (e.g., verifying ) unlikely to happen in the short term due to limited Ops time for Marian and Derek</p>
                 
                   
                 
