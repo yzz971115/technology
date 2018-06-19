@@ -2977,12 +2977,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180618/", 
-            "text": "OSG Technology Area Meeting, 18 June 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\n\n\nOSG Annual Report\n submitted\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n11 (-3) open tickets\n\n\n1 (-3) open VOMS server retirement tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n115\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n+2\n\n\nIn Progress\n\n\n\n\n\n\n9\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n-6\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nosg-tested-internal tests are failing due to the new Slurm in development\n\n\nOSG 3.4.14  \n\n\nGlideinWMS 3.4.0 and \nglideinwms-switchboard-1.0.0\n: where's testing stand?\n\n\nMove HDFS 2.6 to production\n\n\nPKI tools: replace OIM functionality with the ability to generate CSRs and keys\n\n\n\n\n\n\nFactory ops will temporarily put a Madison ITB entry into the production factory\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nCert requests (TimT): Dealt with some trailing requests\n\n\nSupport entry points (TimC): All support entry points now lead to Freshdesk (goc@osg.org moved over last week)\n\n\nTopology (Mat): Investigated mergingin brown-cms; updated some contact entries\n\n\n\n\nOSG Investigations Team\n\n\nOperations\n\n\nTODO:  \n\n\n\n\n(Ongoing) Getting sites to transition to the new HTCondor collector\n\n\nDiscussion of SLA's, availability metrics\n\n\nPuppetize: Collectors, topology, GRACC\n\n\n\n\n\n\nInvestigations\n\n\nIn Progress:\n\n\n\n\nWorking on releasing Writeable Stashcache as production\n\n\nBeginning work with Internet2 to place StashCache in connection points.\n\n\nConsulting with \nSLATE\n for StashCache installtion.\n\n\nWorking with Network group on PS data.\n\n\nMoving StashCache docs to OSG docs page: https://github.com/opensciencegrid/docs/pull/388\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 18 June 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Derek, Edgar, Marian, Mat, Suchandra\n\n\nAnnouncements\n\n\n\n\nOSG Annual Report\n submitted\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n11 (-3) open tickets\n\n\n1 (-3) open VOMS server retirement tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n115\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n+2\n\n\nIn Progress\n\n\n\n\n\n\n9\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n-6\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nosg-tested-internal tests are failing due to the new Slurm in development\n\n\nOSG 3.4.14  \n\n\nGlideinWMS 3.4.0 and \nglideinwms-switchboard-1.0.0\n: where's testing stand?\n\n\nMove HDFS 2.6 to production\n\n\nPKI tools: replace OIM functionality with the ability to generate CSRs and keys\n\n\n\n\n\n\nFactory ops will temporarily put a Madison ITB entry into the production factory\n\n\n\n\nDiscussion\n\n\n\n\nSuchandra has a VM up for Slurm and hopes to have it fixed today\n\n\nEdgar will update condor on the factory + gwms switchboard and run tests again\n\n\n\n\nSupport Update\n\n\n\n\nFrontier Squid (Carl): Someone had questions if SELinux + Squid worked, it should with the newest version\n\n\nTopology (BrianL, Mat): Topology and contact updates\n\n\n\n\nOSG Investigations Team\n\n\nOperations\n\n\nTODO:  \n\n\n\n\n(Ongoing) Getting sites to transition to the new HTCondor collector\n\n\nDiscussion of SLA's, availability metrics\n\n\nPuppetize: Collectors, topology, GRACC\n\n\n\n\nInvestigations\n\n\nIn Progress:\n\n\n\n\nWorking on releasing Writeable Stashcache as production\n\n\nBeginning work with Internet2 to place StashCache in connection points.\n\n\nConsulting with \nSLATE\n for StashCache installtion.\n\n\nWorking with Network group on PS data.\n\n\nMoving StashCache docs to OSG docs page: https://github.com/opensciencegrid/docs/pull/388\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "June 18, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180618/#osg-technology-area-meeting-18-june-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Derek, Edgar, Marian, Mat, Suchandra", 
             "title": "OSG Technology Area Meeting, 18 June 2018"
         }, 
         {
@@ -3007,12 +3007,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180618/#discussion", 
-            "text": "None this week", 
+            "text": "Suchandra has a VM up for Slurm and hopes to have it fixed today  Edgar will update condor on the factory + gwms switchboard and run tests again", 
             "title": "Discussion"
         }, 
         {
             "location": "/meetings/2018/TechArea20180618/#support-update", 
-            "text": "Cert requests (TimT): Dealt with some trailing requests  Support entry points (TimC): All support entry points now lead to Freshdesk (goc@osg.org moved over last week)  Topology (Mat): Investigated mergingin brown-cms; updated some contact entries", 
+            "text": "Frontier Squid (Carl): Someone had questions if SELinux + Squid worked, it should with the newest version  Topology (BrianL, Mat): Topology and contact updates", 
             "title": "Support Update"
         }, 
         {
