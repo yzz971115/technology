@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#writing-osg-software-documentation" tabindex="1" class="md-skip">
+      <a href="#writing-osg-documentation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -934,6 +934,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#contributing-content" title="Contributing Content" class="md-nav__link">
+    Contributing Content
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparing-the-git-repository" title="Preparing the git repository" class="md-nav__link">
+    Preparing the git repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-pages" title="Previewing the pages" class="md-nav__link">
+    Previewing the pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-content-changes" title="Making content changes" class="md-nav__link">
+    Making content changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-content-to-the-itb-advanced" title="Deploying content to the ITB (advanced)" class="md-nav__link">
+    Deploying content to the ITB (advanced)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#document-layout" title="Document Layout" class="md-nav__link">
     Document Layout
   </a>
@@ -964,26 +1005,6 @@
   <a href="#tips-for-writing-procedural-instructions" title="Tips for Writing Procedural Instructions" class="md-nav__link">
     Tips for Writing Procedural Instructions
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing-documentation" title="Contributing Documentation" class="md-nav__link">
-    Contributing Documentation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deploying-itb-documentation" title="Deploying ITB documentation" class="md-nav__link">
-    Deploying ITB documentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1420,6 +1441,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#contributing-content" title="Contributing Content" class="md-nav__link">
+    Contributing Content
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparing-the-git-repository" title="Preparing the git repository" class="md-nav__link">
+    Preparing the git repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-pages" title="Previewing the pages" class="md-nav__link">
+    Previewing the pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-content-changes" title="Making content changes" class="md-nav__link">
+    Making content changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-content-to-the-itb-advanced" title="Deploying content to the ITB (advanced)" class="md-nav__link">
+    Deploying content to the ITB (advanced)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#document-layout" title="Document Layout" class="md-nav__link">
     Document Layout
   </a>
@@ -1453,26 +1515,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#contributing-documentation" title="Contributing Documentation" class="md-nav__link">
-    Contributing Documentation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deploying-itb-documentation" title="Deploying ITB documentation" class="md-nav__link">
-    Deploying ITB documentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -1492,34 +1534,199 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/documentation/writing-documentation.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="writing-osg-software-documentation">Writing OSG Software Documentation<a class="headerlink" href="#writing-osg-software-documentation" title="Permanent link">&para;</a></h1>
-<p>OSG software documentation is written in <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>, built using <a href="http://www.mkdocs.org/">MkDocs</a>, and served via <a href="https://pages.github.com/">GitHub Pages</a>. To contribute documentation, submit a pull request to the relevant github repository:</p>
+                <h1 id="writing-osg-documentation">Writing OSG Documentation<a class="headerlink" href="#writing-osg-documentation" title="Permanent link">&para;</a></h1>
+<p>Many OSG pages are written in <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>, built using
+<a href="http://www.mkdocs.org/">MkDocs</a>, and served via <a href="https://pages.github.com/">GitHub Pages</a>.
+To <a href="#contributing-content">contribute content</a>, submit a pull request to the relevant github repository:</p>
 <ul>
 <li><a href="https://github.com/opensciencegrid/docs/">Site administrator documentation</a></li>
-<li><a href="https://github.com/opensciencegrid/technology/">Internal OSG Technology Area documentation</a>.</li>
+<li><a href="https://github.com/opensciencegrid/technology/">Internal Technology Area documentation</a>.</li>
+<li><a href="https://github.com/opensciencegrid/networking">Networking documentation</a></li>
+<li><a href="https://github.com/opensciencegrid/security">Security documentation</a></li>
+<li><a href="https://github.com/opensciencegrid/operations">Operations documentation</a></li>
+<li><a href="https://github.com/opensciencegrid/production">Production meeting notes</a></li>
+<li><a href="https://github.com/opensciencegrid/management">Management pages</a></li>
+<li><a href="https://github.com/opensciencegrid/outreach">Outreach pages</a><ul>
+<li><a href="https://github.com/opensciencegrid/user-school-2017">User School 2017 pages</a></li>
+<li><a href="https://github.com/opensciencegrid/user-school-2018">User School 2018 pages</a></li>
 </ul>
-<p>This document contains instructions, recommendations, and guidelines for writing OSG Software documentatation.</p>
+</li>
+</ul>
+<p>This document contains instructions, recommendations, and guidelines for writing OSG content.</p>
+<h2 id="contributing-content">Contributing Content<a class="headerlink" href="#contributing-content" title="Permanent link">&para;</a></h2>
+<p>To contribute content to one of the above OSG areas, make sure you and the machine you'll be working on meet the
+following requirements:</p>
+<ul>
+<li>Have a <a href="https://github.com/join">Github account</a></li>
+<li>Installations of the following tools and languages:<ul>
+<li><a href="https://git-scm.com/">git</a></li>
+<li><a href="https://www.python.org/">Python</a></li>
+<li><a href="https://pip.pypa.io/en/stable/installing/">pip</a> (comes by default with Python 2 &gt;= 2.7.9 or Python 3 &gt;= 3.4)</li>
+</ul>
+</li>
+</ul>
+<h3 id="preparing-the-git-repository">Preparing the git repository<a class="headerlink" href="#preparing-the-git-repository" title="Permanent link">&para;</a></h3>
+<p>Before making any content changes, you will need to prepare a local git clone and set up a Python virtual environment:</p>
+<ol>
+<li><a href="https://help.github.com/articles/fork-a-repo/">Fork and clone</a> the GitHub repository that you'd like to contribute to</li>
+<li><code>cd</code> into the directory containing the local clone of your Github fork</li>
+<li>
+<p>Run the following command to update the contents of the <code>ci</code> directory:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git submodule update --init --recursive
+</pre></div>
+
+
+</li>
+<li>
+<p>Add the upstream Github repository as a <a href="https://help.github.com/articles/adding-a-remote/">remote</a>.
+   For example, if you are working on the User School 2018 pages:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git remote add upstream https://github.com/opensciencegrid/user-school-2018
+</pre></div>
+
+
+</li>
+<li>
+<p>Install the <code>virtualenv</code> package:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> pip install --user virtualenv
+</pre></div>
+
+
+</li>
+<li>
+<p>Set up your Python virtual environment:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> virtualenv env
+<span class="gp">$</span> env/bin/pip install -r ci/pip-requirements.txt
+</pre></div>
+
+
+</li>
+</ol>
+<h3 id="previewing-the-pages">Previewing the pages<a class="headerlink" href="#previewing-the-pages" title="Permanent link">&para;</a></h3>
+<p>To preview the pages, start a MkDocs development server.
+The development server will automatically detect any content changes and make them viewable in your browser.</p>
+<ol>
+<li>
+<p><code>cd</code> into the directory containing the local clone of your GitHub fork</p>
+</li>
+<li>
+<p>Start a MkDocs development server to preview your changes:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> env/bin/mkdocs serve
+</pre></div>
+
+
+<p>To preview your changes visit <code>localhost:8000</code> in the browser of your choice.
+The server can be stopped with <code>Ctrl-C</code>.</p>
+</li>
+</ol>
+<h3 id="making-content-changes">Making content changes<a class="headerlink" href="#making-content-changes" title="Permanent link">&para;</a></h3>
+<p>To contribute content to the OSG, follow these steps to submit a pull request with your desired changes:</p>
+<ol>
+<li><code>cd</code> into the directory containing the local clone of your Github fork</li>
+<li>
+<p>Create a branch based on the <code>master</code> branch of the <code>upstream</code> repository:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git fetch --all
+<span class="gp">$</span> git checkout -b <span style="color:red">&lt;BRANCH NAME&gt;</span> upstream/master
+</pre></div>
+
+
+<p>Replacing <code>&lt;BRANCH NAME&gt;</code> with a name of your choice.</p>
+</li>
+<li>
+<p>Make your changes in the <code>docs/</code> directory of your local clone, following the <a href="../../documentation/style-guide">style guide</a>:</p>
+<ul>
+<li><strong>If you are making changes to an existing page:</strong><ol>
+<li>Open <code>mkdocs.yml</code> and find the location of the file relative to the <code>docs/</code> directory</li>
+<li>Make your changes to that file and move onto the next step</li>
+</ol>
+</li>
+<li><strong>If you are contributing a new page:</strong><ol>
+<li>Name the page. Page file names should be lowercase, <code>-</code> delimited, and concise but descriptive,
+   e.g. <code>markdown-migration.md</code> or <code>cutting-release.md</code></li>
+<li>Place the page in the relevant sub-folder of the <code>docs/</code> directory.
+   If you are unsure of the appropriate location, note that in the description of the pull request.</li>
+<li>Add the document to the <code>pages:</code> section of <code>mkdocs.yml</code> in <a href="http://titlecase.com/">title case</a>,
+   e.g. <code>- Migrating Documents to Markdown: 'software/markdown-migration.md'</code></li>
+<li>If you are writing site administrator documentation, following the <a href="#document-layout">suggested document layout</a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>If you haven't already, start a Mkdocs development server to <a href="#previewing-the-pages">preview your changes</a>.</p>
+</li>
+<li>
+<p>Continue making changes until you are satisfied with the preview, then stage your changes in git:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git add <span style="color:red">&lt;YOUR FILE&gt; &lt;YOUR 2nd FILE&gt;...&lt;YOUR Nth FILE</span>
+</pre></div>
+
+
+<p>Adding each file that contains changes that you'd wish to make.
+If you are adding a new page, one of the files should be <code>mkdocs.yml</code>.</p>
+</li>
+<li>
+<p>Commit your changes and push them to your Github fork:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git commit -m <span class="s2">&quot;<span style="color:red">&lt;DESCRIPTIVE COMMIT MESSAGE&gt;</span>&quot;</span>
+<span class="gp">$</span> git push origin
+</pre></div>
+
+
+</li>
+<li>
+<p>From your Github fork, <a href="https://help.github.com/articles/creating-a-pull-request/">submit a pull request</a></p>
+</li>
+</ol>
+<h3 id="deploying-content-to-the-itb-advanced">Deploying content to the ITB (advanced)<a class="headerlink" href="#deploying-content-to-the-itb-advanced" title="Permanent link">&para;</a></h3>
+<p>If you are a member of the OSG software and release team, you can preview large changes to the
+<a href="https://www.opensciencegrid.org/docs-itb/">ITB docs</a> or <a href="https://www.opensciencegrid.org/technology-itb/">ITB technology</a>
+by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo.
+For example:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git remote add upstream https://github.com/opensciencegrid/docs.git
+<span class="gp">$</span> git checkout new_docs
+<span class="gp">$</span> git push upstream new_docs:itb.new_docs
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since there is only one ITB docs area, simultaneous new commits to different <code>itb.*</code> branches will overwrite each other's changes. To re-deploy your changes, find your <a href="https://travis-ci.org/opensciencegrid/docs/branches">Travis-CI build</a> and restart it <strong>BUT</strong> coordinate with the author of the other commits to avoid conflicts.</p>
+</div>
 <h2 id="document-layout">Document Layout<a class="headerlink" href="#document-layout" title="Permanent link">&para;</a></h2>
-<p>This section contains suggested layouts of externally-facing, site administrator documentation. The introduction is the only layout requirement for documents except for installation guides.</p>
+<p>This section contains suggested layouts of externally-facing, <a href="https://github.com/opensciencegrid/docs/">site administrator documentation</a>.
+The introduction is the only layout requirement for documents except for installation guides.</p>
 <h3 id="introductions">Introductions<a class="headerlink" href="#introductions" title="Permanent link">&para;</a></h3>
-<p>All documents should start with an introduction that explains <strong>what</strong> the document contains, <strong>what</strong> the product does, and <strong>why</strong> someone may want to use it. In the past, document introductions were included in <code>About this...</code> sections due to the layout of the table of contents. Since the table of contents is included in the sidebar, introductions should go directly below the title header.</p>
-<p>The <a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a> is an example that meet all of the above criteria.</p>
+<p>All documents should start with an introduction that explains <strong>what</strong> the document contains, <strong>what</strong> the product does,
+and <strong>why</strong> someone may want to use it.
+In the past, document introductions were included in <code>About this...</code> sections due to the layout of the table of contents.
+Since the table of contents is included in the sidebar, introductions should go directly below the title header.</p>
+<p>The <a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a>
+is an example that meet all of the above criteria.</p>
 <h3 id="installation-guides">Installation guides<a class="headerlink" href="#installation-guides" title="Permanent link">&para;</a></h3>
 <p>In addition to the introduction above, installation documents should have the following sections:</p>
 <ul>
-<li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should do or consider before proceeding with the installation (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#before-starting">example</a>).</li>
-<li><strong>Installation:</strong> The (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-htcondor-ce">example</a>)</li>
+<li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should
+  do or consider before proceeding with the installation
+  (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#before-starting">example</a>).</li>
+<li><strong>Installation:</strong> Procedural instructions that tell the user how to install the software
+  (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-htcondor-ce">example</a>)</li>
 <li><strong>Validation:</strong> How does the user make sure their installation is functional?</li>
-<li><strong>Help:</strong> Often just a link to the relevant <a href="http://www.opensciencegrid.org/docs/common/help/">help document</a> as well as contact information for specific support groups, if applicable.</li>
+<li><strong>Help:</strong> Often just a link to the relevant <a href="http://www.opensciencegrid.org/docs/common/help/">help document</a> as well
+  as contact information for specific support groups, if applicable.</li>
 </ul>
 <p>Optionally, the following sections should be included as necessary.</p>
 <ul>
-<li><strong>Overview:</strong> if the introduction becomes large and unwieldy, extract the details of <strong>what</strong> the product does into an overview section</li>
-<li><strong>Configuration:</strong> required configuration steps (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#configuring-htcondor-ce">example</a>) as well as a sub-section for optional configurations. For long optional configuration sections, consider creating a list of contents at the top of the sub-section (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#optional-configuration">example</a>).</li>
+<li><strong>Overview:</strong> if the introduction becomes large and unwieldy, extract the details of <strong>what</strong> the product does into an
+  overview section</li>
+<li><strong>Configuration:</strong> required configuration steps (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#configuring-htcondor-ce">example</a>)
+  as well as a sub-section for optional configurations.
+  For long optional configuration sections, consider creating alist of contents at the top of the sub-section
+  (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#optional-configuration">example</a>).</li>
 <li><strong>Troubleshooting:</strong> common issues that users encounter and their fixes</li>
-<li><strong>Reference:</strong> Details about configuration and log files, unix users, certificates, networking, links to relevant upstream documentation, etc. (<a href="https://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#reference">example</a>)</li>
+<li><strong>Reference:</strong> Details about configuration and log files, unix users, certificates, networking, links to relevant
+  upstream documentation, etc.
+  (<a href="https://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#reference">example</a>)</li>
 </ul>
-<p>If any of the sections become too large, consider separating them out and linking to the new documents (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
+<p>If any of the sections become too large, consider separating them out and linking to the new documents
+(<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
 <h2 id="tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions<a class="headerlink" href="#tips-for-writing-procedural-instructions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -1539,7 +1746,8 @@
 </ol>
 </li>
 <li>
-<p>If the means of carrying out the instruction is unclear or complex, include clarification, ideally in the form of a working example; e.g.:
+<p>If the means of carrying out the instruction is unclear or complex, include clarification, ideally in the form of a
+  working example; e.g.:
   <code>chmod a+x /usr/share/frobnosticator/frob.conf</code></p>
 </li>
 <li>
@@ -1554,34 +1762,11 @@
 <li>
 <p>Avoid pronouns when writing technical articles or documentation e.g., <code>install foo</code> rather than <code>install it</code>.</p>
 </li>
-</ul>
-<h2 id="contributing-documentation">Contributing Documentation<a class="headerlink" href="#contributing-documentation" title="Permanent link">&para;</a></h2>
-<p>We use the GitHub pull request model for accepting document contributions. To contribute to the OSG documentation, follow these steps:</p>
-<ol>
-<li><a href="https://help.github.com/articles/fork-a-repo/">Fork and clone</a> the GitHub repository and choose one of the following:<ul>
-<li>If you are making changes to an existing document, make changes in your local clone and push them to your fork.</li>
-<li>If you are contributing a new document:<ol>
-<li>Name the document. Document file names should be lowercase, <code>-</code> delimited, and concise but descriptive, e.g. <code>markdown-migration.md</code> or <code>cutting-release.md</code></li>
-<li>Place the document in the relevant sub-folder of the <code>docs/</code> directory. If you are unsure of the appropriate location, note that in the description of the pull request.</li>
-<li>Add the document to the <code>pages:</code> section of <code>mkdocs.yml</code> in <a href="http://titlecase.com/">title case</a>, e.g. <code>- Migrating Documents to Markdown: 'software/markdown-migration.md'</code></li>
-</ol>
+<li>
+<p>Avoid superfluous statements like <code>you will want</code>, <code>you want</code>, <code>you should</code> e.g., <code>install foo</code> rather than
+  <code>you will want to install foo</code>.</p>
 </li>
 </ul>
-</li>
-<li>Submit your changes as a pull request to the <a href="#contributing-documntation">appropriate upstream repository</a></li>
-</ol>
-<h3 id="deploying-itb-documentation">Deploying ITB documentation<a class="headerlink" href="#deploying-itb-documentation" title="Permanent link">&para;</a></h3>
-<p>If you are a member of the OSG software and release team, you can preview large changes to the <a href="https://www.opensciencegrid.org/docs-itb/">ITB docs</a> by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo. For example:</p>
-<div class="codehilite"><pre><span></span><span class="gp">$</span> git remote add upstream https://github.com/opensciencegrid/docs.git
-<span class="gp">$</span> git checkout new_docs
-<span class="gp">$</span> git push upstream new_docs:itb.new_docs
-</pre></div>
-
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Since there is only one ITB docs area, simultaneous new commits to different <code>itb.*</code> branches will overwrite each other's changes. To re-deploy your changes, find your <a href="https://travis-ci.org/opensciencegrid/docs/branches">Travis-CI build</a> and restart it <strong>BUT</strong> coordinate with the author of the other commits to avoid conflicts.</p>
-</div>
                 
                   
                 
