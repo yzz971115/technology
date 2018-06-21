@@ -1625,13 +1625,20 @@ The server can be stopped with <code>Ctrl-C</code>.</p>
 <ol>
 <li><code>cd</code> into the directory containing the local clone of your Github fork</li>
 <li>
-<p>Create a branch based on the <code>master</code> branch of the <code>upstream</code> repository:</p>
+<p>Create a branch based on a branch from the <code>upstream</code> repository:</p>
 <div class="codehilite"><pre><span></span><span class="gp">$</span> git fetch --all
-<span class="gp">$</span> git checkout -b <span style="color:red">&lt;BRANCH NAME&gt;</span> upstream/master
+<span class="gp">$</span> git checkout -b <span style="color:red">&lt;BRANCH NAME&gt;</span> upstream/<span style="color:red">&lt;UPSTREAM BRANCH NAME&gt;</span>
 </pre></div>
 
 
-<p>Replacing <code>&lt;BRANCH NAME&gt;</code> with a name of your choice.</p>
+<p>Replace <code>&lt;BRANCH NAME&gt;</code> with a name of your choice and <code>&lt;UPSTREAM BRANCH NAME&gt;</code> with a branch name from the
+<code>upstream</code> repository.
+For example, instructors for the 2018 User School should use the <code>materials</code> branch:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> git checkout -b example_branch_name upstream/materials
+</pre></div>
+
+
+<p>If you do not know which <code>upstream</code> branch to use, pick <code>master</code>.</p>
 </li>
 <li>
 <p>Make your changes in the <code>docs/</code> directory of your local clone, following the <a href="../../documentation/style-guide">style guide</a>:</p>
