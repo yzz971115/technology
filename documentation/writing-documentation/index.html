@@ -1599,10 +1599,20 @@ meet the following requirements:</p>
 <li>Installations of the following tools and languages:<ul>
 <li><a href="https://git-scm.com/">git</a></li>
 <li><a href="https://www.python.org/">Python</a></li>
-<li><a href="https://pip.pypa.io/en/stable/installing/">pip</a> (comes by default with Python 2 &gt;= 2.7.9 or Python 3 &gt;= 3.4)</li>
+<li><a href="https://pip.pypa.io/en/stable/installing/">pip</a> (usually comes by default with Python 2 &gt;= 2.7.9 or Python 3 &gt;= 3.4)</li>
 </ul>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On macOS, the OS-distributed Python does not come with pip.
+Run the following to install it:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> sudo easy_install pip
+</pre></div>
+
+
+<p>pip will be installed in <code>/usr/local/bin/</code>, so you will need <code>/usr/local/bin</code> in your PATH.</p>
+</div>
 <h3 id="preparing-the-git-repository">Preparing the git repository<a class="headerlink" href="#preparing-the-git-repository" title="Permanent link">&para;</a></h3>
 <p>Before making any content changes, you will need to prepare a local git clone and set up a Python virtual environment:</p>
 <ol>
