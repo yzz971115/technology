@@ -1790,18 +1790,20 @@
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <h3 id="operations">Operations<a class="headerlink" href="#operations" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Moving hosts from Anvil cloud host at Nebraska for Anvil downtime</li>
+<li>Moving hosts from Anvil cloud host at Nebraska for Anvil downtime<ul>
+<li>Lots of hosts moved already.  Hopefully, without any noticable downtime</li>
+<li>GRACC head node is moving today (data nodes were moved 2 weeks ago).  May see small downtimes (but will be up at the end of the day)</li>
+<li>Was able keep the same IPs for the central collectors, CE's automatically picked up the (non)change and reported to the new collectors.</li>
+</ul>
+</li>
+<li>Need to start operations meetings again.</li>
 </ul>
 <p>TODO:  </p>
 <ul>
-<li>(Ongoing) Getting sites to transition to the new HTCondor collector</li>
 <li>Discussion of SLA's, availability metrics</li>
-<li>Puppetize: Collectors, GRACC</li>
+<li>Puppetize: ~~Collectors~~, GRACC</li>
 </ul>
 <h3 id="investigations">Investigations<a class="headerlink" href="#investigations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Released StashCache client in production.</li>
-</ul>
 <p>In Progress:  </p>
 <ul>
 <li>Discussions with with Internet2 to place StashCache in connection points.</li>
@@ -1813,7 +1815,6 @@
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>(Derek) AI: Will speak with admins about moving IPs out of Anvil so that we don't have central collector downtime</li>
 <li>(Edgar) AI: gWMS factories would like to generate factory entries based off information in CRIC, which will populate some of its data off of the central collector. Edgar will provide a list of info that he believe may be auto-discoverable on the CE to be advertised back to the central collector</li>
 </ul>
                 
