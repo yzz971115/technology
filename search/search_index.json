@@ -2986,6 +2986,81 @@
             "title": "SHA-2 Compliance"
         }, 
         {
+            "location": "/meetings/2018/TechArea20180730/", 
+            "text": "OSG Technology Area Meeting, 30 July 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Mat, TimT, Carl, Suchandra, Edgar, Derek, Marian, BrianB\n\n\nAnnouncements\n\n\n\n\nMadison folks will be out on Friday\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: TimT\n\n\nNext week: Carl\n\n\n7 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n136\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n17\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n7\n\n\n+2\n\n\nReady for Testing\n\n\n\n\n\n\n2\n\n\n+2\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG 3.4.16: most ready for testing\n\n\nNext doc focus 8/2 (this Thursday) 1PM CDT\n\n\nReview the next triage rotation\n\n\nSSH config is set up for GCT repo host; Mat to handle deploying the tarballs\n\n\n\n\nDiscussion\n\n\n(none)\n\n\nSupport Update\n\n\n\n\nArizona State University wants to get a CE up and running and joining OSG\n    Suchandra pointed them at site reg info and contacting factory ops.  Might also need a VO\n\n\nFlorida: sent them patched SLURM Gratia probe; will wait a week to see if it fixes their issues\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.16\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n1\n\n\n-3\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n1\n\n\n-1\n\n\nReady for Testing\n\n\n\n\n\n\n2\n\n\n+2\n\n\nReady for Release\n\n\n\n\n\n\n6\n\n\n-2\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.16  \n\n\nTesting  \n\n\nXRootD 4.8.4\n\n\nSciTokens 1.2.0\n\n\n\n\n\n\nReady for Release  \n\n\nXRootD 4.8.4\n\n\nFrontier Squid\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nTesting  \n\n\ncilogon-openid-ca\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nGOC  \n\n\nTesting  \n\n\ngracc-summary\n\n\ngracc-archive\n\n\nDrop mirror.batlab.org from mirror list\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nSLURM Gratia probe punted to next release\n\n\nNeed to build BLAHP against HTCondor 8.7.9\n\n\nMadison ITB site not getting GlideIns\n\n\n\n\nOSG Investigations Team\n\n\nOperations\n\n\n\n\nAnvil is now up; we will be \"moving\" our services back (actually building new machines via Puppet to test\n\n\nOps meetings start this week\n\n\nStashcache meetings will resume starting next week (Thursdays at 1 PM)\n\n\n\n\nInvestigations\n\n\nIn Progress:  \n\n\n\n\nDiscussions with with Internet2 to place StashCache in connection points.\n\n\nStarting up with new project called Harvester\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "title": "July 30, 2018"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#osg-technology-area-meeting-30-july-2018", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  Mat, TimT, Carl, Suchandra, Edgar, Derek, Marian, BrianB", 
+            "title": "OSG Technology Area Meeting, 30 July 2018"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#announcements", 
+            "text": "Madison folks will be out on Friday", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#triage-duty", 
+            "text": "This week: TimT  Next week: Carl  7 (+0) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#jira", 
+            "text": "# of tickets   State      136  +1  Open    17  +1  In Progress    7  +2  Ready for Testing    2  +2  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#osg-software-team", 
+            "text": "OSG 3.4.16: most ready for testing  Next doc focus 8/2 (this Thursday) 1PM CDT  Review the next triage rotation  SSH config is set up for GCT repo host; Mat to handle deploying the tarballs", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#discussion", 
+            "text": "(none)", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#support-update", 
+            "text": "Arizona State University wants to get a CE up and running and joining OSG\n    Suchandra pointed them at site reg info and contacting factory ops.  Might also need a VO  Florida: sent them patched SLURM Gratia probe; will wait a week to see if it fixes their issues", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#osg-release-team", 
+            "text": "3.4.16   Status      1  -3  Open    0  +0  In Progress    1  -1  Ready for Testing    2  +2  Ready for Release    6  -2  Total      OSG 3.4.16    Testing    XRootD 4.8.4  SciTokens 1.2.0    Ready for Release    XRootD 4.8.4  Frontier Squid      Data    Testing    cilogon-openid-ca    Ready for Release    Nothing yet      GOC    Testing    gracc-summary  gracc-archive  Drop mirror.batlab.org from mirror list    Ready for Release    Nothing yet", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#discussion_1", 
+            "text": "SLURM Gratia probe punted to next release  Need to build BLAHP against HTCondor 8.7.9  Madison ITB site not getting GlideIns", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#osg-investigations-team", 
+            "text": "", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#operations", 
+            "text": "Anvil is now up; we will be \"moving\" our services back (actually building new machines via Puppet to test  Ops meetings start this week  Stashcache meetings will resume starting next week (Thursdays at 1 PM)", 
+            "title": "Operations"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#investigations", 
+            "text": "In Progress:     Discussions with with Internet2 to place StashCache in connection points.  Starting up with new project called Harvester", 
+            "title": "Investigations"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#ongoing", 
+            "text": "GRACC Project  StashCache Project", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20180730/#discussions", 
+            "text": "None this week", 
+            "title": "Discussions"
+        }, 
+        {
             "location": "/meetings/2018/TechArea20180723/", 
             "text": "OSG Technology Area Meeting, 23 July 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Derek, Edgar, Mat, Suchandra\n\n\nAnnouncements\n\n\n\n\nTimT OOO, returning Wednesday\n\n\nBrianL out next Monday\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Edgar\n\n\nNext week: Mat\n\n\n7 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n135\n\n\n+3\n\n\nOpen\n\n\n\n\n\n\n16\n\n\n-3\n\n\nIn Progress\n\n\n\n\n\n\n5\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG 3.4.16: XRootD 4.8.4, Frontier Squid 3.5.27-5.1, and SciTokens\n\n\nTimC offered his assistance with any web development\n\n\nReview the next triage rotation\n\n\nLet's get the GCT tarballs onto the repo host this week\n\n\nNext doc focus 8/2 1PM CDT\n\n\n\n\nDiscussion\n\n\n\n\nBrianL (AI) - promote SciTokens ticket to testing, assign squid ticket to Suchandra\n\n\nDerek (AI) - Make changes to repo.gridcf.org for the GCT tarballs\n\n\n\n\nSupport Update\n\n\n\n\nLIGO (Edgar) - Some sites don't have secure CVMFS installed (it is difficult for site admins to test)\n\n\nOSU (BrianL, Mat) - inaccurate site topology and still running a GRAM gatekeeper\n\n\nGridUNESP (BrianL) - investigating N/A site records in the GRACC reporting that's suspected to be GridUNESP sites\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.16\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n4\n\n\n-5\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n8\n\n\n-3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.16  \n\n\nTesting  \n\n\nXRootD 4.8.4\n\n\nFrontier Squid\n\n\n\n\n\n\nReady for Release  \n\n\nNothing Yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nTesting  \n\n\ncilogon-openid-ca\n\n\nvo-client-dcache\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nGOC  \n\n\nTesting  \n\n\nDrop mirror.batlab.org from mirror list\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\nOperations\n\n\n\n\nMoving hosts from Anvil cloud host at Nebraska for Anvil downtime\n\n\nLots of hosts moved already.  Hopefully, without any noticable downtime\n\n\nGRACC head node is moving today (data nodes were moved 2 weeks ago).  May see small downtimes (but will be up at the end of the day)\n\n\nWas able keep the same IPs for the central collectors, CE's automatically picked up the (non)change and reported to the new collectors.\n\n\n\n\n\n\nNeed to start operations meetings again.\n\n\n\n\nTODO:  \n\n\n\n\nDiscussion of SLA's, availability metrics\n\n\nPuppetize: ~~Collectors~~, GRACC\n\n\n\n\nInvestigations\n\n\nIn Progress:  \n\n\n\n\nDiscussions with with Internet2 to place StashCache in connection points.\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "July 23, 2018"
