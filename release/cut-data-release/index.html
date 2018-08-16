@@ -722,18 +722,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-schedule/" title="Release Schedule" class="md-nav__link">
-      Release Schedule
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../new-release-series/" title="New Release Series" class="md-nav__link">
       New Release Series
     </a>
@@ -1705,11 +1693,6 @@
 <h3 id="step-2-test-the-pre-release-on-the-madison-itb-site">Step 2: Test the Pre-Release on the Madison ITB site<a class="headerlink" href="#step-2-test-the-pre-release-on-the-madison-itb-site" title="Permanent link">&para;</a></h3>
 <p>Test the pre-release on the Madison ITB by following the <a href="../../release/itb-testing/">ITB pre-release testing instructions</a>.</p>
 <h2 id="day-2-pushing-the-release">Day 2: Pushing the Release<a class="headerlink" href="#day-2-pushing-the-release" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Operations would like to send out the release announcement prior to 3 PM Eastern time.
-Do not start this process after 2 PM Eastern time unless you check with Operations (specifically Kyle Gross) first.</p>
-</div>
 <h3 id="step-1-push-from-pre-release-to-release">Step 1: Push from pre-release to release<a class="headerlink" href="#step-1-push-from-pre-release-to-release" title="Permanent link">&para;</a></h3>
 <p>This script moves the packages into release, clones releases into new version-specific release repos,
 locks the repos and regenerates them.</p>
@@ -1788,10 +1771,21 @@ verify that the version of the VO Package and/or CA certificates match the versi
 
 </li>
 <li>
-<p>The release manager emails the announcement to <code>vdt-discuss@opensciencegrid.org</code></p>
+<p>The release manager uses the <a href="https://opensciencegrid.org/operations/services/sending-announcements/">osg-notify tool</a>
+    on <code>submit-1.chtc.wisc.edu</code> to send the release announcement using the following command:</p>
+<div class="codehilite"><pre><span></span>PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \
+    --no-sign --type production --message message-file
+    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \
+    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \
+    --oim-recipients resources --oim-contact-type administrative
+</pre></div>
+
+
+<p>Replace <code>&lt;EMAIL SUBJECT&gt;</code> with an appropriate subject for your announcement.</p>
 </li>
-<li>The release manager asks the GOC to distribute the announcement by <a href="https://ticket.opensciencegrid.org/goc/other">opening a ticket</a></li>
-<li>The release manager closes the tickets marked 'Ready for Release' in the release's JIRA filter using the 'bulk change' function. Uncheck the box that reads "Send mail for this update"</li>
+<li>
+<p>The release manager closes the tickets marked 'Ready for Release' in the release's JIRA filter using the 'bulk change' function. Uncheck the box that reads "Send mail for this update"</p>
+</li>
 </ol>
 <h2 id="day-3-update-the-itb">Day 3: Update the ITB<a class="headerlink" href="#day-3-update-the-itb" title="Permanent link">&para;</a></h2>
 <p>Now that the release has had a chance to propogate to all the mirrors, update the Madison ITB site by following
