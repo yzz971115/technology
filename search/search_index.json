@@ -2967,22 +2967,22 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/", 
-            "text": "OSG Technology Area Meeting, 10 September 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Mat?\n\n\n5 (-4) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n131\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n27\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n7\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nRemember to add your outages to the OSG Software calendar\n\n\nWhen replying to Freshdesk tickets, add yourself as a watcher!\n\n\nAI (Suchandra, TimT): Update your \nY7 effort numbers\n\n\nOSG 3.4.18  \n\n\nAI (Marian) xrootd-hdfs-2.1.2 build?\n\n\nAI (Carl): xrootd-lcmaps troubleshooting and build\n\n\nAI (Carl): kick off VMU tests against branch that supports xrootd-lcmaps \n 1.4.0\n\n\nAI (Suchandra): kick off VMU tests against the new xrootd build\n\n\nAI: blahp, osg-test, htcondor-ce builds\n\n\n\n\n\n\nAI (Derek): sugwg-scitokens.phy.syr.edu is uploading pilot records is unregistered in the topology\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nHarvard (BrianL): still having issues with multicore pilots and their CE. Doesn't seem to be an HTCondor-CE issue at this point.\n\n\nTopology (BrianL, Mat): fixup Purdue downtime, various downtime and contact registrations\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.18\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n6\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n9\n\n\n+6\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Release\n\n\n\n\n\n\n20\n\n\n+12\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.18\n\n\nTesting\n\n\nGlideinWMS 3.4 in OSG 3.4\n\n\nGratia SLURM probe fails to log exceptions\n\n\nFix \"GRACC server not responding\" warnings in RSV\n\n\nGratia Slurm fails to log probe exceptions\n\n\ntarball-client: remove cog-jglobus-axis workaround\n\n\n\n\n\n\nReady for Release\n\n\nCVMFS 2.5.1\n\n\n\n\n\n\n\n\n\n\nData\n\n\nTesting\n\n\nUpdate LSC and vomses for SuperCDMS and LSST\n\n\n\n\n\n\nReady for Release\n\n\nCreate vo-client-dcache\n\n\n\n\n\n\n\n\n\n\nGOC\n\n\nTesting\n\n\nNothing\n\n\n\n\n\n\nReady for Release\n\n\nNothing\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nProbably do a data release this week\n\n\nProbably do a software (3.4.18) release next week\n\n\n\n\nOSG Investigations Team\n\n\nIn Progress:  \n\n\n\n\nShepherding the xrootd plugins through the release process.  \n\n\nxrootd-TPC - contrib\n\n\nxrootd-macaroons - contrib\n\n\nxrootd-scitokens - release\n\n\nx509-scitokens-issuer - contrib\n\n\n\n\n\n\nDiscussions with with Internet2 to place StashCache in connection points. Waiting on GeoIP issues to be worked out.\n\n\n(Still ongoing) The repo server is going to move, once again.  But there should be no noticable differences.  If there is, then we failed.\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\n\n\nAI (BrianL): Give BrianB a link to the XRootD use case doc", 
+            "text": "OSG Technology Area Meeting, 10 September 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Derek, Edgar, Marian, Mat, Suchandra, TimT\n\n\nAnnouncements\n\n\nIRIS-HEP officially announced on Tuesday (https://www.nsf.gov/news/news_summ.jsp?cntn_id=296456\norg=NSF\nfrom=news)\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Mat?\n\n\n4 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n131\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n27\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n7\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nRemember to add your outages to the OSG Software calendar\n\n\nWhen replying to Freshdesk tickets, add yourself as a watcher!\n\n\nAI (Suchandra, TimT): Update your \nY7 effort numbers\n\n\nOSG 3.4.18  \n\n\nAI (Marian) xrootd-hdfs-2.1.2 build?\n\n\nAI (Carl): xrootd-lcmaps troubleshooting and build\n\n\nAI (Carl): kick off VMU tests against branch that supports xrootd-lcmaps \n 1.4.0\n\n\nAI (Suchandra): kick off VMU tests against the new xrootd build\n\n\nAI: blahp, osg-test, htcondor-ce builds\n\n\n\n\n\n\nAI (Derek): sugwg-scitokens.phy.syr.edu is uploading pilot records is unregistered in the topology\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nHarvard (BrianL): still having issues with multicore pilots and their CE. Doesn't seem to be an HTCondor-CE issue at this point.\n\n\nTopology (BrianL, Mat): fixup Purdue downtime, various downtime and contact registrations\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.18\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n6\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n9\n\n\n+6\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Release\n\n\n\n\n\n\n20\n\n\n+12\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.18\n\n\nTesting\n\n\nGlideinWMS 3.4 in OSG 3.4\n\n\nGratia SLURM probe fails to log exceptions\n\n\nFix \"GRACC server not responding\" warnings in RSV\n\n\nGratia Slurm fails to log probe exceptions\n\n\ntarball-client: remove cog-jglobus-axis workaround\n\n\n\n\n\n\nReady for Release\n\n\nCVMFS 2.5.1\n\n\n\n\n\n\n\n\n\n\nData\n\n\nTesting\n\n\nUpdate LSC and vomses for SuperCDMS and LSST\n\n\n\n\n\n\nReady for Release\n\n\nCreate vo-client-dcache\n\n\n\n\n\n\n\n\n\n\nGOC\n\n\nTesting\n\n\nNothing\n\n\n\n\n\n\nReady for Release\n\n\nNothing\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nProbably do a data release this week\n\n\nProbably do a software (3.4.18) release next week\n\n\nAI (TimT): get approval from Alessandra or Wei on the LSST vo-client updates\n\n\nAI (Carl): find out the original reporter of the GRACC-RSV issue\n\n\nAI (Edgar): test GlideinWMS 3.4.0\n\n\n\n\nOSG Investigations Team\n\n\nIn Progress:  \n\n\n\n\nShepherding the xrootd plugins through the release process.  \n\n\nxrootd-TPC - contrib\n\n\nxrootd-macaroons - contrib\n\n\nxrootd-scitokens - release\n\n\nx509-scitokens-issuer - contrib\n\n\n\n\n\n\nDiscussions with with Internet2 to place StashCache in connection points. Waiting on GeoIP issues to be worked out.\n\n\n(Still ongoing) The repo server is going to move, once again.  But there should be no noticable differences.  If there is, then we failed.\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "September 10, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/#osg-technology-area-meeting-10-september-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Carl, Derek, Edgar, Marian, Mat, Suchandra, TimT", 
             "title": "OSG Technology Area Meeting, 10 September 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/#announcements", 
-            "text": "", 
+            "text": "IRIS-HEP officially announced on Tuesday (https://www.nsf.gov/news/news_summ.jsp?cntn_id=296456 org=NSF from=news)", 
             "title": "Announcements"
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/#triage-duty", 
-            "text": "This week: BrianL  Next week: Mat?  5 (-4) open tickets", 
+            "text": "This week: BrianL  Next week: Mat?  4 (-1) open tickets", 
             "title": "Triage Duty"
         }, 
         {
@@ -3012,7 +3012,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/#discussion_1", 
-            "text": "Probably do a data release this week  Probably do a software (3.4.18) release next week", 
+            "text": "Probably do a data release this week  Probably do a software (3.4.18) release next week  AI (TimT): get approval from Alessandra or Wei on the LSST vo-client updates  AI (Carl): find out the original reporter of the GRACC-RSV issue  AI (Edgar): test GlideinWMS 3.4.0", 
             "title": "Discussion"
         }, 
         {
@@ -3027,7 +3027,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20180910/#discussions", 
-            "text": "AI (BrianL): Give BrianB a link to the XRootD use case doc", 
+            "text": "None this week", 
             "title": "Discussions"
         }, 
         {
