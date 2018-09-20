@@ -1717,13 +1717,16 @@ need to SSH there and do the following:</p>
   (or else they'll get a Python stack trace when they try to connect)</li>
 </ul>
 <h2 id="disabling-and-enabling-a-user">Disabling and Enabling a User<a class="headerlink" href="#disabling-and-enabling-a-user" title="Permanent link">&para;</a></h2>
-<p>Users cannot be deleted, but they can be disabled.</p>
+<p>Users cannot be deleted, but they can be disabled.
+We also put <code>(disabled)</code> in their username to let us easily distinguish between enabled and disabled users.</p>
 <p>To disable a user, use the command:</p>
 <div class="codehilite"><pre><span></span><span class="gp">$</span> osg-koji disable-user <span class="s2">&quot;&lt;USERNAME&gt;&quot;</span>
 </pre></div>
 
 
-<p>To enable a user, use the command:</p>
+<p>Follow the rename procedure above to change their name from <code>&lt;USERNAME&gt;</code> to <code>&lt;USERNAME&gt; (disabled)</code>.</p>
+<p>To enable a user, follow the rename procedure above to change their name from <code>&lt;USERNAME&gt; (disabled)</code> to <code>&lt;USERNAME&gt;</code>.
+Then, use the command:</p>
 <div class="codehilite"><pre><span></span><span class="gp">$</span> osg-koji enable-user <span class="s2">&quot;&lt;USERNAME&gt;&quot;</span>
 </pre></div>
                 
