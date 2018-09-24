@@ -1131,6 +1131,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1600,7 +1612,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/resurrecting-epel-packages.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="resurrecting-epel-rpms">Resurrecting EPEL RPMs<a class="headerlink" href="#resurrecting-epel-rpms" title="Permanent link">&para;</a></h1>
+                <h1 id="resurrecting-epel-rpms">Resurrecting EPEL RPMs</h1>
 <p>You will need to be a Koji admin to do these steps. </p>
 <div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji --list-permissions --mine
 </pre></div>
@@ -1668,7 +1680,7 @@
 </li>
 <li>
 <p>Import the RPMs themselves into the Koji system</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji import <span style="color:red">&lt;RPM_DIRECTORY&gt;</span>/*.rpm
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji import <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>RPM_DIRECTORY<span class="p">&amp;</span>gt<span class="p">;</span></span>/*.rpm
 </pre></div>
 
 
@@ -1676,14 +1688,14 @@
 </li>
 <li>
 <p>Add the package to the whitelist for our koji tag:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji add-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt;</span> <span style="color:red">&lt;PACKAGE&gt;</span> --owner<span class="o">=</span><span class="s2">&quot;<span style="color:red">&lt;YOUR_KOJI_USERNAME&gt;</span>&quot;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji add-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span></span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PACKAGE<span class="p">&amp;</span>gt<span class="p">;</span></span> --owner<span class="o">=</span><span class="s2">&quot;<span style="color:red">&amp;lt;YOUR_KOJI_USERNAME&amp;gt;</span>&quot;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Actually tag the builds:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji tag-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;BUILD&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji tag-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>BUILD<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
@@ -1703,25 +1715,25 @@ done
 </li>
 <li>Update the epelrescue RPMs table below</li>
 </ol>
-<h2 id="removing-resurrected-rpms">Removing resurrected RPMs<a class="headerlink" href="#removing-resurrected-rpms" title="Permanent link">&para;</a></h2>
+<h2 id="removing-resurrected-rpms">Removing resurrected RPMs</h2>
 <p>In case the RPM appeared back in EPEL, or we no longer need it, here's how to remove it from the epelrescue tags so we're not overriding the EPEL version:</p>
 <ol>
 <li>
 <p>Find out the NVR of the build:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji list-tagged <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;PACKAGE&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji list-tagged <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>PACKAGE<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Untag the packages:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji untag-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;BUILD&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji untag-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>BUILD<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
 </li>
 </ol>
-<h3 id="why-you-should-not-use-block-pkg">Why you should not use block-pkg<a class="headerlink" href="#why-you-should-not-use-block-pkg" title="Permanent link">&para;</a></h3>
+<h3 id="why-you-should-not-use-block-pkg">Why you should not use block-pkg</h3>
 <p>EPEL removes their packages by using 'koji block-pkg', which leaves the package and the builds in the tag, but prevents it from appearing in the repos. We cannot do that, because blocks are inherited and this will mess up our build repos. This is what happened in one case:</p>
 <ol>
 <li>EPEL removed rpmdevtools, which is a necessary package for all builds. I resurrected it into epelrescue-el5.</li>
@@ -1730,9 +1742,9 @@ done
 <li>The block not only hid our rpmdevtools, it hid EPEL's rpmdevtools as well, preventing us from being able to build.</li>
 <li>I unblocked the rpmdevtools, and just untagged the build instead, regenerated our build repos, and we could build again.</li>
 </ol>
-<h2 id="policy-for-epelrescue-tags">Policy for epelrescue tags<a class="headerlink" href="#policy-for-epelrescue-tags" title="Permanent link">&para;</a></h2>
+<h2 id="policy-for-epelrescue-tags">Policy for epelrescue tags</h2>
 <p><a href="https://jira.opensciencegrid.org/browse/SOFTWARE-2046">https://jira.opensciencegrid.org/browse/SOFTWARE-2046</a></p>
-<h2 id="table-of-epelrescue-rpms">Table of epelrescue RPMs<a class="headerlink" href="#table-of-epelrescue-rpms" title="Permanent link">&para;</a></h2>
+<h2 id="table-of-epelrescue-rpms">Table of epelrescue RPMs</h2>
 <table>
 <thead>
 <tr>
@@ -1781,7 +1793,7 @@ done
 </tr>
 </tbody>
 </table>
-<h3 id="finding-out-if-a-package-is-still-needed-in-epelrescue">Finding out if a package is still needed in epelrescue<a class="headerlink" href="#finding-out-if-a-package-is-still-needed-in-epelrescue" title="Permanent link">&para;</a></h3>
+<h3 id="finding-out-if-a-package-is-still-needed-in-epelrescue">Finding out if a package is still needed in epelrescue</h3>
 <p>Set <code>$pkg</code> to the name of a package to test (e.g. <code>python-six</code>), and <code>$rhel</code> set to the RHEL version you're testing for (e.g. <code>5</code>, <code>6</code>, or <code>7</code>).</p>
 <p>Using Carl's <code>centos-srpms</code>, <code>scientific-srpms</code>, <code>slf-srpms</code> scripts:</p>
 <div class="codehilite"><pre><span></span>for script in centos-srpms scientific-srpms slf-srpms; do

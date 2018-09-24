@@ -1116,6 +1116,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1572,7 +1584,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/infrastructure/koji-user-management.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="koji-user-management">Koji User Management<a class="headerlink" href="#koji-user-management" title="Permanent link">&para;</a></h1>
+                <h1 id="koji-user-management">Koji User Management</h1>
 <p>All of these operations require Koji admin privileges.
 You can see what privileges you have by running <code>osg-koji list-permissions --mine</code>.
 If you don't see <code>admin</code>, you do not have Koji admin privileges.</p>
@@ -1584,7 +1596,7 @@ If you don't see <code>admin</code>, you do not have Koji admin privileges.</p>
 <li>Tim Cartwright</li>
 <li>Tim Theisen</li>
 </ul>
-<h2 id="adding-a-user">Adding a User<a class="headerlink" href="#adding-a-user" title="Permanent link">&para;</a></h2>
+<h2 id="adding-a-user">Adding a User</h2>
 <p>Adding a user requires two pieces of information about the user:</p>
 <ul>
 <li>the DN of the cert they're using</li>
@@ -1656,7 +1668,7 @@ If you get the name wrong, follow the <a href="#handling-user-cert-changes-renam
 </pre></div>
 
 
-<h3 id="permissions-details">Permissions details<a class="headerlink" href="#permissions-details" title="Permanent link">&para;</a></h3>
+<h3 id="permissions-details">Permissions details</h3>
 <p>To list the available permissions, run</p>
 <div class="codehilite"><pre><span></span><span class="gp">$</span> osg-koji list-permissions
 </pre></div>
@@ -1687,7 +1699,7 @@ If you get the name wrong, follow the <a href="#handling-user-cert-changes-renam
 <p>The <code>grant-permission</code> command can also be used to create new permissions; doing so is beyond the scope of this document.
 For further permission details, see the <a href="../../infrastructure/koji-policy-writing/">policy writing doc</a>
 and <code>/etc/koji-hub/hub.conf</code> on koji.chtc.wisc.edu.</p>
-<h2 id="handling-user-cert-changes-renaming-a-user">Handling User Cert Changes / Renaming a User<a class="headerlink" href="#handling-user-cert-changes-renaming-a-user" title="Permanent link">&para;</a></h2>
+<h2 id="handling-user-cert-changes-renaming-a-user">Handling User Cert Changes / Renaming a User</h2>
 <p>Koji users are identified by the <em>first</em> Common Name (CN) of their X.509 certificate.
 If this changes for a user (e.g. they get a cert from a new CA), someone with root access on koji.chtc.wisc.edu will
 need to SSH there and do the following:</p>
@@ -1716,7 +1728,7 @@ need to SSH there and do the following:</p>
 <li>they must clear their browser cache and cookies for koji.chtc.wisc.edu before using the web interface
   (or else they'll get a Python stack trace when they try to connect)</li>
 </ul>
-<h2 id="disabling-and-enabling-a-user">Disabling and Enabling a User<a class="headerlink" href="#disabling-and-enabling-a-user" title="Permanent link">&para;</a></h2>
+<h2 id="disabling-and-enabling-a-user">Disabling and Enabling a User</h2>
 <p>Users cannot be deleted, but they can be disabled.
 We also put <code>(disabled)</code> in their username to let us easily distinguish between enabled and disabled users.</p>
 <p>To disable a user, use the command:</p>

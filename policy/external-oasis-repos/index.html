@@ -1110,6 +1110,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1560,7 +1572,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/external-oasis-repos.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="policy-for-osg-mirroring-of-external-cvmfs-repositories">Policy for OSG Mirroring of External CVMFS repositories<a class="headerlink" href="#policy-for-osg-mirroring-of-external-cvmfs-repositories" title="Permanent link">&para;</a></h1>
+                <h1 id="policy-for-osg-mirroring-of-external-cvmfs-repositories">Policy for OSG Mirroring of External CVMFS repositories</h1>
 <p>12 October 2017</p>
 <p>This document provides an overview of the policies and security understanding with regards to OSG mirroring of CVMFS
 repositories of external organizations.  It aims to help external repositories and OSG VOs understand what OSG is
@@ -1570,7 +1582,7 @@ This is not a service-level agreement but rather a statement of responsibilities
 <p class="admonition-title">Note</p>
 <p>To actually understand the technical procedure for mirroring a repository, <a href="https://www.opensciencegrid.org/docs/data/external-oasis-repos">see the following page</a>.  This document solely covers the policy aspects.</p>
 </div>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h2 id="introduction">Introduction</h2>
 <p>The OSG provides a network of CVMFS Stratum-1 servers for mirroring content of externally-managed repositories.  These repositories are often
 hosted by large HEP or physics VOs for the purpose of distributing software for high-throughput computing jobs.  Additionally, OSG provides a
 repository (<oasis.opensciencegrid.org>) for smaller VOs; this is not covered here.</p>
@@ -1578,7 +1590,7 @@ repository (<oasis.opensciencegrid.org>) for smaller VOs; this is not covered he
 are meant to help the OSG-affiliated VO accomplish their domain science.</p>
 <p>The goal of this mirroring provides an improved quality-of-service for the VO end-users running at OSG sites.  OSG does not provide support
 for use of the software in external repositories, but will help end-users contact the VO for help as necessary.</p>
-<h2 id="osg-responsibilities">OSG Responsibilities<a class="headerlink" href="#osg-responsibilities" title="Permanent link">&para;</a></h2>
+<h2 id="osg-responsibilities">OSG Responsibilities</h2>
 <ul>
 <li>OSG will provide the Stratum-1 server network according to <a href="https://www.opensciencegrid.org/operations/SLA/oasis-replica/">the OASIS SLA</a></li>
 <li>OSG will provide a best-effort mirror of the full contents of the external repo.  We will attempt to provide best-effort integrity of the
@@ -1589,7 +1601,7 @@ the key managed by them. This will be done in consultation with the security tea
 <li>Once the external repository is approved, OSG will distribute the corresponding repository signing keys in a valid whitelist.  The whitelist
   will be signed by the OSG Stratum-0.  This whitelist attests to the authenticity of the key, but not a statement about repository contents.</li>
 </ul>
-<h2 id="vo-responsibilities">VO Responsibilities<a class="headerlink" href="#vo-responsibilities" title="Permanent link">&para;</a></h2>
+<h2 id="vo-responsibilities">VO Responsibilities</h2>
 <ul>
 <li>The individual responsible on behalf of the VO will be registered with the OASIS Manager role in OIM.</li>
 <li>The requesting VO should only include targeted repositories they need to support their science.</li>
@@ -1602,7 +1614,7 @@ the key managed by them. This will be done in consultation with the security tea
 <li>If the external repository is <em>not</em> operated by the VO, OSG may work directly with the external repository maintainers.  This is done for
   ease of operations and may be limited to day-to-day, non-security-related support.</li>
 </ul>
-<h2 id="operational-policies">Operational Policies<a class="headerlink" href="#operational-policies" title="Permanent link">&para;</a></h2>
+<h2 id="operational-policies">Operational Policies</h2>
 <p>To help us provide the best operational setup possible, we have a few additional replication policies:</p>
 <ol>
 <li>OSG Operations only hosts the shared <code>oasis.opensciencegrid.org</code> repository; VO-dedicated software respositories

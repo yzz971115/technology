@@ -1200,6 +1200,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1738,9 +1750,9 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/development-process.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="software-development-process">Software Development Process<a class="headerlink" href="#software-development-process" title="Permanent link">&para;</a></h1>
+                <h1 id="software-development-process">Software Development Process</h1>
 <p>This page is for the OSG Software team and other contributors to the OSG software stack. It is meant to be the central source for all development processes for the Software team. (But right now, it is just a starting point.)</p>
-<h2 id="overall-development-cycle">Overall Development Cycle<a class="headerlink" href="#overall-development-cycle" title="Permanent link">&para;</a></h2>
+<h2 id="overall-development-cycle">Overall Development Cycle</h2>
 <p>For a typical update to an existing package, the overall development cycle is roughly as follows:</p>
 <ol>
 <li>Download the new upstream source (tarball, source RPM, checkout) into <a href="../rpm-development-guide#upstream-source-cache">the UW AFS upstream area</a></li>
@@ -1753,7 +1765,7 @@
 <li>Obtain permission from the Software manager to promote the package</li>
 <li>Promote the package to testing — see below for details</li>
 </ol>
-<h2 id="versioning-guidelines">Versioning Guidelines<a class="headerlink" href="#versioning-guidelines" title="Permanent link">&para;</a></h2>
+<h2 id="versioning-guidelines">Versioning Guidelines</h2>
 <p>OSG-owned software should contain three digits, X.Y.Z, where X represents the major version, Y the minor version, and Z the maintenance version. New releases of software should increment one of the major, minor, or maintenance according to the following guidelines:</p>
 <ul>
 <li><strong>Major:</strong> Major new software, typically (but not limited to) full rewrites, new architectures, major new features; can certainly break backward compatibility (but should provide a smooth upgrade path). Worthy of introduction into Upcoming.</li>
@@ -1761,8 +1773,8 @@
 <li><strong>Maintenance:</strong> Bug fixes, minor feature tweaks, etc.; must not break compatibility with other versions within the same Major.Minor series.</li>
 </ul>
 <p>If you are unsure about which version number to increment in a software update, consult the Software Manager.</p>
-<h2 id="build-procedures">Build Procedures<a class="headerlink" href="#build-procedures" title="Permanent link">&para;</a></h2>
-<h3 id="building-packages-for-multiple-osg-release-series">Building packages for multiple OSG release series<a class="headerlink" href="#building-packages-for-multiple-osg-release-series" title="Permanent link">&para;</a></h3>
+<h2 id="build-procedures">Build Procedures</h2>
+<h3 id="building-packages-for-multiple-osg-release-series">Building packages for multiple OSG release series</h3>
 <p>The OSG Software team supports multiple release series, independent but in parallel to a large degree. In many cases, a single package is the same across release series, and therefore we want to build the package once and share it among the series. The procedure below suggests a way to accomplish this task.</p>
 <p>Current definitions:</p>
 <ul>
@@ -1805,7 +1817,7 @@
 11. As needed (or directed by the Software manager), perform the cross-series tests (see below)
 -->
 
-<h3 id="merging-changes-from-one-release-series-to-another">Merging changes from one release series to another<a class="headerlink" href="#merging-changes-from-one-release-series-to-another" title="Permanent link">&para;</a></h3>
+<h3 id="merging-changes-from-one-release-series-to-another">Merging changes from one release series to another</h3>
 <p>These instructions assume that you are merging from <code>trunk</code> to <code>branches/osg-3.3</code>. They also assume that the current directory you are in is a checkout of <code>branches/osg-3.3</code>. I will use <code>$pkg</code> to refer to the name of your package.</p>
 <p>First, you will need the commit numbers for your changes:</p>
 <div class="codehilite"><pre><span></span>svn log \^/native/redhat/trunk/$pkg | less
@@ -1834,10 +1846,10 @@ svn merge -c $commit2 \^/native/redhat/trunk/$pkg $pkg
 
 <p>Where <code>$commit1</code>, <code>$commit2</code> are the commit numbers of the individual changes.</p>
 <p>Note that merge tracking in recent versions of SVN (1.5 or newer) should prevent commits from accidentally being merged multiple times. You should still look out for conflicts and examine the changes via <code>svn diff</code> before committing the merge.</p>
-<h2 id="testing-procedures">Testing Procedures<a class="headerlink" href="#testing-procedures" title="Permanent link">&para;</a></h2>
+<h2 id="testing-procedures">Testing Procedures</h2>
 <p>Before promoting a package to a testing repository, each build must be tested lightly from the development repos to make sure that it is not completely broken, thereby wasting time during acceptance testing. Normally, the person who builds a package performs the development testing.</p>
 <p><strong>If you are not doing your own development testing for a package</strong>, contact the Software Manager and/or leave a comment in the associated ticket; otherwise, your package may never be promoted to testing and hence never released.</p>
-<h3 id="the-standard-4-tests-defined">The "Standard 4" tests, defined<a class="headerlink" href="#the-standard-4-tests-defined" title="Permanent link">&para;</a></h3>
+<h3 id="the-standard-4-tests-defined">The "Standard 4" tests, defined</h3>
 <p>In most cases, the Software manager will ask a developer to perform the “standard 4” tests on an updated package in a release series before promotion. This is a shorthand description for a standard set of 4 test runs:</p>
 <ul>
 <li>Fresh install on el6</li>
@@ -1853,21 +1865,21 @@ svn merge -c $commit2 \^/native/redhat/trunk/$pkg $pkg
 <li>For some changes, it will be necessary to perform careful functional tests of the affected component(s)</li>
 </ul>
 <p>If you have questions, check with the Software Manager to determine the amount of testing that is required per test run.</p>
-<h3 id="the-cross-series-test-defined">The "Cross-Series" test, defined<a class="headerlink" href="#the-cross-series-test-defined" title="Permanent link">&para;</a></h3>
+<h3 id="the-cross-series-test-defined">The "Cross-Series" test, defined</h3>
 <p>The cross-series test may need to be run for packages that have been built for multiple release series of the OSG software stack (i.e. 3.3 and 3.4):</p>
 <ul>
 <li>On el6, install from the 3.3 repositories, then update from the 3.4 repositories</li>
 <li>On el7, install from the 3.3 repositories, then update from the 3.4 repositories</li>
 </ul>
 <p>Viewed another way, this test is similar to the update installs, above, except from 3.3-release to 3.4-development.</p>
-<h3 id="the-long-tail-tests-defined">The "Long Tail" tests, defined<a class="headerlink" href="#the-long-tail-tests-defined" title="Permanent link">&para;</a></h3>
+<h3 id="the-long-tail-tests-defined">The "Long Tail" tests, defined</h3>
 <p>These tests may need to be run when updating a package that's also in the old, unsupported (3.2) branch. They will consist of:</p>
 <ul>
 <li>Install from 3.2-release and update to 3.4-development (on el6 only)</li>
 </ul>
-<h3 id="the-full-set-of-tests-defined">The "full set of tests", defined<a class="headerlink" href="#the-full-set-of-tests-defined" title="Permanent link">&para;</a></h3>
+<h3 id="the-full-set-of-tests-defined">The "full set of tests", defined</h3>
 <p>All of the tests mentioned above.</p>
-<h3 id="running-the-tests-in-vm-universe">Running the tests in VM Universe<a class="headerlink" href="#running-the-tests-in-vm-universe" title="Permanent link">&para;</a></h3>
+<h3 id="running-the-tests-in-vm-universe">Running the tests in VM Universe</h3>
 <p>In the case that the package you're testing is covered by osg-tested-internal, you can run the full set of tests in a manual VM universe test run. Make sure you meet the <a href="https://github.com/opensciencegrid/vm-test-runs">pre-requisites</a> required to submit VM Universe jobs on <code>osghost.chtc.wisc.edu</code>. After that's done, you can prepare the test suite by running:</p>
 <div class="codehilite"><pre><span></span><span class="go">osg-run-tests &#39;Testing <span style="color:red">&lt;change x&gt;</span>&#39;</span>
 </pre></div>
@@ -1879,9 +1891,9 @@ svn merge -c $commit2 \^/native/redhat/trunk/$pkg $pkg
 </pre></div>
 
 
-<h2 id="promoting-a-package-to-testing">Promoting a Package to Testing<a class="headerlink" href="#promoting-a-package-to-testing" title="Permanent link">&para;</a></h2>
+<h2 id="promoting-a-package-to-testing">Promoting a Package to Testing</h2>
 <p>Once development and development testing is complete, the final OSG Software step is to promote the package(s) to our testing repositories. After that, the Release team takes over with acceptance testing and ultimately release. Of course if they discover problems, the ticket(s) will be returned to OSG Software for further development, essentially restarting the development cycle.</p>
-<h3 id="preparing-a-good-promotion-request">Preparing a Good Promotion Request<a class="headerlink" href="#preparing-a-good-promotion-request" title="Permanent link">&para;</a></h3>
+<h3 id="preparing-a-good-promotion-request">Preparing a Good Promotion Request</h3>
 <p>Developers must obtain permission from the OSG Software manager to promote a package from development to testing. A promotion request goes into at least one affected JIRA ticket and will be answered there as well. Below are some tips for writing a good promotion request:</p>
 <ul>
 <li>Make sure that relevant information about goals, history, and resolution is in the associated ticket(s)</li>
@@ -1909,7 +1921,7 @@ svn merge -c $commit2 \^/native/redhat/trunk/$pkg $pkg
 <blockquote>
 <p>May I promote <code>htcondor-ce-2.3.4-2.osg3*.el*</code>? I ran a complete set of automated tests <span style="color:red">&lt;LINK THE PRECEDING TEXT OR SEPARATELY HERE></span>; the HTCondor-CE tests ran and passed in all cases. There were some spurious failures of RSV in the All condition for RHEL 6, but this is a known failure case that is independent of HTCondor-CE. I also did a few spot checks manually (one VM each for SL 6 and SL 7), and in each case setting <code>use_frobnosticator = true</code> in the configuration resulted in the expected behavior as defined in the description field above. The <code>built-against-pkgs</code> tool shows that I built against all the latest HTCondor and BLAHP builds, see below. <span style="color:red">&lt;JIRA-formatted table comes after></span></p>
 </blockquote>
-<h3 id="promoting">Promoting<a class="headerlink" href="#promoting" title="Permanent link">&para;</a></h3>
+<h3 id="promoting">Promoting</h3>
 <p>Follow these steps to request promotion, promote a package, and note the promotion in JIRA:</p>
 <ol>
 <li>Make sure the package update has at least one associated JIRA ticket; if there is no ticket, at least create one for releasing the package(s)</li>

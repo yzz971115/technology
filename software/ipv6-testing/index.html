@@ -1165,6 +1165,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1668,19 +1680,19 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/ipv6-testing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="testing-software-with-ipv6">Testing Software with IPv6<a class="headerlink" href="#testing-software-with-ipv6" title="Permanent link">&para;</a></h1>
-<h2 id="about-this-document">About this Document<a class="headerlink" href="#about-this-document" title="Permanent link">&para;</a></h2>
+                <h1 id="testing-software-with-ipv6">Testing Software with IPv6</h1>
+<h2 id="about-this-document">About this Document</h2>
 <p>This document provides instructions on setting up a host with an IPv6 address for testing the OSG software stack. The plan is to be able to spin up special Fermicloud VM’s that have corresponding public IPv6 addresses meaning that there will be a limit of ~15 VM’s at one time.</p>
 <p>For more information on IPv6, consult <a href="http://en.wikipedia.org/wiki/IPv6">Wikipedia</a>.</p>
-<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<h3 id="requirements">Requirements</h3>
 <ol>
 <li>Be familiar with your institute's network policy and firewall configuration 1 <em>Root</em> access is required to configure <code>iptables</code></li>
 </ol>
-<h3 id="enabling-ipv6">Enabling IPV6<a class="headerlink" href="#enabling-ipv6" title="Permanent link">&para;</a></h3>
+<h3 id="enabling-ipv6">Enabling IPV6</h3>
 <ol>
 <li>
 <p>Determine the public IPv6 address of your host (highlighted in <span style="color:red">red<span class="twiki-macro ENDCOLOR">): </p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> nslookup -type<span class="o">=</span>aaaa &lt;hostname&gt;
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> nslookup -type<span class="o">=</span>aaaa <span class="p">&amp;</span>lt<span class="p">;</span>hostname<span class="p">&amp;</span>gt<span class="p">;</span>
 <span class="go">Server:     132.239.0.252      </span>
 <span class="go">Address:    132.239.0.252#53</span>
 
@@ -1717,7 +1729,7 @@ IPV6_DEFAULTGW=&quot;The IPV6 Default Gateway&quot;
 
 </li>
 </ol>
-<h3 id="testing-ipv6-connectivity">Testing IPv6 connectivity<a class="headerlink" href="#testing-ipv6-connectivity" title="Permanent link">&para;</a></h3>
+<h3 id="testing-ipv6-connectivity">Testing IPv6 connectivity</h3>
 <p>To verify that the VM is capable of IPv6 we will be using the <code>ping6</code> command between the test VM and another IPv6 capable machine</p>
 <ol>
 <li>
@@ -1740,7 +1752,7 @@ IPV6_DEFAULTGW=&quot;The IPV6 Default Gateway&quot;
 
 </li>
 </ol>
-<h4 id="verifying-ssh-over-ipv6">Verifying SSH over IPv6<a class="headerlink" href="#verifying-ssh-over-ipv6" title="Permanent link">&para;</a></h4>
+<h4 id="verifying-ssh-over-ipv6">Verifying SSH over IPv6</h4>
 <p>Make sure you can login to your VM over IPv6. Currently, Fermilab's kerberos does not support SSH over IPv6.</p>
 <ol>
 <li>
@@ -1761,7 +1773,7 @@ PubkeyAuthentication yes
 
 </li>
 </ol>
-<h3 id="disabling-ipv4">Disabling IPv4<a class="headerlink" href="#disabling-ipv4" title="Permanent link">&para;</a></h3>
+<h3 id="disabling-ipv4">Disabling IPv4</h3>
 <p>If you were able to log into your VM over IPv6, you can disable IPv4 and try to communicate exclusively over IPv6.</p>
 <ol>
 <li>
@@ -1794,7 +1806,7 @@ IPV6ADDR=&quot;2607:f720:1700:1b30::9b&quot;
 
 </li>
 </ol>
-<h3 id="disabling-ipv6">Disabling IPv6<a class="headerlink" href="#disabling-ipv6" title="Permanent link">&para;</a></h3>
+<h3 id="disabling-ipv6">Disabling IPv6</h3>
 <p>In your testing, you may find the need to disable IPv6.</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> sysctl -w net.ipv6.conf.all.disable_ipv6<span class="o">=</span><span class="m">1</span>
 <span class="gp">root@host #</span> service network restart
@@ -1808,10 +1820,10 @@ IPV6ADDR=&quot;2607:f720:1700:1b30::9b&quot;
 </pre></div>
 
 
-<h3 id="testing-in-mixed-mode">Testing in mixed mode<a class="headerlink" href="#testing-in-mixed-mode" title="Permanent link">&para;</a></h3>
+<h3 id="testing-in-mixed-mode">Testing in mixed mode</h3>
 <p>To test IPv6 in mixed mode, you can use the <code>ntop</code> tool to monitor traffic over IPv6. <code>ntop</code> is installed on all the test machines and you can access the web interface at <em>hostname:3000</em>. To see a table that displays network traffic between your VM and another host by going to <em>All Protocols</em> -&gt; <em>Traffic</em> and looking at the IPv6 column.</p>
 <p><img alt="NTP-web" src="../../img/ipv6-testing.png" /></p>
-<h4 id="enforcing-communication-over-ipv6">Enforcing communication over IPv6<a class="headerlink" href="#enforcing-communication-over-ipv6" title="Permanent link">&para;</a></h4>
+<h4 id="enforcing-communication-over-ipv6">Enforcing communication over IPv6</h4>
 <p>If you want to enforce IPv6 over mixed mode you can try using the IPv6 address for whatever software that you are testing. For example with xrdcp:</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> xrdcp -d <span class="m">1</span> /tmp/first_test root://<span class="o">[</span><span class="m">2607</span>:f720:1700:1b30::a4<span class="o">]</span>:1094//tmp/first_test_8
 <span class="go">[19B/19B][100%][==================================================][0B/s] </span>

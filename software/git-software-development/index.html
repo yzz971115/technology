@@ -1159,6 +1159,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../meetings/2018/TechArea20180924/" title="September 24, 2018" class="md-nav__link">
+      September 24, 2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../meetings/2018/TechArea20180917/" title="September 17, 2018" class="md-nav__link">
       September 17, 2018
     </a>
@@ -1656,30 +1668,30 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/git-software-development.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="git-software-development-workflow">Git software development workflow<a class="headerlink" href="#git-software-development-workflow" title="Permanent link">&para;</a></h1>
+                <h1 id="git-software-development-workflow">Git software development workflow</h1>
 <p>This document describes the development workflow for OSG software packages kept in GitHub. It is intended for people who wish to contribute to OSG software.</p>
-<h2 id="git-and-github-basics">Git and GitHub basics<a class="headerlink" href="#git-and-github-basics" title="Permanent link">&para;</a></h2>
+<h2 id="git-and-github-basics">Git and GitHub basics</h2>
 <p>If you are unfamiliar with Git and GitHub, the GitHub website has a good series of tutorials at <a href="https://help.github.com/categories/bootcamp/">https://help.github.com/categories/bootcamp/</a></p>
-<h2 id="getting-shell-access-to-github">Getting shell access to GitHub<a class="headerlink" href="#getting-shell-access-to-github" title="Permanent link">&para;</a></h2>
+<h2 id="getting-shell-access-to-github">Getting shell access to GitHub</h2>
 <p>There are multiple ways of authenticating to GitHub from the shell. This section will cover using SSH keys. This is no longer the method recommended by GitHub, but is easier to set up for someone with existing SSH experience.</p>
 <p>The instructions here are derived from <a href="https://help.github.com/articles/generating-an-ssh-key/">GitHub's own instructions on using SSH keys</a>.</p>
-<h3 id="creating-a-new-ssh-key-optional-but-recommended">Creating a new SSH key (optional but recommended)<a class="headerlink" href="#creating-a-new-ssh-key-optional-but-recommended" title="Permanent link">&para;</a></h3>
+<h3 id="creating-a-new-ssh-key-optional-but-recommended">Creating a new SSH key (optional but recommended)</h3>
 <p>If you already have an SSH keypair in your <code>~/.ssh</code> directory that you want to use for GitHub, you may skip this step. It is more secure, however, to create a new keypair specifically for use with GitHub.</p>
 <p>The instructions below will create an SSH public/private key pair with the private key stored in <code>~/.ssh/id_github</code> and public key stored in <code>~/.ssh/id_github.pub</code>.</p>
-<h4 id="generating-the-key">Generating the key<a class="headerlink" href="#generating-the-key" title="Permanent link">&para;</a></h4>
+<h4 id="generating-the-key">Generating the key</h4>
 <p>Use <code>ssh-keygen</code> to generate the SSH keypair. For <em>EMAIL_ADDRESS</em>, use the email address associated with your GitHub account.</p>
 <div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> ssh-keygen -t rsa -b <span class="m">4096</span> -f ~/.ssh/id_github -C <span style="color:red">&lt;EMAIL_ADDRESS&gt;</span>
 </pre></div>
 
 
-<h4 id="configuring-ssh-to-use-the-key-for-github">Configuring SSH to use the key for GitHub<a class="headerlink" href="#configuring-ssh-to-use-the-key-for-github" title="Permanent link">&para;</a></h4>
+<h4 id="configuring-ssh-to-use-the-key-for-github">Configuring SSH to use the key for GitHub</h4>
 <p>Make sure SSH uses the new key by default to access GitHub. Create or edit <code>~/.ssh/config</code> and append the following lines:</p>
 <div class="codehilite"><pre><span></span>Host github.com
 IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 </pre></div>
 
 
-<h3 id="adding-the-ssh-public-key-to-github">Adding the SSH public key to GitHub<a class="headerlink" href="#adding-the-ssh-public-key-to-github" title="Permanent link">&para;</a></h3>
+<h3 id="adding-the-ssh-public-key-to-github">Adding the SSH public key to GitHub</h3>
 <p>Using the GitHub web interface:</p>
 <ol>
 <li>On the upper right of the screen, click on your profile picture</li>
@@ -1692,16 +1704,16 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <li>Below the "Key" field, click "Add SSH key"</li>
 </ol>
 <p>You should see your new key in the "SSH keys" list.</p>
-<h3 id="testing-that-shell-access-works">Testing that shell access works<a class="headerlink" href="#testing-that-shell-access-works" title="Permanent link">&para;</a></h3>
+<h3 id="testing-that-shell-access-works">Testing that shell access works</h3>
 <p>To verify you can authenticate to GitHub using SSH, SSH to <code>git@github.com</code>. You should see a message that 'you've successfully authenticated, but GitHub does not provide shell access.'</p>
-<h2 id="contribution-workflow">Contribution workflow<a class="headerlink" href="#contribution-workflow" title="Permanent link">&para;</a></h2>
+<h2 id="contribution-workflow">Contribution workflow</h2>
 <p>We use the standard GitHub <a href="https://help.github.com/articles/using-pull-requests/">pull request</a> workflow for making contributions to OSG software.</p>
 <p>If you've never contributed to this project on GitHub before, do the following steps first:</p>
 <ol>
 <li>Using the GitHub web interface, fork the repo you wish to contribute to.</li>
 <li>
 <p>Make a clone of your forked repo on your local machine.</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git clone &lt;git@github.com&gt;:<span style="color:red">&lt;USERNAME/PROJECT&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git clone <span class="p">&amp;</span>lt<span class="p">;</span>git@github.com<span class="p">&amp;</span>gt<span class="p">;</span>:<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>USERNAME/PROJECT<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
@@ -1716,14 +1728,14 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <ol>
 <li>
 <p>Create a branch to hold changes that are related to the issue you are working on. Give the branch a name that will remind you of its purpose, such as <code>sw2345-pathchange</code></p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git checkout -b <span style="color:red">&lt;BRANCH&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git checkout -b <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Make your commits to this branch, then push the branch to your repo on GitHub.</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red">&lt;BRANCH&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
@@ -1739,13 +1751,13 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 </ul>
 </li>
 </ol>
-<h2 id="release-workflow">Release workflow<a class="headerlink" href="#release-workflow" title="Permanent link">&para;</a></h2>
+<h2 id="release-workflow">Release workflow</h2>
 <p>This section is intended for OSG Software team members or the primary developers of a software project (i.e. those that make releases). Some of the steps require direct write access the GitHub repo for the project owned by <code>opensciencegrid</code>. (If you can approve pull requests, you have write access).</p>
 <p>A release of a software is created from your local clone of a software project. Before you release, you need to make sure your local clone is in sync with the GitHub repo owned by <code>opensciencegrid</code> (the OSG repo):</p>
 <ol>
 <li>
 <p>If you haven't already, add the OSG repo as a "remote" to your repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git remote add upstream git@github.com:opensciencegrid/<span style="color:red">&lt;PROJECT&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git remote add upstream git@github.com:opensciencegrid/<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PROJECT<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
@@ -1778,21 +1790,21 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <ol>
 <li>
 <p>Create the tag in your local repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git tag <span style="color:red">&lt;TAG&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git tag <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Push the tag to your own GitHub repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red">&lt;TAG&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Push the tag to the OSG repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push upstream <span style="color:red">&lt;TAG&gt;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push upstream <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
 </pre></div>
 
 
