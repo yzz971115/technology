@@ -1742,10 +1742,11 @@
 <h3 id="step-1-generate-the-release-list">Step 1: Generate the release list</h3>
 <p>Compare the list of packages already in pre-release to the final list for the release put together by the OSG Release Coordinator (who should have updated <code>release-list</code> in git). To do this, run the <code>1-verify-prerelease</code> script from git:</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;&lt;VERSION(S)&gt;&#39;</span>
+<span class="nv">REVISION</span><span class="o">=</span>&lt;REVISION&gt;
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="m">1</span>-verify-prerelease <span class="nv">$VERSIONS</span>
+<div class="codehilite"><pre><span></span><span class="m">1</span>-verify-prerelease -d <span class="nv">$REVISION</span> <span class="nv">$VERSIONS</span>
 </pre></div>
 
 
