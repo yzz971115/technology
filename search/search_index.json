@@ -2967,12 +2967,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181001/", 
-            "text": "OSG Technology Area Meeting, 1 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n \n\n\n\nAnnouncements\n\n\nBoth Brian and Mat out this week\nTimT will handle promotion requests.\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Tim\n\n\n6 (+3) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n138\n\n\n+3\n\n\nOpen\n\n\n\n\n\n\n19\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n-14\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-5\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\nReminder: topology and especially downtime updates should be considered high priority.\nPlease watch the \ntopology GitHub repo\n.\n\n\nCarl is working on automation and it might take a while before it's ready.\n\n\nDiscussions\n\n\nnone\n\n\nSupport Update\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.18\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n5\n\n\n+5\n\n\nOpen\n\n\n\n\n\n\n4\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n9\n\n\n+9\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.18\n\n\nTesting\n\n\nNothing yet\n\n\n\n\n\n\nReady for Release\n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData\n\n\ndteam VO\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\nIn Progress:  \n\n\n\n\nShepherding the xrootd plugins through the release process.  \n\n\nxrootd-TPC - contrib\n\n\nxrootd-macaroons - contrib\n\n\nxrootd-scitokens - release\n\n\nx509-scitokens-issuer - contrib\n\n\n\n\n\n\nStashCache documentation overhaul!!!\n\n\nStashCache packaging is also being modified to include auth, and less copy-paste!\n\n\n\n\nWe will start sending CMS XRootD traffic to the WLCG file transfer monitoring service (MONIT), in development.\n\n\n\n\n\n\n(Still ongoing) The repo server is going to move, once again.  But there should be no noticable differences.  If there is, then we failed.\n\n\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nLast Week\n\n\n\n\nFIXED\n: Discussions with with Internet2 to place StashCache in connection points. Waiting on GeoIP issues to be worked out.  Should be FIXED with new update!", 
+            "text": "OSG Technology Area Meeting, 1 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Carl, Derek, Marco, Suchandra, TimT\n\n\n\nAnnouncements\n\n\nBoth Brian and Mat out this week\nTimT will handle promotion requests.\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Tim\n\n\n6 (+3) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n138\n\n\n+3\n\n\nOpen\n\n\n\n\n\n\n19\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n-14\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-5\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\nReminder: topology and especially downtime updates should be considered high priority.\nPlease watch the \ntopology GitHub repo\n.\n\n\nCarl is working on automation and it might take a while before it's ready.\n\n\nDiscussions\n\n\n\n\nGlideinWWMS\n\n\nMarco thanks us for getting GlideinWMS 3.4 into 3.4\n\n\nGlideinWMS 3.4.1 is being tested this week\n\n\nGlideinWMS 3.5 should go into upcoming with HTCondor 8.8\n\n\n\n\n\n\n\n\nSupport Update\n\n\n\n\nNothing to report\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n5\n\n\n+5\n\n\nOpen\n\n\n\n\n\n\n4\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n9\n\n\n+9\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19\n\n\nTesting\n\n\nNothing yet\n\n\n\n\n\n\nReady for Release\n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData\n\n\ndteam VO\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\nIn Progress:  \n\n\n\n\nShepherding the xrootd plugins through the release process.  \n\n\nxrootd-TPC - contrib\n\n\nxrootd-macaroons - contrib\n\n\nxrootd-scitokens - release\n\n\nx509-scitokens-issuer - contrib\n\n\n\n\n\n\nStashCache documentation overhaul!!!\n\n\nStashCache packaging is also being modified to include auth, and less copy-paste!\n\n\n\n\nWe will start sending CMS XRootD traffic to the WLCG file transfer monitoring service (MONIT), in development.\n\n\n\n\n\n\n(Still ongoing) The repo server is going to move, once again.  But there should be no noticable differences.  If there is, then we failed.\n\n\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nLast Week\n\n\n\n\nFIXED\n: Discussions with with Internet2 to place StashCache in connection points. Waiting on GeoIP issues to be worked out.  Should be FIXED with new update!", 
             "title": "October 1, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20181001/#osg-technology-area-meeting-1-october-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  Carl, Derek, Marco, Suchandra, TimT", 
             "title": "OSG Technology Area Meeting, 1 October 2018"
         }, 
         {
@@ -2997,17 +2997,17 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181001/#discussions", 
-            "text": "none", 
+            "text": "GlideinWWMS  Marco thanks us for getting GlideinWMS 3.4 into 3.4  GlideinWMS 3.4.1 is being tested this week  GlideinWMS 3.5 should go into upcoming with HTCondor 8.8", 
             "title": "Discussions"
         }, 
         {
             "location": "/meetings/2018/TechArea20181001/#support-update", 
-            "text": "", 
+            "text": "Nothing to report", 
             "title": "Support Update"
         }, 
         {
             "location": "/meetings/2018/TechArea20181001/#osg-release-team", 
-            "text": "3.4.18   Status      5  +5  Open    4  +4  In Progress    0  +0  Ready for Testing    0  +0  Ready for Release    9  +9  Total      OSG 3.4.18  Testing  Nothing yet    Ready for Release  Nothing yet      Data  dteam VO", 
+            "text": "3.4.19   Status      5  +5  Open    4  +4  In Progress    0  +0  Ready for Testing    0  +0  Ready for Release    9  +9  Total      OSG 3.4.19  Testing  Nothing yet    Ready for Release  Nothing yet      Data  dteam VO", 
             "title": "OSG Release Team"
         }, 
         {
