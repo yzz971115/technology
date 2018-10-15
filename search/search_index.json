@@ -2967,12 +2967,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/", 
-            "text": "OSG Technology Area Meeting, 15 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n  \n\n\nAnnouncements\n\n\nTimT out Wed and Thurs  \n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n4 (-3) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n138\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n14\n\n\n-3\n\n\nIn Progress\n\n\n\n\n\n\n5\n\n\n+5\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nNext doc focus this Thursday (10/18) afternoon\n\n\nReminder: topology and especially downtime updates should be considered high priority. Please watch the \ntopology GitHub repo\n.\n\n\nAI (TimT): Update your \nY7 effort numbers\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\nNone this week  \n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n5\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n4\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n9\n\n\n+9\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19  \n\n\nTesting  \n\n\nNothing yet\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNothing on the horizon\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 15 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Edgar, Mat, TimT\n\n\nAnnouncements\n\n\nTimT out Wed and Thurs  \n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n4 (-3) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n138\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n14\n\n\n-3\n\n\nIn Progress\n\n\n\n\n\n\n5\n\n\n+5\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nNext doc focus this Thursday (10/18) afternoon\n\n\nReminder: topology and especially downtime updates should be considered high priority. Please watch the \ntopology GitHub repo\n.\n\n\nAI (TimT): Update your \nY7 effort numbers\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nUCSD (Edgar) - worked with the UCSD CIO so that they can now request InCommon IGTF certificates\n\n\nUniversity of Amsterdam (Edgar) - encountered some policy issues with accepting Let's Encrypt certificates.\n\n\nGlideinWMS (Edgar) - 3.4.1 release candidate with built-in Singularity support has been running for a few weeks at GLOW-ITB and GlueX without any issues.\n\n\nUCSD test frontend (Edgar) - OSG and CMS Singularity wrappers are consistently having issues accessing CVMFS at Nebraska, Purdue, and some T3s. Investigating.\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n5\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n4\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n9\n\n\n+9\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19  \n\n\nTesting  \n\n\nNothing yet\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNothing on the horizon\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nAI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB\n\n\n\n\nOSG Investigations Team\n\n\nNo report\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "October 15, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/#osg-technology-area-meeting-15-october-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Carl, Edgar, Mat, TimT", 
             "title": "OSG Technology Area Meeting, 15 October 2018"
         }, 
         {
@@ -3002,7 +3002,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/#support-update", 
-            "text": "None this week", 
+            "text": "UCSD (Edgar) - worked with the UCSD CIO so that they can now request InCommon IGTF certificates  University of Amsterdam (Edgar) - encountered some policy issues with accepting Let's Encrypt certificates.  GlideinWMS (Edgar) - 3.4.1 release candidate with built-in Singularity support has been running for a few weeks at GLOW-ITB and GlueX without any issues.  UCSD test frontend (Edgar) - OSG and CMS Singularity wrappers are consistently having issues accessing CVMFS at Nebraska, Purdue, and some T3s. Investigating.", 
             "title": "Support Update"
         }, 
         {
@@ -3012,12 +3012,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/#discussion_1", 
-            "text": "None this week", 
+            "text": "AI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB", 
             "title": "Discussion"
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/#osg-investigations-team", 
-            "text": "", 
+            "text": "No report", 
             "title": "OSG Investigations Team"
         }, 
         {
