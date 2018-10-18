@@ -1748,19 +1748,19 @@
 <p class="admonition-title">Note</p>
 <p>If you are performing a software release, please follow the instructions <a href="../../release/cut-sw-release/">here</a></p>
 </div>
-<h1 id="how-to-cut-a-data-release">How to Cut a Data Release</h1>
+<h1 id="how-to-cut-a-data-release">How to Cut a Data Release<a class="headerlink" href="#how-to-cut-a-data-release" title="Permanent link">&para;</a></h1>
 <p>This document details the process for releasing new OSG Data Release version(s). This document does NOT discuss the policy for deciding what goes into a release, which can be found <a href="../../release/release-policy/">here</a>.</p>
 <p>Due to the length of time that this process takes, it is recommended to do the release over three or more days to allow for errors to be corrected and tests to be run.</p>
-<h2 id="requirements">Requirements</h2>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
 <li>User certificate registered with OSG's koji with build and release team privileges</li>
 <li>An account on UW CS machines (e.g. <code>library</code>, <code>ingwe</code>) to access UW's AFS</li>
 <li><code>release-tools</code> scripts in your <code>PATH</code> (<a href="https://github.com/opensciencegrid/release-tools">GitHub</a>)</li>
 <li><code>osg-build</code> scripts in your <code>PATH</code> (installed via OSG yum repos or <a href="https://github.com/opensciencegrid/osg-build">source</a>)</li>
 </ul>
-<h2 id="pick-the-version-and-revision-numbers">Pick the Version and Revision Numbers</h2>
+<h2 id="pick-the-version-and-revision-numbers">Pick the Version and Revision Numbers<a class="headerlink" href="#pick-the-version-and-revision-numbers" title="Permanent link">&para;</a></h2>
 <p>The rest of this document makes references to <code>&lt;REVISION&gt;</code> and <code>&lt;VERSION(S)&gt;</code> , which refer to the space-delimited list of OSG version(s) and data revision, respectively (e.g. <code>3.3.28 3.4.3</code> and <code>2</code>, respectively). If you are unsure about either the version or revision, please consult the release manager.</p>
-<h2 id="day-0-generate-preliminary-release-list">Day 0: Generate Preliminary Release List</h2>
+<h2 id="day-0-generate-preliminary-release-list">Day 0: Generate Preliminary Release List<a class="headerlink" href="#day-0-generate-preliminary-release-list" title="Permanent link">&para;</a></h2>
 <p>The release manager often needs a tentative list of packages to be released. This is done by finding the package differences between osg-testing and the current release. Run <code>0-generate-pkg-list</code> from a machine that has your koji-registered user certificate:</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;&lt;VERSION(S)&gt;&#39;</span>
 <span class="nv">REVISION</span><span class="o">=</span>&lt;REVISION&gt;
@@ -1773,9 +1773,9 @@
 </pre></div>
 
 
-<h2 id="day-1-verify-pre-release">Day 1: Verify Pre-Release</h2>
+<h2 id="day-1-verify-pre-release">Day 1: Verify Pre-Release<a class="headerlink" href="#day-1-verify-pre-release" title="Permanent link">&para;</a></h2>
 <p>This section is to be performed 1-2 days before the release (as designated by the release manager) to perform last checks of the release.</p>
-<h3 id="step-1-generate-the-release-list">Step 1: Generate the release list</h3>
+<h3 id="step-1-generate-the-release-list">Step 1: Generate the release list<a class="headerlink" href="#step-1-generate-the-release-list" title="Permanent link">&para;</a></h3>
 <p>Compare the list of packages already in pre-release to the final list for the release put together by the OSG Release Coordinator (who should have updated <code>release-list</code> in git). To do this, run the <code>1-verify-prerelease</code> script from git:</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;&lt;VERSION(S)&gt;&#39;</span>
 <span class="nv">REVISION</span><span class="o">=</span>&lt;REVISION&gt;
@@ -1787,10 +1787,10 @@
 
 
 <p>If there are any discrepancies consult the release manager. You may have to tag packages with the <code>osg-koji</code> tool.</p>
-<h3 id="step-2-test-the-pre-release-on-the-madison-itb-site">Step 2: Test the Pre-Release on the Madison ITB site</h3>
+<h3 id="step-2-test-the-pre-release-on-the-madison-itb-site">Step 2: Test the Pre-Release on the Madison ITB site<a class="headerlink" href="#step-2-test-the-pre-release-on-the-madison-itb-site" title="Permanent link">&para;</a></h3>
 <p>Test the pre-release on the Madison ITB by following the <a href="../../release/itb-testing/">ITB pre-release testing instructions</a>.</p>
-<h2 id="day-2-pushing-the-release">Day 2: Pushing the Release</h2>
-<h3 id="step-1-push-from-pre-release-to-release">Step 1: Push from pre-release to release</h3>
+<h2 id="day-2-pushing-the-release">Day 2: Pushing the Release<a class="headerlink" href="#day-2-pushing-the-release" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-push-from-pre-release-to-release">Step 1: Push from pre-release to release<a class="headerlink" href="#step-1-push-from-pre-release-to-release" title="Permanent link">&para;</a></h3>
 <p>This script moves the packages into release, clones releases into new version-specific release repos,
 locks the repos and regenerates them.</p>
 <div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s1">&#39;VERSION(S)&gt;&#39;</span>
@@ -1806,7 +1806,7 @@ locks the repos and regenerates them.</p>
 <li><code>*.txt</code> files are also created and it should be verified that they've been moved to <code>/p/vdt/public/html/release-info/</code> on UW's AFS.</li>
 <li>For each release version, use the <code>*release-note*</code> files to update the relevant sections of the release note pages.</li>
 </ol>
-<h3 id="step-2-update-the-docker-wn-client">Step 2: Update the Docker WN client</h3>
+<h3 id="step-2-update-the-docker-wn-client">Step 2: Update the Docker WN client<a class="headerlink" href="#step-2-update-the-docker-wn-client" title="Permanent link">&para;</a></h3>
 <p>Update the GitHub repo at <a href="https://github.com/opensciencegrid/docker-osg-wn">opensciencegrid/docker-osg-wn</a> using the <code>update-all</code> script found in <a href="https://github.com/opensciencegrid/docker-osg-wn-scripts">opensciencegrid/docker-osg-wn-scripts</a>. This requires push access to the <code>opensciencegrid/docker-osg-wn</code> repo.</p>
 <p>Instructions for using the script:</p>
 <div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/docker-osg-wn-scripts.git
@@ -1818,7 +1818,7 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 </pre></div>
 
 
-<h3 id="step-3-verify-the-vo-package-andor-ca-certificates">Step 3: Verify the VO Package and/or CA certificates</h3>
+<h3 id="step-3-verify-the-vo-package-andor-ca-certificates">Step 3: Verify the VO Package and/or CA certificates<a class="headerlink" href="#step-3-verify-the-vo-package-andor-ca-certificates" title="Permanent link">&para;</a></h3>
 <p>Wait for the <a href="https://repo.opensciencegrid.org/cadist/">CA certificates</a> to be updated.
 It may take a while for the updates to reach the mirror used to update the web site.
 The repository is checked hourly for updated CA certificates.
@@ -1829,7 +1829,7 @@ verify that the version of the VO Package and/or CA certificates match the versi
 </pre></div>
 
 
-<h3 id="step-4-announce-the-release">Step 4: Announce the release</h3>
+<h3 id="step-4-announce-the-release">Step 4: Announce the release<a class="headerlink" href="#step-4-announce-the-release" title="Permanent link">&para;</a></h3>
 <p>The following instructions are meant for the release manager (or interim release manager). If you are not the release manager, let the release manager know that they can announce the release.</p>
 <ol>
 <li>
@@ -1884,7 +1884,7 @@ verify that the version of the VO Package and/or CA certificates match the versi
 <p>The release manager closes the tickets marked 'Ready for Release' in the release's JIRA filter using the 'bulk change' function. Uncheck the box that reads "Send mail for this update"</p>
 </li>
 </ol>
-<h2 id="day-3-update-the-itb">Day 3: Update the ITB</h2>
+<h2 id="day-3-update-the-itb">Day 3: Update the ITB<a class="headerlink" href="#day-3-update-the-itb" title="Permanent link">&para;</a></h2>
 <p>Now that the release has had a chance to propogate to all the mirrors, update the Madison ITB site by following
 the <a href="../../infrastructure/madison-itb/#doing-yum-updates">yum update section</a> of the Madison ITB document.</p>
                 

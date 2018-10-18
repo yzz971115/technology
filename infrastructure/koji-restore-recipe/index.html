@@ -1812,12 +1812,12 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/infrastructure/koji-restore-recipe.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="how-to-restore-koji">How to Restore Koji</h1>
+                <h1 id="how-to-restore-koji">How to Restore Koji<a class="headerlink" href="#how-to-restore-koji" title="Permanent link">&para;</a></h1>
 <p>This document contains recipes on how to restore the Koji services and the database they require. It is divided into two sections: one for the database (to be done if something happens to <em>db-01</em>), and one for the server hosting the koji services (to be done if something happens to <em>koji.chtc</em>).</p>
 <p>In case both the database and the hub need to be restored, the database should be restored first.</p>
-<h2 id="background-information">Background information</h2>
+<h2 id="background-information">Background information<a class="headerlink" href="#background-information" title="Permanent link">&para;</a></h2>
 <p>Backups of <em>koji.chtc.wisc.edu</em> and <em>db-01.batlab.org</em> are on <em>host-3.chtc.wisc.edu</em> in <code>/export/backup/&lt;DATE&gt;</code>. That machine is in WID. (Same room as <em>koji.chtc</em> itself, which is why we have offsite backups). It's a homebrew rsync-based backup system. (Not our home -- Nate told me it was written for Midwest Tier 2.) They go back up to a week, with a monthly snapshot for a year.</p>
-<h2 id="setting-up-your-environment">Setting up your environment</h2>
+<h2 id="setting-up-your-environment">Setting up your environment<a class="headerlink" href="#setting-up-your-environment" title="Permanent link">&para;</a></h2>
 <p>For all of these steps, you will need a root shell on <em>host-3.chtc.wisc.edu</em> and have the following environment variables defined:</p>
 <div class="codehilite"><pre><span></span><span class="go">NEWDB=&lt;FQDN OF NEW DATABASE SERVER&gt;</span>
 <span class="go">NEWKOJI=&lt;FQDN OF NEW KOJI HOST&gt;</span>
@@ -1828,11 +1828,11 @@
 </pre></div>
 
 
-<h2 id="restoring-the-database">Restoring the database</h2>
+<h2 id="restoring-the-database">Restoring the database<a class="headerlink" href="#restoring-the-database" title="Permanent link">&para;</a></h2>
 <p>The entire filesystem of <em>db-01</em> is backed up -- this includes all of <code>/var/lib/pgsql</code>, including the database as-is. In theory, this means that we could just rsync all the files to a blank hard drive, boot up, and we'd have a <em>db-01</em> again. However, the Postgres manual warns against restoring the database from a filesystem backup that was made while the database was live, and we do not shut down the database before backups.</p>
 <p>We might be able to restore every other part of the filesystem besides the database, which would speed up the overall restoration process, but only the fresh install was tested.</p>
 <p>The new database server is called <em>newdb</em> in these instructions.</p>
-<h3 id="restoring-services">Restoring Services</h3>
+<h3 id="restoring-services">Restoring Services<a class="headerlink" href="#restoring-services" title="Permanent link">&para;</a></h3>
 <p>Prerequisites for <em>newdb</em>: an EL 6+ host with an SSH server set up and accessible (as root) from <em>host-3.chtc.wisc.edu</em></p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span><span class="c1"># On newdb:</span>
 <span class="gp">#</span><span class="c1"># Install postgres, get a blank DB up and create the user that koji</span>
@@ -1853,7 +1853,7 @@
 
 
 <p>Continue on to the next section</p>
-<h3 id="restoring-database-contents">Restoring Database Contents</h3>
+<h3 id="restoring-database-contents">Restoring Database Contents<a class="headerlink" href="#restoring-database-contents" title="Permanent link">&para;</a></h3>
 <p>Assumes you have restored the /var directory from backup into <code>/root/dbrestore/var</code>.</p>
 <ol>
 <li>
@@ -1887,7 +1887,7 @@ host koji koji 128.104.100.41/32 md5
 
 </li>
 </ol>
-<h3 id="validation">Validation</h3>
+<h3 id="validation">Validation<a class="headerlink" href="#validation" title="Permanent link">&para;</a></h3>
 <p>Do the following tests to make sure the database is ready to use:</p>
 <ol>
 <li>
@@ -1917,11 +1917,11 @@ Be sure you get prompted for a password, and the password from <code>/etc/koji-h
 <p>Continue to "Restoring Koji" if needed, otherwise skip to "Starting Services and Validation"</p>
 </li>
 </ol>
-<h2 id="restoring-koji">Restoring Koji</h2>
+<h2 id="restoring-koji">Restoring Koji<a class="headerlink" href="#restoring-koji" title="Permanent link">&para;</a></h2>
 <p>Both the root filesystem of <em>koji.chtc</em> and <code>/mnt/koji</code> are backed up. The root filesystem backups are in the <code>rootfs</code> subdirectory of <code>/export/backup/$DATE/koji.chtc.wisc.edu</code> and the backups of <code>/mnt/koji</code> are in the <code>kojifs</code> subdirectory.</p>
 <p>The following instructions show how to restore the critical components of Koji onto a new machine.</p>
 <p>In the instructions, the new host will be named <em>newkoji</em>.</p>
-<h3 id="installing-the-os">Installing the OS</h3>
+<h3 id="installing-the-os">Installing the OS<a class="headerlink" href="#installing-the-os" title="Permanent link">&para;</a></h3>
 <p>Prerequisites for <em>newkoji</em>: an EL 6 host with an SSH server set up and accessible (as root) from <em>host-3.chtc.wisc.edu</em> <br />
 (This recipe was tested for EL 6, on the same machine as <em>newdb</em>).</p>
 <ol>
@@ -1983,7 +1983,7 @@ Be sure you get prompted for a password, and the password from <code>/etc/koji-h
 <p>Continue on to the next section</p>
 </li>
 </ol>
-<h3 id="restoring-configuration">Restoring Configuration</h3>
+<h3 id="restoring-configuration">Restoring Configuration<a class="headerlink" href="#restoring-configuration" title="Permanent link">&para;</a></h3>
 <p>On <em>newkoji</em>, define the shell function <code>dirclone</code>, listed below:</p>
 <div class="codehilite"><pre><span></span>dirclone <span class="o">()</span> <span class="o">{</span>
    <span class="nv">srcdir</span><span class="o">=</span><span class="k">$(</span>dirname <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="k">)</span>/<span class="k">$(</span>basename <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="k">)</span>
@@ -2100,11 +2100,11 @@ Disallow: /
 </ul>
 </li>
 </ol>
-<h3 id="fixing-names">Fixing Names</h3>
+<h3 id="fixing-names">Fixing Names<a class="headerlink" href="#fixing-names" title="Permanent link">&para;</a></h3>
 <p>This section should be done if <em>newdb</em> or <em>newkoji</em> do not have the same as the previous db server and hub (i.e. <em>db-01.batlab.org</em> and <em>koji.chtc.wisc.edu</em>). This section should be completed on <em>newkoji</em>.</p>
-<h4 id="fixing-config-files-if-newdb-was-renamed">Fixing config files if <em>newdb</em> was renamed</h4>
+<h4 id="fixing-config-files-if-newdb-was-renamed">Fixing config files if <em>newdb</em> was renamed<a class="headerlink" href="#fixing-config-files-if-newdb-was-renamed" title="Permanent link">&para;</a></h4>
 <p>The only change that's needed if <em>newdb</em> was renamed is to <code>/etc/koji-hub/hub.conf</code>. Edit that file and change the DBHost line to point to the new hostname. After editing, make sure <code>hub.conf</code> is owned by <code>root:apache</code> and chmodded 0640.</p>
-<h4 id="installing-new-certkey-pairs-for-newkoji">Installing new cert/key pairs for <em>newkoji</em></h4>
+<h4 id="installing-new-certkey-pairs-for-newkoji">Installing new cert/key pairs for <em>newkoji</em><a class="headerlink" href="#installing-new-certkey-pairs-for-newkoji" title="Permanent link">&para;</a></h4>
 <p>You will need a cert/key pair for the new hostname. Run <code>dos2unix</code> on all cert and key files before using them. Define the shell function <code>makepem</code>, listed below. <code>makepem</code> combines a public and private keypair to make a .pem file that the Koji services use.</p>
 <p>Usage: <code>makepem &lt;CERTFILE&gt; &lt;KEYFILE&gt; &lt;OUTPUT_FILE&gt;</code></p>
 <div class="codehilite"><pre><span></span>makepem <span class="o">()</span> <span class="o">{</span>
@@ -2159,7 +2159,7 @@ Disallow: /
 </pre></div>
 
 
-<h4 id="fixing-hostname-in-config-files">Fixing hostname in config files</h4>
+<h4 id="fixing-hostname-in-config-files">Fixing hostname in config files<a class="headerlink" href="#fixing-hostname-in-config-files" title="Permanent link">&para;</a></h4>
 <p>Use sed to replace the hostname in the following config files in /etc:</p>
 <ul>
 <li><code>/etc/kojira/kojira.conf</code></li>
@@ -2170,13 +2170,13 @@ Disallow: /
 <li><code>/etc/kojid/kojid.conf</code></li>
 </ul>
 <p>You will need to fix <code>/etc/kojid/kojid.conf</code> on all builder machines as well (e.g. <em>kojibuilder2.chtc.wisc.edu</em>).</p>
-<h4 id="fixing-hostname-in-database">Fixing hostname in database</h4>
+<h4 id="fixing-hostname-in-database">Fixing hostname in database<a class="headerlink" href="#fixing-hostname-in-database" title="Permanent link">&para;</a></h4>
 <p>You will need to find and fix entries that contain the hostname in the following tables:</p>
 <ul>
 <li><code>host</code> (should be 1 entry)</li>
 <li><code>users</code> (should be 2 entries, one for the host, and one for the kojira user)</li>
 </ul>
-<h4 id="fixing-hostname-elsewhere">Fixing hostname elsewhere</h4>
+<h4 id="fixing-hostname-elsewhere">Fixing hostname elsewhere<a class="headerlink" href="#fixing-hostname-elsewhere" title="Permanent link">&para;</a></h4>
 <p>These steps are only necessary if you cannot get a DNS Canonical Name (CN) record such that <em>koji.chtc.wisc.edu</em> resolves to <em>newkoji</em>.</p>
 <ol>
 <li>Update the repo definitions in the <em>osg-release</em> package</li>
@@ -2192,7 +2192,7 @@ Disallow: /
 </li>
 <li>Mail people that they will need to update <em>osg-build</em> and rerun <code>osg-koji setup</code></li>
 </ol>
-<h3 id="starting-services-and-validation">Starting Services and Validation</h3>
+<h3 id="starting-services-and-validation">Starting Services and Validation<a class="headerlink" href="#starting-services-and-validation" title="Permanent link">&para;</a></h3>
 <p>Now you will start up Koji services and verify that they function.
 Prerequisite: previous restore steps have been completed and <code>postgresql</code> is running on the database host.</p>
 <p>All steps will be run on <em>newkoji</em>.</p>

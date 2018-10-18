@@ -1918,7 +1918,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/infrastructure/koji-initial-install.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="notes-on-koji-initial-install">Notes on Koji initial install</h1>
+                <h1 id="notes-on-koji-initial-install">Notes on Koji initial install<a class="headerlink" href="#notes-on-koji-initial-install" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This document was written for the original install of koji/koji-hub version
@@ -1926,7 +1926,7 @@
 purposes, as this setup is no longer accurate with newer versions of Koji,
 machine moves and renames, cert authority changes, etc.</p>
 </div>
-<h2 id="machine-setup">Machine setup</h2>
+<h2 id="machine-setup">Machine setup<a class="headerlink" href="#machine-setup" title="Permanent link">&para;</a></h2>
 <p>koji is run on <code>koji-hub.batlab.org</code>; right now a single machine was used for the hub (koji-hub), the web frontend (koji-web), repo generation (kojira), and el5 building (kojid). A second machine, <code>kojibuilder1.batlab.org</code> was used for el6 building.</p>
 <p>As instructions for setting up the machine, I'm just going to take the Fedora guide at <a href="http://fedoraproject.org/wiki/Koji/ServerHowTo">http://fedoraproject.org/wiki/Koji/ServerHowTo</a>, and add modifications / comments to suit our setup.</p>
 <p>Sections taken from the Fedora guide will be between dividers like this:</p>
@@ -1937,7 +1937,7 @@ machine moves and renames, cert authority changes, etc.</p>
 </ul>
 </blockquote>
 <hr />
-<h3 id="packages-to-install">Packages to install</h3>
+<h3 id="packages-to-install">Packages to install<a class="headerlink" href="#packages-to-install" title="Permanent link">&para;</a></h3>
 <hr />
 <blockquote>
 <p><strong>On the server (koji-hub/koji-web)</strong></p>
@@ -1964,10 +1964,10 @@ machine moves and renames, cert authority changes, etc.</p>
 <li>koji-builder</li>
 <li>koji-utils</li>
 </ul>
-<h3 id="filesystems">Filesystems</h3>
+<h3 id="filesystems">Filesystems<a class="headerlink" href="#filesystems" title="Permanent link">&para;</a></h3>
 <hr />
 <blockquote>
-<h4 id="a-note-on-filesystem-space">A note on filesystem space</h4>
+<h4 id="a-note-on-filesystem-space">A note on filesystem space<a class="headerlink" href="#a-note-on-filesystem-space" title="Permanent link">&para;</a></h4>
 <p>Koji will consume copious amounts of disk space under the primary KojiDir directory (as set in the kojihub.conf file).</p>
 </blockquote>
 <hr />
@@ -1978,7 +1978,7 @@ machine moves and renames, cert authority changes, etc.</p>
 </blockquote>
 <hr />
 <p><code>kojid</code> (the builder daemon) will refuse to start a build if it does not have sufficient space under <code>/var/lib/mock</code>. By default, this is an 8G surplus, but we lowered it to 4G for <code>koji-hub.batlab.org</code>. The build roots will be wiped after successful builds, but the build roots for failed builds will be kept around for 2 weeks (?); as a result, disk usage of <code>/var/lib/mock</code> can swing wildly. For <code>koji-hub.batlab.org</code>, we have allocated 35G for <code>/var/lib/mock</code>. <code>/var/cache/mock</code> doesn't use up that much space, so we didn't make a separate partition for it, it just uses what's under <code>/</code>.</p>
-<h3 id="authentication">Authentication</h3>
+<h3 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h3>
 <p>Most of the "Koji Authentication Selection" section can be skipped. We got our certs from DigiCert. <strong>Note</strong> that certs are sensitive to line ending issues -- you may have to run <code>dos2unix</code> on them before they would work.</p>
 <p>We have 3 certs, with the following subjects:</p>
 <ul>
@@ -1990,7 +1990,7 @@ machine moves and renames, cert authority changes, etc.</p>
 <p>Copies of the certs exist in AFS at <code>/p/condor/home/certificates/koji-hub.batlab.org/</code> and <code>/p/condor/home/certificates/kojibuilder1.batlab.org/</code></p>
 <p>Clients connecting to koji-hub need a file containing the CA certs; this is just a concatenation of the DigiCert Grid Root CA and the DigiCert Grid CA-1 certs, which can be obtained from DigiCert's website (get PEM format). We have a <code>digicert-chain.crt</code> in <code>/etc/pki/tls/certs/digicert-chain.crt</code> on <code>koji-hub</code></p>
 <p>We made a <code>kojiadmin</code> user, but we didn't make a cert for it so we just used user/pass authentication until we set up our own accounts and then disabled <code>kojiadmin</code>.</p>
-<h4 id="using-proxy-certs">Using proxy certs</h4>
+<h4 id="using-proxy-certs">Using proxy certs<a class="headerlink" href="#using-proxy-certs" title="Permanent link">&para;</a></h4>
 <p><code>/etc/sysconfig/httpd</code> needed to be changed to include the following lines:</p>
 <div class="codehilite"><pre><span></span><span class="nv">OPENSSL_ALLOW_PROXY</span><span class="o">=</span><span class="m">1</span>
 <span class="nv">OPENSSL_ALLOW_PROXY_CERTS</span><span class="o">=</span><span class="m">1</span>
@@ -2001,7 +2001,7 @@ machine moves and renames, cert authority changes, etc.</p>
 
 
 <p>The user must use RFC proxies and must have a version of the koji client of 1.6.0-6.osg or newer.</p>
-<h3 id="postgres-database">Postgres Database</h3>
+<h3 id="postgres-database">Postgres Database<a class="headerlink" href="#postgres-database" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Install postgres:<br />
 <code>[root@koji-hub]# yum install postgresql-server</code></li>
@@ -2016,7 +2016,7 @@ machine moves and renames, cert authority changes, etc.</p>
 <!-- I'd love to highlight the quoted stuff but the ``` is broken within blockquotes -->
 
 <blockquote>
-<h4 id="setup-postgresql-and-populate-schema">Setup PostgreSQL and populate schema:</h4>
+<h4 id="setup-postgresql-and-populate-schema">Setup PostgreSQL and populate schema:<a class="headerlink" href="#setup-postgresql-and-populate-schema" title="Permanent link">&para;</a></h4>
 <p>The following commands will create the <code>koji</code> user within PostgreSQL and will then create the koji database using the schema within the <code>/usr/share/doc/koji*/docs/schema.sql</code> directory</p>
 <div class="codehilite"><pre><span></span>root@localhost$ su - postgres
 postgres@localhost$ createuser koji
@@ -2056,7 +2056,7 @@ host    koji        koji        ::1/128               trust
 </pre></div>
 
 
-<h3 id="koji-hub">Koji-Hub</h3>
+<h3 id="koji-hub">Koji-Hub<a class="headerlink" href="#koji-hub" title="Permanent link">&para;</a></h3>
 <hr />
 <blockquote>
 <p>Koji-hub is the center of all Koji operations. It is an XML-RPC server running under mod_python in Apache. koji-hub is passive in that it only receives XML-RPC calls and relies upon the build daemons and other components to initiate communication. Koji-hub is the only component that has direct access to the database and is one of the two components that have write access to the file system.</p>
@@ -2076,7 +2076,7 @@ host    koji        koji        ::1/128               trust
 
 <hr />
 <blockquote>
-<h4 id="etchttpdconfhttpdconf">/etc/httpd/conf/httpd.conf:</h4>
+<h4 id="etchttpdconfhttpdconf">/etc/httpd/conf/httpd.conf:<a class="headerlink" href="#etchttpdconfhttpdconf" title="Permanent link">&para;</a></h4>
 <p>The apache web server has two places that it sets maximum requests a server will handle before the server restarts. The xmlrpc interface in kojihub is a python application, and mod_python can sometimes grow outrageously large when it doesn't reap memory often enough. As a result, it is strongly recommended that you set both instances of MaxRequestsPerChild in <code>httpd.conf</code> to something reasonable in order to prevent the server from becoming overloaded and crashing (at 100 the <code>httpd</code> processes will grow to about 75MB resident set size before respawning).</p>
 <div class="codehilite"><pre><span></span>&amp;lt;IfModule prefork.c&amp;gt;
 ...
@@ -2089,7 +2089,7 @@ MaxRequestsPerChild  100
 </pre></div>
 
 
-<h4 id="etckoji-hubhubconf">/etc/koji-hub/hub.conf:</h4>
+<h4 id="etckoji-hubhubconf">/etc/koji-hub/hub.conf:<a class="headerlink" href="#etckoji-hubhubconf" title="Permanent link">&para;</a></h4>
 <p>This file contains the configuration information for the hub. You will need to edit this configuration to point Koji Hub to the database you are using and to setup Koji Hub to utilize the authentication scheme you selected in the beginning.</p>
 </blockquote>
 <hr />
@@ -2109,7 +2109,7 @@ MaxRequestsPerChild  100
 <p>Finally, there is a <code>[policy]</code> section for controlling ACLs. The contents of that are described later in this document.</p>
 <hr />
 <blockquote>
-<h4 id="etchttpdconfdkojihubconf">/etc/httpd/conf.d/kojihub.conf:</h4>
+<h4 id="etchttpdconfdkojihubconf">/etc/httpd/conf.d/kojihub.conf:<a class="headerlink" href="#etchttpdconfdkojihubconf" title="Permanent link">&para;</a></h4>
 <p>If using SSL auth, uncomment these lines for kojiweb to allow logins.</p>
 <div class="codehilite"><pre><span></span>&amp;lt;Location /kojihub&amp;gt;
 SSLOptions +StdEnvVars
@@ -2130,7 +2130,7 @@ SSLOptions +StdEnvVars
 
 <hr />
 <blockquote>
-<h4 id="etchttpdconfdsslconf">/etc/httpd/conf.d/ssl.conf:</h4>
+<h4 id="etchttpdconfdsslconf">/etc/httpd/conf.d/ssl.conf:<a class="headerlink" href="#etchttpdconfdsslconf" title="Permanent link">&para;</a></h4>
 <p>If using SSL you will also need to add the needed SSL options for apache. These options should point to where the certificates are located on the hub.</p>
 </blockquote>
 <hr />
@@ -2153,7 +2153,7 @@ SSLOptions +StdEnvVars
 
 
 <p>Restart <code>httpd</code> after doing this.</p>
-<h4 id="adding-a-real-admin-user">Adding a real admin user</h4>
+<h4 id="adding-a-real-admin-user">Adding a real admin user<a class="headerlink" href="#adding-a-real-admin-user" title="Permanent link">&para;</a></h4>
 <p>At this point, SSL should be set up on Koji Hub. Create an account for yourself (your CN) and give yourself the admin bit:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[kojiadmin@koji-hub]$</span> koji add-user <span class="s1">&#39;Your Name 123456&#39;</span>
 <span class="gp">[kojiadmin@koji-hub]$</span> koji grant-permission admin <span class="s1">&#39;Your Name 123456&#39;</span>
@@ -2171,14 +2171,14 @@ SSLOptions +StdEnvVars
 </pre></div>
 
 
-<h4 id="koji-filesystem">Koji filesystem</h4>
+<h4 id="koji-filesystem">Koji filesystem<a class="headerlink" href="#koji-filesystem" title="Permanent link">&para;</a></h4>
 <p><code>KojiDir</code> is <code>/mnt/koji</code>, so the following tree should be created:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[root@koji-hub]#</span> mkdir -p /mnt/koji/<span class="o">{</span>packages,repos,work,scratch<span class="o">}</span>
 <span class="gp">[root@koji-hub]#</span> chown apache:apache *
 </pre></div>
 
 
-<h4 id="accounts-for-kojira-and-kojid">Accounts for kojira and kojid</h4>
+<h4 id="accounts-for-kojira-and-kojid">Accounts for kojira and kojid<a class="headerlink" href="#accounts-for-kojira-and-kojid" title="Permanent link">&para;</a></h4>
 <hr />
 <blockquote>
 <p>It is important to note that the kojira component needs repo privileges, but if you just let the account get auto created the first time you run kojira, it won't have that privilege, so you should pre-create the account and grant it the repo privilege now.</p>
@@ -2195,7 +2195,7 @@ kojiadmin@koji-hub$ koji grant-permission repo kojira
 </pre></div>
 
 
-<h3 id="koji-web-kojid">Koji-Web, Kojid</h3>
+<h3 id="koji-web-kojid">Koji-Web, Kojid<a class="headerlink" href="#koji-web-kojid" title="Permanent link">&para;</a></h3>
 <p>Installing:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[root@koji-hub]#</span> yum install koji-web mod_ssl
 <span class="gp">[root@koji-hub]#</span> yum install koji-builder
@@ -2203,7 +2203,7 @@ kojiadmin@koji-hub$ koji grant-permission repo kojira
 
 
 <p>Note that we use a patched koji-builder, so be sure to install what's in the OSG repository. (The patch is not likely to be accepted upstream).</p>
-<h4 id="ssl-certs">SSL certs</h4>
+<h4 id="ssl-certs">SSL certs<a class="headerlink" href="#ssl-certs" title="Permanent link">&para;</a></h4>
 <p>The following files should be in the <code>/etc/pki/tls</code> tree:</p>
 <ul>
 <li>
@@ -2243,7 +2243,7 @@ kojiadmin@koji-hub$ koji grant-permission repo kojira
     the DigiCert CAs catted together</p>
 </li>
 </ul>
-<h4 id="adding-koji-builder-host-to-database">Adding koji-builder host to database</h4>
+<h4 id="adding-koji-builder-host-to-database">Adding koji-builder host to database<a class="headerlink" href="#adding-koji-builder-host-to-database" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="gp">[you@koji-hub]$</span> koji add-host-to-channel koji-hub.batlab.org createrepo
 </pre></div>
 
@@ -2253,13 +2253,13 @@ kojiadmin@koji-hub$ koji grant-permission repo kojira
 </pre></div>
 
 
-<h4 id="start-kojid">Start kojid</h4>
+<h4 id="start-kojid">Start kojid<a class="headerlink" href="#start-kojid" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><span class="gp">[root@koji-hub]#</span> /sbin/service kojid start
 </pre></div>
 
 
 <p>Check <code>/var/log/kojid.log</code> to make sure everything started up.</p>
-<h3 id="kojira">Kojira</h3>
+<h3 id="kojira">Kojira<a class="headerlink" href="#kojira" title="Permanent link">&para;</a></h3>
 <p>Installing:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[root@koji-hub]#</span> yum install koji-utils
 </pre></div>

@@ -2110,11 +2110,11 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/infrastructure/koji-hub-setup.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="notes-on-koji-hub-setup">Notes on Koji-Hub Setup</h1>
+                <h1 id="notes-on-koji-hub-setup">Notes on Koji-Hub Setup<a class="headerlink" href="#notes-on-koji-hub-setup" title="Permanent link">&para;</a></h1>
 <p><a href="https://docs.pagure.org/koji/">Current Koji documentation</a> may be of use.</p>
-<h2 id="tags">Tags</h2>
-<h3 id="base-tags">Base tags</h3>
-<h4 id="dist-el9156793-build">dist-el[567]-build</h4>
+<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
+<h3 id="base-tags">Base tags<a class="headerlink" href="#base-tags" title="Permanent link">&para;</a></h3>
+<h4 id="dist-el9156793-build">dist-el[567]-build<a class="headerlink" href="#dist-el9156793-build" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=dist-el%3F-build">Tag list</a></p>
 <p>These tags contains 3 external repos each, hosted locally under <a href="http://mirror.batlab.org/pub/linux">http://mirror.batlab.org/pub/linux</a>:</p>
 <ul>
@@ -2123,66 +2123,66 @@
 <li><code>dist-el[567]-centos*-updates*</code>: A mirror of the CentOS Updates repositories</li>
 </ul>
 <p>We don't put any packages in them (except for ones required for building, like <code>buildsys-macros</code> and <code>fetch-sources</code>), and generally don't build from them directly, but use tag inheritance.</p>
-<h4 id="osg-el9156793">osg-el[567]</h4>
+<h4 id="osg-el9156793">osg-el[567]<a class="headerlink" href="#osg-el9156793" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-el%3F">Tag list</a></p>
 <p>These tags contains all the <em>package names</em> that we put into OSG; <code>koji add-pkg</code> adds to them. <code>osg-build</code> does this automatically. The tags do not actually contain any builds (i.e. packages with version-release). All the other <code>osg-*</code> tags inherit from these (either directly or indirectly). The purpose of this is to make promoting builds easier, since it keeps you from having to run <code>add-pkg</code> when you promote.</p>
-<h4 id="kojira-fake">kojira-fake</h4>
+<h4 id="kojira-fake">kojira-fake<a class="headerlink" href="#kojira-fake" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/taginfo?tagID=10">Tag</a></p>
 <p>This tag (and targets building to it) were created because <code>kojira</code> does not automatically regenerate a repo unless it's the source of another repo. Without this, the osg-development tags (for example) wouldn't get regenerated automatically after a build.</p>
-<h3 id="main-osg-tags">Main OSG tags</h3>
-<h4 id="osg-39112393-el9156793-build">osg-3.[123]-el[567]-build</h4>
+<h3 id="main-osg-tags">Main OSG tags<a class="headerlink" href="#main-osg-tags" title="Permanent link">&para;</a></h3>
+<h4 id="osg-39112393-el9156793-build">osg-3.[123]-el[567]-build<a class="headerlink" href="#osg-39112393-el9156793-build" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-3.%3F-el%3F-build">Tag list</a></p>
 <p>These are used to initialize the buildroot of most packages we make. They inherit from their respective dist-build and osg-development tags. The EL5 and EL6 tags also contain the <code>jpackage[56]-bin</code> external repos under <a href="http://mirror.batlab.org/pub/jpackage/">http://mirror.batlab.org/pub/jpackage/</a> since we use those for some builds.</p>
 <p><strong>Note</strong> that the JPackage external repos must have a better priority than the OS and EPEL external repos to avoid build problems for Java packages.</p>
-<h4 id="osg-upcoming-el9156793-build">osg-upcoming-el[567]-build</h4>
+<h4 id="osg-upcoming-el9156793-build">osg-upcoming-el[567]-build<a class="headerlink" href="#osg-upcoming-el9156793-build" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-upcoming-el%3F-build">Tag list</a></p>
 <p>These tags are special in that they also need to inherit from the latest mainline osg-build repo (that is, if trunk is 3.3, then <code>osg-upcoming-el6-build</code> should inherit from <code>osg-3.3-el6-build</code>).</p>
-<h4 id="osg-42-el9156793-development">osg-*-el[567]-development</h4>
+<h4 id="osg-42-el9156793-development">osg-*-el[567]-development<a class="headerlink" href="#osg-42-el9156793-development" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-*-el%3F-development">Tag list</a></p>
 <p>These contain the builds in the <code>osg-minefield</code> repos. The <code>osg-development</code> repos hosted by the GOC take packages from this, so <code>osg-development</code> is pretty much <code>osg-minefield</code> after a 1-hour delay. They inherit from osg-testing (and occasionally from the more specialized branches like el5-gt52-experimental, though that is now discouraged). Builds that are made using the <code>osg-el[567]</code> targets (default if you're using <code>osg-build</code>) get their buildroots from the newest osg-build tags and put their results in the newest osg-development tags.</p>
-<h4 id="osg-42-el9156793-testing">osg-*-el[567]-testing</h4>
+<h4 id="osg-42-el9156793-testing">osg-*-el[567]-testing<a class="headerlink" href="#osg-42-el9156793-testing" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-*-el%3F-testing">Tag list</a></p>
 <p>These contain the builds in the <code>osg-testing</code> repos. They inherit from the respective <code>osg-release</code> tags.</p>
-<h4 id="osg-42-el9156793-prerelease">osg-*-el[567]-prerelease</h4>
+<h4 id="osg-42-el9156793-prerelease">osg-*-el[567]-prerelease<a class="headerlink" href="#osg-42-el9156793-prerelease" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-*-el%3F-prerelease">Tag list</a></p>
 <p>These are a staging are for packages that we are <em>certain</em> will be released in the next release. They are otherwise empty. These are used for testing and for building the tarball clients.</p>
-<h4 id="osg-42-el9156793-release">osg-*-el[567]-release</h4>
+<h4 id="osg-42-el9156793-release">osg-*-el[567]-release<a class="headerlink" href="#osg-42-el9156793-release" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-*-el%3F-release">Tag list</a></p>
 <p>These contain the builds in the <code>osg-release</code> repos. They should be locked except for when moving packages from the <code>osg-prerelease</code> repos to the <code>osg-release</code> repos. They inherit from <code>osg-el[567]</code>.</p>
-<h4 id="osg-39112393-el9156793-release-build">osg-3.[123]-el[567]-release-build</h4>
+<h4 id="osg-39112393-el9156793-release-build">osg-3.[123]-el[567]-release-build<a class="headerlink" href="#osg-39112393-el9156793-release-build" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-3.%3F-el%3F-release-build">Tag list</a></p>
 <p>These inherit the <code>dist-*-build</code> tags and the <code>osg-*-release</code> tags, putting a base OS along with OSG packages in a single repo, without the need for yum priorities. It is used, along with <code>osg-*-prerelease</code>, for building the tarball client. Note that there are no <code>release-build</code> repos for upcoming.</p>
-<h4 id="osg-39112393-el9156793-contrib">osg-3.[123]-el[567]-contrib</h4>
+<h4 id="osg-39112393-el9156793-contrib">osg-3.[123]-el[567]-contrib<a class="headerlink" href="#osg-39112393-el9156793-contrib" title="Permanent link">&para;</a></h4>
 <p><a href="https://koji.chtc.wisc.edu/koji/search?match=glob&amp;type=tag&amp;terms=osg-*-contrib">Tag list</a></p>
 <p>These contain the builds in the <code>osg-contrib</code> repos. Note that there are no <code>osg-upcoming-contrib</code> repos.</p>
-<h3 id="specialized-tags">Specialized tags</h3>
+<h3 id="specialized-tags">Specialized tags<a class="headerlink" href="#specialized-tags" title="Permanent link">&para;</a></h3>
 <p>These tags are generally made for long projects which may be in an unstable state and should not interfere with the main development of OSG packages. An example is a full-scale Globus update, where many packages have to be built, using each other as dependencies, and the whole system is not considered usable until all the updates are done. They should generally be removed after the work is done.</p>
-<h4 id="el916793-globus-and-el916793-globus-build">el[67]-globus and el[67]-globus-build</h4>
+<h4 id="el916793-globus-and-el916793-globus-build">el[67]-globus and el[67]-globus-build<a class="headerlink" href="#el916793-globus-and-el916793-globus-build" title="Permanent link">&para;</a></h4>
 <p>These tags were made by Matyas Selmeci for mass Globus updates.</p>
-<h3 id="collaborator-tags">Collaborator Tags</h3>
-<h4 id="hcc-42">hcc-*</h4>
+<h3 id="collaborator-tags">Collaborator Tags<a class="headerlink" href="#collaborator-tags" title="Permanent link">&para;</a></h3>
+<h4 id="hcc-42">hcc-*<a class="headerlink" href="#hcc-42" title="Permanent link">&para;</a></h4>
 <p>For use by the Holland Computing Center at UNL.</p>
-<h2 id="build-targets">Build Targets</h2>
+<h2 id="build-targets">Build Targets<a class="headerlink" href="#build-targets" title="Permanent link">&para;</a></h2>
 <p>A koji <em>target</em> pairs a build tag (which contains packages needed to build software) and a destination tag (which the software will be tagged into once it is built).</p>
-<h3 id="osg-el9156793_1">osg-el[567]</h3>
+<h3 id="osg-el9156793_1">osg-el[567]<a class="headerlink" href="#osg-el9156793_1" title="Permanent link">&para;</a></h3>
 <p>These build from the osg-*-el[567]-build tags for the current release series into the osg-*-el[567]-development tags and are the primary targets used for building OSG software.</p>
-<h3 id="osg-39112393-el9156793">osg-3.[123]-el[567]</h3>
+<h3 id="osg-39112393-el9156793">osg-3.[123]-el[567]<a class="headerlink" href="#osg-39112393-el9156793" title="Permanent link">&para;</a></h3>
 <p>These build from the osg-*-el[567]-build tags into the osg-*-el[567]-development tags and are used for building to releases other than the current one.</p>
-<h3 id="osg-upcoming-el9156793">osg-upcoming-el[567]</h3>
+<h3 id="osg-upcoming-el9156793">osg-upcoming-el[567]<a class="headerlink" href="#osg-upcoming-el9156793" title="Permanent link">&para;</a></h3>
 <p>These build from the osg-upcoming-el[567]-build tags into the osg-upcoming-el[567]-development tags and are used for building to upcoming.</p>
-<h3 id="dist-el9156793-build_1">dist-el[567]-build</h3>
+<h3 id="dist-el9156793-build_1">dist-el[567]-build<a class="headerlink" href="#dist-el9156793-build_1" title="Permanent link">&para;</a></h3>
 <p>These build from the <code>dist-el*-build</code> tag directly into the <code>dist-el*-build</code> tag. It is used for making builds that should be in every buildroot.</p>
-<h3 id="kojira-fake-42">kojira-fake-*</h3>
+<h3 id="kojira-fake-42">kojira-fake-*<a class="headerlink" href="#kojira-fake-42" title="Permanent link">&para;</a></h3>
 <p>These fool kojira into regenerating their build tags as repos we can yum install from. Without this, the osg-development tags (for example) wouldn't get regenerated and osg-minefield wouldn't work.</p>
-<h3 id="hcc-el9156793-panda-el6">hcc-el[567], panda-el6</h3>
+<h3 id="hcc-el9156793-panda-el6">hcc-el[567], panda-el6<a class="headerlink" href="#hcc-el9156793-panda-el6" title="Permanent link">&para;</a></h3>
 <p>These were made for builds made for our collaborators to build into their tags.</p>
-<h2 id="signing-plugin">Signing plugin</h2>
+<h2 id="signing-plugin">Signing plugin<a class="headerlink" href="#signing-plugin" title="Permanent link">&para;</a></h2>
 <p>The signing plugin is used to sign packages right after they are built. We give it a GPG signing key and corresponding passphrase. It is configured per build tag. The current default is to use the OSG key to sign if a configuration is not specified. This is because it's very difficult to sign packages after the fact, so it's better to erroneously sign some of them with the wrong key than to not sign them.</p>
 <p>It is therefore important that whenever a new build tag is created, a corresponding config section for the signing plugin is added, too.</p>
 <p>This comes from the package <code>koji-plugin-sign</code> and has configs in <code>/etc/koji-sign-plugin</code> and <code>/etc/koji-hub/plugins</code>. There is a script called <code>fix-permissions</code> in both directories that will make sure the plugin can read the config.</p>
-<h2 id="tweaks">Tweaks</h2>
+<h2 id="tweaks">Tweaks<a class="headerlink" href="#tweaks" title="Permanent link">&para;</a></h2>
 <p>These are local config changes we needed to make to get certain features to work.</p>
-<h3 id="using-proxy-certs">Using proxy certs</h3>
+<h3 id="using-proxy-certs">Using proxy certs<a class="headerlink" href="#using-proxy-certs" title="Permanent link">&para;</a></h3>
 <p><code>/etc/sysconfig/httpd</code> needed to be changed to include the following lines:</p>
 <div class="codehilite"><pre><span></span>OPENSSL_ALLOW_PROXY=1
 OPENSSL_ALLOW_PROXY_CERTS=1
@@ -2193,11 +2193,11 @@ export OPENSSL_ALLOW_PROXY_CERTS
 
 
 <p>The user must use RFC proxies and must have a version of the koji client of 1.6.0-6.osg or newer.</p>
-<h2 id="procedures">Procedures</h2>
-<h3 id="user-cert-switch">User cert switch</h3>
+<h2 id="procedures">Procedures<a class="headerlink" href="#procedures" title="Permanent link">&para;</a></h2>
+<h3 id="user-cert-switch">User cert switch<a class="headerlink" href="#user-cert-switch" title="Permanent link">&para;</a></h3>
 <p>This procedure is now documented on the
 <a href="../koji-user-management#handling-user-cert-changes-renaming-a-user">user management page</a>.</p>
-<h3 id="adding-cas-for-user-authentication">Adding CAs for user authentication</h3>
+<h3 id="adding-cas-for-user-authentication">Adding CAs for user authentication<a class="headerlink" href="#adding-cas-for-user-authentication" title="Permanent link">&para;</a></h3>
 <p>Since our Koji instance uses certs for auth, we specify which CAs we trust for signing user certs. The CA certs for user auth are concatenated together in the file <code>/etc/pki/tls/certs/allowed-cas-for-users.crt</code>. A comment line before the <code>BEGIN CERTIFICATE</code> line is used to name the file the cert comes from. We take the certs from the <code>osg-ca-certs</code> repository.</p>
 <p>For example, when I added the CERN CAs to the bundle, I installed osg-ca-certs onto a Fermicloud VM, copied <code>/etc/grid-security/certificates/CERN-TCA.pem</code> (which signed user certs) and <code>CERN-Root.pem</code> (which signed <code>CERN-TCA.pem</code>) to <code>koji.chtc.wisc.edu</code>, catted them to the end of the <code>allowed-cas-for-users.crt</code> file, edited the file to add comments before the certs, and restarted <code>httpd</code>.</p>
 <p>A few tidbits of knowledge for administrators of our Koji server:</p>
@@ -2220,7 +2220,7 @@ export OPENSSL_ALLOW_PROXY_CERTS
 </ul>
 </li>
 </ul>
-<h3 id="koji-permissions">Koji Permissions</h3>
+<h3 id="koji-permissions">Koji Permissions<a class="headerlink" href="#koji-permissions" title="Permanent link">&para;</a></h3>
 <p>To add a new user to Koji for someone with a given DN, first extract the CN. For example, Alain has the DN <code>/DC=org/DC=doegrids/OU=People/CN=Alain Roy 424511</code>, and the CN is just <code>Alain Roy 424511</code>. The commands below use just the CN.</p>
 <div class="codehilite"><pre><span></span><span class="gp">[you@client ~]$</span> osg-koji add-user <span class="s2">&quot;&lt;CN&gt;&quot;</span>
 <span class="gp">[you@client ~]$</span> osg-koji grant-permission build <span class="s2">&quot;&lt;CN&gt;&quot;</span>
@@ -2261,7 +2261,7 @@ export OPENSSL_ALLOW_PROXY_CERTS
 </pre></div>
 
 
-<h3 id="renewing-host-and-service-certs">Renewing host and service certs</h3>
+<h3 id="renewing-host-and-service-certs">Renewing host and service certs<a class="headerlink" href="#renewing-host-and-service-certs" title="Permanent link">&para;</a></h3>
 <p>Certs and keys are stored in <code>/p/condor/home/certificates/...</code></p>
 <p>To obtain renewed certificates, use <a href="https://opensciencegrid.github.io/docs/security/certificate-management/#osg-pki-command-line-clients.md">the OSG PKI commandline clients</a> or the web interface at <a href="https://oim.opensciencegrid.org/oim/certificaterequesthost">https://oim.opensciencegrid.org/oim/certificaterequesthost</a>.</p>
 <p>The following cert files are necessary:</p>

@@ -1744,10 +1744,10 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/globus-mass-update-procedure.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="globus-mass-update-procedure">Globus mass update procedure</h1>
+                <h1 id="globus-mass-update-procedure">Globus mass update procedure<a class="headerlink" href="#globus-mass-update-procedure" title="Permanent link">&para;</a></h1>
 <p>Globus consists of many packages, which we tend to update at the same time. This requires extra work, primarily to prevent dependency issues.</p>
-<h2 id="prep-work">Prep work</h2>
-<h3 id="docs">Docs</h3>
+<h2 id="prep-work">Prep work<a class="headerlink" href="#prep-work" title="Permanent link">&para;</a></h2>
+<h3 id="docs">Docs<a class="headerlink" href="#docs" title="Permanent link">&para;</a></h3>
 <p>Create a spreadsheet or table of the builds. Table should have NVR, perhaps URL, status (not started, imported, built, tested), and comments (mostly to record if it was a simple pass-through or not).</p>
 <p>Get packages to update, using <code>osg-outdated-epel-pkgs</code> from <code>opensciencegrid/tools</code>.</p>
 <p>To get in N-V-R format:</p>
@@ -1764,7 +1764,7 @@
 </pre></div>
 
 
-<h3 id="svn">SVN</h3>
+<h3 id="svn">SVN<a class="headerlink" href="#svn" title="Permanent link">&para;</a></h3>
 <p>Create a separate SVN branch and populate it with all the packages you will update. (Get the list from the doc created above).</p>
 <div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> svn mkdir file:///p/vdt/workspace/svn/native/redhat/branches/globus
 <span class="gp">#</span><span class="c1">## From a checkout, in native/redhat</span>
@@ -1774,7 +1774,7 @@
 </pre></div>
 
 
-<h3 id="koji-matcarl">Koji (Mat/Carl)</h3>
+<h3 id="koji-matcarl">Koji (Mat/Carl)<a class="headerlink" href="#koji-matcarl" title="Permanent link">&para;</a></h3>
 <p>This requires a Koji administrator. Koji admins as of August 2017 are Mat Selmeci and Carl Edquist.</p>
 <p>Ensure Koji tags exist: a destination tag, and a build tag, one for each dver, e.g.:</p>
 <ul>
@@ -1816,7 +1816,7 @@
 
 <p>If basing the packages off of the Globus repos, add the Globus repos as external repos, and add them to the build tags (but not the dest tags).</p>
 <p>Edit <code>/etc/koji-hub/plugins/sign.conf</code> and set up the GPG signing for the RPMs. Run <code>/etc/koji-hub/plugins/fix-permissions</code> after editing the file.</p>
-<h2 id="per-package-work">Per-package work</h2>
+<h2 id="per-package-work">Per-package work<a class="headerlink" href="#per-package-work" title="Permanent link">&para;</a></h2>
 <ol>
 <li>cd into branches/globus</li>
 <li>Download packages from <a href="http://dl.fedoraproject.org/pub/epel/6/SRPMS/">http://dl.fedoraproject.org/pub/epel/6/SRPMS/</a></li>
@@ -1826,7 +1826,7 @@
 </pre></div>
 
 
-<h3 id="strict-pass-through-no-osg-directory">Strict pass-through (no osg/ directory)</h3>
+<h3 id="strict-pass-through-no-osg-directory">Strict pass-through (no osg/ directory)<a class="headerlink" href="#strict-pass-through-no-osg-directory" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Run:</p>
@@ -1843,7 +1843,7 @@
 <p>Do a non-scratch build.</p>
 </li>
 </ol>
-<h3 id="non-strict-pass-through">Non-strict pass-through</h3>
+<h3 id="non-strict-pass-through">Non-strict pass-through<a class="headerlink" href="#non-strict-pass-through" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Run:</p>
@@ -1879,7 +1879,7 @@
 <p>Do a non-scratch build.</p>
 </li>
 </ol>
-<h2 id="testing">Testing</h2>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <p>Create a yum <code>.repo</code> file similar to <code>osg-minefield</code> that installs from the <code>el?-globus</code> repos. Enable this and <code>osg-minefield</code>.</p>
 <p>EL7 example:</p>
 <div class="codehilite"><pre><span></span><span class="k">[globus]</span>
@@ -1894,8 +1894,8 @@
 </pre></div>
 
 
-<h2 id="merge">Merge</h2>
-<h3 id="koji-matcarl_1">Koji (Mat/Carl)</h3>
+<h2 id="merge">Merge<a class="headerlink" href="#merge" title="Permanent link">&para;</a></h2>
+<h3 id="koji-matcarl_1">Koji (Mat/Carl)<a class="headerlink" href="#koji-matcarl_1" title="Permanent link">&para;</a></h3>
 <p>This requires a Koji administrator. Koji admins as of August 2017 are Mat Selmeci and Carl Edquist.</p>
 <ol>
 <li>Untag broken versions that we don't want to ship.</li>
@@ -1914,7 +1914,7 @@
 
 </li>
 </ol>
-<h3 id="svn_1">SVN</h3>
+<h3 id="svn_1">SVN<a class="headerlink" href="#svn_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Merge from <code>trunk</code> to <code>branches/globus</code> first, to pick up any globus changes that may have happened in trunk.</li>
 <li>Merge from <code>branches/globus</code> to <code>trunk</code>.</li>

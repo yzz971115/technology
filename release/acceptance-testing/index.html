@@ -2044,14 +2044,14 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/release/acceptance-testing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="acceptance-testing">Acceptance Testing</h1>
+                <h1 id="acceptance-testing">Acceptance Testing<a class="headerlink" href="#acceptance-testing" title="Permanent link">&para;</a></h1>
 <p>The OSG Release Team collects and maintains testing procedures for major components in the OSG Sofware Stack. These test should verify that basic functionality of the component works in typically deployed configurations.</p>
-<h2 id="cvmfs">CVMFS</h2>
+<h2 id="cvmfs">CVMFS<a class="headerlink" href="#cvmfs" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This acceptance testing recipe was created when access to a machine with sufficient disk space to make a complete replica of OASIS was not available.</p>
 </div>
-<h3 id="creating-a-cvmfs-repository-server-stratum-0">Creating a CVMFS Repository Server (Stratum 0)</h3>
+<h3 id="creating-a-cvmfs-repository-server-stratum-0">Creating a CVMFS Repository Server (Stratum 0)<a class="headerlink" href="#creating-a-cvmfs-repository-server-stratum-0" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Disable SELinux by setting the following in <code>/etc/selinux/config</code>.</p>
@@ -2162,7 +2162,7 @@ KeepAlive On
 <p>Download a copy of the CVMFS repository's public key e.g., /etc/cvmfs/keys/test.cvmfs-stratum-0.novalocal.pub</p>
 </li>
 </ol>
-<h3 id="creating-a-cvmfs-replica-server-stratum-1">Creating a CVMFS Replica Server (Stratum 1)</h3>
+<h3 id="creating-a-cvmfs-replica-server-stratum-1">Creating a CVMFS Replica Server (Stratum 1)<a class="headerlink" href="#creating-a-cvmfs-replica-server-stratum-1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Repeat steps 1 though 8 in the previous section on "Creating a CVMFS Repository Server ". However, now also install <code>mod_wsgi</code>.</p>
@@ -2189,7 +2189,7 @@ KeepAlive On
 
 </li>
 </ol>
-<h3 id="creating-a-cvmfs-client">Creating a CVMFS client</h3>
+<h3 id="creating-a-cvmfs-client">Creating a CVMFS client<a class="headerlink" href="#creating-a-cvmfs-client" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Update system and install CVMFS client package.</p>
@@ -2262,7 +2262,7 @@ KeepAlive On
 
 </li>
 </ol>
-<h3 id="creating-an-oasis-client">Creating an OASIS client</h3>
+<h3 id="creating-an-oasis-client">Creating an OASIS client<a class="headerlink" href="#creating-an-oasis-client" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Update system and install CVMFS client package.<ul>
 <li>yum update</li>
@@ -2306,7 +2306,7 @@ KeepAlive On
 </ul>
 </li>
 </ol>
-<h3 id="additional-documentation">Additional Documentation</h3>
+<h3 id="additional-documentation">Additional Documentation<a class="headerlink" href="#additional-documentation" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://cvmfs.readthedocs.io/en/stable/">CERN's CVMFS Documentation</a></li>
 <li><a href="https://www.opensciencegrid.org/docs/other/install-cvmfs-stratum1/">OSG's CVMFS Replica Server</a></li>
@@ -2318,7 +2318,7 @@ KeepAlive On
 <p><a href="../bash_pi.sh">bash_pi.sh</a>: A bash script that uses a simple Monte Carlo method to estimate the value of Pi</p>
 </li>
 </ul>
-<h2 id="gratia-probe">Gratia Probe</h2>
+<h2 id="gratia-probe">Gratia Probe<a class="headerlink" href="#gratia-probe" title="Permanent link">&para;</a></h2>
 <p>This section documents the testing procedure to test the gratia probes sufficiently tested to be promoted to the osg-testing repository. The test procedure is the same on both SL6 and SL7.</p>
 <ul>
 <li>install or update the <code>gratia-probe-condor</code> rpm as appropriate</li>
@@ -2335,7 +2335,7 @@ KeepAlive On
 <li>Run <code>/usr/share/gratia/condor/condor_meter</code></li>
 <li>Check <code>/var/lib/gratia/tmp/gratiafiles/</code> for a <code>subdir.condor_...</code> directory and verify that there are 200 xml jobs and the cpus/wall times are appropriate (either PT0S or PT1M).</li>
 </ul>
-<h2 id="gsi-openssh">GSI OpenSSH</h2>
+<h2 id="gsi-openssh">GSI OpenSSH<a class="headerlink" href="#gsi-openssh" title="Permanent link">&para;</a></h2>
 <p>To test a fresh installation:</p>
 <ol>
 <li>Spin up two VM's and set up the EPEL/OSG repos on both of them.</li>
@@ -2379,12 +2379,12 @@ KeepAlive On
 </ol>
 </li>
 </ol>
-<h2 id="htcondor-ce-collector-wip">HTCondor-CE Collector (WIP)</h2>
+<h2 id="htcondor-ce-collector-wip">HTCondor-CE Collector (WIP)<a class="headerlink" href="#htcondor-ce-collector-wip" title="Permanent link">&para;</a></h2>
 <p>The CE Collector is a stripped-down version of HTCondor-CE that contains mostly just the collector daemon and configs. It was introduced in htcondor-ce-1.6. The production CE Collectors run at the GOC, but you may want to set up your own for testing.</p>
 <ol>
 <li>Make 2 VMs with the EPEL/OSG repos installed: one for the collector, and one for the CE</li>
 </ol>
-<h3 id="setting-up-the-collector">Setting Up the Collector</h3>
+<h3 id="setting-up-the-collector">Setting Up the Collector<a class="headerlink" href="#setting-up-the-collector" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Install <code>htcondor-ce-collector</code></li>
 <li>
@@ -2399,7 +2399,7 @@ KeepAlive On
 <p>Run <code>service condor-ce-collector start</code></p>
 </li>
 </ol>
-<h3 id="setting-up-the-ce">Setting Up the CE</h3>
+<h3 id="setting-up-the-ce">Setting Up the CE<a class="headerlink" href="#setting-up-the-ce" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Install <code>osg-htcondor-ce-condor</code> (replace condor with the batch system of your choice)</li>
 <li>Ensure osg-configure &gt;= 1.0.60-2 is installed</li>
@@ -2443,7 +2443,7 @@ KeepAlive On
 <li>Run <code>service condor-ce start</code></li>
 </ol>
 <p>The CE will report to the collector host every five minutes. If you want to force it to send now, run <code>condor_ce_reconfig</code>. You should see your CE if you run <code>condor_ce_status -schedd</code> on the collector host.</p>
-<h2 id="rsv">RSV</h2>
+<h2 id="rsv">RSV<a class="headerlink" href="#rsv" title="Permanent link">&para;</a></h2>
 <p>Testing a fresh installation:</p>
 <ol>
 <li>make sure the yum repositories required by OSG is installed on your host<ul>
@@ -2475,13 +2475,13 @@ KeepAlive On
 <li>you can use the old 30-rsv.ini file for configuration</li>
 <li>repeat steps 4)~11) as mentioned in the last section.</li>
 </ol>
-<h2 id="slurm">Slurm</h2>
+<h2 id="slurm">Slurm<a class="headerlink" href="#slurm" title="Permanent link">&para;</a></h2>
 <p>This section goes through the steps needed to set up a slurm install on a VM. This is a necessary prerequisite for testing Slurm related components (CE integration, gratia, etc.). Note that the slurm setup used for this uses weak passwords for mysql. It should be sufficient for a quick setup, testing, and then tear down but should not be used without changes if it will be running for any appreciable length of time.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>need to have a VM with 2+ GB of memory</p>
 </div>
-<h3 id="installation-and-setup">Installation and setup</h3>
+<h3 id="installation-and-setup">Installation and setup<a class="headerlink" href="#installation-and-setup" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Download scripts and config files: </p>
@@ -2505,7 +2505,7 @@ export version=&#39;14.11.7&#39; \# slurm version to install (e.g. 16.05.2 or 14
 <p>After successful completion, slurm and slurm gratia probes should be setup and enabled.</p>
 </li>
 </ol>
-<h3 id="running-a-job-using-slurm">Running a job using slurm</h3>
+<h3 id="running-a-job-using-slurm">Running a job using slurm<a class="headerlink" href="#running-a-job-using-slurm" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Generate test.sh with the following:</p>
@@ -2520,25 +2520,25 @@ export version=&#39;14.11.7&#39; \# slurm version to install (e.g. 16.05.2 or 14
 </li>
 <li>the output from the jobs should appear in the current working directory as <code>test.sh.[eo].nnnnn</code> where nnnnn is a job id</li>
 </ol>
-<h2 id="vo-client">VO Client</h2>
+<h2 id="vo-client">VO Client<a class="headerlink" href="#vo-client" title="Permanent link">&para;</a></h2>
 <p>This document contains a basic recipe for testing a VO Package release</p>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
 <p>Testing the VO package requires a few components:
    * X.509 certificate with membership to at least one VO
    * System with working GUMS installation
    * System with OSG installation (voms-proxy-init and edg-mkgridmap)</p>
-<h3 id="testing-voms-proxy-init">Testing <code>voms-proxy-init</code></h3>
+<h3 id="testing-voms-proxy-init">Testing <code>voms-proxy-init</code><a class="headerlink" href="#testing-voms-proxy-init" title="Permanent link">&para;</a></h3>
 <p>Login in the system that has voms-proxy-init installed.  Make sure that you have the correct 
 vo-client rpms installed and that your X.509 certificate is in your home directory.  For each
 VO that you have membership in, run the following <code>voms-proxy-init -voms [VO]</code> where <code>[VO]</code> is 
 the appropriate VO (e.g. osg, cms, etc.).  You should be able to generate a voms-proxy for that
 VO without errors.</p>
-<h3 id="testing-edg-mkgridmap">Testing <code>edg-mkgridmap</code></h3>
+<h3 id="testing-edg-mkgridmap">Testing <code>edg-mkgridmap</code><a class="headerlink" href="#testing-edg-mkgridmap" title="Permanent link">&para;</a></h3>
 <p>Log on to a system with <code>edg-mkgridmap</code> installed.  Make sure you have the correct vo-client rpms 
 installed (vo-client-edgmkgridmap).  Run <code>edg-mkgridmap</code> and check the log output for errors.<br />
 There will be some errors so compare your errors with the errors on previous vo-package tickets to
 make sure no new errors have appeared.</p>
-<h3 id="testing-gums">Testing GUMS</h3>
+<h3 id="testing-gums">Testing GUMS<a class="headerlink" href="#testing-gums" title="Permanent link">&para;</a></h3>
 <p>Log on to a system with a working GUMS install.  Make sure that you have the correct vo-client 
 rpms (osg-gums-config) installed.  </p>
 <ol>
@@ -2551,10 +2551,10 @@ rpms (osg-gums-config) installed.  </p>
 <li>Once completed, there will probably be some errors.</li>
 <li>Compare errors to errors on prior vo package update tickets and make sure no new errors have occurred. </li>
 </ol>
-<h2 id="voms-admin-server">VOMS Admin Server</h2>
-<h3 id="install-and-configure-voms-admin-server">Install and configure voms-admin-server</h3>
+<h2 id="voms-admin-server">VOMS Admin Server<a class="headerlink" href="#voms-admin-server" title="Permanent link">&para;</a></h2>
+<h3 id="install-and-configure-voms-admin-server">Install and configure voms-admin-server<a class="headerlink" href="#install-and-configure-voms-admin-server" title="Permanent link">&para;</a></h3>
 <p>Install and configure voms-admin-server with this <a href="../voms-install.sh">voms-install.sh</a> script, entering <code>osg-testing</code> when prompted for the <code>REPO</code> and your own e-mail address when prompted for <code>EMAIL_FROM</code>.</p>
-<h3 id="set-up-test_vo-and-add-yourself-as-an-admin">Set up TEST_VO and add yourself as an admin</h3>
+<h3 id="set-up-test_vo-and-add-yourself-as-an-admin">Set up TEST_VO and add yourself as an admin<a class="headerlink" href="#set-up-test_vo-and-add-yourself-as-an-admin" title="Permanent link">&para;</a></h3>
 <p>To add a test VO (named TEST_VO) and add yourself as an admin, use the following script, replacing the <code>USER_EMAIL</code>, <code>USER_CERT_SUBJECT</code>, and <code>USER_COMMON_NAME</code> variables with your own:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
@@ -2575,12 +2575,12 @@ voms-admin --vo <span class="nv">$VO_NAME</span> --host <span class="nv">$HOSTNA
 </pre></div>
 
 
-<h3 id="testing-the-web-ui">Testing the web UI</h3>
+<h3 id="testing-the-web-ui">Testing the web UI<a class="headerlink" href="#testing-the-web-ui" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Add/suspend/restore/delete a user (using your e-mail address for contact)</li>
 <li>Verify e-mail receipt of suspension message</li>
 </ol>
-<h2 id="xrootd-voms-testing">XRootD VOMS Testing</h2>
+<h2 id="xrootd-voms-testing">XRootD VOMS Testing<a class="headerlink" href="#xrootd-voms-testing" title="Permanent link">&para;</a></h2>
 <p>This section is intended for OSG Software/Release teams to gather information on testing vomsxrd/xrootd-voms-plugin package. Original plugin named <a href="http://gganis.github.io/vomsxrd/">vomsxrd</a>, similar to lcmaps that extracts information for authorization within xrootd of a proxy's voms extension.</p>
 <p>You need an <a href="https://www.opensciencegrid.org/docs/data/install-xrootd/">xrootd server installation</a></p>
 <p>In the xrootd server yum install the following packages:</p>
@@ -2630,8 +2630,8 @@ sec.protocol /usr/lib64 gsi -ca:1 -crl:3
 </pre></div>
 
 
-<h2 id="xrootd-plugins">XRootD Plugins</h2>
-<h3 id="hadoop-name-node-installation">Hadoop name node installation</h3>
+<h2 id="xrootd-plugins">XRootD Plugins<a class="headerlink" href="#xrootd-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="hadoop-name-node-installation">Hadoop name node installation<a class="headerlink" href="#hadoop-name-node-installation" title="Permanent link">&para;</a></h3>
 <p>Use the following script with option 1:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 <span class="nb">set</span> -e
@@ -2687,7 +2687,7 @@ service hadoop-hdfs-<span class="nv">$NODETYPE</span> start
 </pre></div>
 
 
-<h3 id="hadoop-data-node-installation">Hadoop data node installation</h3>
+<h3 id="hadoop-data-node-installation">Hadoop data node installation<a class="headerlink" href="#hadoop-data-node-installation" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Run same script as before but with option number 2.</li>
 <li>
@@ -2705,9 +2705,9 @@ service hadoop-hdfs-<span class="nv">$NODETYPE</span> start
 
 </li>
 </ol>
-<h3 id="gridftp-installation">GridFTP installation</h3>
+<h3 id="gridftp-installation">GridFTP installation<a class="headerlink" href="#gridftp-installation" title="Permanent link">&para;</a></h3>
 <p>Run same as script but with option number.</p>
-<h3 id="on-the-name-node">On the name node</h3>
+<h3 id="on-the-name-node">On the name node<a class="headerlink" href="#on-the-name-node" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="gp">[root@fermicloud092 ~]#</span> hdfs dfs -ls /test-file
 <span class="go">Found 1 items</span>
 <span class="go">-rw-r--r--   2 root root          0 2014-07-21 15:57 /test-file</span>

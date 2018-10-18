@@ -1702,7 +1702,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/documentation/writing-documentation.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="writing-osg-documentation">Writing OSG Documentation</h1>
+                <h1 id="writing-osg-documentation">Writing OSG Documentation<a class="headerlink" href="#writing-osg-documentation" title="Permanent link">&para;</a></h1>
 <p>Many OSG pages are written in <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>, built using
 <a href="http://www.mkdocs.org/">MkDocs</a>, and served via <a href="https://pages.github.com/">GitHub Pages</a>.
 To <a href="#contributing-content">contribute content</a>, submit a pull request to the relevant github repository:</p>
@@ -1721,7 +1721,7 @@ To <a href="#contributing-content">contribute content</a>, submit a pull request
 </li>
 </ul>
 <p>This document contains instructions, recommendations, and guidelines for writing OSG content.</p>
-<h2 id="contributing-content">Contributing Content</h2>
+<h2 id="contributing-content">Contributing Content<a class="headerlink" href="#contributing-content" title="Permanent link">&para;</a></h2>
 <p>To contribute minor content changes (e.g., fixing typos, changing a couple of sentences), we recommend using the
 <a href="https://help.github.com/articles/editing-files-in-your-repository/">GitHub web interface</a> to submit a pull request.</p>
 <p>To contribute major content changes to one of the above OSG areas, make sure you and the machine you'll be working on
@@ -1745,7 +1745,7 @@ Run the following to install it:</p>
 
 <p>pip will be installed in <code>/usr/local/bin/</code>, so you will need <code>/usr/local/bin</code> in your PATH.</p>
 </div>
-<h3 id="preparing-the-git-repository">Preparing the git repository</h3>
+<h3 id="preparing-the-git-repository">Preparing the git repository<a class="headerlink" href="#preparing-the-git-repository" title="Permanent link">&para;</a></h3>
 <p>Before making any content changes, you will need to prepare a local git clone and set up a Python virtual environment:</p>
 <ol>
 <li><a href="https://help.github.com/articles/fork-a-repo/">Fork and clone</a> the GitHub repository that you'd like to contribute to</li>
@@ -1781,7 +1781,7 @@ Run the following to install it:</p>
 
 </li>
 </ol>
-<h3 id="previewing-the-pages">Previewing the pages</h3>
+<h3 id="previewing-the-pages">Previewing the pages<a class="headerlink" href="#previewing-the-pages" title="Permanent link">&para;</a></h3>
 <p>To preview the pages, start a MkDocs development server.
 The development server will automatically detect any content changes and make them viewable in your browser.</p>
 <ol>
@@ -1798,7 +1798,7 @@ The development server will automatically detect any content changes and make th
 The server can be stopped with <code>Ctrl-C</code>.</p>
 </li>
 </ol>
-<h3 id="making-content-changes">Making content changes</h3>
+<h3 id="making-content-changes">Making content changes<a class="headerlink" href="#making-content-changes" title="Permanent link">&para;</a></h3>
 <p>To contribute content to the OSG, follow these steps to submit a pull request with your desired changes:</p>
 <ol>
 <li><code>cd</code> into the directory containing the local clone of your Github fork</li>
@@ -1862,7 +1862,7 @@ If you are adding a new page, one of the files should be <code>mkdocs.yml</code>
 <p>From your Github fork, <a href="https://help.github.com/articles/creating-a-pull-request/">submit a pull request</a></p>
 </li>
 </ol>
-<h3 id="deploying-content-to-the-itb-advanced">Deploying content to the ITB (advanced)</h3>
+<h3 id="deploying-content-to-the-itb-advanced">Deploying content to the ITB (advanced)<a class="headerlink" href="#deploying-content-to-the-itb-advanced" title="Permanent link">&para;</a></h3>
 <p>If you are a member of the OSG software and release team, you can preview large changes to the
 <a href="https://www.opensciencegrid.org/docs-itb/">ITB docs</a> or <a href="https://www.opensciencegrid.org/technology-itb/">ITB technology</a>
 by pushing a branch that starts with an <code>itb.</code> prefix to the <code>opensciencegrid/docs</code> repo.
@@ -1877,17 +1877,17 @@ For example:</p>
 <p class="admonition-title">Note</p>
 <p>Since there is only one ITB docs area, simultaneous new commits to different <code>itb.*</code> branches will overwrite each other's changes. To re-deploy your changes, find your <a href="https://travis-ci.org/opensciencegrid/docs/branches">Travis-CI build</a> and restart it <strong>BUT</strong> coordinate with the author of the other commits to avoid conflicts.</p>
 </div>
-<h2 id="document-layout">Document Layout</h2>
+<h2 id="document-layout">Document Layout<a class="headerlink" href="#document-layout" title="Permanent link">&para;</a></h2>
 <p>This section contains suggested layouts of externally-facing, <a href="https://github.com/opensciencegrid/docs/">site administrator documentation</a>.
 The introduction is the only layout requirement for documents except for installation guides.</p>
-<h3 id="introductions">Introductions</h3>
+<h3 id="introductions">Introductions<a class="headerlink" href="#introductions" title="Permanent link">&para;</a></h3>
 <p>All documents should start with an introduction that explains <strong>what</strong> the document contains, <strong>what</strong> the product does,
 and <strong>why</strong> someone may want to use it.
 In the past, document introductions were included in <code>About this...</code> sections due to the layout of the table of contents.
 Since the table of contents is included in the sidebar, introductions should go directly below the title header.</p>
 <p>The <a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#installing-and-maintaining-htcondor-ce">HTCondor-CE installation guide</a>
 is an example that meet all of the above criteria.</p>
-<h3 id="installation-guides">Installation guides</h3>
+<h3 id="installation-guides">Installation guides<a class="headerlink" href="#installation-guides" title="Permanent link">&para;</a></h3>
 <p>In addition to the introduction above, installation documents should have the following sections:</p>
 <ul>
 <li><strong>Before Starting:</strong> This section should contain information for any prepatory work that the site administrator should
@@ -1914,7 +1914,7 @@ is an example that meet all of the above criteria.</p>
 </ul>
 <p>If any of the sections become too large, consider separating them out and linking to the new documents
 (<a href="http://www.opensciencegrid.org/docs/compute-element/install-htcondor-ce/#troubleshooting-htcondor-ce">example</a>).</p>
-<h2 id="tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions</h2>
+<h2 id="tips-for-writing-procedural-instructions">Tips for Writing Procedural Instructions<a class="headerlink" href="#tips-for-writing-procedural-instructions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>Title the procedure with the user goal, usually starting with a gerund; e.g.:</p>

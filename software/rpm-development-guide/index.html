@@ -2192,9 +2192,9 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/rpm-development-guide.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="rpm-development-guide">RPM Development Guide</h1>
+                <h1 id="rpm-development-guide">RPM Development Guide<a class="headerlink" href="#rpm-development-guide" title="Permanent link">&para;</a></h1>
 <p>This page documents technical guidelines and details about RPM development for the OSG Software Stack. The procedures, conventions, and policies defined within are used by the OSG Software Team, and are recommended to all external developers who wish to contribute to the OSG Software Stack.</p>
-<h2 id="principles">Principles</h2>
+<h2 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h2>
 <p>The principles below guide the design and implementation of the technical details that follow.</p>
 <ul>
 <li>Packages should adhere to community standards (e.g., <a href="http://fedoraproject.org/wiki/PackagingGuidelines">Fedora Packaging Guidelines</a>) when possible, and significant deviations must be documented</li>
@@ -2205,7 +2205,7 @@
 <li>External developers should have a clear and effective system for developing and contributing packages</li>
 <li>We should use standard tools from relevant packaging and development communities when appropriate</li>
 </ul>
-<h2 id="contributing-packages">Contributing Packages</h2>
+<h2 id="contributing-packages">Contributing Packages<a class="headerlink" href="#contributing-packages" title="Permanent link">&para;</a></h2>
 <p>We encourage all interested parties to contribute to OSG Software, and all the infrastructure described on this page should be friendly to external contributors.</p>
 <ul>
 <li>To participate in the packaging community: You must subscribe to the <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;">&#111;&#115;&#103;&#45;&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;</a> email list. Subscribing to an OSG email list is <a href="http://listserv.fnal.gov/users.asp#subscribe%20to%20list">described here</a>.</li>
@@ -2213,7 +2213,7 @@
 <li>To upload new source tarballs: You must have a cs.wisc.edu account with write access to the VDT source tarball directory. Email the osg-software list and request permission.</li>
 <li>To build using the OSG's Koji build system: You must have a valid grid certificate and a Koji account. Email the osg-software list with your cert's DN and request permission.</li>
 </ul>
-<h2 id="development-infrastructure">Development Infrastructure</h2>
+<h2 id="development-infrastructure">Development Infrastructure<a class="headerlink" href="#development-infrastructure" title="Permanent link">&para;</a></h2>
 <p>This section documents most of what a developer needs to know about our RPM infrastructure:</p>
 <ul>
 <li>Upstream Source Cache — a filesystem scheme for caching upstream source files</li>
@@ -2221,10 +2221,10 @@
 <li>Build System — how to build packages from the revision control system</li>
 <li>Yum Repository — the location and organization of our Yum repository, and how to promote packages through it</li>
 </ul>
-<h3 id="upstream-source-cache">Upstream Source Cache</h3>
+<h3 id="upstream-source-cache">Upstream Source Cache<a class="headerlink" href="#upstream-source-cache" title="Permanent link">&para;</a></h3>
 <p>One of our principles (every released package must be reproducible from data stored in our system) creates a potential issue: If we keep all historical source data, especially upstream files like source tarballs and source RPMs, in our revision control system, we may face large checkouts and consequently long checkout and update times.</p>
 <p>Our solution is to cache all upstream source files in a separate filesystem area, retaining historical files indefinitely. To avoid tainting upstream files, our policy is to leave them unmodified after download.</p>
-<h4 id="locating-files-in-the-cache">Locating Files in the Cache</h4>
+<h4 id="locating-files-in-the-cache">Locating Files in the Cache<a class="headerlink" href="#locating-files-in-the-cache" title="Permanent link">&para;</a></h4>
 <p>Upstream source files are stored in the filesystem as follows:</p>
 <blockquote>
 <p><code>/p/vdt/public/html/upstream/&lt;PACKAGE&gt;/&lt;VERSION&gt;/&lt;FILE&gt;</code></p>
@@ -2258,18 +2258,18 @@
 </table>
 <p>The authoritative cache is the VDT webserver, which is fully backed up. The Koji build system uses this cache.</p>
 <p>Upstream source files are referenced from within the revision control system; see below for details.</p>
-<h4 id="contributing-upstream-files">Contributing Upstream Files</h4>
+<h4 id="contributing-upstream-files">Contributing Upstream Files<a class="headerlink" href="#contributing-upstream-files" title="Permanent link">&para;</a></h4>
 <p>You must make sure that any new upstream source files are cached on the VDT webserver before building the package via Koji. You have two options:</p>
 <ul>
 <li>If you have access to a UW–Madison CSL machine, you can scp the source files directly into the AFS locations using that machine</li>
 <li>If you do not have such access, write to the osg-software list to find someone who will post the files for you</li>
 </ul>
-<h4 id="gitgithub-hosted-upstream-files">Git/GitHub Hosted Upstream Files</h4>
+<h4 id="gitgithub-hosted-upstream-files">Git/GitHub Hosted Upstream Files<a class="headerlink" href="#gitgithub-hosted-upstream-files" title="Permanent link">&para;</a></h4>
 <p>It is also possible to pull sources and spec files from remote Git or GitHub repos instead of our source cache.
 See the <a href="#upstream">upstream dir info</a> for more information.</p>
-<h3 id="revision-control-system">Revision Control System</h3>
+<h3 id="revision-control-system">Revision Control System<a class="headerlink" href="#revision-control-system" title="Permanent link">&para;</a></h3>
 <p>All packages that the OSG Software Team releases are checked into our Subversion repository.</p>
-<h4 id="subversion-access">Subversion Access</h4>
+<h4 id="subversion-access">Subversion Access<a class="headerlink" href="#subversion-access" title="Permanent link">&para;</a></h4>
 <p>Our Subversion repository is located at:</p>
 <blockquote>
 <div class="codehilite"><pre><span></span>https://vdt.cs.wisc.edu/svn
@@ -2290,7 +2290,7 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 </pre></div>
 
 
-<h4 id="osg-owned-software">OSG-Owned Software</h4>
+<h4 id="osg-owned-software">OSG-Owned Software<a class="headerlink" href="#osg-owned-software" title="Permanent link">&para;</a></h4>
 <p>OSG-owned software goes into GitHub under the <code>opensciencegrid</code> organization. Files are organized as the developer sees fit.</p>
 <p>It is strongly recommended that each software package include a top-level Makefile with at least the following targets:</p>
 <table>
@@ -2315,7 +2315,7 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 </tr>
 </tbody>
 </table>
-<h4 id="packaging-top-level-directory-organization">Packaging Top-Level Directory Organization</h4>
+<h4 id="packaging-top-level-directory-organization">Packaging Top-Level Directory Organization<a class="headerlink" href="#packaging-top-level-directory-organization" title="Permanent link">&para;</a></h4>
 <p>The top levels of our Subversion directory hierarchy for packaging are as follows:</p>
 <blockquote>
 <p><code>native/redhat/&lt;SECTION&gt;/&lt;PACKAGE&gt;</code></p>
@@ -2342,7 +2342,7 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 </tr>
 </tbody>
 </table>
-<h4 id="package-directory-organization">Package Directory Organization</h4>
+<h4 id="package-directory-organization">Package Directory Organization<a class="headerlink" href="#package-directory-organization" title="Permanent link">&para;</a></h4>
 <p>Within a source package directory, the following files (detailed in separate sections below) may exist:</p>
 <table>
 <thead>
@@ -2370,9 +2370,9 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 </tr>
 </tbody>
 </table>
-<h5 id="readme">README</h5>
+<h5 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">&para;</a></h5>
 <p>This is a free-form text file for developers to leave notes about the package. Please document anything interesting about how you procured the upstream source, the reasons for the modifications you made, or anything else people might need to know in order to maintain the package in the future. Please document the <em>why</em>, not just the <em>what</em>.</p>
-<h5 id="upstream">upstream</h5>
+<h5 id="upstream">upstream<a class="headerlink" href="#upstream" title="Permanent link">&para;</a></h5>
 <p>Within the per-package directories of the revision control system, there must be a way to refer to cached files. This is done with small text files that (a) are named consistently, and (b) contain the location of the referenced file as its contents.</p>
 <p>A reference file is named:</p>
 <blockquote>
@@ -2403,7 +2403,7 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 <p>and contain references to cached files, Git repos, and comments.
 which start with <code>#</code> and continue until the end of the line.
 It is useful to add the source of the upstream file into a comment.</p>
-<h6 id="cached-files">Cached files</h6>
+<h6 id="cached-files">Cached files<a class="headerlink" href="#cached-files" title="Permanent link">&para;</a></h6>
 <p>To reference files in the upstream source cache, use the upstream source cache path defined above, without the prefix component:</p>
 <blockquote>
 <p><code>&lt;PACKAGE&gt;/&lt;VERSION&gt;/&lt;FILE&gt;</code></p>
@@ -2417,7 +2417,7 @@ It is useful to add the source of the upstream file into a comment.</p>
 
 
 </div>
-<h6 id="git-repos">Git repos</h6>
+<h6 id="git-repos">Git repos<a class="headerlink" href="#git-repos" title="Permanent link">&para;</a></h6>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>OSG software policy requires that all Git and GitHub repos used for building software have mirrors at the UW.
@@ -2485,7 +2485,7 @@ If you are uncertain, or have a new project that you want mirrored, send email t
 </div>
 <p>In addition, if the repository contains a file called <code>rpm/&lt;NAME&gt;.spec</code>, it will be used as the spec file for the build
 (unless overridden in the <code>osg</code> directory).</p>
-<h6 id="github-repos">GitHub repos</h6>
+<h6 id="github-repos">GitHub repos<a class="headerlink" href="#github-repos" title="Permanent link">&para;</a></h6>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>OSG software policy requires that all Git and GitHub repos used for building software have mirrors at the UW.
@@ -2551,7 +2551,7 @@ If you are uncertain, or have a new project that you want mirrored, send email t
 </div>
 <p>In addition, if the repository contains a file called <code>rpm/&lt;PROJECT&gt;.spec</code>, it will be used as the spec file for the build
 (unless overridden in the <code>osg</code> directory).</p>
-<h5 id="advanced-features-for-git-and-github-repos">Advanced features for Git and GitHub repos</h5>
+<h5 id="advanced-features-for-git-and-github-repos">Advanced features for Git and GitHub repos<a class="headerlink" href="#advanced-features-for-git-and-github-repos" title="Permanent link">&para;</a></h5>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>These features require OSG-Build 1.12.2 or later.</p>
@@ -2597,14 +2597,14 @@ For example, you can use this to make scratch builds of the current master:</p>
 
 
 <p>This might also be useful as part of a continuous integration scheme (e.g. Travis-CI).</p>
-<h5 id="osg">osg</h5>
+<h5 id="osg">osg<a class="headerlink" href="#osg" title="Permanent link">&para;</a></h5>
 <p>The <code>osg</code> directory contains files that are owned by the OSG Software Team and that are used to create the final, released source package. It may contain a variety of development files:</p>
 <ul>
 <li>An RPM <code>.spec</code> file, which overrides any spec file from a referenced source</li>
 <li>Patch (<code>.patch</code>) or replacement files, which override any same-named file from the top-level directory of a referenced source</li>
 <li>Other files, which must be explicitly placed into the package by the spec file</li>
 </ul>
-<h4 id="generated-directories">Generated directories</h4>
+<h4 id="generated-directories">Generated directories<a class="headerlink" href="#generated-directories" title="Permanent link">&para;</a></h4>
 <p>The following directories may be generated by our build tool, <a href="../osg-build-tools">OSG-Build</a>. They are not under revision control.</p>
 <table>
 <thead>
@@ -2636,18 +2636,18 @@ For example, you can use this to make scratch builds of the current master:</p>
 </tr>
 </tbody>
 </table>
-<h5 id="95upstream95srpm95contents">_upstream_srpm_contents</h5>
+<h5 id="95upstream95srpm95contents">_upstream_srpm_contents<a class="headerlink" href="#95upstream95srpm95contents" title="Permanent link">&para;</a></h5>
 <p>The <code>_upstream_srpm_contents</code> directory contains the files that are part of the upstream source package. It is a volatile record of the upstream source for developer use.</p>
-<h5 id="95upstream95tarball95contents">_upstream_tarball_contents</h5>
+<h5 id="95upstream95tarball95contents">_upstream_tarball_contents<a class="headerlink" href="#95upstream95tarball95contents" title="Permanent link">&para;</a></h5>
 <p>The <code>_upstream_tarball_contents</code> directory contains the files that are part of the upstream source tarballs. It is generated by the package build tool if the <code>--full-extract</code> option is passed. It is not used for anything by the build tool, but meant as a convenience to allow the developer to look inside the upstream sources (for making patches, etc.).</p>
-<h5 id="95final95srpm95contents">_final_srpm_contents</h5>
+<h5 id="95final95srpm95contents">_final_srpm_contents<a class="headerlink" href="#95final95srpm95contents" title="Permanent link">&para;</a></h5>
 <p>The <code>_final_srpm_contents</code> directory contains the final files that are part of the released source package. It is a volatile record of a build for developer use.</p>
-<h5 id="95build95results">_build_results</h5>
+<h5 id="95build95results">_build_results<a class="headerlink" href="#95build95results" title="Permanent link">&para;</a></h5>
 <p>The <code>_build_results</code> directory contains the source and binary RPMs that are produced by a local build. It is a volatile record of a build for developer use.</p>
-<h5 id="95quilt">_quilt</h5>
+<h5 id="95quilt">_quilt<a class="headerlink" href="#95quilt" title="Permanent link">&para;</a></h5>
 <p>The <code>_quilt</code> directory contains the unpacked sources after they have been patched using the <a href="http://savannah.nongnu.org/projects/quilt">quilt</a> utility. This allows easier patch development.</p>
-<h4 id="packaging-organization-examples">Packaging Organization Examples</h4>
-<h5 id="use-case-1-packaging-an-upstream-source-tarball">Use Case 1: Packaging an Upstream Source Tarball</h5>
+<h4 id="packaging-organization-examples">Packaging Organization Examples<a class="headerlink" href="#packaging-organization-examples" title="Permanent link">&para;</a></h4>
+<h5 id="use-case-1-packaging-an-upstream-source-tarball">Use Case 1: Packaging an Upstream Source Tarball<a class="headerlink" href="#use-case-1-packaging-an-upstream-source-tarball" title="Permanent link">&para;</a></h5>
 <p>When the OSG Software Team packages an upstream source tarball, for which there is no existing package, the source tarball is referenced with a .source file and we provide a spec file and, if necessary, patches. For example, RSV is provided as a source tarball only. Its package directory contains:</p>
 <blockquote>
 <div class="codehilite"><pre><span></span>rsv/
@@ -2659,7 +2659,7 @@ For example, you can use this to make scratch builds of the current master:</p>
 
 
 </blockquote>
-<h5 id="use-case-2-passing-through-a-source-rpm">Use Case 2: Passing Through a Source RPM</h5>
+<h5 id="use-case-2-passing-through-a-source-rpm">Use Case 2: Passing Through a Source RPM<a class="headerlink" href="#use-case-2-passing-through-a-source-rpm" title="Permanent link">&para;</a></h5>
 <p>When the OSG Software Team simply provides a copy of an existing source RPM, it is referenced with a .source file and that is it. For example, we do not modify the <code>globus-common</code> source RPM from EPEL. Its package directory contains:</p>
 <blockquote>
 <div class="codehilite"><pre><span></span>globus-common/
@@ -2669,7 +2669,7 @@ For example, you can use this to make scratch builds of the current master:</p>
 
 
 </blockquote>
-<h5 id="use-case-3-modifying-a-source-rpm">Use Case 3: Modifying a Source RPM</h5>
+<h5 id="use-case-3-modifying-a-source-rpm">Use Case 3: Modifying a Source RPM<a class="headerlink" href="#use-case-3-modifying-a-source-rpm" title="Permanent link">&para;</a></h5>
 <p>When the OSG Software Team modifies an existing source RPM, it is referenced with a .source file and then all changes to the upstream source are contained in the <code>osg</code> directory. For example, we use this mechanism for the <code>globus-ftp-client</code> package, originally obtained from EPEL. Its package directory contains:</p>
 <blockquote>
 <div class="codehilite"><pre><span></span>globus-ftp-client/
@@ -2682,17 +2682,17 @@ For example, you can use this to make scratch builds of the current master:</p>
 
 
 </blockquote>
-<h3 id="build-process">Build Process</h3>
+<h3 id="build-process">Build Process<a class="headerlink" href="#build-process" title="Permanent link">&para;</a></h3>
 <ol>
 <li>All necessary information to create the package will be committed to the VDT source code repository (see below)</li>
 <li>The <a href="../osg-build-tools">OSG build tools</a> will take those files, create a source RPM, and submit it to our Koji build system</li>
 </ol>
 <p>Developers may use <code>rpmbuild</code> and <code>mock</code> for faster iterative development before submitting the package to Koji. <code>osg-build</code> may be used as a wrapper script around <code>rpmbuild</code> and <code>mock</code>.</p>
-<h3 id="osg-software-repository">OSG Software Repository</h3>
+<h3 id="osg-software-repository">OSG Software Repository<a class="headerlink" href="#osg-software-repository" title="Permanent link">&para;</a></h3>
 <p>OSG Operations maintains the Yum repositories that contain our source and binary RPMs at <code>https://repo.opensciencegrid.org/osg/</code> and are mirrored at other institutions as well.</p>
-<h4 id="release-levels">Release Levels</h4>
+<h4 id="release-levels">Release Levels<a class="headerlink" href="#release-levels" title="Permanent link">&para;</a></h4>
 <p>Every package is classified into a release level based on the amount of testing it has undergone and our confidence in its stability. When a package is first built, it goes into the lowest level (<code>osg-development</code>). The members of the OSG Software and Release teams may promote packages through the release levels, as per our <a href="../../release/release-policy">Release Policy page</a>.</p>
-<h2 id="packaging-conventions">Packaging Conventions</h2>
+<h2 id="packaging-conventions">Packaging Conventions<a class="headerlink" href="#packaging-conventions" title="Permanent link">&para;</a></h2>
 <p>In addition to adhering to the <a href="http://fedoraproject.org/wiki/PackagingGuidelines">Fedora Packaging Guidelines</a> (FPG), we have a few rules and guidelines of our own:</p>
 <ul>
 <li>When we pass-through an RPM and make any changes to it (so it has an updated package number), we construct the version-release as follows:<ul>
@@ -2707,8 +2707,8 @@ For example, you can use this to make scratch builds of the current master:</p>
 </pre></div>
 
 
-<h2 id="packaging-for-multiple-distro-versions">Packaging for Multiple Distro Versions</h2>
-<h3 id="conditionalizing-spec-files">Conditionalizing spec files</h3>
+<h2 id="packaging-for-multiple-distro-versions">Packaging for Multiple Distro Versions<a class="headerlink" href="#packaging-for-multiple-distro-versions" title="Permanent link">&para;</a></h2>
+<h3 id="conditionalizing-spec-files">Conditionalizing spec files<a class="headerlink" href="#conditionalizing-spec-files" title="Permanent link">&para;</a></h3>
 <p>Some packages may need different build behavior between major versions of the OS; RPM conditional statements will be used to handle this.</p>
 <p>The following macros are defined:</p>
 <table>
@@ -2754,7 +2754,7 @@ For example, you can use this to make scratch builds of the current master:</p>
 
 <p>(There does not seem to be an <code>%elseif</code>).</p>
 <p>The syntax <code>%{?el6}</code> expands to the value of the <code>%el6</code> macro if it is defined, and to the empty string if not; the <code>0</code> is there to keep the condition from being empty in the <code>%if</code> statement if the macro is not defined.</p>
-<h2 id="renaming-or-removing-packages">Renaming or Removing Packages</h2>
+<h2 id="renaming-or-removing-packages">Renaming or Removing Packages<a class="headerlink" href="#renaming-or-removing-packages" title="Permanent link">&para;</a></h2>
 <p>Occasionally we want to cause a package to be removed on update, or replaced by a package with a different name.</p>
 <p>For the most part, the <a href="https://fedoraproject.org/wiki/Packaging:Guidelines#Renaming.2FReplacing_Existing_Packages">Fedora Packaging Guidelines page on renames</a> shows how to do that.
 The exception is that we do not have the equivalent of a <code>fedora-obsolete-packages</code> package, so in order to force the removal of an entire package (not a subpackage), we have to dummy out the package instead -- see below.
@@ -2783,7 +2783,7 @@ Then, run:</p>
 <p class="admonition-title">Note</p>
 <p>Carefully test these changes, including places where the old package may be brought in indirectly.</p>
 </div>
-<h3 id="dummying-out-a-package">Dummying out a package</h3>
+<h3 id="dummying-out-a-package">Dummying out a package<a class="headerlink" href="#dummying-out-a-package" title="Permanent link">&para;</a></h3>
 <p>In order to forcibly remove an entire package with no replacement, you have to replace the package with one that does nothing.
 This is because there is no package that will "obsolete" the old package.</p>
 <p>Do the following for the main package and any subpackages it may have:</p>

@@ -1676,10 +1676,10 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/release/itb-testing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="testing-osg-software-prereleases-on-the-madison-itb-site">Testing OSG Software Prereleases on the Madison ITB Site</h1>
+                <h1 id="testing-osg-software-prereleases-on-the-madison-itb-site">Testing OSG Software Prereleases on the Madison ITB Site<a class="headerlink" href="#testing-osg-software-prereleases-on-the-madison-itb-site" title="Permanent link">&para;</a></h1>
 <p>This document contains basic recipes for testing a OSG software prereleases on the Madison ITB site, which includes
 HTCondor prerelease builds and full OSG software stack prereleases from Yum.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>The following items are known prerequisites to using this recipe.  If you are not running the Ansible commands from
 osghost, there are almost certainly other prerequisites that are not listed below.  And even using osghost for Ansible
 and itb-submit for the submissions, there may be other prerequisites missing.  Please improve this document by adding
@@ -1688,7 +1688,7 @@ other prerequisites as they are identified!</p>
 <li>A checkout of the osgitb directory from our local git instance (not GitHub)</li>
 <li>Your X.509 DN in the <code>osgitb/unmanaged/htcondor-ce/grid-mapfile</code> file and (via Ansible) on <code>itb-ce1</code> and <code>itb-ce2</code></li>
 </ul>
-<h2 id="gathering-information">Gathering Information</h2>
+<h2 id="gathering-information">Gathering Information<a class="headerlink" href="#gathering-information" title="Permanent link">&para;</a></h2>
 <p>Technically skippable, this section is about checking on the state of the ITB machines before making changes.  The plan
 is to keep the ITB machines generally up-to-date independently, so those steps are not listed here.  And honestly, the
 steps below are just some ideas; do whatever makes sense for the given update.</p>
@@ -1716,7 +1716,7 @@ steps below are just some ideas; do whatever makes sense for the given update.</
 
 </li>
 </ol>
-<h2 id="installing-htcondor-prerelease">Installing HTCondor Prerelease</h2>
+<h2 id="installing-htcondor-prerelease">Installing HTCondor Prerelease<a class="headerlink" href="#installing-htcondor-prerelease" title="Permanent link">&para;</a></h2>
 <p>Use this section to install a new version of HTCondor, specifically a prerelease build from the development or
 upcoming-development repository, on the test hosts.</p>
 <ol>
@@ -1760,7 +1760,7 @@ upcoming-development repository, on the test hosts.</p>
 
 </li>
 </ol>
-<h2 id="installing-a-prerelease-of-the-osg-software-stack">Installing a Prerelease of the OSG Software Stack</h2>
+<h2 id="installing-a-prerelease-of-the-osg-software-stack">Installing a Prerelease of the OSG Software Stack<a class="headerlink" href="#installing-a-prerelease-of-the-osg-software-stack" title="Permanent link">&para;</a></h2>
 <p>Use this section to install new versions of all OSG software from a prerelease repository in Yum.</p>
 <ol>
 <li>
@@ -1800,10 +1800,10 @@ repositories by adding command-line options to the <code>yum update</code> comma
 <p>Use an inventory group and package names that best fit the situation.</p>
 </li>
 </ol>
-<h2 id="running-tests">Running Tests</h2>
+<h2 id="running-tests">Running Tests<a class="headerlink" href="#running-tests" title="Permanent link">&para;</a></h2>
 <p>For the first two test workflows, use your personal space on <code>itb-submit</code>.  Copy or checkout the <code>osgitb/htcondor-tests</code>
 directory to get the test directories.</p>
-<h3 id="part-i-submitting-jobs-directly">Part Ⅰ: Submitting jobs directly</h3>
+<h3 id="part-i-submitting-jobs-directly">Part Ⅰ: Submitting jobs directly<a class="headerlink" href="#part-i-submitting-jobs-directly" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Change into the <code>1-direct-jobs</code> subdirectory</p>
@@ -1844,7 +1844,7 @@ watch out for a case in which no jobs run on the newly updated hosts (at the tim
    target to remove all workflow-generated files (plus Emacs backup files).</p>
 </li>
 </ol>
-<h3 id="part-ii-submitting-jobs-using-htcondor-c">Part Ⅱ: Submitting jobs using HTCondor-C</h3>
+<h3 id="part-ii-submitting-jobs-using-htcondor-c">Part Ⅱ: Submitting jobs using HTCondor-C<a class="headerlink" href="#part-ii-submitting-jobs-using-htcondor-c" title="Permanent link">&para;</a></h3>
 <p>If direct submissions fail, there is probably no point to doing this step.</p>
 <ol>
 <li>
@@ -1892,7 +1892,7 @@ trying steps 2 and 3 until you get a clean run (or one or more HTCondor bug tick
 <p>(Optional) Clean up, using the <code>make clean</code> or <code>make distclean</code> commands.</p>
 </li>
 </ol>
-<h3 id="part-iii-submitting-jobs-from-a-glideinwms-vo-frontend">Part Ⅲ: Submitting jobs from a GlideinWMS VO Frontend</h3>
+<h3 id="part-iii-submitting-jobs-from-a-glideinwms-vo-frontend">Part Ⅲ: Submitting jobs from a GlideinWMS VO Frontend<a class="headerlink" href="#part-iii-submitting-jobs-from-a-glideinwms-vo-frontend" title="Permanent link">&para;</a></h3>
 <p>For this workflow, use your personal space on <code>glidein3.chtc.wisc.edu</code>.  Copy or checkout the <code>osgitb/htcondor-tests</code>
 directory to get the test directories.  Again, if previous steps fail, do not bother with this step.</p>
 <ol>

@@ -1523,7 +1523,7 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/quilt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="how-to-write-a-patch">How to Write a Patch</h1>
+                <h1 id="how-to-write-a-patch">How to Write a Patch<a class="headerlink" href="#how-to-write-a-patch" title="Permanent link">&para;</a></h1>
 <p>You create one or more <code>.patch</code> files with diff and stick them in the osg directory. Then you declare the patch files in the header of the spec file with a line like <code>Patch0: py24compat.patch</code> and in the <code>%prep</code> section, just after<code>%setup</code>, you add a <code>%patch</code> line to actually apply the patch, like this: <code>%patch0 -p1</code> (where the <code>-p1</code> indicates that it should strip off the first leading component of the path in each file mentioned in the .patch file) Look at the mash package for an example.</p>
 <p>The easiest way to actually create the patch in the first place is to use a utility called quilt. First you run <code>osg-build quilt</code> on the package directory and it will create a <code>_quilt</code> subdirectory that has the expanded sources and patches.</p>
 <ul>

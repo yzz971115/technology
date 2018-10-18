@@ -1702,12 +1702,12 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/documentation/style-guide.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="markdown-style-guide">Markdown Style Guide</h1>
+                <h1 id="markdown-style-guide">Markdown Style Guide<a class="headerlink" href="#markdown-style-guide" title="Permanent link">&para;</a></h1>
 <p>This document contains markdown conventions that are used in OSG Software documentation.</p>
-<h2 id="meta">Meta</h2>
+<h2 id="meta">Meta<a class="headerlink" href="#meta" title="Permanent link">&para;</a></h2>
 <p>Wherever possible, prose should be limited to 120 characters wide.
 In addition, using one line for each sentence is recommended since it makes update diffs easier to review.</p>
-<h2 id="headings">Headings</h2>
+<h2 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h2>
 <p>Use the following conventions for headings:</p>
 <ul>
 <li>The title should be the only level 1 heading</li>
@@ -1718,10 +1718,10 @@ In addition, using one line for each sentence is recommended since it makes upda
 <li>Go no deeper than of level 5 headings</li>
 <li>Spin-off a new document or re-organize the existing document if you find that you regularly need level 5 headings.</li>
 </ul>
-<h2 id="links">Links</h2>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <p>Use site-relative (<code>/software/development-process</code>) instead of document-relative (<code>../software/development-process.md</code>)
 links. This will allow us to easily search for links and move documents around in the future.</p>
-<h3 id="section-links">Section links</h3>
+<h3 id="section-links">Section links<a class="headerlink" href="#section-links" title="Permanent link">&para;</a></h3>
 <p>To link sections within a page, lowercase the entire section name and replace spaces with dashes. If there are multiple
 sections with the same name you can link the subsequent sections by appending <code>_N</code> where <code>N</code> is the section's ordinal
 number minus one, e.g. append <code>_1</code> for the second section. For example, if you have three sections named "Optional
@@ -1732,7 +1732,7 @@ Configuration", link them like so:</p>
 </pre></div>
 
 
-<h2 id="command-blocks-and-file-snippets">Command blocks and file snippets</h2>
+<h2 id="command-blocks-and-file-snippets">Command blocks and file snippets<a class="headerlink" href="#command-blocks-and-file-snippets" title="Permanent link">&para;</a></h2>
 <p>Command blocks and file snippets outside of lists should be wrapped in three back-ticks (```) followed by an optional
 code highlighting format:</p>
 <div class="codehilite"><pre><span></span>```console
@@ -1751,7 +1751,7 @@ colons followed by an optional code highlighting format:</p>
 <p>We use the <a href="http://pygments.org/">Pygments</a> highlighting library for syntax; it knows about 100 different languages.
 The Pygments website contains a live renderer if you want to see how your text will come out.  Please use the <code>console</code>
 language for shell sessions.</p>
-<h3 id="root-and-user-prompts">Root and user prompts</h3>
+<h3 id="root-and-user-prompts">Root and user prompts<a class="headerlink" href="#root-and-user-prompts" title="Permanent link">&para;</a></h3>
 <p>When specifying instructions for the command-line, indicate to users whether the commands can be run as root 
 (<code>root@host #</code>) or as an unprivileged user (<code>user@host $</code>).</p>
 <p>For example:</p>
@@ -1765,14 +1765,14 @@ language for shell sessions.</p>
 <p>It can provide helpful context to use a more specific hostname in the prompt than <code>host</code>.
 For example, if you're writing a doc for setting up a Storage Element and a command is run as root on the SE, use <code>root@se #</code>.
 Or if you're testing the SE from the client side and the command is run as a normal user on a client, use <code>user@client $</code>.</p>
-<h3 id="highlighting-user-input">Highlighting user input</h3>
+<h3 id="highlighting-user-input">Highlighting user input<a class="headerlink" href="#highlighting-user-input" title="Permanent link">&para;</a></h3>
 <p>Use descriptive, all-caps text wrapped in angle brackets to to highlight areas that users would have to insert text
 specific to their site. You may also use TWiki-style color highlighting. For example:</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_ce_trace -d <span style="color:red">&lt;CE HOSTNAME&gt;</span>
 </pre></div>
 
 
-<h2 id="lists">Lists</h2>
+<h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 <p>When constructing lists, use the following guidelines:</p>
 <ul>
 <li>Use <code>1.</code> for each item in a numbered list</li>
@@ -1832,7 +1832,7 @@ SNIPPET
 
 </li>
 </ol>
-<h2 id="notes">Notes</h2>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
 <p>To catch the user's attention for important items or pitfalls, we used <code>%NOTE%</code> TWiki macros, these can be replaced with
 admonition-style notes and warnings:</p>
 <div class="codehilite"><pre><span></span>!!! note

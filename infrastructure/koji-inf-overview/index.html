@@ -1648,9 +1648,9 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/infrastructure/koji-inf-overview.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="koji-infrastructure-overview">Koji Infrastructure Overview</h1>
-<h2 id="in-madison">In Madison</h2>
-<h3 id="in-wid">In WID</h3>
+                <h1 id="koji-infrastructure-overview">Koji Infrastructure Overview<a class="headerlink" href="#koji-infrastructure-overview" title="Permanent link">&para;</a></h1>
+<h2 id="in-madison">In Madison<a class="headerlink" href="#in-madison" title="Permanent link">&para;</a></h2>
+<h3 id="in-wid">In WID<a class="headerlink" href="#in-wid" title="Permanent link">&para;</a></h3>
 <ul>
 <li><em>koji.chtc.wisc.edu</em> is the main Koji server. It runs:<ul>
 <li><code>koji-hub</code> (httpd/mod_python service) -- controls everything else</li>
@@ -1681,7 +1681,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="in-cs-3370a">In CS (3370A)</h3>
+<h3 id="in-cs-3370a">In CS (3370A)<a class="headerlink" href="#in-cs-3370a" title="Permanent link">&para;</a></h3>
 <ul>
 <li><em>osghost.chtc.wisc.edu</em> is a VM host. It runs:<ul>
 <li><em>kojibuilder2.chtc.wisc.edu</em> and <em>kojibuilder3.chtc.wisc.edu</em> are builder VMs. Each runs:<ul>
@@ -1692,7 +1692,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="in-indiana">In Indiana</h2>
+<h2 id="in-indiana">In Indiana<a class="headerlink" href="#in-indiana" title="Permanent link">&para;</a></h2>
 <ul>
 <li><em>repo1.grid.iu.edu</em>, <em>repo2.grid.iu.edu</em> and <em>repo-itb.grid.iu.edu</em> are repo hosts. Each runs:<ul>
 <li><code>mash</code> (cron job) -- pulls RPMs from a <code>koji-hub</code></li>
@@ -1701,7 +1701,7 @@
 </li>
 <li><em>repo.grid.iu.edu</em> is a DNS alias pointing to either <em>repo1</em> or <em>repo2</em></li>
 </ul>
-<h2 id="lines-of-communication">Lines of Communication</h2>
+<h2 id="lines-of-communication">Lines of Communication<a class="headerlink" href="#lines-of-communication" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>koji-web</code> provides a web interface to <code>koji-hub</code></li>
 <li><code>koji-hub</code> sends jobs to all <code>kojid</code> daemons and gets back the results</li>
@@ -1712,7 +1712,7 @@
 <li><code>puppetd</code> on all Madison machines pulls Puppet configuration from <code>puppetmaster</code> on <em>wid-service-1</em></li>
 <li><code>rsync</code> on <em>host-3.chtc.wisc.edu</em> pulls files from <code>rsyncd</code> on <em>koji.chtc.wisc.edu</em> and <em>db-01.batlab.org</em></li>
 </ul>
-<h2 id="management">Management</h2>
+<h2 id="management">Management<a class="headerlink" href="#management" title="Permanent link">&para;</a></h2>
 <p>Managed by the GOC:</p>
 <ul>
 <li><em>repo1.grid.iu.edu</em></li>

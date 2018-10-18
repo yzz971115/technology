@@ -1780,11 +1780,11 @@
                 
                   <h1>Koji Policy Writing</h1>
                 
-                <h2 id="koji-permissions-and-policy">Koji permissions and policy</h2>
+                <h2 id="koji-permissions-and-policy">Koji permissions and policy<a class="headerlink" href="#koji-permissions-and-policy" title="Permanent link">&para;</a></h2>
 <p>These are some notes I wrote on Koji ACLs/policy after doing some source diving in the Koji code.
 The version of Koji was 1.6.0.
 I later found some documentation at <a href="https://docs.pagure.org/koji/defining_hub_policies/">https://docs.pagure.org/koji/defining_hub_policies/</a>. Go read it, that page has better examples.</p>
-<h3 id="default-policies-defined-in-hubkojixmlrpcpy">Default policies (defined in hub/kojixmlrpc.py)</h3>
+<h3 id="default-policies-defined-in-hubkojixmlrpcpy">Default policies (defined in hub/kojixmlrpc.py)<a class="headerlink" href="#default-policies-defined-in-hubkojixmlrpcpy" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>build_from_srpm =
        has_perm admin :: allow
        all :: deny
@@ -1805,7 +1805,7 @@ vm =
 
 
 <p>If <code>MissingPolicyOk</code> is true (default), then policies that do not exist default to "allow".</p>
-<h3 id="policy-syntax">Policy syntax</h3>
+<h3 id="policy-syntax">Policy syntax<a class="headerlink" href="#policy-syntax" title="Permanent link">&para;</a></h3>
 <p>Policies are set in the <code>[policy]</code> section of <code>/etc/koji-hub/hub.conf</code></p>
 <p>Each policy definition starts with</p>
 <div class="codehilite"><pre><span></span>policy_name =
@@ -1954,7 +1954,7 @@ test [params] [&amp;amp;&amp;amp; test [params] ...] !! action-if-false
     ?</p>
 </li>
 </ul>
-<h3 id="default-permissions">Default permissions</h3>
+<h3 id="default-permissions">Default permissions<a class="headerlink" href="#default-permissions" title="Permanent link">&para;</a></h3>
 <p>These are the permissions that people can be given in koji:</p>
 <ul>
 <li><code>admin</code></li>
@@ -1987,7 +1987,7 @@ test [params] [&amp;amp;&amp;amp; test [params] ...] !! action-if-false
 </li>
 </ul>
 <p>I haven't found out where some of the other permissions are used.</p>
-<h3 id="adding-permissions">Adding permissions</h3>
+<h3 id="adding-permissions">Adding permissions<a class="headerlink" href="#adding-permissions" title="Permanent link">&para;</a></h3>
 <p>You can give someone a permission that doesn't exist by doing:</p>
 <div class="codehilite"><pre><span></span>osg-koji grant-permission --new &amp;lt;PERMISSION&amp;gt; &quot;&amp;lt;USER&amp;gt;&quot;
 </pre></div>
@@ -1995,8 +1995,8 @@ test [params] [&amp;amp;&amp;amp; test [params] ...] !! action-if-false
 
 <p>Doing so creates the permission as a side effect.
 I'm not aware of a way to create the permission without granting it, other than with database hackery.</p>
-<h3 id="where-policies-are-used-and-what-policy-data-is-passed-on">Where policies are used and what policy data is passed on:</h3>
-<h4 id="build95from95srpm">build_from_srpm</h4>
+<h3 id="where-policies-are-used-and-what-policy-data-is-passed-on">Where policies are used and what policy data is passed on:<a class="headerlink" href="#where-policies-are-used-and-what-policy-data-is-passed-on" title="Permanent link">&para;</a></h3>
+<h4 id="build95from95srpm">build_from_srpm<a class="headerlink" href="#build95from95srpm" title="Permanent link">&para;</a></h4>
 <p><strong>source:</strong></p>
 <ul>
 <li><code>builder/kojid:BuildTask.handler</code> <br />
@@ -2033,14 +2033,14 @@ I'm not aware of a way to create the permission without granting it, other than 
     the destination tag (only if <code>skip_tag</code> is false)</p>
 </li>
 </ul>
-<h4 id="build95from95repo95id">build_from_repo_id</h4>
+<h4 id="build95from95repo95id">build_from_repo_id<a class="headerlink" href="#build95from95repo95id" title="Permanent link">&para;</a></h4>
 <p><strong>source:</strong></p>
 <ul>
 <li><code>builder/kojid:BuildTask.handler</code> <br />
     used when the <code>--repo-id</code> option is passed to <code>koji build</code></li>
 </ul>
 <p><strong>policy data:</strong> same as <code>build_from_srpm</code></p>
-<h4 id="package95list">package_list</h4>
+<h4 id="package95list">package_list<a class="headerlink" href="#package95list" title="Permanent link">&para;</a></h4>
 <p><strong>source:</strong></p>
 <ul>
 <li><code>hub/kojihub.py:pkglist_add</code> <br />
@@ -2077,7 +2077,7 @@ I'm not aware of a way to create the permission without granting it, other than 
 <code>unblock-pkg</code> command</li>
 </ul>
 <p><strong>policy data:</strong> same as above, except <code>action</code> is 'unblock'</p>
-<h4 id="tag">tag</h4>
+<h4 id="tag">tag<a class="headerlink" href="#tag" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>RootExports is the class containing functions exported via XMLRPC. In general, each function corresponds to a koji task.</p>
@@ -2124,7 +2124,7 @@ I'm not aware of a way to create the permission without granting it, other than 
     tagging builds ("host version" ?)</li>
 </ul>
 <p><strong>policy data:</strong> same as for <code>tagBuild</code>, plus <code>user_id</code></p>
-<h4 id="vm">vm</h4>
+<h4 id="vm">vm<a class="headerlink" href="#vm" title="Permanent link">&para;</a></h4>
 <p><strong>source:</strong></p>
 <ul>
 <li><code>hub/kojihub.py:RootExports.winBuild</code> <br />
@@ -2141,8 +2141,8 @@ I'm not aware of a way to create the permission without granting it, other than 
     the name of the vm</p>
 </li>
 </ul>
-<h3 id="examples">Examples</h3>
-<h4 id="let-people-with-the-build-permission-also-add-packages-and-build-srpms">Let people with the "build" permission also add packages and build SRPMs</h4>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<h4 id="let-people-with-the-build-permission-also-add-packages-and-build-srpms">Let people with the "build" permission also add packages and build SRPMs<a class="headerlink" href="#let-people-with-the-build-permission-also-add-packages-and-build-srpms" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>package_list = 
     has_perm admin :: allow
     has_perm build &amp;amp;&amp;amp; match action add update :: allow
@@ -2154,7 +2154,7 @@ build_from_srpm =
 </pre></div>
 
 
-<h4 id="promotion-policy-for-different-teams">Promotion policy for different teams</h4>
+<h4 id="promotion-policy-for-different-teams">Promotion policy for different teams<a class="headerlink" href="#promotion-policy-for-different-teams" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Software team members can tag any package as testing/release.</li>
 <li>Operations team members can tag vo-clients as testing/release.</li>

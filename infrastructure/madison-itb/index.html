@@ -1802,8 +1802,8 @@ pre em { color: red; font-weight: normal; font-style: normal; }
 .off { color: blue; }
 </style>
 
-<h1 id="softwarerelease-team-itb-site-design">Software/Release Team ITB Site Design</h1>
-<h2 id="madison-itb-machines">Madison ITB Machines</h2>
+<h1 id="softwarerelease-team-itb-site-design">Software/Release Team ITB Site Design<a class="headerlink" href="#softwarerelease-team-itb-site-design" title="Permanent link">&para;</a></h1>
+<h2 id="madison-itb-machines">Madison ITB Machines<a class="headerlink" href="#madison-itb-machines" title="Permanent link">&para;</a></h2>
 <p>All physical hosts are located in 3370A in the VDT rack.</p>
 <table>
 <thead>
@@ -2022,16 +2022,16 @@ pre em { color: red; font-weight: normal; font-style: normal; }
 </tbody>
 </table>
 <p>(Data last updated 2017-10-13 by Tim C. <span class="old">Red</span> indicates a host that has yet to be rebuilt; <span class="off">Blue</span> is rebuilt but currently off.)</p>
-<h2 id="itb-goals">ITB Goals</h2>
+<h2 id="itb-goals">ITB Goals<a class="headerlink" href="#itb-goals" title="Permanent link">&para;</a></h2>
 <p>Goals for the Madison ITB site are now maintained in <a href="https://docs.google.com/document/d/1H4r8d2cznTKwnvPZGhj63-c7HMF9c_7izeU8dxerPiM/">a Google document</a>.</p>
-<h2 id="configuration">Configuration</h2>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <p>Basic host configuration is handled by Ansible and a local Git repository of playbooks.</p>
-<h3 id="git-repository">Git Repository</h3>
+<h3 id="git-repository">Git Repository<a class="headerlink" href="#git-repository" title="Permanent link">&para;</a></h3>
 <p>The authoritative Git repository for Madison ITB configuration is <code>gitolite@git.chtc.wisc.edu:osgitb</code>.  Clone the
 repository and push validated changes back to it.</p>
-<h3 id="ansible">Ansible</h3>
+<h3 id="ansible">Ansible<a class="headerlink" href="#ansible" title="Permanent link">&para;</a></h3>
 <p>The <code>osghost</code> machine has Ansible 2.3.1.0 installed via RPM.  Use other hosts and versions at your own risk.</p>
-<h4 id="common-ansible-commands">Common Ansible commands</h4>
+<h4 id="common-ansible-commands">Common Ansible commands<a class="headerlink" href="#common-ansible-commands" title="Permanent link">&para;</a></h4>
 <p><strong>Note:</strong></p>
 <ul>
 <li>For critical passwords, see Tim C. or other knowledgeable Madison OSG staff in person</li>
@@ -2065,7 +2065,7 @@ For example, to run the iptables tag/role:</p>
 </pre></div>
 
 
-<h4 id="adding-host-and-other-certificates">Adding host and other certificates</h4>
+<h4 id="adding-host-and-other-certificates">Adding host and other certificates<a class="headerlink" href="#adding-host-and-other-certificates" title="Permanent link">&para;</a></h4>
 <p>(This is in very rough form, but the key bits are here.)</p>
 <ol>
 <li>Ask Mat to get new certificates — be sure to think about <code>http</code>, <code>rsv</code>, and other service certificates</li>
@@ -2082,7 +2082,7 @@ For example, to run the iptables tag/role:</p>
 <li>Commit changes (now or after applying)</li>
 <li>Push changes to origin (<code>gitolite@git.chtc.wisc.edu:osgitb</code>)</li>
 </ol>
-<h4 id="doing-yum-updates">Doing yum updates</h4>
+<h4 id="doing-yum-updates">Doing yum updates<a class="headerlink" href="#doing-yum-updates" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>Check to see if updates are needed and, if so, what would be updated:</p>
@@ -2113,19 +2113,19 @@ therefore Ansible shows such results as failures.</p>
 
 </li>
 </ol>
-<h4 id="updating-htcondor-from-upcoming">Updating HTCondor from Upcoming</h4>
+<h4 id="updating-htcondor-from-upcoming">Updating HTCondor from Upcoming<a class="headerlink" href="#updating-htcondor-from-upcoming" title="Permanent link">&para;</a></h4>
 <p>Something like this:</p>
 <div class="codehilite"><pre><span></span><span class="go">ansible condordev -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-upcoming --assumeyes update condor&#39;</span>
 </pre></div>
 
 
-<h2 id="monitoring">Monitoring</h2>
-<h3 id="htcondor-ce-view">HTCondor-CE View</h3>
+<h2 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h2>
+<h3 id="htcondor-ce-view">HTCondor-CE View<a class="headerlink" href="#htcondor-ce-view" title="Permanent link">&para;</a></h3>
 <p>Once we sort out our firewall rules, pilot, VO, and schedd availability graphs should be available
 <a href="http://itb-ce1.chtc.wisc.edu:59619">here</a> through HTCondor-CE View.</p>
-<h3 id="tracking-payload-jobs-via-kibana">Tracking payload jobs via Kibana</h3>
+<h3 id="tracking-payload-jobs-via-kibana">Tracking payload jobs via Kibana<a class="headerlink" href="#tracking-payload-jobs-via-kibana" title="Permanent link">&para;</a></h3>
 <p>At this time, the easest way to verify that payload jobs are running within the glideinWMS pilots is to track their records via <a href="https://gracc.opensciencegrid.org/kibana/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:f,value:0),time:(from:now%2Fw,mode:quick,to:now%2Fw))&_a=(columns:!(_source),index:%27gracc.osg-itb.raw-\*%27,interval:auto,query:(query_string:(analyze_wildcard:!f,query:%27\*%27)),sort:!(EndTime,desc))">Kibana</a>. To view all payload jobs that have run on our ITB site in the past week, use <a href="https://gracc.opensciencegrid.org/kibana/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:f,value:0),time:(from:now%2Fw,mode:quick,to:now%2Fw))&_a=(columns:!(ProbeName),index:%27gracc.osg-itb.raw-\*%27,interval:auto,query:(query_string:(analyze_wildcard:!f,query:%27ResourceType:%20Payload%20AND%20ProbeConfig:%20%22condor:itb-ce1.chtc.wisc.edu%22%27)),sort:!(EndTime,desc))">this query</a>.</p>
-<h2 id="making-a-new-virtual-machine-on-itb-host-1">Making a New Virtual Machine on itb-host-1</h2>
+<h2 id="making-a-new-virtual-machine-on-itb-host-1">Making a New Virtual Machine on itb-host-1<a class="headerlink" href="#making-a-new-virtual-machine-on-itb-host-1" title="Permanent link">&para;</a></h2>
 <p>For this procedure, you will need login access to the CHTC Cobbler website, which is separate from other CHTC logins.
 If you do not have an account, request one from the CHTC system administrators.</p>
 <ol>
@@ -2207,7 +2207,7 @@ then reboot the now-installed machine.  The whole process typically takes 15–2
 </ol>
 </li>
 </ol>
-<h3 id="libvirt-vm-template">Libvirt VM Template</h3>
+<h3 id="libvirt-vm-template">Libvirt VM Template<a class="headerlink" href="#libvirt-vm-template" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;domain</span> <span class="na">type=</span><span class="s">&#39;kvm&#39;</span><span class="nt">&gt;</span>
 
   <span class="nt">&lt;name&gt;</span>{{ HOSTNAME }}<span class="nt">&lt;/name&gt;</span>

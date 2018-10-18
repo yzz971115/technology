@@ -1826,9 +1826,9 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/koji-workflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="koji-workflow">Koji Workflow</h1>
+                <h1 id="koji-workflow">Koji Workflow<a class="headerlink" href="#koji-workflow" title="Permanent link">&para;</a></h1>
 <p>This covers the basics of using and understanding the <a href="https://koji.chtc.wisc.edu/koji">OSG Koji</a> instance. It is meant primarily for OSG Software team members who need to interact with the service.</p>
-<h2 id="terminology">Terminology</h2>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
 <p>Using and understanding the following terminology correctly will help in the reading of this document:</p>
 <p><strong>Package</strong><br />
 This refers to a named piece of software in the Koji database. An example would be "lcmaps".</p>
@@ -1870,15 +1870,15 @@ A unit of work for Koji. Several common tasks are:</p>
 The results of a buildArch task. Their metadata are recorded in the Koji database, and files are saved to disk. Metadata may include checksums, timestamps, and who initiated the task. Artifacts may include RPMs, SRPMs, and build logs.</p>
 <p><strong>Repository</strong><br />
 A yum repository created from the contents of a tag at a specific point in time. By default, the yum repository will contain all successful, non-blocked builds in the tag, plus all RPMs in the external repositories for the tag.</p>
-<h2 id="using-koji">Using Koji</h2>
-<h3 id="required-software">Required Software</h3>
+<h2 id="using-koji">Using Koji<a class="headerlink" href="#using-koji" title="Permanent link">&para;</a></h2>
+<h3 id="required-software">Required Software<a class="headerlink" href="#required-software" title="Permanent link">&para;</a></h3>
 <p>Using Koji requires:</p>
 <ul>
 <li><code>osg-build</code> version 1.6.3 or later.</li>
 <li><code>koji</code> 1.6.0-2.osg or later. <strong>Note</strong> that you want a koji build from osg; the output of <code>rpm -q koji</code> should end in ".osg".</li>
 </ul>
 <p>Both pieces of software are available from the osg repositories. <code>osg-build</code> may also be obtained from GitHub by cloning out <code>https://github.com/opensciencegrid/osg-build</code></p>
-<h4 id="special-instructions-for-uw-madison-csl-machines">Special instructions for UW-Madison CSL machines:</h4>
+<h4 id="special-instructions-for-uw-madison-csl-machines">Special instructions for UW-Madison CSL machines:<a class="headerlink" href="#special-instructions-for-uw-madison-csl-machines" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>Clone the osg-build GitHub repo:</p>
@@ -1899,11 +1899,11 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p>to set up the koji configuration and certificates in <code>~/.osg-koji</code></p>
 </li>
 </ul>
-<h3 id="obtaining-a-login">Obtaining a login</h3>
+<h3 id="obtaining-a-login">Obtaining a login<a class="headerlink" href="#obtaining-a-login" title="Permanent link">&para;</a></h3>
 <p>You will be using your grid certificate to log in. Email a Koji admin the DN of your certificate, and we will set up a Koji account with the appropriate permissions.</p>
 <p>If you are switching certificate providers, you will need to email a Koji admin with your new DN. You will also need to clear your browser cookies and cache for <code>https://koji.chtc.wisc.edu</code> before trying to use the Koji web interface again. If your CN has changed, you will not be able to use your old certificate.</p>
 <p>Current Koji admins are Mat Selmeci and Carl Edquist.</p>
-<h3 id="configuring-certificate-authentication">Configuring certificate authentication</h3>
+<h3 id="configuring-certificate-authentication">Configuring certificate authentication<a class="headerlink" href="#configuring-certificate-authentication" title="Permanent link">&para;</a></h3>
 <p>You must also configure certificate authentication for the command-line tools on your build host:</p>
 <ul>
 <li>
@@ -1916,7 +1916,7 @@ A yum repository created from the contents of a tag at a specific point in time.
 </li>
 </ul>
 <p>After this, you will also be able to run koji commands manually by using the <code>osg-koji</code> wrapper script. You might need to rerun <code>osg-koji setup</code> if you renew or change your cert.</p>
-<h3 id="creating-a-new-build">Creating a new build</h3>
+<h3 id="creating-a-new-build">Creating a new build<a class="headerlink" href="#creating-a-new-build" title="Permanent link">&para;</a></h3>
 <p>We create a new build in Koji from the package's directory in OSG Software subversion.</p>
 <p>If a successful build already exists in Koji (regardless of whether it is in the tag you use), you cannot replace the build. Two builds are the same if they have the same NVR (Name-Version-Release). You <em>can</em> do a "scratch" build, which recompiles, but the results are not added to the tag. This is useful for experimenting with koji.</p>
 <p>To do a build, execute the following command from within the OSG Software subversion checkout:</p>
@@ -1927,8 +1927,8 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p>To do a scratch build, simply add the <code>--scratch</code> command line flag.</p>
 <p>Each invocation of osg-build will ask for the password once or twice; if you get asked more like 20 times, then you may not be running the OSG-patched version of Koji; try switching to the one from the osg-development repository.</p>
 <p>When you do a non-scratch build, it will build with the <em>osg-el6</em> and <em>osg-el7</em> targets. This will assign your build the <em>osg-3.4-el6-development</em> and <em>osg-3.4-el7-development</em> tags (and your package will be assigned the <em>osg-el6</em> and <em>osg-el7</em> tags). If successful, your build will end up in the Koji <em>osg-minefield</em> yum repos and will eventually show up in the <em>osg-development</em> yum repos. This is a high latency process.</p>
-<h3 id="build-task-results">Build task Results</h3>
-<h4 id="how-to-find-build-results">How to find build results</h4>
+<h3 id="build-task-results">Build task Results<a class="headerlink" href="#build-task-results" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-find-build-results">How to find build results<a class="headerlink" href="#how-to-find-build-results" title="Permanent link">&para;</a></h4>
 <p>The most recent build results are always shown on the home page of Koji:</p>
 <p><a href="https://koji.chtc.wisc.edu/koji/index">https://koji.chtc.wisc.edu/koji/index</a></p>
 <p>Clicking on a build result brings you to the build information page. A successful build will result in the build page having build logs, RPMs, and a SRPM.</p>
@@ -1936,13 +1936,13 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p><a href="https://koji.chtc.wisc.edu/koji/packageinfo?packageID=56">https://koji.chtc.wisc.edu/koji/packageinfo?packageID=56</a></p>
 <p>And the lcmaps-1.6.6-1.1.osg33.el6 build is here:</p>
 <p><a href="https://koji.chtc.wisc.edu/koji/buildinfo?buildID=7427">https://koji.chtc.wisc.edu/koji/buildinfo?buildID=7427</a></p>
-<h4 id="trying-our-your-build">Trying our your build</h4>
+<h4 id="trying-our-your-build">Trying our your build<a class="headerlink" href="#trying-our-your-build" title="Permanent link">&para;</a></h4>
 <p>Because it takes a while for your build to get into one of the regular repositories, it's simplest to download your RPM directly (see the previous section on How to find build results), and install it with:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[root@host]#</span> yum localinstall &lt;RPM&gt;
 </pre></div>
 
 
-<h4 id="how-to-get-the-resulting-rpm-into-a-repository">How to get the resulting RPM into a repository</h4>
+<h4 id="how-to-get-the-resulting-rpm-into-a-repository">How to get the resulting RPM into a repository<a class="headerlink" href="#how-to-get-the-resulting-rpm-into-a-repository" title="Permanent link">&para;</a></h4>
 <p>Once a package has been built, it is added to a tag. We then must turn the tag into a yum repository. This is normally done automatically and you do not need to deal with it yourself. Three notes:</p>
 <ul>
 <li>The kojira daemon creates a repository automatically post-build on the koji-hub host. Eventually, the development repository will be the one hosted by koji-hub.</li>
@@ -1957,7 +1957,7 @@ A yum repository created from the contents of a tag at a specific point in time.
 -   You can create your own personal repository using <code>mash</code>.</p>
 </li>
 </ul>
-<h4 id="debugging-build-issues">Debugging build issues</h4>
+<h4 id="debugging-build-issues">Debugging build issues<a class="headerlink" href="#debugging-build-issues" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>Failed build tasks can be seen from the Koji homepage. The logs from the tasks are included. Relevant logs include:</p>
@@ -1993,10 +1993,10 @@ A yum repository created from the contents of a tag at a specific point in time.
 </ul>
 </li>
 </ul>
-<h3 id="promoting-builds-from-development-testing">Promoting Builds from Development -&gt; Testing</h3>
+<h3 id="promoting-builds-from-development-testing">Promoting Builds from Development -&gt; Testing<a class="headerlink" href="#promoting-builds-from-development-testing" title="Permanent link">&para;</a></h3>
 <p>Software contributors can promote any package to testing. Members of the security team can promote ca-cert packages to testing.</p>
 <p>To promote from development to testing:</p>
-<h4 id="using-osg-promote">Using <em>osg-promote</em></h4>
+<h4 id="using-osg-promote">Using <em>osg-promote</em><a class="headerlink" href="#using-osg-promote" title="Permanent link">&para;</a></h4>
 <p>If you want to promote the latest version:</p>
 <div class="codehilite"><pre><span></span><span class="gp">[you@host]$</span> osg-promote -r &lt;OSGVER&gt;-testing &lt;PACKAGE NAME&gt;
 </pre></div>
@@ -2013,7 +2013,7 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p><code>osg-promote</code> will promote both the el6 and el7 builds of a package. After promoting, copy and paste the JIRA code <code>osg-promote</code> produces into the JIRA ticket that you are working on.</p>
 <p>For <code>osg-promote</code>, you may omit the <code>.osg34.el6</code> or <code>.osg34.el7</code>; the script will add the appropriate disttag on.</p>
 <p>See <a href="../osg-build-tools">OSG Building Tools</a> for full details on <code>osg-promote</code>.</p>
-<h3 id="creating-custom-koji-areas">Creating custom koji areas</h3>
+<h3 id="creating-custom-koji-areas">Creating custom koji areas<a class="headerlink" href="#creating-custom-koji-areas" title="Permanent link">&para;</a></h3>
 <p>Occasionally you may want to make builds of a package (or packages) which you
 do not yet want to go into the main development repos.  In this case, you can
 create a set of custom koji tags and build targets for these builds.  We have
@@ -2022,7 +2022,7 @@ a script in our
 called
 <a href="https://github.com/opensciencegrid/osg-next-tools/blob/master/koji/new-koji-area">new-koji-area</a>
 that facilitates this set up.</p>
-<h2 id="further-reading">Further reading</h2>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Official Koji documentation: <a href="https://docs.pagure.org/koji/">https://docs.pagure.org/koji/</a></li>
 <li>Fedora's koji documentation: <a href="https://fedoraproject.org/wiki/Koji">https://fedoraproject.org/wiki/Koji</a></li>
