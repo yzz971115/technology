@@ -1870,10 +1870,12 @@ verify that the version of the VO Package and/or CA certificates match the versi
 <li>
 <p>The release manager uses the <a href="https://opensciencegrid.org/operations/services/sending-announcements/">osg-notify tool</a>
     on <code>submit-1.chtc.wisc.edu</code> to send the release announcement using the following command:</p>
-<div class="codehilite"><pre><span></span>PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \
-    --no-sign --type production --message message-file \
-    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \
-    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> topology
+<span class="gp">$</span> git pull
+<span class="gp">$</span> python bin/osg-notify --cert your-cert.pem --key your-key.pem <span class="se">\</span>
+    --no-sign --type production --message message-file <span class="se">\</span>
+    --subject <span class="s1">&#39;&lt;EMAIL SUBJECT&gt;&#39;</span> <span class="se">\</span>
+    --recipients <span class="s2">&quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot;</span> <span class="se">\</span>
     --oim-recipients resources --oim-contact-type administrative
 </pre></div>
 
