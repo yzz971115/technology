@@ -1898,8 +1898,8 @@ host koji koji 128.104.100.41/32 md5
 
 <!-- -->
 
-<div class="codehilite"><pre><span></span><span class="n">koji</span><span class="o">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">users</span><span class="p">;</span>
-<span class="go">koji=&amp;gt; select * from build order by id desc limit 10;</span>
+<div class="codehilite"><pre><span></span><span class="gp">koji=&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">users</span><span class="p">;</span>
+<span class="gp">koji=&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">build</span> <span class="k">order</span> <span class="k">by</span> <span class="n">id</span> <span class="k">desc</span> <span class="k">limit</span> <span class="mf">10</span><span class="p">;</span>
 </pre></div>
 
 
@@ -2025,7 +2025,7 @@ Be sure you get prompted for a password, and the password from <code>/etc/koji-h
 <div class="codehilite"><pre><span></span><span class="gp">#</span><span class="c1"># Restore some of the directories in /etc:</span>
 <span class="gp">[root@newkoji]#</span> <span class="k">while</span> <span class="nb">read</span> subtree<span class="p">;</span> <span class="k">do</span>
 <span class="go">    dirclone /root/hubrestore/etc/$subtree /etc/$subtree</span>
-<span class="go">done &amp;lt;&amp;lt;___END___</span>
+<span class="go">done &lt;&lt;___END___</span>
 <span class="go">httpd</span>
 <span class="go">kojid</span>
 <span class="go">koji-hub</span>
@@ -2060,7 +2060,7 @@ Be sure you get prompted for a password, and the password from <code>/etc/koji-h
 <div class="codehilite"><pre><span></span><span class="gp">#</span><span class="c1"># Skip home directories for the special users</span>
 <span class="gp">[root@newkoji]#</span> <span class="k">for</span> dir in /root/hubrestore/home/*<span class="p">;</span> <span class="k">do</span>
 <span class="go">    bndir=$(basename &quot;$dir&quot;)</span>
-<span class="go">    if [[ $bndir = koji &amp;amp;&amp;amp; $bndir = postgres ]]; then</span>
+<span class="go">    if [[ $bndir = koji &amp;&amp; $bndir = postgres ]]; then</span>
 <span class="go">        dirclone &quot;$dir&quot; /home/&quot;$bndir&quot;</span>
 <span class="go">    fi</span>
 <span class="go">done</span>

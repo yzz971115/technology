@@ -2116,18 +2116,18 @@ docker-osg-wn-scripts/update-all docker-osg-wn
     The announcement should mention a handful of the most important updates.
     Due to downstream formatting issues, each major change should end at column 76 or earlier.
     Here is a sample, replace <code>&lt;BRACKETED TEXT&gt;</code> with the appropriate values:</p>
-<div class="codehilite"><pre><span></span><span class="n">Subject</span><span class="o">:</span> <span class="n">Announcing</span> <span class="n">OSG</span> <span class="n">Software</span> <span class="n">version</span> <span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">VERSION</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span>
+<div class="codehilite"><pre><span></span><span class="n">Subject</span><span class="o">:</span> <span class="n">Announcing</span> <span class="n">OSG</span> <span class="n">Software</span> <span class="n">version</span> <span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;</span>
 
-<span class="n">We</span> <span class="n">are</span> <span class="n">pleased</span> <span class="n">to</span> <span class="n">announce</span> <span class="n">OSG</span> <span class="n">Software</span> <span class="n">version</span> <span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">VERSION</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;!</span>
+<span class="n">We</span> <span class="n">are</span> <span class="n">pleased</span> <span class="n">to</span> <span class="n">announce</span> <span class="n">OSG</span> <span class="n">Software</span> <span class="n">version</span> <span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;!</span>
 
-<span class="n">Changes</span> <span class="n">to</span> <span class="n">OSG</span> <span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">VERSION</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span> <span class="k">include</span><span class="o">:</span>
+<span class="n">Changes</span> <span class="n">to</span> <span class="n">OSG</span> <span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;</span> <span class="k">include</span><span class="o">:</span>
 <span class="o">-</span> <span class="n">Major</span> <span class="n">Change</span> <span class="mi">1</span>
 <span class="o">-</span> <span class="n">Major</span> <span class="n">Change</span> <span class="mi">2</span>
 <span class="o">-</span> <span class="n">Major</span> <span class="n">Change</span> <span class="mi">3</span>
 
 <span class="n">Release</span> <span class="n">notes</span> <span class="n">and</span> <span class="n">pointers</span> <span class="n">to</span> <span class="n">more</span> <span class="n">documentation</span> <span class="n">can</span> <span class="n">be</span> <span class="n">found</span> <span class="n">at</span><span class="o">:</span>
 
-<span class="n">http</span><span class="o">://</span><span class="n">www</span><span class="o">.</span><span class="na">opensciencegrid</span><span class="o">.</span><span class="na">org</span><span class="sr">/docs/release/&amp;lt;SERIES.VERSION&amp;gt;/release-&amp;lt;RELEASE-VERSION&amp;gt;/</span>
+<span class="n">http</span><span class="o">://</span><span class="n">www</span><span class="o">.</span><span class="na">opensciencegrid</span><span class="o">.</span><span class="na">org</span><span class="sr">/docs/release/&lt;SERIES.VERSION&gt;/release-&lt;RELEASE-VERSION&gt;/</span>
 
 <span class="n">Need</span> <span class="n">help</span><span class="o">?</span> <span class="n">Let</span> <span class="n">us</span> <span class="n">know</span><span class="o">:</span>
 
@@ -2143,7 +2143,7 @@ docker-osg-wn-scripts/update-all docker-osg-wn
     on <code>submit-1.chtc.wisc.edu</code> to send the release announcement using the following command:</p>
 <div class="codehilite"><pre><span></span>PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \
     --no-sign --type production --message message-file \
-    --subject &#39;&amp;lt;EMAIL SUBJECT&amp;gt;&#39; \
+    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \
     --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \
     --oim-recipients resources --oim-contact-type administrative
 </pre></div>

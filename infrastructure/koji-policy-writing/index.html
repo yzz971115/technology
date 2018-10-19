@@ -1814,15 +1814,15 @@ vm =
 
 <p>The rest of the definition is indented. The lines in the policy definition have the following format:</p>
 <p>Simple tests:</p>
-<div class="codehilite"><pre><span></span>test [params] [&amp;amp;&amp;amp; test [params] ...] :: action-if-true
-test [params] [&amp;amp;&amp;amp; test [params] ...] !! action-if-false
+<div class="codehilite"><pre><span></span>test [params] [&amp;&amp; test [params] ...] :: action-if-true
+test [params] [&amp;&amp; test [params] ...] !! action-if-false
 </pre></div>
 
 
 <p>Complex tests:</p>
-<div class="codehilite"><pre><span></span>test [params [&amp;amp;&amp;amp; ...]] :: {
-   test [params [&amp;amp;&amp;amp; ...]] :: action
-   test [params [&amp;amp;&amp;amp; ...]] :: {
+<div class="codehilite"><pre><span></span>test [params [&amp;&amp; ...]] :: {
+   test [params [&amp;&amp; ...]] :: action
+   test [params [&amp;&amp; ...]] :: {
       ...
       }
 }
@@ -1989,7 +1989,7 @@ test [params] [&amp;amp;&amp;amp; test [params] ...] !! action-if-false
 <p>I haven't found out where some of the other permissions are used.</p>
 <h3 id="adding-permissions">Adding permissions<a class="headerlink" href="#adding-permissions" title="Permanent link">&para;</a></h3>
 <p>You can give someone a permission that doesn't exist by doing:</p>
-<div class="codehilite"><pre><span></span>osg-koji grant-permission --new &amp;lt;PERMISSION&amp;gt; &quot;&amp;lt;USER&amp;gt;&quot;
+<div class="codehilite"><pre><span></span>osg-koji grant-permission --new &lt;PERMISSION&gt; &quot;&lt;USER&gt;&quot;
 </pre></div>
 
 
@@ -2145,7 +2145,7 @@ I'm not aware of a way to create the permission without granting it, other than 
 <h4 id="let-people-with-the-build-permission-also-add-packages-and-build-srpms">Let people with the "build" permission also add packages and build SRPMs<a class="headerlink" href="#let-people-with-the-build-permission-also-add-packages-and-build-srpms" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>package_list = 
     has_perm admin :: allow
-    has_perm build &amp;amp;&amp;amp; match action add update :: allow
+    has_perm build &amp;&amp; match action add update :: allow
     all :: deny
 
 build_from_srpm =
@@ -2164,23 +2164,23 @@ build_from_srpm =
 
 <div class="codehilite"><pre><span></span>promotion =
    has_perm software-team :: allow
-   has_perm operations-team &amp;amp;&amp;amp; package vo-client :: allow
-   has_perm security-team &amp;amp;&amp;amp; package *-ca-certs* :: allow
+   has_perm operations-team &amp;&amp; package vo-client :: allow
+   has_perm security-team &amp;&amp; package *-ca-certs* :: allow
    all :: deny
 
 tag =
     has_perm admin :: allow
     operation tag :: {
-        tag *testing *release* &amp;amp;&amp;amp; policy promotion :: allow
+        tag *testing *release* &amp;&amp; policy promotion :: allow
         tag *testing *release* !! allow
     }
     operation untag :: {
-        fromtag *testing *release* &amp;amp;&amp;amp; policy promotion :: allow
+        fromtag *testing *release* &amp;&amp; policy promotion :: allow
         fromtag *testing *release* !! allow
     }
     operation move :: {
-        tag *testing *release* &amp;amp;&amp;amp; policy promotion :: allow
-        fromtag *testing *release* &amp;amp;&amp;amp; policy promotion :: allow
+        tag *testing *release* &amp;&amp; policy promotion :: allow
+        fromtag *testing *release* &amp;&amp; policy promotion :: allow
         tag *testing *release* !! {
             fromtag *testing *release* !! allow
         }

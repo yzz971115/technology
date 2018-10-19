@@ -1726,20 +1726,20 @@ upcoming-development repository, on the test hosts.</p>
 </li>
 <li>
 <p>Shut down HTCondor and HTCondor-CE on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=stopped&#39;</span>
-<span class="go">ansible &#39;testing:&amp;amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=stopped&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=stopped&#39;</span>
+<span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=stopped&#39;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Install new version of HTCondor on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes update condor&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes update condor&#39;</span>
 </pre></div>
 
 
 <p>or, if you need to install an NVR that is “earlier” (in the RPM sense) than what is currently installed:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes downgrade condor condor-classads condor-python condor-procd blahp&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 10 -m command -a &#39;yum --enablerepo=osg-development --assumeyes downgrade condor condor-classads condor-python condor-procd blahp&#39;</span>
 </pre></div>
 
 
@@ -1753,8 +1753,8 @@ upcoming-development repository, on the test hosts.</p>
 </li>
 <li>
 <p>Restart HTCondor and HTCondor-CE on prerelease machines:</p>
-<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=started&#39;</span>
-<span class="go">ansible &#39;testing:&amp;amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=started&#39;</span>
+<div class="codehilite"><pre><span></span><span class="go">ansible &#39;testing:&amp;condor&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor state=started&#39;</span>
+<span class="go">ansible &#39;testing:&amp;ces&#39; -i inventory -bK -f 20 -m service -a &#39;name=condor-ce state=started&#39;</span>
 </pre></div>
 
 

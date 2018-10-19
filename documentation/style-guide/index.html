@@ -1719,8 +1719,17 @@ In addition, using one line for each sentence is recommended since it makes upda
 <li>Spin-off a new document or re-organize the existing document if you find that you regularly need level 5 headings.</li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
-<p>Use site-relative (<code>/software/development-process</code>) instead of document-relative (<code>../software/development-process.md</code>)
-links. This will allow us to easily search for links and move documents around in the future.</p>
+<div class="admonition danger">
+<p class="admonition-title">Avoid document relative links</p>
+<p>Document-relative links to other pages have changed in MkDocs 1.0.0 in a backwards-incompatible way.
+Please convert any document-relative links to site-relative links before updating the <code>doc-ci-scripts</code> submodule.</p>
+</div>
+<ul>
+<li>Links to internal pages should not have the <code>.md</code> extension</li>
+<li>Use site-relative (<code>/software/development-process</code>) instead of document-relative (<code>../software/development-process</code>)
+  links.
+  This will allow us to easily search for links and move documents around in the future.</li>
+</ul>
 <h3 id="section-links">Section links<a class="headerlink" href="#section-links" title="Permanent link">&para;</a></h3>
 <p>To link sections within a page, lowercase the entire section name and replace spaces with dashes. If there are multiple
 sections with the same name you can link the subsequent sections by appending <code>_N</code> where <code>N</code> is the section's ordinal
@@ -1782,7 +1791,7 @@ specific to their site. You may also use TWiki-style color highlighting. For exa
   beginning of each line, where N is the level of the item in the list. To apply code highlighting, start the code
   block with <code>:::&lt;FORMAT&gt;</code>; see <a href="http://squidfunk.github.io/mkdocs-material/extensions/codehilite/">this page</a> for
   details, including possible highlighting formats.  For an example of formatting a code section inside a list, see
-  <a href="https://github.com/opensciencegrid/docs/blob/master/docs/release/release_series.md">the release series document</a>.</li>
+  <a href="https://github.com/opensciencegrid/docs/blob/master/docs/release/release_series">the release series document</a>.</li>
 <li>For additional text (i.e. after a code block), insert <code>N*4</code> spaces at the beginning of each line, where N is the
   level of the item in the list.</li>
 </ul>
@@ -1847,9 +1856,7 @@ admonition-style notes and warnings:</p>
 
 
 <p>The above blocks are rendered below as an example.</p>
-<div class="admonition note things to note">
-<p class="admonition-title">Note</p>
-</div>
+<p>!!! note things to note</p>
 <p>and</p>
 <p>!!! warning if a user doesn't do this thing, bad stuff will happen</p>
 <p>For a full list of admonition styles, see the documentation

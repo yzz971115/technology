@@ -1830,8 +1830,8 @@
 <ol>
 <li>
 <p>Run:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-import-srpm <span class="s2">&quot;<span style="color:red">&amp;lt;URL&amp;gt;</span>&quot;</span>
-<span class="gp">[you@uw]$</span> osg-build-globus --scratch <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PKG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-import-srpm <span class="s2">&quot;<span style="color:red">&lt;URL&gt;</span>&quot;</span>
+<span class="gp">[you@uw]$</span> osg-build-globus --scratch <span style="color:red">&lt;PKG&gt;</span>
 </pre></div>
 
 
@@ -1847,7 +1847,7 @@
 <ol>
 <li>
 <p>Run:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-import-srpm --diff3 <span class="s2">&quot;<span style="color:red">&amp;lt;URL&amp;gt;</span>&quot;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-import-srpm --diff3 <span class="s2">&quot;<span style="color:red">&lt;URL&gt;</span>&quot;</span>
 </pre></div>
 
 
@@ -1857,7 +1857,7 @@
 </li>
 <li>
 <p>Run:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-build quilt <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PKG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[you@uw]$</span> osg-build quilt <span style="color:red">&lt;PKG&gt;</span>
 </pre></div>
 
 
@@ -1867,7 +1867,7 @@
 </li>
 <li>
 <p>Run:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[you@uw&amp;gt;]$</span> osg-build-globus --scratch <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PKG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[you@uw&gt;]$</span> osg-build-globus --scratch <span style="color:red">&lt;PKG&gt;</span>
 </pre></div>
 
 
@@ -1899,12 +1899,12 @@
 <p>This requires a Koji administrator. Koji admins as of August 2017 are Mat Selmeci and Carl Edquist.</p>
 <ol>
 <li>Untag broken versions that we don't want to ship.</li>
-<li>Use <code>move-pkg</code>:<div class="codehilite"><pre><span></span><span class="gp">[you@host&amp;gt;]$</span> <span class="k">for</span> el in el6 el7<span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
+<li>Use <code>move-pkg</code>:<div class="codehilite"><pre><span></span><span class="gp">[you@host&gt;]$</span> <span class="k">for</span> el in el6 el7<span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
         osg-koji -q list-tagged <span class="si">${</span><span class="nv">el</span><span class="si">}</span>-globus <span class="p">|</span> <span class="se">\</span>
-            awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">&amp;</span>gt<span class="p">;</span> <span class="si">${</span><span class="nv">el</span><span class="si">}</span>-tagged.txt<span class="p">;</span> <span class="se">\</span>
+            awk <span class="s1">&#39;{print $1}&#39;</span> &gt; <span class="si">${</span><span class="nv">el</span><span class="si">}</span>-tagged.txt<span class="p">;</span> <span class="se">\</span>
     <span class="k">done</span>
 <span class="gp">#</span><span class="c1">## Check the txts if they look sane</span>
-<span class="gp">[you@host&amp;gt;]$</span> <span class="k">for</span> el in el6 el7<span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
+<span class="gp">[you@host&gt;]$</span> <span class="k">for</span> el in el6 el7<span class="p">;</span> <span class="k">do</span> <span class="se">\</span>
         xargs -a <span class="si">${</span><span class="nv">el</span><span class="si">}</span>-tagged.txt <span class="se">\</span>
             osg-koji move-pkg <span class="si">${</span><span class="nv">el</span><span class="si">}</span>-globus <span class="se">\</span>
                 osg-3.3-<span class="si">${</span><span class="nv">el</span><span class="si">}</span>-development<span class="p">;</span> <span class="se">\</span>

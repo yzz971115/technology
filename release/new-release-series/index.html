@@ -1805,9 +1805,9 @@ git clone git@github.com:opensciencegrid/docker-osg-wn.git
 <span class="nb">cd</span> ../docker-osg-wn
 <span class="k">for</span> bpath in ../docker-osg-wn-scripts/branches/*<span class="p">;</span> <span class="k">do</span>
     <span class="nv">b</span><span class="o">=</span><span class="si">${</span><span class="nv">bpath</span><span class="p">##*/</span><span class="si">}</span>
-    git checkout -b <span class="nv">$b</span> master <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-        mv <span class="nv">$bpath</span> Dockerfile.in <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
-        git add Dockerfile.in <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+    git checkout -b <span class="nv">$b</span> master <span class="o">&amp;&amp;</span> <span class="se">\</span>
+        mv <span class="nv">$bpath</span> Dockerfile.in <span class="o">&amp;&amp;</span> <span class="se">\</span>
+        git add Dockerfile.in <span class="o">&amp;&amp;</span> <span class="se">\</span>
         git commit -m <span class="s2">&quot;Add branch </span><span class="nv">$b</span><span class="s2">&quot;</span>
 <span class="k">done</span>
 </pre></div>

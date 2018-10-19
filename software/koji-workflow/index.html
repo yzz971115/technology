@@ -1948,7 +1948,7 @@ A yum repository created from the contents of a tag at a specific point in time.
 <li>The kojira daemon creates a repository automatically post-build on the koji-hub host. Eventually, the development repository will be the one hosted by koji-hub.</li>
 <li>
 <p>The koji-hub repository can be created manually by running</p>
-<div class="codehilite"><pre><span></span><span class="gp">[you@host]$</span> osg-koji regen-repo <span class="p">&amp;</span>lt<span class="p">;</span>TAG NAME<span class="p">&amp;</span>gt<span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[you@host]$</span> osg-koji regen-repo &lt;TAG NAME&gt;
 </pre></div>
 
 
@@ -2012,7 +2012,7 @@ A yum repository created from the contents of a tag at a specific point in time.
 <p>&lt;OSGVER&gt; is the OSG major version that you are promoting for (e.g. <code>3.4</code>).</p>
 <p><code>osg-promote</code> will promote both the el6 and el7 builds of a package. After promoting, copy and paste the JIRA code <code>osg-promote</code> produces into the JIRA ticket that you are working on.</p>
 <p>For <code>osg-promote</code>, you may omit the <code>.osg34.el6</code> or <code>.osg34.el7</code>; the script will add the appropriate disttag on.</p>
-<p>See <a href="../osg-build-tools">OSG Building Tools</a> for full details on <code>osg-promote</code>.</p>
+<p>See <a href="../../software/osg-build-tools">OSG Building Tools</a> for full details on <code>osg-promote</code>.</p>
 <h3 id="creating-custom-koji-areas">Creating custom koji areas<a class="headerlink" href="#creating-custom-koji-areas" title="Permanent link">&para;</a></h3>
 <p>Occasionally you may want to make builds of a package (or packages) which you
 do not yet want to go into the main development repos.  In this case, you can

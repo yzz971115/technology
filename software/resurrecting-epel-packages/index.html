@@ -1716,7 +1716,7 @@
 </li>
 <li>
 <p>Import the RPMs themselves into the Koji system</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji import <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>RPM_DIRECTORY<span class="p">&amp;</span>gt<span class="p">;</span></span>/*.rpm
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji import <span style="color:red">&lt;RPM_DIRECTORY&gt;</span>/*.rpm
 </pre></div>
 
 
@@ -1724,14 +1724,14 @@
 </li>
 <li>
 <p>Add the package to the whitelist for our koji tag:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji add-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span></span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PACKAGE<span class="p">&amp;</span>gt<span class="p">;</span></span> --owner<span class="o">=</span><span class="s2">&quot;<span style="color:red">&amp;lt;YOUR_KOJI_USERNAME&amp;gt;</span>&quot;</span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji add-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt;</span> <span style="color:red">&lt;PACKAGE&gt;</span> --owner<span class="o">=</span><span class="s2">&quot;<span style="color:red">&lt;YOUR_KOJI_USERNAME&gt;</span>&quot;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Actually tag the builds:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji tag-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>BUILD<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji tag-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;BUILD&gt;</span>
 </pre></div>
 
 
@@ -1756,14 +1756,14 @@ done
 <ol>
 <li>
 <p>Find out the NVR of the build:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji list-tagged <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>PACKAGE<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji list-tagged <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;PACKAGE&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Untag the packages:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji untag-pkg <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>OUR_KOJI_TAG<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>BUILD<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~] $</span> osg-koji untag-pkg <span style="color:red">&lt;OUR_KOJI_TAG&gt; &lt;BUILD&gt;</span>
 </pre></div>
 
 

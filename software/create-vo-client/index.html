@@ -1721,7 +1721,7 @@
 </pre></div>
 
 
-<p>Upload the tarball into the <a href="../rpm-development-guide#upstream-source-cache">upstream source cache</a>, in the <code>vo-client/VERSION/</code> directory.</p>
+<p>Upload the tarball into the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>, in the <code>vo-client/VERSION/</code> directory.</p>
 <h2 id="automated-gums-conversion">Automated GUMS Conversion<a class="headerlink" href="#automated-gums-conversion" title="Permanent link">&para;</a></h2>
 <p>The above <a href="../gums-template-conversion.txt">instructions</a> outline a procedure for converting the osg gums.config template from GUMS 1.1 format to 1.3 format. Because setting up a GUMS instance for this can be time consuming and tricky to get right, a script was written to automate the procedure on a Fermi VM. The script lives in svn under: <code>$SVN/software/tools/convert-osg-gums-template-for-vo-client.sh</code> .</p>
 <p>To use it:</p>
@@ -1744,21 +1744,21 @@
 <li>The newly converted <code>gums.config.template</code> should be compared to the old version of that file (from the previous vo-client package) to ensure that the only the differences are the changes for this release. (I have had to manually strip the extra test account stuff.) The 'meld' program is a nice graphical diff tool that I use for comparing them.</li>
 </ul>
 <h2 id="rpm-spec-file-maintenance">RPM spec file maintenance<a class="headerlink" href="#rpm-spec-file-maintenance" title="Permanent link">&para;</a></h2>
-<p>The OSG RPM spec file is <a href="../rpm-development-guide#revision-control-system">maintained in Subversion</a>.</p>
+<p>The OSG RPM spec file is <a href="../../software/rpm-development-guide#revision-control-system">maintained in Subversion</a>.</p>
 <p>The VO Client package is located in <code>native/redhat/trunk/vo-client</code></p>
 <p>There are two files that need to be maintained:</p>
 <ul>
 <li><code>osg/vo-client.spec</code> - This is the RPM spec file proper. One needs to update the version (and/or the release number) every time a new RPM is created.</li>
-<li><code>upstream/release_tarball.source</code> - This file contains the relative path of the tarball within the <a href="../rpm-development-guide#upstream-source-cache">upstream source cache</a>. Since the tarball file name will change with every new RPM version, this file has to be changed accordingly.</li>
+<li><code>upstream/release_tarball.source</code> - This file contains the relative path of the tarball within the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>. Since the tarball file name will change with every new RPM version, this file has to be changed accordingly.</li>
 </ul>
 <h2 id="rpm-building">RPM building<a class="headerlink" href="#rpm-building" title="Permanent link">&para;</a></h2>
-<p>After installing the <a href="../osg-build-tools">osg-build tools</a>, check out a clean copy from svn, then:</p>
+<p>After installing the <a href="../../software/osg-build-tools">osg-build tools</a>, check out a clean copy from svn, then:</p>
 <ul>
 <li><code>osg-build prebuild .</code></li>
 <li>Once there are no errors, run <code>osg-build koji . --scratch</code> This can be done without making any permanent change.</li>
 <li>Once that builds successfully, run <code>osg-build koji .</code> This is permanent, unlike when you ran with <code>--scratch</code>. You cannot rebuild this version of the RPM again - you must bump the release number and edit the changelog.</li>
 </ul>
-<p>This will push the RPMs into the OSG development repository. Koji requires additional setup compared to rpmbuild; <a href="../koji-workflow">see the documentation here</a>.</p>
+<p>This will push the RPMs into the OSG development repository. Koji requires additional setup compared to rpmbuild; <a href="../../software/koji-workflow">see the documentation here</a>.</p>
 <h2 id="promotion-to-testing-and-release">Promotion to testing and release:<a class="headerlink" href="#promotion-to-testing-and-release" title="Permanent link">&para;</a></h2>
 <h3 id="policies">Policies<a class="headerlink" href="#policies" title="Permanent link">&para;</a></h3>
 <p>Read <a href="../../release/release-policy">Release Policy</a>.</p>

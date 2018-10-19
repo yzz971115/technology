@@ -1749,7 +1749,7 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <li>Using the GitHub web interface, fork the repo you wish to contribute to.</li>
 <li>
 <p>Make a clone of your forked repo on your local machine.</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git clone <span class="p">&amp;</span>lt<span class="p">;</span>git@github.com<span class="p">&amp;</span>gt<span class="p">;</span>:<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>USERNAME/PROJECT<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git clone &lt;git@github.com&gt;:<span style="color:red">&lt;USERNAME/PROJECT&gt;</span>
 </pre></div>
 
 
@@ -1764,14 +1764,14 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <ol>
 <li>
 <p>Create a branch to hold changes that are related to the issue you are working on. Give the branch a name that will remind you of its purpose, such as <code>sw2345-pathchange</code></p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git checkout -b <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git checkout -b <span style="color:red">&lt;BRANCH&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Make your commits to this branch, then push the branch to your repo on GitHub.</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red">&lt;BRANCH&gt;</span>
 </pre></div>
 
 
@@ -1793,7 +1793,7 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <ol>
 <li>
 <p>If you haven't already, add the OSG repo as a "remote" to your repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git remote add upstream git@github.com:opensciencegrid/<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PROJECT<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git remote add upstream git@github.com:opensciencegrid/<span style="color:red">&lt;PROJECT&gt;</span>
 </pre></div>
 
 
@@ -1826,21 +1826,21 @@ IdentityFile <span style="color:red">&lt;YOUR_HOME_DIR&gt;</span>/.ssh/id_github
 <ol>
 <li>
 <p>Create the tag in your local repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git tag <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git tag <span style="color:red">&lt;TAG&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Push the tag to your own GitHub repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push origin <span style="color:red">&lt;TAG&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Push the tag to the OSG repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push upstream <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TAG<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">[user@client ~ ] $</span> git push upstream <span style="color:red">&lt;TAG&gt;</span>
 </pre></div>
 
 

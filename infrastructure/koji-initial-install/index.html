@@ -2026,7 +2026,7 @@ Shall the new role be allowed to create more new roles? (y/n) n
 postgres@localhost$ createdb -O koji koji
 postgres@localhost$ logout
 root@localhost$ su - koji
-koji@localhost$ psql koji koji &amp;lt; /usr/share/doc/koji*/docs/schema.sql
+koji@localhost$ psql koji koji &lt; /usr/share/doc/koji*/docs/schema.sql
 koji@localhost$ exit
 </pre></div>
 
@@ -2078,14 +2078,14 @@ host    koji        koji        ::1/128               trust
 <blockquote>
 <h4 id="etchttpdconfhttpdconf">/etc/httpd/conf/httpd.conf:<a class="headerlink" href="#etchttpdconfhttpdconf" title="Permanent link">&para;</a></h4>
 <p>The apache web server has two places that it sets maximum requests a server will handle before the server restarts. The xmlrpc interface in kojihub is a python application, and mod_python can sometimes grow outrageously large when it doesn't reap memory often enough. As a result, it is strongly recommended that you set both instances of MaxRequestsPerChild in <code>httpd.conf</code> to something reasonable in order to prevent the server from becoming overloaded and crashing (at 100 the <code>httpd</code> processes will grow to about 75MB resident set size before respawning).</p>
-<div class="codehilite"><pre><span></span>&amp;lt;IfModule prefork.c&amp;gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;IfModule</span> <span class="err">prefork.c</span><span class="nt">&gt;</span>
 ...
 MaxRequestsPerChild  100
-&amp;lt;/IfModule&amp;gt;
-&amp;lt;IfModule worker.c&amp;gt;
+<span class="nt">&lt;/IfModule&gt;</span>
+<span class="nt">&lt;IfModule</span> <span class="err">worker.c</span><span class="nt">&gt;</span>
 ...
 MaxRequestsPerChild  100
-&amp;lt;/IfModule&amp;gt;
+<span class="nt">&lt;/IfModule&gt;</span>
 </pre></div>
 
 
@@ -2111,9 +2111,9 @@ MaxRequestsPerChild  100
 <blockquote>
 <h4 id="etchttpdconfdkojihubconf">/etc/httpd/conf.d/kojihub.conf:<a class="headerlink" href="#etchttpdconfdkojihubconf" title="Permanent link">&para;</a></h4>
 <p>If using SSL auth, uncomment these lines for kojiweb to allow logins.</p>
-<div class="codehilite"><pre><span></span>&amp;lt;Location /kojihub&amp;gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Location</span> <span class="err">/kojihub</span><span class="nt">&gt;</span>
 SSLOptions +StdEnvVars
-&amp;lt;/Location&amp;gt;
+<span class="nt">&lt;/Location&gt;</span>
 </pre></div>
 
 

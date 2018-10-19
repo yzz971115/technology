@@ -2069,8 +2069,8 @@
 </li>
 <li>
 <p>CVMFS for EL7 requires OverlayFS (as of kernel version 4.2.x). If default kernel is &lt;= 4.2.x, update kernel.</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> rpm --import <span class="p">&amp;</span>lt<span class="p">;</span>https://www.elrepo.org/RPM-GPG-KEY-elrepo.org<span class="p">&amp;</span>gt<span class="p">;</span>
-<span class="gp">root@host #</span> rpm -Uvh <span class="p">&amp;</span>lt<span class="p">;</span>http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm<span class="p">&amp;</span>gt<span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> rpm --import &lt;https://www.elrepo.org/RPM-GPG-KEY-elrepo.org&gt;
+<span class="gp">root@host #</span> rpm -Uvh &lt;http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm&gt;
 <span class="gp">root@host #</span> yum install yum-plugin-fastestmirror
 <span class="gp">root@host #</span> yum --enablerepo<span class="o">=</span>elrepo-kernel install kernel-ml
 </pre></div>
@@ -2105,7 +2105,7 @@
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum update
 <span class="gp">root@host #</span> yum install epel-release
 <span class="gp">root@host #</span> yum install yum-plugin-priorities
-<span class="gp">root@host #</span> rpm -Uvh <span class="p">&amp;</span>lt<span class="p">;</span>https://repo.opensciencegrid.org/osg/3.3/osg-3.3-el7-release-latest.rpm<span class="p">&amp;</span>gt<span class="p">;</span>
+<span class="gp">root@host #</span> rpm -Uvh &lt;https://repo.opensciencegrid.org/osg/3.3/osg-3.3-el7-release-latest.rpm&gt;
 <span class="gp">root@host #</span> yum install cvmfs cvmfs-server
 </pre></div>
 
@@ -2153,7 +2153,7 @@ KeepAlive On
 <p>Check repository status after publication.</p>
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> cvmfs<span class="se">\_</span>server check
 <span class="gp">root@host #</span> cvmfs<span class="se">\_</span>server tag
-<span class="gp">root@host #</span> wget -qO- <span class="p">&amp;</span>lt<span class="p">;</span>http://localhost:8000/cvmfs/test.cvmfs-stratum-0.novalocal/.cvmfswhitelist%7Ccat<span class="p">&amp;</span>gt<span class="p">;</span> -v
+<span class="gp">root@host #</span> wget -qO- &lt;http://localhost:8000/cvmfs/test.cvmfs-stratum-0.novalocal/.cvmfswhitelist%7Ccat&gt; -v
 </pre></div>
 
 
@@ -2176,7 +2176,7 @@ KeepAlive On
 </li>
 <li>
 <p>Add replica of the repository.</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> cvmfs_server add-replica -o root <span class="p">&amp;</span>lt<span class="p">;</span>http://10.128.3.96:8000/cvmfs/test.cvmfs-stratum-0.novalocal<span class="p">&amp;</span>gt<span class="p">;</span> /etc/cvmfs/keys/test.cvmfs-stratum-0.novalocal.pub
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> cvmfs_server add-replica -o root &lt;http://10.128.3.96:8000/cvmfs/test.cvmfs-stratum-0.novalocal&gt; /etc/cvmfs/keys/test.cvmfs-stratum-0.novalocal.pub
 </pre></div>
 
 
@@ -2196,7 +2196,7 @@ KeepAlive On
 <div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum update
 <span class="gp">root@host #</span> yum install epel-release
 <span class="gp">root@host #</span> yum install yum-plugin-priorities
-<span class="gp">root@host #</span> rpm -Uvh <span class="p">&amp;</span>lt<span class="p">;</span>https://repo.opensciencegrid.org/osg/3.3/osg-3.3-el7-release-latest.rpm<span class="p">&amp;</span>gt<span class="p">;</span>
+<span class="gp">root@host #</span> rpm -Uvh &lt;https://repo.opensciencegrid.org/osg/3.3/osg-3.3-el7-release-latest.rpm&gt;
 <span class="gp">root@host #</span> yum install cvmfs
 </pre></div>
 
@@ -2355,21 +2355,21 @@ KeepAlive On
 </li>
 <li>
 <p>Connect to the server:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsissh -p <span class="m">2222</span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>server hostname<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsissh -p <span class="m">2222</span> <span style="color:red">&lt;server hostname&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Copy a test file to the server:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsiscp -p <span class="m">2222</span> testfile <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>server hostname<span class="p">&amp;</span>gt<span class="p">;</span></span>:/tmp
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsiscp -p <span class="m">2222</span> testfile <span style="color:red">&lt;server hostname&gt;</span>:/tmp
 </pre></div>
 
 
 </li>
 <li>
 <p>Connect to the server via SFTP and grab files:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsisftp -P <span class="m">2222</span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>server hostname<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> gsisftp -P <span class="m">2222</span> <span style="color:red">&lt;server hostname&gt;</span>
 <span class="gp">user@host $</span> <span class="nb">cd</span> /tmp
 <span class="gp">user@host $</span> get testfile
 </pre></div>
@@ -2389,7 +2389,7 @@ KeepAlive On
 <li>Install <code>htcondor-ce-collector</code></li>
 <li>
 <p>Create a file called <code>/etc/condor-ce/config.d/99-local.conf</code> that contains this line:<pre class='file'></p>
-<div class="codehilite"><pre><span></span>COLLECTOR.ALLOW_ADVERTISE_SCHEDD = $(COLLECTOR.ALLOW_ADVERTISE_SCHEDD), your_htcondor_ce_host.example.net&amp;lt;/pre&amp;gt;
+<div class="codehilite"><pre><span></span>COLLECTOR.ALLOW_ADVERTISE_SCHEDD = $(COLLECTOR.ALLOW_ADVERTISE_SCHEDD), your_htcondor_ce_host.example.net&lt;/pre&gt;
 </pre></div>
 
 
@@ -2485,9 +2485,9 @@ KeepAlive On
 <ol>
 <li>
 <p>Download scripts and config files: </p>
-<div class="codehilite"><pre><span></span><span class="nt">cd</span> <span class="o">/</span><span class="nt">tmp</span><span class="o">/</span>
-<span class="nt">git</span> <span class="nt">clone</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">sthapa</span><span class="o">/</span><span class="nt">utilities</span><span class="p">.</span><span class="nc">git</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
-<span class="nt">cd</span> <span class="nt">utilities</span><span class="o">/</span><span class="nt">slurm</span>
+<div class="codehilite"><pre><span></span>cd /tmp/
+git clone &lt;https://github.com/sthapa/utilities.git&gt;
+cd utilities/slurm
 </pre></div>
 
 
@@ -2509,8 +2509,8 @@ export version=&#39;14.11.7&#39; \# slurm version to install (e.g. 16.05.2 or 14
 <ol>
 <li>
 <p>Generate test.sh with the following:</p>
-<div class="codehilite"><pre><span></span><span class="err">#</span><span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">bash</span>
-<span class="nt">echo</span> <span class="s2">&quot;In the directory: `pwd`&quot;</span> <span class="nt">echo</span> <span class="s2">&quot;As the user: `whoami`&quot;</span> <span class="nt">echo</span> <span class="err">“</span><span class="nt">Hostname</span><span class="o">:</span><span class="err">&quot;</span> <span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">hostname</span> <span class="nt">sleep</span> <span class="nt">60</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;/</span><span class="nt">pre</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
+<div class="codehilite"><pre><span></span>#/bin/bash
+echo &quot;In the directory: `pwd`&quot; echo &quot;As the user: `whoami`&quot; echo “Hostname:&quot; /bin/hostname sleep 60 &lt;/pre&gt;
 </pre></div>
 
 
@@ -2757,9 +2757,9 @@ oss.space default_stage /opt/xrootd_cache
 
 
 <p>Create file <code>/etc/xrootd/storage.xml</code> and place this:</p>
-<div class="codehilite"><pre><span></span>&amp;lt;storage-mapping&amp;gt;
-&amp;lt;lfn-to-pfn protocol=&quot;hadoop&quot; destination-match=&quot;.*&quot; path-match=&quot;.*/+tmp2/test-file&quot; result=&quot;/test-file&quot;/&amp;gt;
-&amp;lt;/storage-mapping&amp;gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;storage-mapping&gt;</span>
+<span class="nt">&lt;lfn-to-pfn</span> <span class="na">protocol=</span><span class="s">&quot;hadoop&quot;</span> <span class="na">destination-match=</span><span class="s">&quot;.*&quot;</span> <span class="na">path-match=</span><span class="s">&quot;.*/+tmp2/test-file&quot;</span> <span class="na">result=</span><span class="s">&quot;/test-file&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/storage-mapping&gt;</span>
 </pre></div>
 
 

@@ -1578,8 +1578,8 @@
 </li>
 <li>
 <p>Clone the repository and <code>cd</code> into the directory:</p>
-<div class="codehilite"><pre><span></span><span class="nt">git</span> <span class="nt">clone</span> <span class="nt">git</span><span class="p">@</span><span class="k">github</span><span class="p">.</span><span class="nc">com</span><span class="p">:</span><span class="nd">opensciencegrid</span><span class="o">/&amp;</span><span class="nt">lt</span><span class="p">;</span><span class="nt">REPO</span> <span class="nt">NAME</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
-<span class="nt">cd</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span><span class="nt">REPO</span> <span class="nt">NAME</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
+<div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/&lt;REPO NAME&gt;
+cd &lt;REPO NAME&gt;
 </pre></div>
 
 
@@ -1593,7 +1593,7 @@
 </li>
 <li>
 <p>Update the contents of <code>README.md</code> and populate the <code>LICENSE</code> file with a <a href="https://creativecommons.org/licenses/by/4.0/legalcode.txt">Creative Commons Attribution 4.0 license</a>:</p>
-<div class="codehilite"><pre><span></span><span class="nt">wget</span> <span class="nt">https</span><span class="o">://</span><span class="nt">creativecommons</span><span class="p">.</span><span class="nc">org</span><span class="o">/</span><span class="nt">licenses</span><span class="o">/</span><span class="nt">by</span><span class="o">/</span><span class="nt">4</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">legalcode</span><span class="p">.</span><span class="nc">txt</span> <span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">LICENSE</span>
+<div class="codehilite"><pre><span></span>wget https://creativecommons.org/licenses/by/4.0/legalcode.txt &gt; LICENSE
 </pre></div>
 
 
@@ -1667,8 +1667,8 @@ git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 </li>
 <li>
 <p>Clone the repository and <code>cd</code> into the directory:</p>
-<div class="codehilite"><pre><span></span><span class="nt">git</span> <span class="nt">clone</span> <span class="nt">git</span><span class="p">@</span><span class="k">github</span><span class="p">.</span><span class="nc">com</span><span class="p">:</span><span class="nd">opensciencegrid</span><span class="o">/&amp;</span><span class="nt">lt</span><span class="p">;</span><span class="nt">ITB</span> <span class="nt">REPO</span> <span class="nt">NAME</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
-<span class="nt">cd</span> <span class="o">&amp;</span><span class="nt">lt</span><span class="o">;</span><span class="nt">ITB</span> <span class="nt">REPO</span> <span class="nt">NAME</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span>
+<div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/&lt;ITB REPO NAME&gt;
+cd &lt;ITB REPO NAME&gt;
 </pre></div>
 
 
@@ -1688,7 +1688,7 @@ git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 <ol>
 <li>
 <p><code>cd</code> into the non-ITB repository and generate the ITB deploy key</p>
-<div class="codehilite"><pre><span></span>cd &amp;lt;REPO NAME&amp;gt;
+<div class="codehilite"><pre><span></span>cd &lt;REPO NAME&gt;
 ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-itb
 </pre></div>
 

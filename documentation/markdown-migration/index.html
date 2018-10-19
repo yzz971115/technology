@@ -1906,21 +1906,21 @@
 <li><code>cd</code> into your local git repository</li>
 <li>
 <p>Add <code>opensciencegrid/technology</code> as the upstream remote repository for merging upstream changes:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git remote add upstream https://www.github.com/opensciencegrid/<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>REPOSITORY<span class="p">&amp;</span>gt<span class="p">;</span></span>.git
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git remote add upstream https://www.github.com/opensciencegrid/<span style="color:red">&lt;REPOSITORY&gt;</span>.git
 </pre></div>
 
 
 </li>
 <li>
 <p>Create a branch for the document you plan to convert:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git branch <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span></span> master
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git branch <span style="color:red">&lt;BRANCH NAME&gt;</span> master
 </pre></div>
 
 
 </li>
 <li>
 <p>Change to the branch you just created</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git checkout <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git checkout <span style="color:red">&lt;BRANCH NAME&gt;</span>
 </pre></div>
 
 
@@ -1931,7 +1931,7 @@
 <ol>
 <li>
 <p>Create a container from the image with the following command:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker run -d -v <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PATH TO LOCAL GITHUB REPO<span class="p">&amp;</span>gt<span class="p">;</span></span>:/source -p <span class="m">8000</span> opensciencegrid/docker-twiki-converter
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker run -d -v <span style="color:red">&lt;PATH TO LOCAL GITHUB REPO&gt;</span>:/source -p <span class="m">8000</span> opensciencegrid/docker-twiki-converter
 </pre></div>
 
 
@@ -1943,7 +1943,7 @@
 </li>
 <li>
 <p>To find the port that your development server is listening on, use the container ID (you should only need the first few chars of the ID) returned from the previous command:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker port <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>CONTAINER ID<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker port <span style="color:red">&lt;CONTAINER ID&gt;</span>
 </pre></div>
 
 
@@ -1981,7 +1981,7 @@
 <li>Copy the archive of the document into the root of your git repository</li>
 <li>
 <p>Kill the process in the docker container:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker <span class="nb">exec</span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>CONTAINER ID<span class="p">&amp;</span>gt<span class="p">;</span></span> pkill -9 pandoc
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker <span class="nb">exec</span> <span style="color:red">&lt;CONTAINER ID&gt;</span> pkill -9 pandoc
 </pre></div>
 
 
@@ -1991,7 +1991,7 @@
 </li>
 <li>
 <p>Run pandoc manually:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker <span class="nb">exec</span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>CONTAINER ID<span class="p">&amp;</span>gt<span class="p">;</span></span> pandoc -f twiki -t markdown_github <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>ARCHIVE COPY<span class="p">&amp;</span>gt<span class="p">;</span></span> <span class="p">&amp;</span>gt<span class="p">;</span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>MARKDOWN FILE<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> docker <span class="nb">exec</span> <span style="color:red">&lt;CONTAINER ID&gt;</span> pandoc -f twiki -t markdown_github <span style="color:red">&lt;ARCHIVE COPY&gt;</span> &gt; <span style="color:red">&lt;MARKDOWN FILE&gt;</span>
 </pre></div>
 
 
@@ -2017,21 +2017,21 @@
 <li><code>cd</code> into your local git repository</li>
 <li>
 <p>Add <code>opensciencegrid/technology</code> as the upstream remote repository for merging upstream changes:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git remote add upstream https://www.github.com/opensciencegrid/<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>REPOSITORY<span class="p">&amp;</span>gt<span class="p">;</span></span>.git
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git remote add upstream https://www.github.com/opensciencegrid/<span style="color:red">&lt;REPOSITORY&gt;</span>.git
 </pre></div>
 
 
 </li>
 <li>
 <p>Create a branch for the document you plan to convert:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git branch <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span></span> master
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git branch <span style="color:red">&lt;BRANCH NAME&gt;</span> master
 </pre></div>
 
 
 </li>
 <li>
 <p>Change to the branch you just created</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git checkout <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git checkout <span style="color:red">&lt;BRANCH NAME&gt;</span>
 </pre></div>
 
 
@@ -2078,15 +2078,15 @@
 <ol>
 <li>
 <p>Stage the archived raw TWiki (as well as the converted Markdown document(s) and <code>mkdocs.yml</code> if you are converting the document):</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git add mkdocs.yml archive/<span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>TWIKI ARCHIVE<span class="p">&amp;</span>gt<span class="p">;</span></span> <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>PATH TO CONVERTED DOC<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git add mkdocs.yml archive/<span style="color:red">&lt;TWIKI ARCHIVE&gt;</span> <span style="color:red">&lt;PATH TO CONVERTED DOC&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Commit and push your changes to your GitHub repo:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git commit -m <span class="s2">&quot;<span style="color:red">&amp;lt;COMMIT MSG&amp;gt;</span>&quot;</span>
-<span class="gp">user@host $</span> git push origin <span style="color:red"><span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span></span>
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> git commit -m <span class="s2">&quot;<span style="color:red">&lt;COMMIT MSG&gt;</span>&quot;</span>
+<span class="gp">user@host $</span> git push origin <span style="color:red">&lt;BRANCH NAME&gt;</span>
 </pre></div>
 
 
@@ -2096,7 +2096,7 @@
 </li>
 <li>
 <p>Submit a pull request containing with the following body:</p>
-<div class="codehilite"><pre><span></span><span class="c"><span style="color:red">&amp;lt;LINK TO TWIKI DOCUMENT&amp;gt;</span></span>
+<div class="codehilite"><pre><span></span><span class="c"><span style="color:red">&lt;LINK TO TWIKI DOCUMENT&gt;</span></span>
 
 <span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Enter</span> <span class="n">date</span> <span class="n">into</span> &quot;<span class="n">Migrated</span>&quot; <span class="n">column</span> <span class="n">of</span> <span class="n">google</span> <span class="n">sheet</span>
 </pre></div>
