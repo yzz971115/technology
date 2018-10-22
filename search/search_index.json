@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area!\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (5%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n   (\nsubscribe\n)\n\n\nSlack channel\n - if you can't create an account, send an e-mail to \nosg-software@opensciencegrid.org\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n15 October 2018\n\n\n8 October 2018\n\n\n1 October 2018\n\n\n24 September 2018\n\n\n17 September 2018\n\n\n10 September 2018\n\n\n3 September 2018 (Canceled - Labor Day)\n\n\n27 August 2018\n\n\n20 August 2018\n\n\n13 August 2018\n\n\n6 August 2018\n\n\n30 July 2018\n\n\n23 July 2018\n\n\n16 July 2018\n\n\n9 July 2018 (Canceled - OSG User School)\n\n\n2 July 2018\n\n\n25 June 2018\n\n\n18 June 2018\n\n\n11 June 2018\n\n\n4 June 2018\n\n\n29 May 2018\n - Memorial Day\n\n\n21 May 2018 (Canceled - HTCondor Week)\n\n\n14 May 2018\n\n\n7 May 2018\n\n\n30 April 2018\n\n\n23 April 2018\n\n\n16 April 2018\n\n\n9 April 2018\n\n\n2 April 2018\n\n\n26 March 2018 (Canceled)\n\n\n19 March 2018 (Canceled - OSG All Hands)\n\n\n12 March 2018\n\n\n5 March 2018\n\n\n26 February 2018\n\n\n19 February 2018\n\n\n12 February 2018\n\n\n5 February 2018\n\n\n29 January 2018\n\n\n22 January 2018\n\n\n15 January 2018 (Canceled - MLK day)\n\n\n8 January 2018\n\n\n2 January 2018\n\n\n\n\nArchived notes\n\n\n\n\nMeeting note archives older than January 1, 2018 and oler than February 27, 2017 can be found\n  \nhere\n\n\nMeeting note archives older than February 27, 2017 can be found\n  \nhere\n.", 
+            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area!\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nSuchandra Thapa (50%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Cartwright (5%)\n\n\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n   (\nsubscribe\n)\n\n\nSlack channel\n - if you can't create an account, send an e-mail to \nosg-software@opensciencegrid.org\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n22 October 2018\n\n\n15 October 2018\n\n\n8 October 2018\n\n\n1 October 2018\n\n\n24 September 2018\n\n\n17 September 2018\n\n\n10 September 2018\n\n\n3 September 2018 (Canceled - Labor Day)\n\n\n27 August 2018\n\n\n20 August 2018\n\n\n13 August 2018\n\n\n6 August 2018\n\n\n30 July 2018\n\n\n23 July 2018\n\n\n16 July 2018\n\n\n9 July 2018 (Canceled - OSG User School)\n\n\n2 July 2018\n\n\n25 June 2018\n\n\n18 June 2018\n\n\n11 June 2018\n\n\n4 June 2018\n\n\n29 May 2018\n - Memorial Day\n\n\n21 May 2018 (Canceled - HTCondor Week)\n\n\n14 May 2018\n\n\n7 May 2018\n\n\n30 April 2018\n\n\n23 April 2018\n\n\n16 April 2018\n\n\n9 April 2018\n\n\n2 April 2018\n\n\n26 March 2018 (Canceled)\n\n\n19 March 2018 (Canceled - OSG All Hands)\n\n\n12 March 2018\n\n\n5 March 2018\n\n\n26 February 2018\n\n\n19 February 2018\n\n\n12 February 2018\n\n\n5 February 2018\n\n\n29 January 2018\n\n\n22 January 2018\n\n\n15 January 2018 (Canceled - MLK day)\n\n\n8 January 2018\n\n\n2 January 2018\n\n\n\n\nArchived notes\n\n\n\n\nMeeting note archives older than January 1, 2018 and oler than February 27, 2017 can be found\n  \nhere\n\n\nMeeting note archives older than February 27, 2017 can be found\n  \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#recent-notes", 
-            "text": "15 October 2018  8 October 2018  1 October 2018  24 September 2018  17 September 2018  10 September 2018  3 September 2018 (Canceled - Labor Day)  27 August 2018  20 August 2018  13 August 2018  6 August 2018  30 July 2018  23 July 2018  16 July 2018  9 July 2018 (Canceled - OSG User School)  2 July 2018  25 June 2018  18 June 2018  11 June 2018  4 June 2018  29 May 2018  - Memorial Day  21 May 2018 (Canceled - HTCondor Week)  14 May 2018  7 May 2018  30 April 2018  23 April 2018  16 April 2018  9 April 2018  2 April 2018  26 March 2018 (Canceled)  19 March 2018 (Canceled - OSG All Hands)  12 March 2018  5 March 2018  26 February 2018  19 February 2018  12 February 2018  5 February 2018  29 January 2018  22 January 2018  15 January 2018 (Canceled - MLK day)  8 January 2018  2 January 2018", 
+            "text": "22 October 2018  15 October 2018  8 October 2018  1 October 2018  24 September 2018  17 September 2018  10 September 2018  3 September 2018 (Canceled - Labor Day)  27 August 2018  20 August 2018  13 August 2018  6 August 2018  30 July 2018  23 July 2018  16 July 2018  9 July 2018 (Canceled - OSG User School)  2 July 2018  25 June 2018  18 June 2018  11 June 2018  4 June 2018  29 May 2018  - Memorial Day  21 May 2018 (Canceled - HTCondor Week)  14 May 2018  7 May 2018  30 April 2018  23 April 2018  16 April 2018  9 April 2018  2 April 2018  26 March 2018 (Canceled)  19 March 2018 (Canceled - OSG All Hands)  12 March 2018  5 March 2018  26 February 2018  19 February 2018  12 February 2018  5 February 2018  29 January 2018  22 January 2018  15 January 2018 (Canceled - MLK day)  8 January 2018  2 January 2018", 
             "title": "Recent Notes"
         }, 
         {
@@ -2964,6 +2964,71 @@
             "location": "/projects/sha2-support/#sha-2-compliance", 
             "text": "When a certificate authority signs a certificate, it uses one of several possible hash algorithms. \nHistorically, the most popular algorithms were MD5 (now retired due to security issues) and the SHA-1 family.\nSHA-1 certificates are being phased out due to perceived weaknesses \u2014 as of February 2017, a practical attack for generating collisions was demonstrated by  Google researchers .\n These days, the preferred hash algorithm family is SHA-2.  The certificate authorities (CAs), which issue host and user certificates used widely in the OSG, defaulted to SHA-2-based certificates on 1 October 2013; all sites will need to make sure that their software supports certificates using the SHA-2 algorithms. All supported OSG releases support SHA-2.  The table below denotes indicates the minimum releases necessary to support SHA-2 certificates.     Component  Version  In Release  Notes      BeStMan 2  bestman2-2.3.0-9.osg  3.1.13  SHA-2 support; also see jGlobus, below    dCache SRM client  dcache-srmclient-2.2.11.1-2.osg  3.1.22  Major update includes SHA-2 support    Globus GRAM  globus-gram-job-manager-13.45-1.2.osg, globus-gram-job-manager-condor-1.0-13.1.osg, globus-gram-job-manager-pbs-1.6-1.1.osg  3.1.9  Critical bug fixes (not SHA-2 specific)    GUMS  gums-1.3.18.009-15.2.osg  3.1.13  Switched to jGlobus 2 with SHA-2 support; also see jGlobus, below    jGlobus (for BeStMan 2)  jglobus-2.0.5-3.osg  3.1.18  Fixed CRL refresh bug (not SHA-2 specific)    VOMS  voms-2.0.8-1.5.osg  3.1.17  SHA-2 fix for voms-proxy-init     If a component does not appear in the above table, it already has SHA-2 support.", 
             "title": "SHA-2 Compliance"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/", 
+            "text": "OSG Technology Area Meeting, 22 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\n\n\nIRIS-HEP kickoff at UChicago 10/31-11/2\n\n\nGitHub is still recovering from network partition/DB failures over the weekend.\n  See \nthis page\n for details.\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n3 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n139\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n18\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n-1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\n3.4.19  \n\n\nXRootD 4.8.5 released this morning, Marian will be cutting a build, and we need someone to dev test it\n\n\nGlideinWMS 3.4.1 released last week. Need a dev tester.\n\n\nNeed to kick off VMU tests for osg-test\n\n\nGSI OpenSSH? StashCP packaging?\n\n\n\n\n\n\nThere are a few remaining doc focus tickets that haven't been started\n\n\nReminder: topology and especially downtime updates should be considered high priority. Please watch the \ntopology GitHub repo\n.\n\n\nAI (TimT): Update your \nY7 effort numbers\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\nNone this week  \n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n6\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n12\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19  \n\n\nTesting  \n\n\nImprove StashCache packaging\n\n\nRelease autopyfactory 2.4.9\n\n\nRelease OSG flock submit host packaging\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNothing on the horizon\n\n\n\n\n\n\nOperations  \n\n\nrepo-update-cadist updates\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nAI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB\n\n\n\n\nOSG Investigations Team\n\n\nMarian out this week.  \n\n\n\n\nXRootD-scitokens release coming!\n\n\nSciTokens release coming!\n\n\nPyJWT built in osg-devel.  Need to run some tests.\n\n\nXRootD-macaroons: Developer testing.  Difficult to test (need some infrastructure to setup)\n\n\nXRootD-TPC in osg-contrib\n\n\n\n\nNOTE:\n\nEdgar, Derek, Brian, Marian all involved in CHEP papers that are due at the end of this month.  \n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "title": "October 22, 2018"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#osg-technology-area-meeting-22-october-2018", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "title": "OSG Technology Area Meeting, 22 October 2018"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#announcements", 
+            "text": "IRIS-HEP kickoff at UChicago 10/31-11/2  GitHub is still recovering from network partition/DB failures over the weekend.\n  See  this page  for details.", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#triage-duty", 
+            "text": "This week: Carl  Next week: Edgar  3 (-1) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#jira", 
+            "text": "# of tickets   State      139  +1  Open    18  +4  In Progress    4  -1  Ready for Testing    1  +1  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#osg-software-team", 
+            "text": "3.4.19    XRootD 4.8.5 released this morning, Marian will be cutting a build, and we need someone to dev test it  GlideinWMS 3.4.1 released last week. Need a dev tester.  Need to kick off VMU tests for osg-test  GSI OpenSSH? StashCP packaging?    There are a few remaining doc focus tickets that haven't been started  Reminder: topology and especially downtime updates should be considered high priority. Please watch the  topology GitHub repo .  AI (TimT): Update your  Y7 effort numbers", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#discussion", 
+            "text": "None this week", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#support-update", 
+            "text": "None this week", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#osg-release-team", 
+            "text": "3.4.19   Status      6  +1  Open    3  -1  In Progress    3  +3  Ready for Testing    0  +0  Ready for Release    12  +3  Total      OSG 3.4.19    Testing    Improve StashCache packaging  Release autopyfactory 2.4.9  Release OSG flock submit host packaging    Ready for Release    Nothing yet      Data    Nothing on the horizon    Operations    repo-update-cadist updates", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#discussion_1", 
+            "text": "AI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#osg-investigations-team", 
+            "text": "Marian out this week.     XRootD-scitokens release coming!  SciTokens release coming!  PyJWT built in osg-devel.  Need to run some tests.  XRootD-macaroons: Developer testing.  Difficult to test (need some infrastructure to setup)  XRootD-TPC in osg-contrib   NOTE: \nEdgar, Derek, Brian, Marian all involved in CHEP papers that are due at the end of this month.", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#ongoing", 
+            "text": "GRACC Project  StashCache Project", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2018/TechArea20181022/#discussions", 
+            "text": "None this week", 
+            "title": "Discussions"
         }, 
         {
             "location": "/meetings/2018/TechArea20181015/", 
