@@ -2967,17 +2967,17 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/", 
-            "text": "OSG Technology Area Meeting, 22 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\n\n\nIRIS-HEP kickoff at UChicago 10/31-11/2\n\n\nGitHub is still recovering from network partition/DB failures over the weekend.\n  See \nthis page\n for details.\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n3 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n139\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n18\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n-1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\n3.4.19  \n\n\nXRootD 4.8.5 released this morning, Marian will be cutting a build, and we need someone to dev test it\n\n\nGlideinWMS 3.4.1 released last week. Need a dev tester.\n\n\nNeed to kick off VMU tests for osg-test\n\n\nGSI OpenSSH? StashCP packaging?\n\n\n\n\n\n\nThere are a few remaining doc focus tickets that haven't been started\n\n\nReminder: topology and especially downtime updates should be considered high priority. Please watch the \ntopology GitHub repo\n.\n\n\nAI (TimT): Update your \nY7 effort numbers\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\nNone this week  \n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n6\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n12\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19  \n\n\nTesting  \n\n\nImprove StashCache packaging\n\n\nRelease autopyfactory 2.4.9\n\n\nRelease OSG flock submit host packaging\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNothing on the horizon\n\n\n\n\n\n\nOperations  \n\n\nrepo-update-cadist updates\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nAI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB\n\n\n\n\nOSG Investigations Team\n\n\nMarian out this week.  \n\n\n\n\nXRootD-scitokens release coming!\n\n\nSciTokens release coming!\n\n\nPyJWT built in osg-devel.  Need to run some tests.\n\n\nXRootD-macaroons: Developer testing.  Difficult to test (need some infrastructure to setup)\n\n\nXRootD-TPC in osg-contrib\n\n\n\n\nNOTE:\n\nEdgar, Derek, Brian, Marian all involved in CHEP papers that are due at the end of this month.  \n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 22 October 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Derek, Edgar, Mat, TimT\n\n\nAnnouncements\n\n\n\n\nIRIS-HEP kickoff at UChicago 10/31-11/2\n\n\nGitHub is still recovering from network partition/DB failures over the weekend.\n    See \nthis page\n for details.\n\n\nMarian will be at CERN all week\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n3 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n139\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n18\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n-1\n\n\nReady for Testing\n\n\n\n\n\n\n1\n\n\n+1\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\n3.4.19  \n\n\nXRootD 4.8.5 released this morning, Marian will be cutting a build, and we need someone to dev test it\n\n\nGlideinWMS 3.4.1 released last week. Need a dev tester.\n\n\nNeed to kick off VMU tests for osg-test\n\n\nGSI OpenSSH? StashCP packaging?\n\n\n\n\n\n\nThere are a few remaining doc focus tickets that haven't been started\n\n\nReminder: topology and especially downtime updates should be considered high priority. Please watch the \ntopology GitHub repo\n.\n\n\nAI (TimT): Update your \nY7 effort numbers\n\n\n\n\nDiscussion\n\n\n\n\nAI (BrianL) - Will pick volunteers for GlideinWMS/XRootD VMU tests. Kick off osg-test VMU tests.\n\n\nAI (Mat) - Punt 3.4.20 tickets, try to sneak a new build of StashCache into 3.4.19, and untag GlideinWMS 3.4 from upcoming\n\n\nAI (Edgar) - will test GlideinWMS 3.4.1 when it's ready in osg-testing\n\n\nAI (Carl) - Condor prerelease builds + VMU tests\n\n\n\n\nSupport Update\n\n\nTest frontend (Edgar) - Fixed. The problem was due to GlideinWMS scripts (a CMS frontend using OSG scripts).\nThis class of problem will go away with the built-in GlideinWMS Singularity support.\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.19\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n6\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n-1\n\n\nIn Progress\n\n\n\n\n\n\n3\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n12\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.19  \n\n\nTesting  \n\n\nImprove StashCache packaging\n\n\nRelease autopyfactory 2.4.9\n\n\nRelease OSG flock submit host packaging\n\n\n\n\n\n\nReady for Release  \n\n\nNothing yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNothing on the horizon\n\n\n\n\n\n\nOperations  \n\n\nrepo-update-cadist updates\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nAI (TimT): Coordinate with Edgar about issues with submitting pilots to the Madison ITB\n\n\n\n\nOSG Investigations Team\n\n\nMarian out this week.  \n\n\n\n\nXRootD-scitokens release coming!\n\n\nSciTokens release coming!\n\n\nPyJWT built in osg-devel.  Need to run some tests.\n\n\nXRootD-macaroons: Developer testing.  Difficult to test (need some infrastructure to setup)\n\n\nXRootD-TPC in osg-contrib\n\n\n\n\nNOTE:\n\nEdgar, Derek, Brian, Marian all involved in CHEP papers that are due at the end of this month.  \n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\n\n\nAI (BrianL) - Talk with BrianB and Derek about SciTokens for EL6\n\n\nAI (Derek) - Get BrianL IRIS-DOMA doc", 
             "title": "October 22, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/#osg-technology-area-meeting-22-october-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Carl, Derek, Edgar, Mat, TimT", 
             "title": "OSG Technology Area Meeting, 22 October 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/#announcements", 
-            "text": "IRIS-HEP kickoff at UChicago 10/31-11/2  GitHub is still recovering from network partition/DB failures over the weekend.\n  See  this page  for details.", 
+            "text": "IRIS-HEP kickoff at UChicago 10/31-11/2  GitHub is still recovering from network partition/DB failures over the weekend.\n    See  this page  for details.  Marian will be at CERN all week", 
             "title": "Announcements"
         }, 
         {
@@ -2997,12 +2997,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/#discussion", 
-            "text": "None this week", 
+            "text": "AI (BrianL) - Will pick volunteers for GlideinWMS/XRootD VMU tests. Kick off osg-test VMU tests.  AI (Mat) - Punt 3.4.20 tickets, try to sneak a new build of StashCache into 3.4.19, and untag GlideinWMS 3.4 from upcoming  AI (Edgar) - will test GlideinWMS 3.4.1 when it's ready in osg-testing  AI (Carl) - Condor prerelease builds + VMU tests", 
             "title": "Discussion"
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/#support-update", 
-            "text": "None this week", 
+            "text": "Test frontend (Edgar) - Fixed. The problem was due to GlideinWMS scripts (a CMS frontend using OSG scripts).\nThis class of problem will go away with the built-in GlideinWMS Singularity support.", 
             "title": "Support Update"
         }, 
         {
@@ -3027,7 +3027,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181022/#discussions", 
-            "text": "None this week", 
+            "text": "AI (BrianL) - Talk with BrianB and Derek about SciTokens for EL6  AI (Derek) - Get BrianL IRIS-DOMA doc", 
             "title": "Discussions"
         }, 
         {
