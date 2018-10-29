@@ -226,17 +226,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://opensciencegrid.github.io/technology/documentation/markdown-migration/</loc>
-     <lastmod>2018-10-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://opensciencegrid.github.io/technology/infrastructure/koji-initial-install/</loc>
      <lastmod>2018-10-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/technology/projects/sha2-support/</loc>
+     <lastmod>2018-10-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.github.io/technology/documentation/markdown-migration/</loc>
      <lastmod>2018-10-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
