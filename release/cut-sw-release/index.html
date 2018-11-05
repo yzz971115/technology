@@ -1933,7 +1933,7 @@
 <li>An account on UW CS machines (e.g. <code>library</code>, <code>ingwe</code>) to access UW's AFS</li>
 <li><code>release-tools</code> scripts in your <code>PATH</code> (<a href="https://github.com/opensciencegrid/release-tools">GitHub</a>)</li>
 <li><code>osg-build</code> scripts in your <code>PATH</code> (installed via OSG yum repos or <a href="https://github.com/opensciencegrid/osg-build">source</a>)</li>
-<li>Access to the tarball repository at UNL (osgcollab@hcc-osg-software.unl.edu)</li>
+<li>Access to the tarball repository at UNL (osgcollab@repo.opensciencegrid.org)</li>
 </ul>
 <h2 id="pick-the-version-number">Pick the Version Number<a class="headerlink" href="#pick-the-version-number" title="Permanent link">&para;</a></h2>
 <p>The rest of this document makes references to <code>&lt;VERSION(S)&gt;</code> and <code>&lt;NON-UPCOMING VERSIONS(S)&gt;</code>, which refer to a space-delimited list of OSG version(s) and that same list minus <code>upcoming</code> (e.g. <code>3.3.28 3.4.3 upcoming</code> and <code>3.3.28 3.4.3</code>). If you are unsure about either the version or revision, please consult the release manager.</p>
@@ -2082,14 +2082,14 @@ locks the repos and regenerates them.</p>
 <div class="codehilite"><pre><span></span><span class="nb">pushd</span> /p/vdt/public/html/tarball-client
 <span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
     <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
-    ssh osgcollab@hcc-osg-software.unl.edu mkdir -p /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
-    scp -p <span class="nv">$major_ver</span>/*/osg-wn-client-<span class="nv">$ver</span>*gz osgcollab@hcc-osg-software.unl.edu:/usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
+    ssh osgcollab@repo.opensciencegrid.org mkdir -p /usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
+    scp -p <span class="nv">$major_ver</span>/*/osg-wn-client-<span class="nv">$ver</span>*gz osgcollab@repo.opensciencegrid.org:/usr/local/repo/tarball-install/<span class="nv">$major_ver</span>/<span class="nv">$ver</span>
 <span class="k">done</span>
 <span class="nb">popd</span>
-ssh osgcollab@hcc-osg-software.unl.edu bin/mk-sims.sh
+ssh osgcollab@repo.opensciencegrid.org bin/mk-sims.sh
 <span class="k">for</span> ver in <span class="nv">$NON_UPCOMING_VERSIONS</span><span class="p">;</span> <span class="k">do</span>
     <span class="nv">major_ver</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ver</span><span class="p">%.*</span><span class="si">}</span><span class="s2">&quot;</span>
-    ssh osgcollab@hcc-osg-software.unl.edu <span class="s2">&quot;cd /usr/local/repo/tarball-install; ls -l </span><span class="nv">$major_ver</span><span class="s2">/*latest*&quot;</span>
+    ssh osgcollab@repo.opensciencegrid.org <span class="s2">&quot;cd /usr/local/repo/tarball-install; ls -l </span><span class="nv">$major_ver</span><span class="s2">/*latest*&quot;</span>
 <span class="k">done</span>
 <span class="c1"># verify the &quot;latest&quot; symlinks point to the version(s) just installed</span>
 </pre></div>
