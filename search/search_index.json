@@ -2967,7 +2967,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181119/", 
-            "text": "OSG Technology Area Meeting, 19 November 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Mat, Derek, Carl, Marian, Edgar\n\n\nAnnouncements\n\n\n\n\nBrianL out today, around the rest of Thanksgiving\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n5 open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n147\n\n\n+8\n\n\nOpen\n\n\n\n\n\n\n19\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nTopology resource, VO, and project pull requests may come in without IDs or GroupIDs.\n    We should generate the IDs for them\n\n\nUpdate your topology checkout\n\n\nRun the corresponding script from bin/\n\n\nMake GitHub suggestions updating the relevant ID fields along with any other fixes to get the CI to pass\n\n\n\n\n\n\nMoate set up a test k8s cluster in the CHTC; Lincoln from UChicago will come down to Madison to give us an overview\n\n\nXRootD overhaul\n\n\nAI (Mat): Add StashCache tests (\nSOFTWARE-3360\n)\n\n\nAI (Edgar): XRootD plugin tests (\nSOFTWARE-3359\n, \nSOFTWARE-3362\n)\n\n\n\n\n\n\n3.4.21\n\n\nOptional rolling release repository for OSG 3.4\n\n\nAdd stashcache-client to osg-wn-client\n\n\nGratia probe fixes for Slurm and Hosted-CE\n\n\n\n\n\n\nDoc focus 11/29\n\n\nAI (BrianL): Review PRs, finish XRootD overview\n\n\nAI (Carl): Address comments in PR related to \nSOFTWARE-3365\n\n\nAI (TimT): submit PRs for doc focus tickets\n\n\n\n\n\n\n\n\nDiscussion\n\n\nSupport Update\n\n\nNone\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.21\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n11\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n2\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n17\n\n\n+5\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.21\n\n\nTesting\n\n\nosg-update-certs\n\n\nPegasus 4.9.0\n\n\nfrontier-squid 3.5.28-3.1\n\n\nHDFS-FUSE for EL6\n\n\n\n\n\n\nReady for Release\n\n\nNothing Yet\n\n\n\n\n\n\n\n\n\n\nData\n\n\nPerhaps IGTF?\n\n\n\n\n\n\nOperations\n\n\nrepo-update-cadist updates (low priority)\n\n\n\n\n\n\nContrib\n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\n\nOSG Investigations Team\n\n\n\n\nStashCache focus data in Omaha on Wed.  John + Brian + Derek involved\n\n\nLoadtests for stashcache\n\n\nRe-organize caches behind redirectors to split load with I2 caches.  Nebraska and KC cache first\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions", 
+            "text": "OSG Technology Area Meeting, 19 November 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Mat, Derek, Carl, Marian, Edgar\n\n\nAnnouncements\n\n\n\n\nBrianL out today, around the rest of Thanksgiving\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: BrianL\n\n\nNext week: Carl\n\n\n5 open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n147\n\n\n+8\n\n\nOpen\n\n\n\n\n\n\n19\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nTopology resource, VO, and project pull requests may come in without IDs or GroupIDs.\n    We should generate the IDs for them\n\n\nUpdate your topology checkout\n\n\nRun the corresponding script from bin/\n\n\nMake GitHub suggestions updating the relevant ID fields along with any other fixes to get the CI to pass\n\n\n\n\n\n\nMoate set up a test k8s cluster in the CHTC; Lincoln from UChicago will come down to Madison to give us an overview\n\n\nXRootD overhaul\n\n\nAI (Mat): Add StashCache tests (\nSOFTWARE-3360\n)\n\n\nAI (Edgar): XRootD plugin tests (\nSOFTWARE-3359\n, \nSOFTWARE-3362\n)\n\n\n\n\n\n\n3.4.21\n\n\nOptional rolling release repository for OSG 3.4\n\n\nAdd stashcache-client to osg-wn-client\n\n\nGratia probe fixes for Slurm and Hosted-CE\n\n\n\n\n\n\nDoc focus 11/29\n\n\nAI (BrianL): Review PRs, finish XRootD overview\n\n\nAI (Carl): Address comments in PR related to \nSOFTWARE-3365\n\n\nAI (TimT): submit PRs for doc focus tickets\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nSupport Update\n\n\nNone this week\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.21\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n11\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n2\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n17\n\n\n+5\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.21\n\n\nTesting\n\n\nosg-update-certs\n\n\nPegasus 4.9.0\n\n\nfrontier-squid 3.5.28-3.1\n\n\nHDFS-FUSE for EL6\n\n\n\n\n\n\nReady for Release\n\n\nNothing Yet\n\n\n\n\n\n\n\n\n\n\nData\n\n\nPerhaps IGTF?\n\n\n\n\n\n\nOperations\n\n\nrepo-update-cadist updates (low priority)\n\n\n\n\n\n\nContrib\n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week\n\n\nOSG Investigations Team\n\n\n\n\nStashCache focus data in Omaha on Wed.  John + Brian + Derek involved\n\n\nLoadtests for stashcache\n\n\nRe-organize caches behind redirectors to split load with I2 caches.  Nebraska and KC cache first\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
             "title": "November 19, 2018"
         }, 
         {
@@ -2997,12 +2997,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181119/#discussion", 
-            "text": "", 
+            "text": "None this week", 
             "title": "Discussion"
         }, 
         {
             "location": "/meetings/2018/TechArea20181119/#support-update", 
-            "text": "None", 
+            "text": "None this week", 
             "title": "Support Update"
         }, 
         {
@@ -3012,7 +3012,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181119/#discussion_1", 
-            "text": "", 
+            "text": "None this week", 
             "title": "Discussion"
         }, 
         {
@@ -3027,7 +3027,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181119/#discussions", 
-            "text": "", 
+            "text": "None this week", 
             "title": "Discussions"
         }, 
         {
