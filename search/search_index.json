@@ -2967,12 +2967,12 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/", 
-            "text": "OSG Technology Area Meeting, 26 November 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\n\n\nBrianL out the next 2 Mondays (Argonne, CERN) and the week of Christmas (see OSG Software calendar)\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n5 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n153\n\n\n+6\n\n\nOpen\n\n\n\n\n\n\n23\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG Container Workshop this Wednesday and Thursday morning (WIP schedule: \nhttps://indico.fnal.gov/event/19149/\n)\n\n\nXRootD overhaul  \n\n\nAI (Mat): Add StashCache tests (\nSOFTWARE-3360\n)\n\n\nAI (Edgar): XRootD plugin tests (\nSOFTWARE-3359\n, \nSOFTWARE-3362\n)\n\n\nAI (Marian): XRootD 4.9.0 (\nSOFTWARE-3485\n)\n\n\n\n\n\n\n3.4.21  \n\n\nOptional rolling release repository for OSG 3.4\n\n\nAdd stashcache-client to osg-wn-client\n\n\nGratia probe fixes for Slurm and Hosted-CE\n\n\n\n\n\n\nDoc focus  \n\n\nDoc focus postponed to 2018-12-06 1PM CST\n\n\nAI (Carl): Address comments in PR related to \nSOFTWARE-3365\n\n\nAI (TimT): submit PRs for doc focus tickets\n\n\n\n\n\n\nChanges in effort tracking policy coming\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nTACC (Marco Mascheroni): there are issues with a Hosted CE detecting the BLAHP version on the TACC side\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.21\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n11\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n2\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n17\n\n\n+5\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.21  \n\n\nTesting  \n\n\nosg-update-certs\n\n\nPegasus 4.9.0\n\n\nfrontier-squid 3.5.28-3.1\n\n\nHDFS-FUSE for EL6\n\n\n\n\n\n\nReady for Release  \n\n\nNothing Yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nPerhaps IGTF?\n\n\n\n\n\n\nOperations  \n\n\nrepo-update-cadist updates (low priority)\n\n\n\n\n\n\nContrib  \n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nOSG Investigations Team\n\n\n\n\nStashCache focus data in Omaha on Wed.  John + Brian + Derek involved\n\n\nBunch of pull requests created for this.\n\n\nAutomated Authfile generation is the biggest contribution.  But also docs fixes, and documentation on registering caches and origins.\n\n\nMore changes in the pipeline.\n\n\n\n\n\n\nDeveloped load testing for stashcache using \nLocust\n\n\nRe-organize caches behind redirectors to split load with I2 caches.  Nebraska and KC cache first\n\n\nHTCondor-TCP stats packaging for the submit nodes (SchedDs) \n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNone this week", 
+            "text": "OSG Technology Area Meeting, 26 November 2018\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Derek, Edgar, Marco Mambelli, Mat, TimT  \n\n\nAnnouncements\n\n\n\n\nBrianL out the next 2 Mondays (Argonne, CERN) and the week of Christmas (see OSG Software calendar)\n\n\n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n5 (+0) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n153\n\n\n+6\n\n\nOpen\n\n\n\n\n\n\n23\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n6\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\nOSG Container Workshop this Wednesday and Thursday morning (WIP schedule: \nhttps://indico.fnal.gov/event/19149/\n)\n\n\nXRootD overhaul  \n\n\nAI (Mat): Add StashCache tests (\nSOFTWARE-3360\n)\n\n\nAI (Edgar): XRootD plugin tests (\nSOFTWARE-3359\n, \nSOFTWARE-3362\n)\n\n\nAI (Marian): XRootD 4.9.0 (\nSOFTWARE-3485\n)\n\n\n\n\n\n\n3.4.21  \n\n\nGlideinWMS 3.5.0 RC (upcoming) expected later this week or early next week\n\n\nHTCondor 8.8.0 (upcoming) expected mid-December\n\n\nOptional rolling release repository for OSG 3.4\n\n\nAdd stashcache-client to osg-wn-client\n\n\nGratia probe fixes for Slurm and Hosted-CE\n\n\n\n\n\n\nDoc focus  \n\n\nDoc focus postponed to 2018-12-06 1PM CST\n\n\nAI (Carl): Address comments in PR related to \nSOFTWARE-3365\n\n\nAI (TimT): submit PRs for doc focus tickets\n\n\n\n\n\n\nChanges in effort tracking policy coming\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nFIFE (Marco Mambelli): investigating a report that site blacklists are not working on the frontend\n\n\nTACC (Marco Mascheroni): there are issues with a Hosted CE detecting the BLAHP version on the TACC side\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.21\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n11\n\n\n+4\n\n\nOpen\n\n\n\n\n\n\n2\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+3\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n17\n\n\n+5\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.21  \n\n\nTesting  \n\n\nosg-update-certs\n\n\nPegasus 4.9.0\n\n\nfrontier-squid 3.5.28-3.1\n\n\nHDFS-FUSE for EL6\n\n\n\n\n\n\nReady for Release  \n\n\nNothing Yet\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nPerhaps IGTF?\n\n\n\n\n\n\nOperations  \n\n\nrepo-update-cadist updates (low priority)\n\n\n\n\n\n\nContrib  \n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nAI (BrianL): Speak to the security team about releasing OSG 1.78 and IGTF 1.95\n\n\nAI (BrianL): Reach out to Notre Dame for testing HDFS on EL6\n\n\n\n\nOSG Investigations Team\n\n\n\n\nStashCache focus data in Omaha on Wed.  John + Brian + Derek involved\n\n\nBunch of pull requests created for this.\n\n\nAutomated Authfile generation is the biggest contribution.  But also docs fixes, and documentation on registering caches and origins.\n\n\nMore changes in the pipeline.\n\n\n\n\n\n\nDeveloped load testing for stashcache using \nLocust\n\n\nRe-organize caches behind redirectors to split load with I2 caches.  Nebraska and KC cache first\n\n\nHTCondor-TCP stats packaging for the submit nodes (SchedDs) \n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\n\n\nAI (Edgar): Investigate why glidein logs aren't being ingested from the factory", 
             "title": "November 26, 2018"
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/#osg-technology-area-meeting-26-november-2018", 
-            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  BrianL, Derek, Edgar, Marco Mambelli, Mat, TimT", 
             "title": "OSG Technology Area Meeting, 26 November 2018"
         }, 
         {
@@ -2992,7 +2992,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/#osg-software-team", 
-            "text": "OSG Container Workshop this Wednesday and Thursday morning (WIP schedule:  https://indico.fnal.gov/event/19149/ )  XRootD overhaul    AI (Mat): Add StashCache tests ( SOFTWARE-3360 )  AI (Edgar): XRootD plugin tests ( SOFTWARE-3359 ,  SOFTWARE-3362 )  AI (Marian): XRootD 4.9.0 ( SOFTWARE-3485 )    3.4.21    Optional rolling release repository for OSG 3.4  Add stashcache-client to osg-wn-client  Gratia probe fixes for Slurm and Hosted-CE    Doc focus    Doc focus postponed to 2018-12-06 1PM CST  AI (Carl): Address comments in PR related to  SOFTWARE-3365  AI (TimT): submit PRs for doc focus tickets    Changes in effort tracking policy coming", 
+            "text": "OSG Container Workshop this Wednesday and Thursday morning (WIP schedule:  https://indico.fnal.gov/event/19149/ )  XRootD overhaul    AI (Mat): Add StashCache tests ( SOFTWARE-3360 )  AI (Edgar): XRootD plugin tests ( SOFTWARE-3359 ,  SOFTWARE-3362 )  AI (Marian): XRootD 4.9.0 ( SOFTWARE-3485 )    3.4.21    GlideinWMS 3.5.0 RC (upcoming) expected later this week or early next week  HTCondor 8.8.0 (upcoming) expected mid-December  Optional rolling release repository for OSG 3.4  Add stashcache-client to osg-wn-client  Gratia probe fixes for Slurm and Hosted-CE    Doc focus    Doc focus postponed to 2018-12-06 1PM CST  AI (Carl): Address comments in PR related to  SOFTWARE-3365  AI (TimT): submit PRs for doc focus tickets    Changes in effort tracking policy coming", 
             "title": "OSG Software Team"
         }, 
         {
@@ -3002,7 +3002,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/#support-update", 
-            "text": "TACC (Marco Mascheroni): there are issues with a Hosted CE detecting the BLAHP version on the TACC side", 
+            "text": "FIFE (Marco Mambelli): investigating a report that site blacklists are not working on the frontend  TACC (Marco Mascheroni): there are issues with a Hosted CE detecting the BLAHP version on the TACC side", 
             "title": "Support Update"
         }, 
         {
@@ -3012,7 +3012,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/#discussion_1", 
-            "text": "None this week", 
+            "text": "AI (BrianL): Speak to the security team about releasing OSG 1.78 and IGTF 1.95  AI (BrianL): Reach out to Notre Dame for testing HDFS on EL6", 
             "title": "Discussion"
         }, 
         {
@@ -3027,7 +3027,7 @@
         }, 
         {
             "location": "/meetings/2018/TechArea20181126/#discussions", 
-            "text": "None this week", 
+            "text": "AI (Edgar): Investigate why glidein logs aren't being ingested from the factory", 
             "title": "Discussions"
         }, 
         {
