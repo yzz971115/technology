@@ -1852,7 +1852,7 @@
                 
                 <h1 id="osg-technology-area-meeting-10-december-2018">OSG Technology Area Meeting, 10 December 2018<a class="headerlink" href="#osg-technology-area-meeting-10-december-2018" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a></p>
-<p><strong>Attending:</strong> </p>
+<p><strong>Attending:</strong> Mat, Derek, Marian, Tim T, Edgar, Carl</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <ul>
 <li>BrianL at CERN</li>
@@ -1861,7 +1861,7 @@
 <ul>
 <li>This week: Mat</li>
 <li>Next week: Tim T</li>
-<li>7 (+2) open tickets</li>
+<li>5 (-2) open tickets</li>
 </ul>
 <h3 id="jira">JIRA<a class="headerlink" href="#jira" title="Permanent link">&para;</a></h3>
 <table>
@@ -1874,58 +1874,59 @@
 </thead>
 <tbody>
 <tr>
-<td>159</td>
-<td>+6</td>
+<td>153</td>
+<td>-6</td>
 <td>Open</td>
 </tr>
 <tr>
-<td>24</td>
-<td>+1</td>
+<td>30</td>
+<td>+6</td>
 <td>In Progress</td>
 </tr>
 <tr>
 <td>7</td>
-<td>+1</td>
+<td>+0</td>
 <td>Ready for Testing</td>
 </tr>
 <tr>
-<td>0</td>
-<td>+0</td>
+<td>2</td>
+<td>+2</td>
 <td>Ready for Release</td>
 </tr>
 </tbody>
 </table>
 <h2 id="osg-software-team">OSG Software Team<a class="headerlink" href="#osg-software-team" title="Permanent link">&para;</a></h2>
 <ul>
-<li>OSG Container Workshop last week went well; BrianL will be discussing SW team's role in the containerization at conference
-    (slides from workshop: <a href="https://indico.fnal.gov/event/19149/">https://indico.fnal.gov/event/19149/</a>)</li>
 <li>XRootD overhaul<ul>
 <li>AI (Mat): Add StashCache tests (<a href="https://opensciencegrid.atlassian.net/browse/SOFTWARE-3360">SOFTWARE-3360</a>)</li>
 <li>AI (Edgar): XRootD plugin tests (<a href="https://opensciencegrid.atlassian.net/browse/SOFTWARE-3359">SOFTWARE-3359</a>, <a href="https://opensciencegrid.atlassian.net/browse/SOFTWARE-3362">SOFTWARE-3362</a>)</li>
-<li>AI (Marian): XRootD 4.9.0 (<a href="https://opensciencegrid.atlassian.net/browse/SOFTWARE-3485">SOFTWARE-3485</a>)</li>
 </ul>
 </li>
 <li>3.4.21<ul>
-<li>GlideinWMS 3.5.0 RC (upcoming) expected later this week or early next week</li>
-<li>HTCondor 8.8.0 (upcoming) expected mid-December</li>
 <li>Optional rolling release repository for OSG 3.4</li>
 <li>Add stashcache-client to osg-wn-client</li>
 <li>Gratia probe fixes for Slurm and Hosted-CE</li>
+<li>StashCache 1.0.0 (depends on XRootD 4.9.0)<ul>
+<li>Marian has been testing XRootD RC at UNL since Friday
+  but full version might not be out until Christmas</li>
 </ul>
 </li>
-<li>Doc focus<ul>
-<li>Doc focus this Thursday, 2018-12-06 1PM CST</li>
+<li>New Frontier-Squid</li>
+</ul>
+</li>
+<li>Future<ul>
+<li>HTCondor 8.8.0</li>
+<li>GlideinWMS 3.5.0 RC (upcoming) expected later this week or early next week</li>
 </ul>
 </li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
 <ul>
-<li>BrianB would like to automate pushing the tarballs to avoid state on repo.opensciencegrid.org, perhaps to GitHub releases</li>
+<li>Doodle poll sent out for next Doc Focus</li>
 </ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
-<li>RPM-GPG key missing from repo server; has been resolved but still need to automate the process (John Thiltges will put it in Puppet)</li>
-<li>Having trouble adding CHTC origin server to CVMFS; at the moment it's IPv6 firewall issues</li>
+<li>none this week</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -1993,6 +1994,8 @@
 </li>
 </ul>
 <h3 id="discussion_1">Discussion<a class="headerlink" href="#discussion_1" title="Permanent link">&para;</a></h3>
+<p>New repo-update-cadist will be installed on repo-itb; Tim T needs access to
+that host to test scenario where there are no MD5 sums.</p>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <p>Largely the same as last week</p>
 <ul>
