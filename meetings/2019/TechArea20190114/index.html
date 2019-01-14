@@ -1888,7 +1888,7 @@
                 
                 <h1 id="osg-technology-area-meeting-14-january-2019">OSG Technology Area Meeting, 14 January 2019<a class="headerlink" href="#osg-technology-area-meeting-14-january-2019" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>   </p>
+<strong>Attending:</strong> BrianB, BrianL, Derek, Edgar, Marian, Mat, TimT</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <p>Next meeting on Tues Jan 22, 2018 due to MLK Jr day  </p>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
@@ -1943,12 +1943,16 @@
 <li>Potential student hire at UW-Madison</li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>A default XCache image will serve as the base for StashCache and ATLAS XCache</li>
+<li>Organize XCache Dockerfiles in a single repository either under different directories or branches</li>
+</ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
 <li>AGLT2 (BrianL): high load on some worker nodes (<code>ls /tmp hangs</code>) with some ATLAS jobs using 100% of swap</li>
 <li>Colorado (BrianL): Some FIFE jobs are failing to fetch the worker node hostname causing job failure. As a result, FNAL is blacklisting Colorado.</li>
 <li>FNAL (BrianL): Accounting group issues when submitting jobs through a CE. The same user can show up under the CE UID domain or the local batch system UID domain</li>
+<li>Georgia Tech (Derek, Edgar): They need some help registering a Stash cache and updating their registration to support XCache 1.0. Edgar is working with them to get an IGTF InCommon certificate.</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -2021,7 +2025,11 @@
 </li>
 </ul>
 <h3 id="discussion_1">Discussion<a class="headerlink" href="#discussion_1" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>AI (Carl): Manually test HDFS 2.6 on EL6 packages, especially upgrades from EL6.</li>
+<li>AI (BrianL, TimT): Write HDFS release notes to indicate that this update is only intended to support mounting HDFS via FUSE with EL6 clients.
+    It is not intended for updating name nodes, data nodes, XRootD, or GridFTP hosts. Instead we recommend updating to EL7.</li>
+</ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Re-organize caches behind redirectors to split load with I2 caches. Nebraska and KC cache first. Need to register the redirector with the cache discovery methods.</li>
@@ -2039,7 +2047,7 @@
 <li><a href="http://opensciencegrid.org/docs/data/stashcache/overview/">StashCache Project</a></li>
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
-<p>None this week</p>
+<p>AI (Edgar): Coordinate with BrianL and Mat for k8s-ization of StashCache origin and hosted CEs</p>
                 
                   
                 
