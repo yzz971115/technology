@@ -1900,12 +1900,16 @@
                 
                 <h1 id="osg-technology-area-meeting-22-january-2019">OSG Technology Area Meeting, 22 January 2019<a class="headerlink" href="#osg-technology-area-meeting-22-january-2019" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>   </p>
+<strong>Attending:</strong> BrianL, Carl, Derek, Edgar, Mat, TimT</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>OSG All Hands registration open (https://opensciencegrid.org/all-hands/2019/)</li>
+<li>Operations F2F meeting to be held next Tues-Thurs (https://indico.fnal.gov/event/19580/)</li>
+</ul>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
 <ul>
 <li>This week: Carl</li>
-<li>Next week: BrianL (?)</li>
+<li>Next week: TimT (?)</li>
 <li>5 (+0) open tickets</li>
 </ul>
 <h3 id="jira">JIRA<a class="headerlink" href="#jira" title="Permanent link">&para;</a></h3>
@@ -1955,10 +1959,13 @@
 <p>None this week  </p>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
-<li>AGLT2 (BrianL): high load on some worker nodes (<code>ls /tmp hangs</code>) with some ATLAS jobs using 100% of swap</li>
-<li>Colorado (BrianL): Tanya's group is using the hostname for blackhole detection, not sure why the experiment itself is testing for the hostname.</li>
-<li>FNAL (BrianL): Accounting group issues are being resolved in the job router. The fix will make it into 8.6 and 8.8</li>
-<li>Georgia Tech (Derek, Edgar): They need some help registering a Stash cache and updating their registration to support XCache 1.0. Edgar is working with them to get an IGTF InCommon certificate.</li>
+<li>AGLT2 (BrianL): high load on some worker nodes (=ls /tmp hangs=) with some ATLAS jobs using 100% of swap</li>
+<li>Colorado (BrianL): Tanya's group is using the hostname for blackhole detection, and they will investigate why the experiment itself is testing for the hostname.</li>
+<li>FNAL (BrianL): Accounting group issues are being resolved in the job router. The fix will make it into 8.6.13-1.2 and 8.8.1</li>
+<li>Georgia Tech (Edgar): They got an IGTF InCommon certificate and their cache registration needs to be updated to support XCache 1.0</li>
+<li>Internet2 (Edgar): Bug in CVMFS fault-tolernace that is being addressed upstream</li>
+<li>Notre Dame (Edgar): issue with accessing Boone and other FNAL experiments from Stash Cache. Turned out to be an issue with two old squids at the UW CMS T2 that were open to the public and that IceCube depended on these squids so they can't be turned down. IceCube and Edgar will work on solutions so that they don't rely on the UW squids any longer.</li>
+<li>NERSC (Mat): Someone wanted to recompile OSG Software for SUSE, Mat pointed them at the tarballs and recommended the Docker images</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -2029,7 +2036,10 @@
 </li>
 </ul>
 <h3 id="discussion_1">Discussion<a class="headerlink" href="#discussion_1" title="Permanent link">&para;</a></h3>
-<p>None this week</p>
+<ul>
+<li>AI (TimT): Ping Marian to test xrootd-lcmaps</li>
+<li>AI (TimT): Request testing of HDFS on EL6 from Purdue/Notre Dame</li>
+</ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <ul>
 <li>OSG Ops meeting next week, investigations is deeply involved in ops.</li>
