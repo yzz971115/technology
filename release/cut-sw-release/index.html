@@ -711,36 +711,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-upload-the-client-tarballs" title="Step 2: Upload the client tarballs" class="md-nav__link">
-    Step 2: Upload the client tarballs
+  <a href="#step-2-generate-the-release-notes" title="Step 2: Generate the release notes" class="md-nav__link">
+    Step 2: Generate the release notes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-install-the-tarballs-into-oasis" title="Step 3: Install the tarballs into OASIS" class="md-nav__link">
-    Step 3: Install the tarballs into OASIS
+  <a href="#step-3-upload-the-client-tarballs" title="Step 3: Upload the client tarballs" class="md-nav__link">
+    Step 3: Upload the client tarballs
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-remove-old-uw-afs-installations-of-the-tarball-client" title="Step 4: Remove old UW AFS installations of the tarball client" class="md-nav__link">
-    Step 4: Remove old UW AFS installations of the tarball client
+  <a href="#step-4-install-the-tarballs-into-oasis" title="Step 4: Install the tarballs into OASIS" class="md-nav__link">
+    Step 4: Install the tarballs into OASIS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-update-the-docker-wn-client" title="Step 5: Update the Docker WN client" class="md-nav__link">
-    Step 5: Update the Docker WN client
+  <a href="#step-5-remove-old-uw-afs-installations-of-the-tarball-client" title="Step 5: Remove old UW AFS installations of the tarball client" class="md-nav__link">
+    Step 5: Remove old UW AFS installations of the tarball client
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-announce-the-release" title="Step 6: Announce the release" class="md-nav__link">
-    Step 6: Announce the release
+  <a href="#step-6-update-the-docker-wn-client" title="Step 6: Update the Docker WN client" class="md-nav__link">
+    Step 6: Update the Docker WN client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-announce-the-release" title="Step 7: Announce the release" class="md-nav__link">
+    Step 7: Announce the release
   </a>
   
 </li>
@@ -1975,36 +1982,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-upload-the-client-tarballs" title="Step 2: Upload the client tarballs" class="md-nav__link">
-    Step 2: Upload the client tarballs
+  <a href="#step-2-generate-the-release-notes" title="Step 2: Generate the release notes" class="md-nav__link">
+    Step 2: Generate the release notes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-install-the-tarballs-into-oasis" title="Step 3: Install the tarballs into OASIS" class="md-nav__link">
-    Step 3: Install the tarballs into OASIS
+  <a href="#step-3-upload-the-client-tarballs" title="Step 3: Upload the client tarballs" class="md-nav__link">
+    Step 3: Upload the client tarballs
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-remove-old-uw-afs-installations-of-the-tarball-client" title="Step 4: Remove old UW AFS installations of the tarball client" class="md-nav__link">
-    Step 4: Remove old UW AFS installations of the tarball client
+  <a href="#step-4-install-the-tarballs-into-oasis" title="Step 4: Install the tarballs into OASIS" class="md-nav__link">
+    Step 4: Install the tarballs into OASIS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-update-the-docker-wn-client" title="Step 5: Update the Docker WN client" class="md-nav__link">
-    Step 5: Update the Docker WN client
+  <a href="#step-5-remove-old-uw-afs-installations-of-the-tarball-client" title="Step 5: Remove old UW AFS installations of the tarball client" class="md-nav__link">
+    Step 5: Remove old UW AFS installations of the tarball client
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-announce-the-release" title="Step 6: Announce the release" class="md-nav__link">
-    Step 6: Announce the release
+  <a href="#step-6-update-the-docker-wn-client" title="Step 6: Update the Docker WN client" class="md-nav__link">
+    Step 6: Update the Docker WN client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-announce-the-release" title="Step 7: Announce the release" class="md-nav__link">
+    Step 7: Announce the release
   </a>
   
 </li>
@@ -2185,15 +2199,25 @@ locks the repos and regenerates them.</p>
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="m">2</span>-create-release <span class="nv">$VERSIONS</span>
+<div class="codehilite"><pre><span></span><span class="m">2</span>-push-release <span class="nv">$VERSIONS</span>
+</pre></div>
+
+
+<h3 id="step-2-generate-the-release-notes">Step 2: Generate the release notes<a class="headerlink" href="#step-2-generate-the-release-notes" title="Permanent link">&para;</a></h3>
+<p>This script generates the release notes and updates the release information in AFS.</p>
+<div class="codehilite"><pre><span></span><span class="nv">VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;VERSION(S)&gt;&quot;</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="m">2</span>-make-notes <span class="nv">$VERSIONS</span>
 </pre></div>
 
 
 <ol>
-<li><code>*.txt</code> files are also created and it should be verified that they've been moved to /p/vdt/public/html/release-info/ on UW's AFS.</li>
+<li><code>*.txt</code> files are created and it should be verified that they've been moved to /p/vdt/public/html/release-info/ on UW's AFS.</li>
 <li>For each release version, use the <code>*release-note*</code> files to update the relevant sections of the release note pages.</li>
 </ol>
-<h3 id="step-2-upload-the-client-tarballs">Step 2: Upload the client tarballs<a class="headerlink" href="#step-2-upload-the-client-tarballs" title="Permanent link">&para;</a></h3>
+<h3 id="step-3-upload-the-client-tarballs">Step 3: Upload the client tarballs<a class="headerlink" href="#step-3-upload-the-client-tarballs" title="Permanent link">&para;</a></h3>
 <p>Upload the tarballs to the repository with the following procedure from a UW CS machine (e.g., <code>ingwe</code>):</p>
 <div class="codehilite"><pre><span></span><span class="nv">NON_UPCOMING_VERSIONS</span><span class="o">=</span><span class="s2">&quot;&lt;NON-UPCOMING VERSION(S)&gt;&quot;</span>
 </pre></div>
@@ -2215,7 +2239,7 @@ ssh osgcollab@repo.opensciencegrid.org bin/mk-sims.sh
 </pre></div>
 
 
-<h3 id="step-3-install-the-tarballs-into-oasis">Step 3: Install the tarballs into OASIS<a class="headerlink" href="#step-3-install-the-tarballs-into-oasis" title="Permanent link">&para;</a></h3>
+<h3 id="step-4-install-the-tarballs-into-oasis">Step 4: Install the tarballs into OASIS<a class="headerlink" href="#step-4-install-the-tarballs-into-oasis" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You must be an OASIS manager of the <code>mis</code> VO to do these steps. Known managers as of 2014-07-22: Mat, Tim C, Tim T, Brian L. </p>
@@ -2234,13 +2258,13 @@ git clone --depth <span class="m">1</span> file:///p/vdt/workspace/git/repo/tarb
 
 
 <p>The script will automatically ssh you to oasis-login.opensciencegrid.org and give you instructions to complete the process.</p>
-<h3 id="step-4-remove-old-uw-afs-installations-of-the-tarball-client">Step 4: Remove old UW AFS installations of the tarball client<a class="headerlink" href="#step-4-remove-old-uw-afs-installations-of-the-tarball-client" title="Permanent link">&para;</a></h3>
+<h3 id="step-5-remove-old-uw-afs-installations-of-the-tarball-client">Step 5: Remove old UW AFS installations of the tarball client<a class="headerlink" href="#step-5-remove-old-uw-afs-installations-of-the-tarball-client" title="Permanent link">&para;</a></h3>
 <p>To keep space usage down, remove tarball client installations and symlinks under <code>/p/vdt/workspace/tarball-client</code> on UW's AFS that are more than 2 months old. The following command will remove them:</p>
 <div class="codehilite"><pre><span></span>find /p/vdt/workspace/tarball-client -maxdepth <span class="m">1</span> -mtime +60 -name <span class="m">3</span><span class="se">\*</span> -ls -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 
 
-<h3 id="step-5-update-the-docker-wn-client">Step 5: Update the Docker WN client<a class="headerlink" href="#step-5-update-the-docker-wn-client" title="Permanent link">&para;</a></h3>
+<h3 id="step-6-update-the-docker-wn-client">Step 6: Update the Docker WN client<a class="headerlink" href="#step-6-update-the-docker-wn-client" title="Permanent link">&para;</a></h3>
 <p>Update the GitHub repo at <a href="https://github.com/opensciencegrid/docker-osg-wn">opensciencegrid/docker-osg-wn</a> using the <code>update-all</code> script found in <a href="https://github.com/opensciencegrid/docker-osg-wn-scripts">opensciencegrid/docker-osg-wn-scripts</a>. This requires push access to the <code>opensciencegrid/docker-osg-wn</code> repo.</p>
 <p>Instructions for using the script:</p>
 <div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/docker-osg-wn-scripts.git
@@ -2252,7 +2276,7 @@ docker-osg-wn-scripts/update-all docker-osg-wn
 </pre></div>
 
 
-<h3 id="step-6-announce-the-release">Step 6: Announce the release<a class="headerlink" href="#step-6-announce-the-release" title="Permanent link">&para;</a></h3>
+<h3 id="step-7-announce-the-release">Step 7: Announce the release<a class="headerlink" href="#step-7-announce-the-release" title="Permanent link">&para;</a></h3>
 <p>The following instructions are meant for the release manager (or interim release manager). If you are not the release manager, let the release manager know that they can announce the release.</p>
 <ol>
 <li>
