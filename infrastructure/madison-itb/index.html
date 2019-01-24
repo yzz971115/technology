@@ -2250,8 +2250,22 @@ therefore Ansible shows such results as failures.</p>
 
 </li>
 <li>
+<p>Check if anything needs restarting:</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible [ HOST | GROUP ] -i inventory -bK -f 20 -m command -a &#39;needs-restarting&#39;</span>
+</pre></div>
+
+
+</li>
+<li>
 <p>If needed (and if unsure, ask a sysadmin), reboot machines:</p>
 <div class="codehilite"><pre><span></span><span class="go">ansible [ HOST | GROUP ] -i inventory -bK -f 20 -m command -a &#39;/sbin/shutdown -r +1&#39; [ -l LIMITS ]</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Check if machines are up, running, and synchronized to the time servers</p>
+<div class="codehilite"><pre><span></span><span class="go">ansible [ HOST | GROUP ] -i inventory -f 20 -m command -a &#39;/usr/sbin/ntpq -p&#39;</span>
 </pre></div>
 
 
