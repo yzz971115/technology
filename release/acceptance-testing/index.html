@@ -875,8 +875,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#xrootd-plugins" title="XRootD Plugins" class="md-nav__link">
-    XRootD Plugins
+  <a href="#hdfs" title="HDFS" class="md-nav__link">
+    HDFS
   </a>
   
     <nav class="md-nav">
@@ -885,6 +885,13 @@
           <li class="md-nav__item">
   <a href="#hadoop-name-node-installation" title="Hadoop name node installation" class="md-nav__link">
     Hadoop name node installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-configuration" title="Edit Configuration" class="md-nav__link">
+    Edit Configuration
   </a>
   
 </li>
@@ -910,8 +917,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#on-the-name-node_1" title="On the name node" class="md-nav__link">
+    On the name node
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xrootd-plugins" title="XRootD Plugins" class="md-nav__link">
+    XRootD Plugins
+  </a>
   
 </li>
       
@@ -2129,8 +2150,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#xrootd-plugins" title="XRootD Plugins" class="md-nav__link">
-    XRootD Plugins
+  <a href="#hdfs" title="HDFS" class="md-nav__link">
+    HDFS
   </a>
   
     <nav class="md-nav">
@@ -2139,6 +2160,13 @@
           <li class="md-nav__item">
   <a href="#hadoop-name-node-installation" title="Hadoop name node installation" class="md-nav__link">
     Hadoop name node installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-configuration" title="Edit Configuration" class="md-nav__link">
+    Edit Configuration
   </a>
   
 </li>
@@ -2164,8 +2192,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#on-the-name-node_1" title="On the name node" class="md-nav__link">
+    On the name node
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xrootd-plugins" title="XRootD Plugins" class="md-nav__link">
+    XRootD Plugins
+  </a>
   
 </li>
       
@@ -2774,7 +2816,7 @@ sec.protocol /usr/lib64 gsi -ca:1 -crl:3
 </pre></div>
 
 
-<h2 id="xrootd-plugins">XRootD Plugins<a class="headerlink" href="#xrootd-plugins" title="Permanent link">&para;</a></h2>
+<h2 id="hdfs">HDFS<a class="headerlink" href="#hdfs" title="Permanent link">&para;</a></h2>
 <h3 id="hadoop-name-node-installation">Hadoop name node installation<a class="headerlink" href="#hadoop-name-node-installation" title="Permanent link">&para;</a></h3>
 <p>Use the following script with option 1:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
@@ -2831,9 +2873,42 @@ service hadoop-hdfs-<span class="nv">$NODETYPE</span> start
 </pre></div>
 
 
+<h3 id="edit-configuration">Edit Configuration<a class="headerlink" href="#edit-configuration" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Edit /etc/hadoop/conf/hdfs-site.xml<ul>
+<li>set dfs.replication to 1   </li>
+<li>set dfs.replication.min to 1</li>
+</ul>
+</li>
+</ol>
 <h3 id="hadoop-data-node-installation">Hadoop data node installation<a class="headerlink" href="#hadoop-data-node-installation" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Run same script as before but with option number 2.</li>
+</ol>
+<h3 id="gridftp-installation">GridFTP installation<a class="headerlink" href="#gridftp-installation" title="Permanent link">&para;</a></h3>
+<p>Run same as script but with option number 3.</p>
+<h3 id="on-the-name-node">On the name node<a class="headerlink" href="#on-the-name-node" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="gp">[root@fermicloud092 ~]#</span> hdfs dfs -ls /test-file
+<span class="go">Found 1 items</span>
+<span class="go">-rw-r--r--   2 root root          0 2014-07-21 15:57 /test-file</span>
+</pre></div>
+
+
+<h3 id="on-the-name-node_1">On the name node<a class="headerlink" href="#on-the-name-node_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="gp">[root@]#</span> hadoop fs -mkdir /matyas
+<span class="gp">[root@]#</span> hadoop fs -chown matyas /matyas
+<span class="gp">[root@]#</span> hdfs dfsadmin -setSpaceQuota 123k /matyas
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="gp">user@host $</span> dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/tmp/blob <span class="nv">bs</span><span class="o">=</span><span class="m">4096</span> <span class="nv">count</span><span class="o">=</span><span class="m">10000</span>
+<span class="gp">user@host $</span> kx509<span class="p">;</span> voms-proxy-init -noregen -voms fermilab
+<span class="gp">user@host $</span> globus-url-copy -vb file:///tmp/blob gsiftp://<span class="sb">`</span>hostname -f<span class="sb">`</span>/mnt/hadoop/matyas
+</pre></div>
+
+
+<h2 id="xrootd-plugins">XRootD Plugins<a class="headerlink" href="#xrootd-plugins" title="Permanent link">&para;</a></h2>
+<ol>
 <li>
 <p>Install xrootd-server:</p>
 <div class="codehilite"><pre><span></span>yum install xrootd-server
@@ -2849,16 +2924,6 @@ service hadoop-hdfs-<span class="nv">$NODETYPE</span> start
 
 </li>
 </ol>
-<h3 id="gridftp-installation">GridFTP installation<a class="headerlink" href="#gridftp-installation" title="Permanent link">&para;</a></h3>
-<p>Run same as script but with option number.</p>
-<h3 id="on-the-name-node">On the name node<a class="headerlink" href="#on-the-name-node" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="gp">[root@fermicloud092 ~]#</span> hdfs dfs -ls /test-file
-<span class="go">Found 1 items</span>
-<span class="go">-rw-r--r--   2 root root          0 2014-07-21 15:57 /test-file</span>
-</pre></div>
-
-
-<p>This means your hadoop is working.</p>
 <p>Modify the file <code>/etc/xrootd/xrootd-clustered.cfg</code> to look like this:</p>
 <div class="codehilite"><pre><span></span>xrd.port 1094
 
