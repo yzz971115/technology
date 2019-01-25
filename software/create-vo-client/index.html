@@ -386,50 +386,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#making-the-tarball" title="Making the tarball" class="md-nav__link">
-    Making the tarball
+  <a href="#jira-ticket-for-the-release" title="JIRA Ticket for the Release" class="md-nav__link">
+    JIRA Ticket for the Release
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-gums-conversion" title="Automated GUMS Conversion" class="md-nav__link">
-    Automated GUMS Conversion
+  <a href="#updates-to-the-gums-template" title="Updates to the GUMS Template" class="md-nav__link">
+    Updates to the GUMS Template
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpm-spec-file-maintenance" title="RPM spec file maintenance" class="md-nav__link">
-    RPM spec file maintenance
+  <a href="#making-the-tarball" title="Making the Tarball" class="md-nav__link">
+    Making the Tarball
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpm-building" title="RPM building" class="md-nav__link">
-    RPM building
+  <a href="#rpm-spec-file-maintenance" title="RPM Spec File Maintenance" class="md-nav__link">
+    RPM Spec File Maintenance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#promotion-to-testing-and-release" title="Promotion to testing and release:" class="md-nav__link">
-    Promotion to testing and release:
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#policies" title="Policies" class="md-nav__link">
-    Policies
+  <a href="#rpm-building" title="RPM Building" class="md-nav__link">
+    RPM Building
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#publishing-the-new-release" title="Publishing the New Release" class="md-nav__link">
+    Publishing the New Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promotion-to-testing-and-release" title="Promotion to Testing and Release:" class="md-nav__link">
+    Promotion to Testing and Release:
+  </a>
   
 </li>
       
@@ -1742,50 +1743,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#making-the-tarball" title="Making the tarball" class="md-nav__link">
-    Making the tarball
+  <a href="#jira-ticket-for-the-release" title="JIRA Ticket for the Release" class="md-nav__link">
+    JIRA Ticket for the Release
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-gums-conversion" title="Automated GUMS Conversion" class="md-nav__link">
-    Automated GUMS Conversion
+  <a href="#updates-to-the-gums-template" title="Updates to the GUMS Template" class="md-nav__link">
+    Updates to the GUMS Template
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpm-spec-file-maintenance" title="RPM spec file maintenance" class="md-nav__link">
-    RPM spec file maintenance
+  <a href="#making-the-tarball" title="Making the Tarball" class="md-nav__link">
+    Making the Tarball
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpm-building" title="RPM building" class="md-nav__link">
-    RPM building
+  <a href="#rpm-spec-file-maintenance" title="RPM Spec File Maintenance" class="md-nav__link">
+    RPM Spec File Maintenance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#promotion-to-testing-and-release" title="Promotion to testing and release:" class="md-nav__link">
-    Promotion to testing and release:
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#policies" title="Policies" class="md-nav__link">
-    Policies
+  <a href="#rpm-building" title="RPM Building" class="md-nav__link">
+    RPM Building
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#publishing-the-new-release" title="Publishing the New Release" class="md-nav__link">
+    Publishing the New Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promotion-to-testing-and-release" title="Promotion to Testing and Release:" class="md-nav__link">
+    Promotion to Testing and Release:
+  </a>
   
 </li>
       
@@ -1808,105 +1810,144 @@
                   <a href="https://github.com/opensciencegrid/technology/edit/master/docs/software/create-vo-client.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="creating-the-vo-client-package">Creating the VO Client package<a class="headerlink" href="#creating-the-vo-client-package" title="Permanent link">&para;</a></h1>
+                <h1 id="creating-the-vo-client-package">Creating the VO Client Package<a class="headerlink" href="#creating-the-vo-client-package" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The VO Client package is just a conversion of the tarball created by GOC into the RPM format.</p>
+<p>This document will explain the step-by-step procedures for creating and releasing the VO Client Package.</p>
+<p>The VO Client Package sources can be found here:
+<a href="https://github.com/opensciencegrid/osg-vo-config">https://github.com/opensciencegrid/osg-vo-config</a></p>
+<p>When upstream changes have been made and are ready for a new VO Client Package release, these sources will be used to
+prepare a release tarball, which will in turn be used for the RPMs.</p>
 <p>In order to build the RPM, one needs:</p>
 <ul>
 <li>The tarball containing the:<ul>
-<li><code>vomses</code> file</li>
 <li><code>edg-mkgridmap.conf</code> file</li>
 <li><code>gums.config.template</code> file</li>
-<li><code>vomsdir</code> directory tree, containing the lsc files.</li>
+<li><code>grid-vorolemap</code> file (generated)</li>
+<li><code>voms-mapfile-default</code> file (generated)</li>
+<li><code>vomses</code> file</li>
+<li><code>vomsdir</code> directory tree, containing the .lsc files.</li>
 </ul>
 </li>
-<li>The RPM spec file</li>
+<li>The RPM spec file, <a href="#rpm-spec-file-maintenance">maintained</a> in the OSG packaging area.</li>
 </ul>
-<h2 id="making-the-tarball">Making the tarball<a class="headerlink" href="#making-the-tarball" title="Permanent link">&para;</a></h2>
+<h2 id="jira-ticket-for-the-release">JIRA Ticket for the Release<a class="headerlink" href="#jira-ticket-for-the-release" title="Permanent link">&para;</a></h2>
+<p>There should be an associated JIRA ticket with a summary line of the form "Release VO Package 85".
+(Throughout this document, this release number will be referred to as <code>&lt;NN&gt;</code>.)</p>
+<p>The JIRA ticket should contain the details of the changes expected in the new VO Client Package release, which you
+should verify before proceeding.
+You can verify this with your favorite git tool (eg, <code>git diff</code> or <code>gitk</code>), or just view the changes directly on GitHub:</p>
+<ul>
+<li><a href="https://github.com/opensciencegrid/osg-vo-config/compare/release-84...master">https://github.com/opensciencegrid/osg-vo-config/compare/release-84...master</a></li>
+</ul>
+<p>Here, <code>release-84</code> is the <em>previous</em> release tag, which you are comparing to the latest changes in <code>master</code>.
+To use GitHub to view the comparison, you need to specify whatever is the most recent <em>previous</em> release tag.</p>
+<p>Alternatively, you can proceed to <a href="#making-the-tarball">make the tarball</a>, and compare the result to the previous
+<code>vo-client</code> tarball (from the upstream source cache) before <a href="#publishing-the-new-release">publishing the new release</a>.</p>
+<p>However you choose to do it, the point is to verify that the changes going into the release match what is expected in
+the JIRA ticket before publishing a new release.</p>
+<h2 id="updates-to-the-gums-template">Updates to the GUMS Template<a class="headerlink" href="#updates-to-the-gums-template" title="Permanent link">&para;</a></h2>
+<p>Most commonly, VO Client Package releases do not involve changes to the <code>gums.config.template</code> file, though on occasion
+it needs to be updated.
+Before proceeding, any changes to <code>gums.config.template</code> related to this release should be committed to git and pushed
+to the upstream repo on GitHub.</p>
+<p>The procedure for updating <code>gums.config.template</code> is outside the scope of this document, but the main important point is
+that any updates to this file should be done with the GUMS web interface rather than editing its xml contents by hand.</p>
+<h2 id="making-the-tarball">Making the Tarball<a class="headerlink" href="#making-the-tarball" title="Permanent link">&para;</a></h2>
+<p>The process to make a new tarball has been mostly scripted.</p>
 <p>To make the tarball:</p>
 <ul>
-<li>start with a clean directory</li>
-<li>copy in the <code>vomses</code>, <code>gums.template</code>, and <code>edg-mkgridmap.conf</code> files and rename the edg-mkgridmap file:</li>
-</ul>
-<!-- -->
-
-<div class="codehilite"><pre><span></span>      wget http://repo.opensciencgrid.org/pacman/tarballs/vo-package/vomses
-      wget http://repo.opensciencegrid.org/pacman/tarballs/vo-package/edg-mkgridmap.osg
-      mv edg-mkgridmap.osg edg-mkgridmap.conf
-      wget http://repo.opensciencegrid.org/pacman/tarballs/vo-package/gums.template # TODO UNSURE
+<li>
+<p>Start with a clean checkout of the latest <code>master</code> branch of the <code>osg-vo-config</code>
+    <a href="https://github.com/opensciencegrid/osg-vo-config">source repo</a>.</p>
+<p>This checked out commit should be the one intended to be tagged for the new release.
+-   Run the <code>mk-vo-client-tarball</code> script with the new release number <code>&lt;NN&gt;</code>:</p>
+<div class="codehilite"><pre><span></span>$ ./bin/mk-vo-client-tarball &lt;NN&gt;
 </pre></div>
 
 
-<ul>
-<li>Create the vomsdir directory by downloading the .lsc files</li>
-</ul>
-<!-- -->
-
-<div class="codehilite"><pre><span></span>     wget --recursive --no-host-directories --cut-dirs=3 -A &quot;*.lsc&quot; http://repo.opensciencegrid.org/pacman/tarballs/vo-package/vomsdir
+<p>For example:</p>
+<div class="codehilite"><pre><span></span>$ ./bin/mk-vo-client-tarball <span class="m">85</span>
 </pre></div>
 
 
-<ul>
-<li>In a separate directory, unpack the <em>old</em> vo-client tarball (from the upstream source cache)</li>
-<li>diff the two directories, and compare the changes to the expected changes listed in the JIRA ticket for this VO Client package release</li>
+<p>This will create a file <code>vo-client-&lt;NN&gt;-osg.tar.gz</code> in the current directory.</p>
+</li>
 </ul>
-<!-- -->
-
+<p>Once the tarball is created:</p>
 <ul>
-<li>Follow the instructions in the attached <a href="../gums-template-conversion.txt">gums-template-conversion.txt</a> file to convert it from GUMS 1.1 (1.2?) format to GUMS 1.3 format. Name the result <code>gums.config.template</code>. See also the <a href="#automated-gums-conversion">Automated GUMS Conversion</a> section below for a scripted version of this step.</li>
-<li>Move the files into a subdirectory to include in the tarball:</li>
+<li>
+<p>If you have not already verified the changes expected in the JIRA ticket, compare the contents of the new tarball
+    with the previous version in the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>.</p>
+</li>
+<li>
+<p>Upload the tarball into the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>, under
+    the <code>vo-client/&lt;NN&gt;/</code> directory.</p>
+</li>
 </ul>
-<!-- -->
-
-<div class="codehilite"><pre><span></span>      VERSION=44  # set appropriately
-      mkdir vo-client-$VERSION
-      mv vomses gums.config.template edg-mkgridmap.conf vomsdir vo-client-$VERSION/
-      tar -czf vo-client-$VERSION-osg.tar.gz vo-client-$VERSION/
-</pre></div>
-
-
-<p>Upload the tarball into the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>, in the <code>vo-client/VERSION/</code> directory.</p>
-<h2 id="automated-gums-conversion">Automated GUMS Conversion<a class="headerlink" href="#automated-gums-conversion" title="Permanent link">&para;</a></h2>
-<p>The above <a href="../gums-template-conversion.txt">instructions</a> outline a procedure for converting the osg gums.config template from GUMS 1.1 format to 1.3 format. Because setting up a GUMS instance for this can be time consuming and tricky to get right, a script was written to automate the procedure on a Fermi VM. The script lives in svn under: <code>$SVN/software/tools/convert-osg-gums-template-for-vo-client.sh</code> .</p>
-<p>To use it:</p>
-<ul>
-<li>Create a new Fermi VM (el5 or el6)</li>
-<li>Copy the script and the new <code>gums.template</code> to be converted to the /root homedir on the VM.</li>
-<li>Log into the VM as root, make sure the script is executable, and run against the gums template:</li>
-</ul>
-<!-- -->
-
-<div class="codehilite"><pre><span></span>      $ ssh root@el6-vo-client
-      # wget https://vdt.cs.wisc.edu/svn/software/tools/convert-osg-gums-template-for-vo-client.sh
-      # chmod +x convert-osg-gums-template-for-vo-client.sh
-      # ./convert-osg-gums-template-for-vo-client.sh gums.template
-</pre></div>
-
-
-<ul>
-<li>It takes a little while to install and set up gums and related packages, but if it succeeds, you should see a message that says "User group has been saved.", and a file <code>gums.config.template</code> should be written in the current directory.</li>
-<li>The newly converted <code>gums.config.template</code> should be compared to the old version of that file (from the previous vo-client package) to ensure that the only the differences are the changes for this release. (I have had to manually strip the extra test account stuff.) The 'meld' program is a nice graphical diff tool that I use for comparing them.</li>
-</ul>
-<h2 id="rpm-spec-file-maintenance">RPM spec file maintenance<a class="headerlink" href="#rpm-spec-file-maintenance" title="Permanent link">&para;</a></h2>
+<h2 id="rpm-spec-file-maintenance">RPM Spec File Maintenance<a class="headerlink" href="#rpm-spec-file-maintenance" title="Permanent link">&para;</a></h2>
 <p>The OSG RPM spec file is <a href="../../software/rpm-development-guide#revision-control-system">maintained in Subversion</a>.</p>
-<p>The VO Client package is located in <code>native/redhat/trunk/vo-client</code></p>
+<p>The VO Client package is located in <code>native/redhat/trunk/vo-client</code>; that is,
+<a href="https://vdt.cs.wisc.edu/svn/native/redhat/trunk/vo-client/">here</a>.</p>
 <p>There are two files that need to be maintained:</p>
 <ul>
-<li><code>osg/vo-client.spec</code> - This is the RPM spec file proper. One needs to update the version (and/or the release number) every time a new RPM is created.</li>
-<li><code>upstream/release_tarball.source</code> - This file contains the relative path of the tarball within the <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>. Since the tarball file name will change with every new RPM version, this file has to be changed accordingly.</li>
+<li>
+<p><code>osg/vo-client.spec</code></p>
+<ul>
+<li>The <code>Version:</code> field should be updated to match the <code>&lt;NN&gt;</code> number for the release</li>
+<li>A <code>%changelog</code> entry should be added for the new release, mentioning any changes and their associated tickets</li>
 </ul>
-<h2 id="rpm-building">RPM building<a class="headerlink" href="#rpm-building" title="Permanent link">&para;</a></h2>
-<p>After installing the <a href="../../software/osg-build-tools">osg-build tools</a>, check out a clean copy from svn, then:</p>
+</li>
+<li>
+<p><code>upstream/release_tarball.source</code></p>
+<ul>
+<li>Update the relative path for the new tarball within the
+    <a href="../../software/rpm-development-guide#upstream-source-cache">upstream source cache</a>.
+    Typically this will be <code>vo-client/&lt;NN&gt;/vo-client-&lt;NN&gt;-osg.tar.gz</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="rpm-building">RPM Building<a class="headerlink" href="#rpm-building" title="Permanent link">&para;</a></h2>
+<p>After installing the <a href="../../software/osg-build-tools">osg-build tools</a>, check out a clean copy of the <code>vo-client</code> packaging
+directory from svn, then:</p>
 <ul>
 <li><code>osg-build prebuild .</code></li>
-<li>Once there are no errors, run <code>osg-build koji . --scratch</code> This can be done without making any permanent change.</li>
-<li>Once that builds successfully, run <code>osg-build koji .</code> This is permanent, unlike when you ran with <code>--scratch</code>. You cannot rebuild this version of the RPM again - you must bump the release number and edit the changelog.</li>
+<li>Once there are no errors, run <code>osg-build koji . --scratch</code>.
+    (This can be done without making any permanent change.)</li>
+<li>Once that builds successfully, run <code>osg-build koji .</code>
+    (This is permanent, unlike when you ran with <code>--scratch</code>.)
+    You cannot rebuild this version of the RPM again; to rebuild with changes, you must bump the release number and edit
+    the changelog.</li>
 </ul>
-<p>This will push the RPMs into the OSG development repository. Koji requires additional setup compared to rpmbuild; <a href="../../software/koji-workflow">see the documentation here</a>.</p>
-<h2 id="promotion-to-testing-and-release">Promotion to testing and release:<a class="headerlink" href="#promotion-to-testing-and-release" title="Permanent link">&para;</a></h2>
-<h3 id="policies">Policies<a class="headerlink" href="#policies" title="Permanent link">&para;</a></h3>
+<p>This will push the RPMs into the OSG development repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Koji requires additional setup compared to rpmbuild; <a href="../../software/koji-workflow">see the documentation here</a>.</p>
+</div>
+<h2 id="publishing-the-new-release">Publishing the New Release<a class="headerlink" href="#publishing-the-new-release" title="Permanent link">&para;</a></h2>
+<p>The final version of the sources in the <code>osg-vo-config</code>, which was used to create the tarball that was used in the koji
+build, needs be tagged in git with a <code>release-&lt;NN&gt;</code> tag (eg, <code>release-85</code>) and published as a release on GitHub.</p>
+<p>You can create and push the <code>release-&lt;NN&gt;</code> from your git checkout of <code>osg-vo-config</code>, OR create the tag while publishing
+the release on GitHub (recommended).</p>
+<p>To publish the new release on GitHub:</p>
+<ul>
+<li>Go to <a href="https://github.com/opensciencegrid/osg-vo-config/releases/new">https://github.com/opensciencegrid/osg-vo-config/releases/new</a></li>
+<li>In the "Tag version" field, enter <code>release-&lt;NN&gt;</code> (eg, <code>release-85</code>)</li>
+<li>If you are creating this tag on GitHub, click the "Target" dropdown button, and under the "Recent Commits" tab, make
+    sure to select the commit you used when creating the tarball
+    (It should be the first one)</li>
+<li>In the "Release title" field, enter <code>&lt;MONTH&gt; &lt;YEAR&gt; VO Package Release &lt;NN&gt;</code>
+    (eg, <code>December 2018 VO Package Release 85</code>)</li>
+<li>
+<p>In the release description, list the changes in this release and their associated ticket numbers, similar to the new
+    <code>%changelog</code> entry added in the rpm spec file</p>
+<p>(You can view the <a href="https://github.com/opensciencegrid/osg-vo-config/releases">releases</a> page for examples)
+-   Click the "Publish release" button</p>
+</li>
+</ul>
+<h2 id="promotion-to-testing-and-release">Promotion to Testing and Release:<a class="headerlink" href="#promotion-to-testing-and-release" title="Permanent link">&para;</a></h2>
 <p>Read <a href="../../release/release-policy">Release Policy</a>.</p>
-<p>These should be synchronized internally with other GOC update activities.</p>
+<p>Note that the <code>vo-client</code> package frequently is part of a separate <code>-data</code> release; it does not necessarily have to
+wait for the main release cycle.</p>
                 
                   
                 
