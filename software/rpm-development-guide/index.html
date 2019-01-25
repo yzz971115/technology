@@ -453,6 +453,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#typical-workflow-when-building-out-of-github-repos" title="Typical workflow when building out of GitHub repos" class="md-nav__link">
+    Typical workflow when building out of GitHub repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#advanced-features-for-git-and-github-repos" title="Advanced features for Git and GitHub repos" class="md-nav__link">
     Advanced features for Git and GitHub repos
   </a>
@@ -2133,6 +2140,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#typical-workflow-when-building-out-of-github-repos" title="Typical workflow when building out of GitHub repos" class="md-nav__link">
+    Typical workflow when building out of GitHub repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#advanced-features-for-git-and-github-repos" title="Advanced features for Git and GitHub repos" class="md-nav__link">
     Advanced features for Git and GitHub repos
   </a>
@@ -2695,6 +2709,23 @@ If you are uncertain, or have a new project that you want mirrored, send email t
 </div>
 <p>In addition, if the repository contains a file called <code>rpm/&lt;PROJECT&gt;.spec</code>, it will be used as the spec file for the build
 (unless overridden in the <code>osg</code> directory).</p>
+<h5 id="typical-workflow-when-building-out-of-github-repos">Typical workflow when building out of GitHub repos<a class="headerlink" href="#typical-workflow-when-building-out-of-github-repos" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Fork the repository of the package that you would like to build</li>
+<li>Create a new branch in your fork</li>
+<li>Make, commit, and push changes to your new branch</li>
+<li>In your fork, tag the commit that you would like to build</li>
+<li>In the <code>upstream/osg.github.source</code>, change the repo to point at your fork and tag</li>
+<li>Attempt a scratch build</li>
+<li>If the build fails, remove the tag and repeat steps 3-6</li>
+<li>Submit a PR to merge changes upstream</li>
+<li>Tag the final version on the upstream fork</li>
+<li>Build the version that will go through the normal software cycle</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Packaging-only changes should be tagged with a release number of the format <code>v&lt;version&gt;-&lt;release&gt;</code>, e.g. <code>v3.4.23-2</code></p>
+</div>
 <h5 id="advanced-features-for-git-and-github-repos">Advanced features for Git and GitHub repos<a class="headerlink" href="#advanced-features-for-git-and-github-repos" title="Permanent link">&para;</a></h5>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
