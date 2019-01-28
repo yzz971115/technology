@@ -1912,7 +1912,7 @@
                 
                 <h1 id="osg-technology-area-meeting-28-january-2019">OSG Technology Area Meeting, 28 January 2019<a class="headerlink" href="#osg-technology-area-meeting-28-january-2019" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>   </p>
+<strong>Attending:</strong> BrianL, Carl, Edgar, MarcoM, Mat, TimT  </p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <p>Operations F2F meeting to Tues-Thurs (<a href="https://indico.fnal.gov/event/19580/">https://indico.fnal.gov/event/19580/</a>)  </p>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
@@ -1964,14 +1964,19 @@
 <li>XCache container due at the end of the month</li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>Hold off on tagging XCache 1.0.1 since container work is still ongoing and finding issues</li>
+<li>AI (BrianL): follow-up with Marco regarding signal trapping in the blahp</li>
+<li>Stash Cache and Origin registrations need to authZ updates before the release of XCache 1.0</li>
+</ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
 <li>AGLT2 (BrianL): high load on some worker nodes (<code>ls /tmp hangs</code>) with some ATLAS jobs using 100% of swap</li>
 <li>FNAL (BrianL): Issues with the HTCondor accounting fix, Farrukh is in direct contact with the HTCondor team</li>
-<li>Georgia Tech (Edgar): Cache registration needs to be updated to support XCache 1.0</li>
-<li>Internet2 (Edgar): Bug in CVMFS fault-tolerance that is being addressed upstream</li>
-<li>Notre Dame (Edgar): issue with accessing Boone and other FNAL experiments from Stash Cache. Turned out to be an issue with two old squids at the UW CMS T2 that were open to the public and that IceCube depended on these squids so they can't be turned down. IceCube and Edgar will work on solutions so that they don't rely on the UW squids any longer.</li>
+<li>Georgia Tech (Edgar): Initial cache registration is complete</li>
+<li>Ice Cube (Edgar): Edgar set up a public squid for Ice Cube so that UW-Madison's CMS T2 can retire their public squids</li>
+<li>Purdue (Marco): Glideins ignoring SIGTERM because the <code>pbs_script.sh</code> wrapper script created by the BLAHP is trapping signals and not forwarding them</li>
+<li>UERJ (Mat): Job router is ignoring jobs in the CE queue, discussing the issue with the HTCondor team</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -2047,29 +2052,15 @@
 <li>AI (TimT): Ping Marian to test xrootd-lcmaps</li>
 </ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
-<ul>
-<li>OSG Ops meeting next week, investigations is deeply involved in ops.</li>
-<li>Lots of changes to the perfsonar infrastructure software.  Should be in "testing mode" this week.</li>
-<li>Lots of performance tests by the experiments that may lead to xrootd bug reports which we will be facilitating.</li>
-<li>
-<p>GRACC updates for hosted CE gratia probe fixes.  Will need to do some data analaytics.</p>
-</li>
-<li>
-<p>Need an update - Re-organize caches behind redirectors to split load with I2 caches. Nebraska and KC cache first. Need to register the redirector with the cache discovery methods.</p>
-</li>
-<li>Need an update - Perfsonar mesh for the StashCache nodes, or at least nearby nodes.</li>
-</ul>
-<p>Done last week:  </p>
-<ul>
-<li>Some more SciTokens</li>
-</ul>
+<p>Edgar is working with a student to do load tests of authorized reads of LIGO data from a cache.
+They've noticed some issues when there are thousands of clients trying to read the data and will investigate it further this week.</p>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://opensciencegrid.atlassian.net/projects/GRACC">GRACC Project</a></li>
 <li><a href="http://opensciencegrid.org/docs/data/stashcache/overview/">StashCache Project</a></li>
 </ul>
 <h3 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h3>
-<p>AI (Edgar): Coordinate with BrianL and Mat for k8s-ization of StashCache origin and hosted CEs</p>
+<p>None this week</p>
                 
                   
                 
