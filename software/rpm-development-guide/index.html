@@ -2797,13 +2797,6 @@ The extension must be <code>.tar.gz</code>, no other archive formats are support
 The directory inside the tarball will then be <code>&lt;NAME&gt;/</code>.</p>
 </li>
 <li>
-<p>Can specify hash and tarball instead of tag (scratch and local builds only):</p>
-<p>For local builds (rpmbuild and mock tasks) and Koji scratch builds,
-you can omit the <code>tag</code> attribute and use only the hash to determine what to check out.
-You <em>must</em> specify the <code>tarball</code> attribute in this case.
-Non-scratch Koji builds will still require a tag.</p>
-</li>
-<li>
 <p>Can ignore hash mismatch (scratch and local builds only):</p>
 <p>For local builds (rpmbuild and mock tasks) and Koji scratch builds, a hash mismatch will result in a warning.
 Non-scratch Koji builds will still consider it an error.</p>
