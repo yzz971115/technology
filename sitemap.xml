@@ -136,6 +136,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://opensciencegrid.github.io/technology/policy/cream-support/</loc>
+     <lastmod>2019-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://opensciencegrid.github.io/technology/policy/service-migrations-spring-2018/</loc>
      <lastmod>2019-02-21</lastmod>
      <changefreq>daily</changefreq>

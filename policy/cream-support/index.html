@@ -12,7 +12,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://opensciencegrid.github.io/technology/policy/flexible-release-model/">
+        <link rel="canonical" href="https://opensciencegrid.github.io/technology/policy/cream-support/">
       
       
       
@@ -39,7 +39,7 @@
     
     
       
-        <title>Flexible Release Model - OSG Technology Area</title>
+        <title>CREAM-CE Support - OSG Technology Area</title>
       
     
     
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#osg-software-flexible-release-model" tabindex="1" class="md-skip">
+      <a href="#osghtcondor-cream-ce-support" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -121,7 +121,7 @@
                 OSG Technology Area
               </span>
               <span class="md-header-nav__topic">
-                Flexible Release Model
+                CREAM-CE Support
               </span>
             
           
@@ -677,11 +677,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../cream-support/" title="CREAM-CE Support" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        CREAM-CE Support
+      </label>
+    
+    <a href="./" title="CREAM-CE Support" class="md-nav__link md-nav__link--active">
       CREAM-CE Support
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -773,56 +811,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Flexible Release Model
-      </label>
-    
-    <a href="./" title="Flexible Release Model" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../flexible-release-model/" title="Flexible Release Model" class="md-nav__link">
       Flexible Release Model
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-model" title="Release Model" class="md-nav__link">
-    Release Model
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1752,15 +1745,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-model" title="Release Model" class="md-nav__link">
-    Release Model
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
   </a>
   
 </li>
@@ -1781,36 +1767,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/flexible-release-model.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/opensciencegrid/technology/edit/master/docs/policy/cream-support.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="osg-software-flexible-release-model">OSG Software Flexible Release Model<a class="headerlink" href="#osg-software-flexible-release-model" title="Permanent link">&para;</a></h1>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>Before November 2017, the OSG software stack was released on the second Tuesday of each month, except in the case of urgent releases, which were infrequent. This schedule had been in place since early 2013. Since then, conditions within and outside of the Software team have changed, and we have adjusted the release schedule and associated processes.</p>
-<p>The previous release model had the recurring problem of a "release crunch," where it was difficult to find the effort required to test large changes before their deadline had passed. Sometimes the lack of timely effort led to software being pushed to the next release (a month later), because there was insufficient testing time.</p>
-<p>Based on software support tickets, we noticed that many sites follow a local update schedule that is independent of the OSG Release team schedule; some sites upgrade every few months, skipping interim releases, other sites upgrade individual packages as needed. In addition, upstream software developers do not follow our release schedule either, releasing software on their own development timelines. As a result, some site administrators would prefer to have OSG software updates more often, closer to when they become available, rather than tied to a monthly cycle.</p>
-<p>For these reasons, we created a new release model.</p>
-<h2 id="release-model">Release Model<a class="headerlink" href="#release-model" title="Permanent link">&para;</a></h2>
-<p>The OSG Release team releases batches of integrated, tested software on an ad hoc basis, with the process outlined below (changes from the old process are highlighted):</p>
-<ol>
-<li>
-<p>Software and Release Team members develop packages and mark them for testing</p>
-</li>
-<li>
-<p>Software and Release Team members test the packages, possibly with help from the community</p>
-</li>
-<li>
-<p>Once adequate testing is complete and successful, the Release Manager approves packages for release</p>
-</li>
-<li>
-<p><strong>Weekly, the Release Manager evaluates packages that are ready for release; when a sufficient number of important packages are ready</strong>[1]<strong>, the Release Manager schedules a release date and announces it. For urgent changes, the Release Manager evaluates the packages as soon as they are tested</strong></p>
-</li>
-<li>
-<p>The Software and Release Team performs pre-release testing, releases the packages, and announces the release</p>
-</li>
-</ol>
-<p>Note: The release dates of parallel release series (e.g., 3.3 and 3.4) do not have to coincide, as they have in the past.</p>
-<p>[1] The threshold for “sufficient number of important packages” is determined by the Release Manager, with input from the other Technology Area leaders.</p>
+                <h1 id="osghtcondor-cream-ce-support">OSG/HTCondor CREAM-CE Support<a class="headerlink" href="#osghtcondor-cream-ce-support" title="Permanent link">&para;</a></h1>
+<p>The CREAM working group has <a href="#Reference">recently announced</a> official support for the
+CREAM-CE will cease in December 2020.  With this email, we are soliciting
+feedback on OSG and HTCondor’s transition plan.  OSG and HTCondor remain committed
+to supporting VOs who need to access to CREAM-CE based resources throughout the
+transition period; we will continue to support submission to CREAM-CE endpoints
+and offer assistance to VOs to manage the transition.</p>
+<p>OSG runs a glidein submission service that submits to grid infrastructures worldwide
+on behalf of dozens of science projects.  This service currently submits to
+approximately 100 CREAM-CE endpoints; we will continue to maintain the capability
+to access these endpoints while we assist sites in testing and enabling ARC-CE
+and/or HTCondor-CE replacement services.</p>
+<p>The HTCondor team plans to support the CREAM-CE on EL6/7 in the 8.8.x stable release
+series and will maintain support for 8.8.x through December 2020.  CREAM-CE support
+will remain enabled at the start of the 8.9.x developer series; in early 2020, the
+HTCondor team will re-evaluate, based on community need, whether CREAM-CE support
+will be available in the next stable series.</p>
+<p>We realize that software retirements can be very disruptive; the OSG and HTCondor
+teams are committed to assisting user communities through the process.  If you
+believe our plan does not fit the needs of your user community, please contact
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;">&#104;&#101;&#108;&#112;&#64;&#111;&#112;&#101;&#110;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#103;&#114;&#105;&#100;&#46;&#111;&#114;&#103;</a>.</p>
+<p>Regards,</p>
+<p>Brian Bockelman, OSG Technology Area Coordinator</p>
+<p>Todd Tannenbaum, HTCondor Technical Lead</p>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://operations-portal.egi.eu/broadcast/archive/2293">EGI broadcast about CREAM retirement</a>;
+the EGI link requires authentication; statement has been reproduced below:</p>
+<blockquote>
+<p>Dear Users </p>
+<p>The CREAM working group has announced that official support for the CREAM-CE component will
+cease at the end of the EOSC-hub project, i.e. in Dec 2020. To prepare for this, EGI
+Foundation and CERN are actively working to help to minimise disruption. This will include
+helping users migrate to alternative solutions, i.e. ARC-CE or HTCondor-CE. </p>
+<p>The CREAM working group will be providing full support until the end of 2019, including one
+minor release already scheduled. During 2020 only security updates will be released. </p>
+<p>If you have any concerns or queries, please open a support ticket at https://ggus.eu/ </p>
+<p>Best regards </p>
+<p>EGI Foundation and CERN Operations Teams</p>
+</blockquote>
                 
                   
                 
@@ -1831,7 +1829,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../external-oasis-repos/" title="OASIS Repository Mirroring" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../release/acceptance-testing/" title="Acceptance Testing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1840,19 +1838,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                OASIS Repository Mirroring
+                Acceptance Testing
               </span>
             </div>
           </a>
         
         
-          <a href="../../infrastructure/koji-restore-recipe/" title="Koji Restore Recipe" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../service-migrations-spring-2018/" title="Service Migrations - Spring 2018" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Koji Restore Recipe
+                Service Migrations - Spring 2018
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
