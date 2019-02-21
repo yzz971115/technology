@@ -2622,18 +2622,23 @@ See the <a href="#upstream">upstream dir info</a> for more information.</p>
 which start with <code>#</code> and continue until the end of the line.
 It is useful to add the source of the upstream file into a comment.</p>
 <h6 id="cached-files">Cached files<a class="headerlink" href="#cached-files" title="Permanent link">&para;</a></h6>
-<p>To reference files in the upstream source cache, use the upstream source cache path defined above, without the prefix component:</p>
+<p>To reference files in the upstream source cache, use the upstream source cache path defined above,
+without the prefix component, followed by the sha1sum of the file:</p>
 <blockquote>
-<p><code>&lt;PACKAGE&gt;/&lt;VERSION&gt;/&lt;FILE&gt;</code></p>
+<p><code>&lt;PACKAGE&gt;/&lt;VERSION&gt;/&lt;FILE&gt; sha1sum=&lt;SHA1SUM&gt;</code></p>
 </blockquote>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>The reference file for <code>globus-common</code>'s source tarball is named <code>epel.srpm.source</code> and contains:</p>
-<div class="codehilite"><pre><span></span>globus-common/16.4/globus-common-16.4-1.el6.src.rpm
+<div class="codehilite"><pre><span></span>globus-common/16.4/globus-common-16.4-1.el6.src.rpm sha1sum=134478c56c2437c335c20636831f794b66290bec
 # Downloaded from &#39;http://dl.fedoraproject.org/pub/epel/6/SRPMS/globus-common-16.4-1.el6.src.rpm&#39;
 </pre></div>
 
 
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The sha1sum can be obtained by running the <code>sha1sum</code> command with the source file as an argument.</p>
 </div>
 <h6 id="git-repos">Git repos<a class="headerlink" href="#git-repos" title="Permanent link">&para;</a></h6>
 <div class="admonition warning">
