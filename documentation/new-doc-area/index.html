@@ -1669,12 +1669,12 @@
 <p>Create a new repository in the <a href="https://github.com/organizations/opensciencegrid/repositories/new">opensciencegrid organization</a> (referred to as <code>&lt;REPO NAME&gt;</code> in the rest of this document)</p>
 <ol>
 <li>Check the box marked <code>Initialize this repository with a README</code></li>
-<li>Once created, add the <code>mkdocs</code> topic by clicking on the "Add topics" button</li>
+<li>Once created, add the <code>mkdocs</code> topic by clicking on the "Manage topics" link</li>
 </ol>
 </li>
 <li>
 <p>Clone the repository and <code>cd</code> into the directory:</p>
-<div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/&lt;REPO NAME&gt;
+<div class="codehilite"><pre><span></span>git clone https://github.com/opensciencegrid/&lt;REPO NAME&gt;.git
 cd &lt;REPO NAME&gt;
 </pre></div>
 
@@ -1723,7 +1723,7 @@ cd &lt;REPO NAME&gt;
 
 </li>
 <li>
-<p>Add and commit your files:</p>
+<p>Stage and commit your files:</p>
 <div class="codehilite"><pre><span></span>git add LICENSE mkdocs.yml docs deploy-key.enc
 git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 </pre></div>
