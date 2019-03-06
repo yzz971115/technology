@@ -1663,18 +1663,23 @@
                 
                 
                 <h1 id="creating-a-new-area">Creating a New Area<a class="headerlink" href="#creating-a-new-area" title="Permanent link">&para;</a></h1>
-<p>This document contains instructions for creating a new top-level OSG website via <a href="https://pages.github.com/">GitHub Pages</a> and deploying it automatically with <a href="https://travis-ci.org/">Travis-CI</a>. Before starting, make sure that you have the <code>git</code> and <code>gem</code> tools installed.</p>
+<p>This document contains instructions for creating a new top-level OSG website via <a href="https://pages.github.com/">GitHub Pages</a>
+and deploying it automatically with <a href="https://travis-ci.org/">Travis-CI</a>.
+This document assumes that you are an administrator of the <code>opensciencegrid</code> GitHub organization.
+Before starting, make sure that you have the <code>git</code> and <code>gem</code> tools installed.</p>
 <ol>
 <li>
-<p>Create a new repository in the <a href="https://github.com/organizations/opensciencegrid/repositories/new">opensciencegrid organization</a> (referred to as <code>&lt;REPO NAME&gt;</code> in the rest of this document)</p>
+<p>Create a new repository in the <a href="https://github.com/organizations/opensciencegrid/repositories/new">opensciencegrid organization</a>
+   (referred to as <code>&lt;REPO NAME&gt;</code> in the rest of this document)</p>
 <ol>
 <li>Check the box marked <code>Initialize this repository with a README</code></li>
 </ol>
 </li>
 <li>
-<p>Identify the repository as using mkdocs</p>
+<p>Identify the repository as using mkdocs:</p>
 <ol>
-<li>On the repository home page (i.e., https://github.com/opensciencegrid/<REPO NAME>), click the “Manage topics” link</li>
+<li>On the repository home page (i.e., <code>https://github.com/opensciencegrid/&lt;REPO NAME&gt;</code>), click the “Manage topics”
+   link</li>
 <li>Search for <code>mkdocs</code> and select <code>mkdocs</code></li>
 <li>Click the “Done” button</li>
 </ol>
@@ -1695,22 +1700,19 @@ cd &lt;REPO NAME&gt;
 
 </li>
 <li>
-<p>Update the contents of <code>README.md</code> and populate the <code>LICENSE</code> file with a <a href="https://creativecommons.org/licenses/by/4.0/legalcode.txt">Creative Commons Attribution 4.0 license</a>:</p>
+<p>Update the contents of <code>README.md</code> and populate the <code>LICENSE</code> file with a
+   <a href="https://creativecommons.org/licenses/by/4.0/legalcode.txt">Creative Commons Attribution 4.0 license</a>:</p>
 <div class="codehilite"><pre><span></span>wget https://creativecommons.org/licenses/by/4.0/legalcode.txt &gt; LICENSE
 </pre></div>
 
 
 </li>
 <li>
-<p>Follow <a href="https://github.com/opensciencegrid/doc-ci-scripts#travis-ci-documentation-scripts">these instructions</a> to add the <code>doc-ci-scripts</code> sub-module</p>
-</li>
-<li>Create <code>mkdocs.yml</code> and a <code>docs</code> directory</li>
-<li>
 <p>Create and encrypt the repository deploy key</p>
 <ol>
 <li>
 <p>Generate the repository deploy key:</p>
-<div class="codehilite"><pre><span></span>ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-key
+<div class="codehilite"><pre><span></span>ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-key -N &#39;&#39;
 </pre></div>
 
 
@@ -1718,6 +1720,20 @@ cd &lt;REPO NAME&gt;
 <li>
 <p>Install the <code>travis</code> gem:</p>
 <div class="codehilite"><pre><span></span>gem install travis
+</pre></div>
+
+
+</li>
+<li>
+<p>Login using your GitHub credentials:</p>
+<div class="codehilite"><pre><span></span>travis login
+</pre></div>
+
+
+</li>
+<li>
+<p>Enable the repository in Travis:</p>
+<div class="codehilite"><pre><span></span>travis enable opensciencegrid/&lt;REPO NAME&gt;
 </pre></div>
 
 
@@ -1731,7 +1747,7 @@ cd &lt;REPO NAME&gt;
 </li>
 <li>
 <p>Stage and commit your files:</p>
-<div class="codehilite"><pre><span></span>git add LICENSE mkdocs.yml docs deploy-key.enc
+<div class="codehilite"><pre><span></span>git add LICENSE README.md deploy-key.enc
 git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 </pre></div>
 
@@ -1742,10 +1758,45 @@ git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 </div>
 </li>
 <li>
-<p>Add <code>deploy-key.pub</code> to your repository's list of <a href="https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys">deploy keys</a>.
+<p>Add the contents of <code>deploy-key.pub</code> to your repository's list of
+   <a href="https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys">deploy keys</a>.
    Make sure to check <code>Allow write access</code>.</p>
 </li>
 </ol>
+</li>
+<li>
+<p>Follow <a href="https://github.com/opensciencegrid/doc-ci-scripts#travis-ci-documentation-scripts">these instructions</a> to add
+   the <code>doc-ci-scripts</code> sub-module</p>
+</li>
+<li>
+<p>Create <code>mkdocs.yml</code> containing the following:</p>
+<div class="codehilite"><pre><span></span>site_name: &lt;TITLE OF YOUR SITE&gt;
+site_url: https://opensciencegrid.org/&lt;REPO NAME&gt;
+repo_name: https://github.com/opensciencegrid/&lt;REPO NAME&gt;
+
+pages:
+  - Home: &#39;index.md&#39;
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc(permalink=true)
+  - toc:
+      permalink: True
+</pre></div>
+
+
+</li>
+<li>
+<p>Create a <code>docs</code> directory containing an <code>index.md</code> that will be your home page.</p>
+</li>
+<li>
+<p>Stage and commit these changes:</p>
+<div class="codehilite"><pre><span></span>git add mkdocs.yml docs/index.md
+git commit -m &quot;Staging initial web page contents&quot;
+</pre></div>
+
+
 </li>
 <li>
 <p>Push local changes to the GitHub repository:</p>
