@@ -1864,9 +1864,13 @@
                 
                 <h1 id="osg-technology-area-meeting-11-march-2019">OSG Technology Area Meeting, 11 March 2019<a class="headerlink" href="#osg-technology-area-meeting-11-march-2019" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong>   </p>
+<strong>Attending:</strong> BrianL, Carl, Derek, Edgar, Mat, TimT</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
-<p>HOW 2019 site admin training Thurs morning  </p>
+<ul>
+<li>HOW 2019 site admin training Thurs morning</li>
+<li>Edgar will be attending the Singularity user group meeting Tue/Wed</li>
+<li>Edgar won't be at the AHM</li>
+</ul>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
 <ul>
 <li>This week: Carl</li>
@@ -1907,18 +1911,32 @@
 </table>
 <h2 id="osg-software-team">OSG Software Team<a class="headerlink" href="#osg-software-team" title="Permanent link">&para;</a></h2>
 <ul>
-<li>3.4.25  <ul>
+<li>3.4.26<ul>
 <li>AI (Carl, Mat): Tag and build new osg-build</li>
 <li>AI (Mat): Is XCache 1.0.2 ready?</li>
 <li>GlideinWMS 3.4.4 and XRootD 4.9.1 expected this week</li>
 </ul>
 </li>
+<li>Update your koji configuration with <code>osg-koji setup</code> this week</li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
-<p>None this week  </p>
+<ul>
+<li>You can use the 'latest' branch from the osg-build GitHub repository if you'd like the latest released version of osg-build</li>
+<li>Mat has tested stash-cache 1.0.2 but not the origin.
+    We decided that we should not hold the tag and build back for extensive origin testing since there are so many tickets.</li>
+<li>We don't believe we'll have to rebuild the various XRootD plugins for 4.9.1</li>
+<li>Carl thinks he has a simple fix for Bockjoo's missing accounting records and will coordinate with Derek for applying it.
+    We discussed that we should test this on a few records first before running it over the entirety of the folder</li>
+<li>Carl contacted slurm-users about the supported Slurm versions but only got a sales pitch.
+    Derek will get us the version that UNL uses and we will likely use the version that we test in the nightlies as a baseline.</li>
+</ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
-<li>UFL (Carl, Derek): Missing January accounting records due to a Slurm update that broke our database queries.<br />
+<li>JLab (Edgar): Gratia probe was misconfigured so we haven't been getting records for a few months.
+    Gratia was failing immediately so there's a good chance that the history files are still there and that we can fix the configuration and get all of the missing records.</li>
+<li>StashCache (Edgar): the European StashCache is being overly utilized, users in Europe are being routed to NYC back to Amsterdam.
+    Edgar will coordinate with Geant to try and get this fixed.</li>
+<li>UFL (Carl, Derek): Missing January accounting records due to a Slurm update that broke our database queries.
     Bockjoo has a workaround that has temporarily solved this issue but we'd like to solve this more sustainably (SOFTWARE-1588).</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
