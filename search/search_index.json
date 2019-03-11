@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area!\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nTim Cartwright (5%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n   (\nsubscribe\n)\n\n\nSlack channel\n - if you can't create an account, send an e-mail to \nosg-software@opensciencegrid.org\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n4 March 2019\n\n\n25 February 2019\n\n\n18 February 2019\n\n\n11 February 2019\n\n\n4 February 2019\n\n\n28 January 2019\n\n\n22 January 2019\n (MLK Jr. Day)\n\n\n14 January 2019\n\n\n7 January 2019\n\n\n31 December 2018 (Canceled - New Year's Eve)\n\n\n24 December 2018 (Canceled - Christmas Eve)\n\n\n17 December 2018\n\n\n10 December 2018\n\n\n3 December 2018\n\n\n26 November 2018\n\n\n19 November 2018\n\n\n12 November 2018\n\n\n5 November 2018\n\n\n29 October 2018\n\n\n22 October 2018\n\n\n15 October 2018\n\n\n8 October 2018\n\n\n1 October 2018\n\n\n24 September 2018\n\n\n17 September 2018\n\n\n10 September 2018\n\n\n3 September 2018 (Canceled - Labor Day)\n\n\n27 August 2018\n\n\n20 August 2018\n\n\n13 August 2018\n\n\n6 August 2018\n\n\n30 July 2018\n\n\n23 July 2018\n\n\n16 July 2018\n\n\n9 July 2018 (Canceled - OSG User School)\n\n\n2 July 2018\n\n\n25 June 2018\n\n\n18 June 2018\n\n\n11 June 2018\n\n\n4 June 2018\n\n\n29 May 2018\n - Memorial Day\n\n\n21 May 2018 (Canceled - HTCondor Week)\n\n\n14 May 2018\n\n\n7 May 2018\n\n\n30 April 2018\n\n\n23 April 2018\n\n\n16 April 2018\n\n\n9 April 2018\n\n\n2 April 2018\n\n\n26 March 2018 (Canceled)\n\n\n19 March 2018 (Canceled - OSG All Hands)\n\n\n12 March 2018\n\n\n5 March 2018\n\n\n26 February 2018\n\n\n19 February 2018\n\n\n12 February 2018\n\n\n5 February 2018\n\n\n29 January 2018\n\n\n22 January 2018\n\n\n15 January 2018 (Canceled - MLK day)\n\n\n8 January 2018\n\n\n2 January 2018\n\n\n\n\nArchived notes\n\n\n\n\nMeeting note archives older than January 1, 2018 and oler than February 27, 2017 can be found\n  \nhere\n\n\nMeeting note archives older than February 27, 2017 can be found\n  \nhere\n.", 
+            "text": "OSG Technology Area\n\n\nWelcome to the home page of the OSG Technology Team documentation area!\n\n\nIf you are looking for site administrator documentation, please visit the \nOSG Documentation page\n.\n\n\nThe Team\n\n\n\n\n\n\n\n\nSoftware and Release\n\n\nTechnology\n\n\n\n\n\n\n\n\n\n\nBrian Lin (software manager)\n\n\nBrian Bockelman (manager) (50%)\n\n\n\n\n\n\nCarl Edquist\n\n\nDerek Weitzel (50%)\n\n\n\n\n\n\nEdgar Fajardo (50%)\n\n\nEdgar Fajardo (50%)\n\n\n\n\n\n\nMat Selmeci\n\n\nJeff Dost (50%)\n\n\n\n\n\n\nTim Cartwright (5%)\n\n\nMarian Zvada (25%)\n\n\n\n\n\n\nTim Theisen (release manager) (50%)\n\n\n\n\n\n\n\n\n\n\nContact Us\n\n\n\n\nosg-software@opensciencegrid.org\n - General discussion amongst team members\n   (\nsubscribe\n)\n\n\nSlack channel\n - if you can't create an account, send an e-mail to \nosg-software@opensciencegrid.org\n\n\nosg-commits@cs.wisc.edu\n - Broadcast of all source code repo commits\n\n\n\n\nMeeting Notes\n\n\nWhen:\n Every Monday, 11:00 a.m. (U.S. Central)  \n\n\nWhere:\n +1 719-284-5267, PIN #57363; \nUber Conference\n\n\nRecent Notes\n\n\n\n\n11 March 2019\n\n\n4 March 2019\n\n\n25 February 2019\n\n\n18 February 2019\n\n\n11 February 2019\n\n\n4 February 2019\n\n\n28 January 2019\n\n\n22 January 2019\n (MLK Jr. Day)\n\n\n14 January 2019\n\n\n7 January 2019\n\n\n31 December 2018 (Canceled - New Year's Eve)\n\n\n24 December 2018 (Canceled - Christmas Eve)\n\n\n17 December 2018\n\n\n10 December 2018\n\n\n3 December 2018\n\n\n26 November 2018\n\n\n19 November 2018\n\n\n12 November 2018\n\n\n5 November 2018\n\n\n29 October 2018\n\n\n22 October 2018\n\n\n15 October 2018\n\n\n8 October 2018\n\n\n1 October 2018\n\n\n24 September 2018\n\n\n17 September 2018\n\n\n10 September 2018\n\n\n3 September 2018 (Canceled - Labor Day)\n\n\n27 August 2018\n\n\n20 August 2018\n\n\n13 August 2018\n\n\n6 August 2018\n\n\n30 July 2018\n\n\n23 July 2018\n\n\n16 July 2018\n\n\n9 July 2018 (Canceled - OSG User School)\n\n\n2 July 2018\n\n\n25 June 2018\n\n\n18 June 2018\n\n\n11 June 2018\n\n\n4 June 2018\n\n\n29 May 2018\n - Memorial Day\n\n\n21 May 2018 (Canceled - HTCondor Week)\n\n\n14 May 2018\n\n\n7 May 2018\n\n\n30 April 2018\n\n\n23 April 2018\n\n\n16 April 2018\n\n\n9 April 2018\n\n\n2 April 2018\n\n\n26 March 2018 (Canceled)\n\n\n19 March 2018 (Canceled - OSG All Hands)\n\n\n12 March 2018\n\n\n5 March 2018\n\n\n26 February 2018\n\n\n19 February 2018\n\n\n12 February 2018\n\n\n5 February 2018\n\n\n29 January 2018\n\n\n22 January 2018\n\n\n15 January 2018 (Canceled - MLK day)\n\n\n8 January 2018\n\n\n2 January 2018\n\n\n\n\nArchived notes\n\n\n\n\nMeeting note archives older than January 1, 2018 and oler than February 27, 2017 can be found\n  \nhere\n\n\nMeeting note archives older than February 27, 2017 can be found\n  \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#recent-notes", 
-            "text": "4 March 2019  25 February 2019  18 February 2019  11 February 2019  4 February 2019  28 January 2019  22 January 2019  (MLK Jr. Day)  14 January 2019  7 January 2019  31 December 2018 (Canceled - New Year's Eve)  24 December 2018 (Canceled - Christmas Eve)  17 December 2018  10 December 2018  3 December 2018  26 November 2018  19 November 2018  12 November 2018  5 November 2018  29 October 2018  22 October 2018  15 October 2018  8 October 2018  1 October 2018  24 September 2018  17 September 2018  10 September 2018  3 September 2018 (Canceled - Labor Day)  27 August 2018  20 August 2018  13 August 2018  6 August 2018  30 July 2018  23 July 2018  16 July 2018  9 July 2018 (Canceled - OSG User School)  2 July 2018  25 June 2018  18 June 2018  11 June 2018  4 June 2018  29 May 2018  - Memorial Day  21 May 2018 (Canceled - HTCondor Week)  14 May 2018  7 May 2018  30 April 2018  23 April 2018  16 April 2018  9 April 2018  2 April 2018  26 March 2018 (Canceled)  19 March 2018 (Canceled - OSG All Hands)  12 March 2018  5 March 2018  26 February 2018  19 February 2018  12 February 2018  5 February 2018  29 January 2018  22 January 2018  15 January 2018 (Canceled - MLK day)  8 January 2018  2 January 2018", 
+            "text": "11 March 2019  4 March 2019  25 February 2019  18 February 2019  11 February 2019  4 February 2019  28 January 2019  22 January 2019  (MLK Jr. Day)  14 January 2019  7 January 2019  31 December 2018 (Canceled - New Year's Eve)  24 December 2018 (Canceled - Christmas Eve)  17 December 2018  10 December 2018  3 December 2018  26 November 2018  19 November 2018  12 November 2018  5 November 2018  29 October 2018  22 October 2018  15 October 2018  8 October 2018  1 October 2018  24 September 2018  17 September 2018  10 September 2018  3 September 2018 (Canceled - Labor Day)  27 August 2018  20 August 2018  13 August 2018  6 August 2018  30 July 2018  23 July 2018  16 July 2018  9 July 2018 (Canceled - OSG User School)  2 July 2018  25 June 2018  18 June 2018  11 June 2018  4 June 2018  29 May 2018  - Memorial Day  21 May 2018 (Canceled - HTCondor Week)  14 May 2018  7 May 2018  30 April 2018  23 April 2018  16 April 2018  9 April 2018  2 April 2018  26 March 2018 (Canceled)  19 March 2018 (Canceled - OSG All Hands)  12 March 2018  5 March 2018  26 February 2018  19 February 2018  12 February 2018  5 February 2018  29 January 2018  22 January 2018  15 January 2018 (Canceled - MLK day)  8 January 2018  2 January 2018", 
             "title": "Recent Notes"
         }, 
         {
@@ -2414,6 +2414,71 @@
             "location": "/documentation/markdown-migration/#reviewing-pull-requests", 
             "text": "To review pull requests,  cd  into the dir containing your git repository and check out the requester's branch, which the twiki-converter container should automatically notice. Here's an example checking out Brian's  cut-sw-release  branch of the technology repository:  #  Add the requester s repo as a remote if you haven t already user@host $  git remote add blin https://www.github.com/brianhlin/technology.git user@host $  git fetch --all user@host $  git checkout blin/cut-sw-release  Refresh your browser and navigate to the document in the request.", 
             "title": "Reviewing pull requests"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/", 
+            "text": "OSG Technology Area Meeting, 11 March 2019\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\n\nHOW 2019 site admin training Thurs morning  \n\n\nTriage Duty\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n4 (-1) open tickets\n\n\n\n\nJIRA\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\n\nState\n\n\n\n\n\n\n\n\n\n\n162\n\n\n+3\n\n\nOpen\n\n\n\n\n\n\n41\n\n\n+4\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n-6\n\n\nReady for Testing\n\n\n\n\n\n\n5\n\n\n-5\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\n\n\n\n3.4.25  \n\n\nAI (Carl, Mat): Tag and build new osg-build\n\n\nAI (Mat): Is XCache 1.0.2 ready?\n\n\nGlideinWMS 3.4.4 and XRootD 4.9.1 expected this week\n\n\n\n\n\n\n\n\nDiscussion\n\n\nNone this week  \n\n\nSupport Update\n\n\n\n\nUFL (Carl, Derek): Missing January accounting records due to a Slurm update that broke our database queries.\n\n    Bockjoo has a workaround that has temporarily solved this issue but we'd like to solve this more sustainably (SOFTWARE-1588).\n\n\n\n\nOSG Release Team\n\n\n\n\n\n\n\n\n3.4.25\n\n\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n10\n\n\n-1\n\n\nOpen\n\n\n\n\n\n\n12\n\n\n+1\n\n\nIn Progress\n\n\n\n\n\n\n4\n\n\n+0\n\n\nReady for Testing\n\n\n\n\n\n\n5\n\n\n+3\n\n\nReady for Release\n\n\n\n\n\n\n1\n\n\n+0\n\n\nClosed\n\n\n\n\n\n\n32\n\n\n+3\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.25  \n\n\nReady for Testing  \n\n\nXRootD 4.9.0\n\n\ngsi-openssh\n\n\nGlobus Packages\n\n\ncctools 7.0.9\n\n\n\n\n\n\nReady for Release  \n\n\nxrootd-lcmaps 1.7.0 (EL6 and EL7)\n\n\nHTCondor 8.6.13-1.2\n\n\nKoji 1.11.1\n\n\nosg-tested-internal 3.4-7\n\n\nUpcoming  \n\n\nHTCondor 8.8.1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData - Today  \n\n\nIGTF 1.96\n\n\nVO Package v86\n\n\n\n\n\n\nOperations  \n\n\nNothing\n\n\n\n\n\n\nContrib  \n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\nHave Lincoln test gsi-openssh at GATech\n\n\nRelease what we have this week\n\n\nCheck with Dan Bradley (and Carl) about testing backup lz VOMS admin server\n\n\n\n\nOSG Investigations Team\n\n\n\n\nNew Perfsonar collectors.. sidelined.\n\n\nTicket support on topology on hold temporarily.\n\n\nCreating small script to create check\nmk\n availability spreadsheet for OSG Ops.\n\n\nNew SciTokens setup at osg-connect.  Will be following up with the osg-connect ops and user support teams.  Will need to coordinate with both.\n\n\n\n\nOngoing\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\n\nNew SciTokens setup on osg-connect only concerns HTCondor-related services", 
+            "title": "March 11, 2019"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#osg-technology-area-meeting-11-march-2019", 
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:", 
+            "title": "OSG Technology Area Meeting, 11 March 2019"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#announcements", 
+            "text": "HOW 2019 site admin training Thurs morning", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#triage-duty", 
+            "text": "This week: Carl  Next week: Edgar  4 (-1) open tickets", 
+            "title": "Triage Duty"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#jira", 
+            "text": "# of tickets   State      162  +3  Open    41  +4  In Progress    4  -6  Ready for Testing    5  -5  Ready for Release", 
+            "title": "JIRA"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#osg-software-team", 
+            "text": "3.4.25    AI (Carl, Mat): Tag and build new osg-build  AI (Mat): Is XCache 1.0.2 ready?  GlideinWMS 3.4.4 and XRootD 4.9.1 expected this week", 
+            "title": "OSG Software Team"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#discussion", 
+            "text": "None this week", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#support-update", 
+            "text": "UFL (Carl, Derek): Missing January accounting records due to a Slurm update that broke our database queries. \n    Bockjoo has a workaround that has temporarily solved this issue but we'd like to solve this more sustainably (SOFTWARE-1588).", 
+            "title": "Support Update"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#osg-release-team", 
+            "text": "3.4.25   Status      10  -1  Open    12  +1  In Progress    4  +0  Ready for Testing    5  +3  Ready for Release    1  +0  Closed    32  +3  Total      OSG 3.4.25    Ready for Testing    XRootD 4.9.0  gsi-openssh  Globus Packages  cctools 7.0.9    Ready for Release    xrootd-lcmaps 1.7.0 (EL6 and EL7)  HTCondor 8.6.13-1.2  Koji 1.11.1  osg-tested-internal 3.4-7  Upcoming    HTCondor 8.8.1        Data - Today    IGTF 1.96  VO Package v86    Operations    Nothing    Contrib    Nothing", 
+            "title": "OSG Release Team"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#discussion_1", 
+            "text": "Have Lincoln test gsi-openssh at GATech  Release what we have this week  Check with Dan Bradley (and Carl) about testing backup lz VOMS admin server", 
+            "title": "Discussion"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#osg-investigations-team", 
+            "text": "New Perfsonar collectors.. sidelined.  Ticket support on topology on hold temporarily.  Creating small script to create check mk  availability spreadsheet for OSG Ops.  New SciTokens setup at osg-connect.  Will be following up with the osg-connect ops and user support teams.  Will need to coordinate with both.", 
+            "title": "OSG Investigations Team"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#ongoing", 
+            "text": "GRACC Project  StashCache Project", 
+            "title": "Ongoing"
+        }, 
+        {
+            "location": "/meetings/2019/TechArea20190311/#discussions", 
+            "text": "New SciTokens setup on osg-connect only concerns HTCondor-related services", 
+            "title": "Discussions"
         }, 
         {
             "location": "/meetings/2019/TechArea20190304/", 
