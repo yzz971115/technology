@@ -1951,6 +1951,8 @@
     Edgar will coordinate with Geant to try and get this fixed.</li>
 <li>UFL (Carl, Derek): Missing January accounting records due to a Slurm update that broke our database queries.<br />
     Bockjoo has a workaround that has temporarily solved this issue but we'd like to solve this more sustainably (SOFTWARE-1588).</li>
+<li>Syracuse (Derek): Help with startup time of Syracuse.  Eric's goal is to fill 30k cores in ~1hour.  Is that possible?  Will talk with factory ops.</li>
+<li>GlueX (Derek): From Richard Jones' talk at HOW, https://indico.cern.ch/event/759388/contributions/3352640/.  I got the 57 page notebook of problems he had.  Will read through them to see if there are any actionable items for Bosco/HTCondor/Blahp</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -2087,9 +2089,13 @@
 </ul>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <ul>
-<li>New Perfsonar collectors.. almost done!  Waiting 24 hours for green light to switch over to production!</li>
-<li>Creating small script to create check<sub>mk</sub> availability spreadsheet for OSG Ops.  Now in development.</li>
-<li>New SciTokens setup at osg-connect.  Will be following up with the osg-connect ops and user support teams.  Will need to coordinate with both.  Created a project plan, but hit snag on the first step.  The new glideins don't work, everything else is on hold.</li>
+<li>PerfSonar collectors = DONE</li>
+<li>Lots of GRACC questions at HOW, will likely take development</li>
+<li>Moving forward with new SciTokens setup at OSG-Connect.  Need to coordinate switchover.</li>
+<li>What would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska.</li>
+<li>StashCache paper accepted to PEARC, will likely disappear into a bunker to write.</li>
+<li>Lots of good press about StashCache / Xcache at HOW.  Want to build off of that.</li>
+<li>Investigating check_mk probe that will check the status of hosted-ce's.</li>
 </ul>
 <h3 id="ongoing">Ongoing<a class="headerlink" href="#ongoing" title="Permanent link">&para;</a></h3>
 <ul>
