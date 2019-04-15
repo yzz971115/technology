@@ -1938,7 +1938,7 @@
                 
                 <h1 id="osg-technology-area-meeting-15-april-2019">OSG Technology Area Meeting, 15 April 2019<a class="headerlink" href="#osg-technology-area-meeting-15-april-2019" title="Permanent link">&para;</a></h1>
 <p><strong>Coordinates:</strong> Conference: 719-284-5267, PIN: 57363; <a href="https://www.uberconference.com/osgblin">https://www.uberconference.com/osgblin</a><br />
-<strong>Attending:</strong></p>
+<strong>Attending:</strong> BrianL, Carl, Edgar, Marco, Marian, Mat, TimT</p>
 <h2 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
 <h3 id="triage-duty">Triage Duty<a class="headerlink" href="#triage-duty" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2002,28 +2002,23 @@
 </ul>
 </li>
 <li>Doc Focus 2019-04-18 1:30pm CDT</li>
+<li>Default Python containers in Travis-CI will from 2.7 -&gt; 3.6 tomorrow</li>
 <li>library and ingwe will be retired and replaced by moria.cs.wisc.edu</li>
 </ul>
 <h3 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h3>
 <ul>
-<li>GridFTP packages are tested but MyProxy packages have not been</li>
-<li>XRootD 4.9.1 has been released and needs to be promoted to testing</li>
+<li>Leave 8.8 in upcoming because of the empty daemon list may affect central managers that also run a submit host and as an execute node</li>
+<li>Marco expects to release a GlideinWMS 3.4.5 bug-fix by the end of this week</li>
 </ul>
 <h3 id="support-update">Support Update<a class="headerlink" href="#support-update" title="Permanent link">&para;</a></h3>
 <ul>
 <li>AGLT2 (BrianL): They're using <code>/tmp</code> for their <code>OSG_WN_TMP</code> and HTCondor execute directories and this is causing issues since HTCondor and user jobs fight for space.<br />
     Recommended that they move EXECUTE off of <code>/tmp</code>, clean <code>/tmp</code> periodically, and look into Docker universe jobs or cgroups.</li>
-<li>GLOW (Carl): Sent in the request to UW DoIT for the new VO certificate</li>
-<li>GlueX (Edgar): Due to some certificate changes at the UConn frontend collector GlueX resources are unavailable to the frontends.<br />
-    They aren't completely dead in the water, though, since they are flocking to the OSG pool.</li>
-<li>Notre Dame (Derek, Edgar): some extensive network usage going back to Wisconsin so they've banned the GLOW VO.<br />
-    Currently being investigated.</li>
+<li>GlueX (Edgar): Their GlideinWMS pool is fixed; the admin updated the cert but not the key so HTCondor couldn't obtain its necessary credentials.</li>
+<li>LIGO (Edgar): Interested in using GPUs, we're looking to find opportunistic resources</li>
 <li>SWT2 (BrianL): the blahp does not appear to be refreshing proxies after 24h on WNs and this has bitten ATLAS.<br />
     Trying to determine if this is a configuration issue or a bug.</li>
-<li>UFL (Carl, Derek): We've provided Bockjoo a custom package to fix his missing accounting data from Jan/Feb.<br />
-    There may be some complications because they have a temporary</li>
-<li>UConn (Mat, Derek): setting up a StashCache origin is getting complicated to fetch from their local dCache.<br />
-    Their XRootD-dCache is reporting to the OSG redirector (Freshdesk 8513)</li>
+<li>UFL (Carl, Derek): The Jan-Feb records have been uploaded to the GRACC but we still need to resend the records to APEL.</li>
 </ul>
 <h2 id="osg-release-team">OSG Release Team<a class="headerlink" href="#osg-release-team" title="Permanent link">&para;</a></h2>
 <table>
@@ -2068,7 +2063,7 @@
 </tbody>
 </table>
 <ul>
-<li>OSG 3.4.27 - Tomorrow<ul>
+<li>OSG 3.4.28 - Tomorrow<ul>
 <li>Ready for Testing  <ul>
 <li>XRootD 4.9.1</li>
 <li>StashCache/XCache (13 tickets)</li>
@@ -2153,14 +2148,13 @@
 </li>
 </ul>
 <h3 id="discussion_1">Discussion<a class="headerlink" href="#discussion_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li>We promote approximately 180 packages to testing over the year. That works out to roughly 3 packages every 4 working days.</li>
-</ul>
+<p>We promote approximately 180 packages to testing over the year. That works out to roughly 3 packages every 4 working days.</p>
 <h2 id="osg-investigations-team">OSG Investigations Team<a class="headerlink" href="#osg-investigations-team" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Moving forward with new SciTokens setup at OSG-Connect.  Need to coordinate switchover.  Daily poking of osg-connect team.  Admittidely, they seem un-motivated.  Will motivate with&#x2026; snacks?</li>
-<li>Derek's current status: In bunker, writing.</li>
-<li>Investigating check<sub>mk</sub> probe that will check the status of hosted-ce's.  Direct query of glideinwms factory seems dubious.</li>
+<li>Derek is busy preparing for a presentation at UNL about using the OSG as a research platform</li>
+<li>XRootD workshop will be held in France in 6-8 weeks</li>
+<li>Some resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers.
+    We have opened tickets with the relevant site admins.</li>
 </ul>
 <h3 id="future">Future<a class="headerlink" href="#future" title="Permanent link">&para;</a></h3>
 <ul>
