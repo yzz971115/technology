@@ -2431,6 +2431,76 @@
             "title": "Reviewing pull requests"
         },
         {
+            "location": "/meetings/2019/TechArea20190422/",
+            "text": "OSG Technology Area Meeting, 22 April 2019\n\u00b6\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n   \n\n\nAnnouncements\n\u00b6\n\n\nBrianL out next week 4/29 - 5/1\n\n\nTriage Duty\n\u00b6\n\n\n\n\nThis week: Edgar\n\n\nNext week: Mat\n\n\n9 (+1) open FreshDesk tickets\n\n\n1 (+0) open GGUS tickets\n\n\n\n\nJIRA\n\u00b6\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\u0394\n\n\nState\n\n\n\n\n\n\n\n\n\n\n164\n\n\n-7\n\n\nOpen\n\n\n\n\n\n\n26\n\n\n-3\n\n\nIn Progress\n\n\n\n\n\n\n12\n\n\n-5\n\n\nReady for Testing\n\n\n\n\n\n\n7\n\n\n+7\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\u00b6\n\n\n\n\nNew GLOW VO certificate?\n\n\nTPC tests have been failing since 4/12 (\nhttp://vdt.cs.wisc.edu/tests/20190412-0423/results.html\n)\n\n\nBlahp updates  \n\n\nMerging relevant HTCondor patches\n\n\nAI (Carl): Use the \"new\" condor env format\n\n\nAI (BrianL): Proxies on WNs fail to renew\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\nNone this week  \n\n\nSupport Update\n\u00b6\n\n\n\n\nLIGO (Edgar): Interested in using GPUs, we're looking to find opportunistic resources\n\n\nSWT2 (BrianL): the blahp does not refresh proxies after 24h on WNs and this has bitten ATLAS.\n\n    Investigating potentialf ixes.\n\n\nUFL (Carl, Derek): The Jan-Feb records have been uploaded to the GRACC but we still need to resend the records to APEL.\n\n\n\n\nOSG Release Team\n\u00b6\n\n\n\n\n\n\n\n\n3.4.28\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n17\n\n\n+17\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\nClosed\n\n\n\n\n\n\n20\n\n\n+20\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.28 - Tomorrow  \n\n\nReady for Testing  \n\n\nXRootD 4.9.1\n\n\nStashCache/XCache (13 tickets)\n\n\nMyProxy using GCT\n\n\nosg-flock 1.1: flock host DN\n\n\n\n\n\n\nReady for Release  \n\n\nNothing\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNew DN for OSG VO?\n\n\n\n\n\n\nOperations  \n\n\nNothing\n\n\n\n\n\n\nContrib  \n\n\nNothing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.4.27\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n-2\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-5\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n-19\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-4\n\n\nReady for Release\n\n\n\n\n\n\n13\n\n\n+13\n\n\nClosed\n\n\n\n\n\n\n13\n\n\n-17\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.27 - Last week  \n\n\nRelease  \n\n\nGridFTP using GCT\n\n\nHTCondor CE 3.2.2\n\n\nCVMFS 2.6.0\n\n\nkoji 1.11.1-1.1\n\n\nosg-pki-tools 3.2.2\n\n\ncctools 7.0.11\n\n\nosg-build 1.14.2\n\n\nUpcoming: Singularity 3.1.1\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\nWe promote approximately 180 packages to testing over the year. That works out to roughly 3 packages every 4 working days.  \n\n\nOSG Investigations Team\n\u00b6\n\n\n\n\nDerek is busy preparing for a presentation at UNL about using the OSG as a research platform\n\n\nXRootD workshop will be held in France in 6-8 weeks\n\n\nSome resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers.\n\n    We have opened tickets with the relevant site admins.\n\n\n\n\nFuture\n\u00b6\n\n\n\n\nLots of GRACC questions: \nhttps://opensciencegrid.atlassian.net/browse/SOFTWARE-3642\n\n\nWhat would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.\n\n\n\n\nOngoing\n\u00b6\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\u00b6\n\n\nNone this week",
+            "title": "April 22, 2019"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#osg-technology-area-meeting-22-april-2019",
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:",
+            "title": "OSG Technology Area Meeting, 22 April 2019"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#announcements",
+            "text": "BrianL out next week 4/29 - 5/1",
+            "title": "Announcements"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#triage-duty",
+            "text": "This week: Edgar  Next week: Mat  9 (+1) open FreshDesk tickets  1 (+0) open GGUS tickets",
+            "title": "Triage Duty"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#jira",
+            "text": "# of tickets  \u0394  State      164  -7  Open    26  -3  In Progress    12  -5  Ready for Testing    7  +7  Ready for Release",
+            "title": "JIRA"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#osg-software-team",
+            "text": "New GLOW VO certificate?  TPC tests have been failing since 4/12 ( http://vdt.cs.wisc.edu/tests/20190412-0423/results.html )  Blahp updates    Merging relevant HTCondor patches  AI (Carl): Use the \"new\" condor env format  AI (BrianL): Proxies on WNs fail to renew",
+            "title": "OSG Software Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#discussion",
+            "text": "None this week",
+            "title": "Discussion"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#support-update",
+            "text": "LIGO (Edgar): Interested in using GPUs, we're looking to find opportunistic resources  SWT2 (BrianL): the blahp does not refresh proxies after 24h on WNs and this has bitten ATLAS. \n    Investigating potentialf ixes.  UFL (Carl, Derek): The Jan-Feb records have been uploaded to the GRACC but we still need to resend the records to APEL.",
+            "title": "Support Update"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#osg-release-team",
+            "text": "3.4.28  \u0394  Status      0  +0  Open    3  +3  In Progress    17  +17  Ready for Testing    0  +0  Ready for Release    0  +0  Closed    20  +20  Total      OSG 3.4.28 - Tomorrow    Ready for Testing    XRootD 4.9.1  StashCache/XCache (13 tickets)  MyProxy using GCT  osg-flock 1.1: flock host DN    Ready for Release    Nothing      Data    New DN for OSG VO?    Operations    Nothing    Contrib    Nothing        3.4.27  \u0394  Status      0  -2  Open    0  -5  In Progress    0  -19  Ready for Testing    0  -4  Ready for Release    13  +13  Closed    13  -17  Total      OSG 3.4.27 - Last week    Release    GridFTP using GCT  HTCondor CE 3.2.2  CVMFS 2.6.0  koji 1.11.1-1.1  osg-pki-tools 3.2.2  cctools 7.0.11  osg-build 1.14.2  Upcoming: Singularity 3.1.1",
+            "title": "OSG Release Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#discussion_1",
+            "text": "We promote approximately 180 packages to testing over the year. That works out to roughly 3 packages every 4 working days.",
+            "title": "Discussion"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#osg-investigations-team",
+            "text": "Derek is busy preparing for a presentation at UNL about using the OSG as a research platform  XRootD workshop will be held in France in 6-8 weeks  Some resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers. \n    We have opened tickets with the relevant site admins.",
+            "title": "OSG Investigations Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#future",
+            "text": "Lots of GRACC questions:  https://opensciencegrid.atlassian.net/browse/SOFTWARE-3642  What would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.",
+            "title": "Future"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#ongoing",
+            "text": "GRACC Project  StashCache Project",
+            "title": "Ongoing"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190422/#discussions",
+            "text": "None this week",
+            "title": "Discussions"
+        },
+        {
             "location": "/meetings/2019/TechArea20190415/",
             "text": "OSG Technology Area Meeting, 15 April 2019\n\u00b6\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Edgar, Marco, Marian, Mat, TimT\n\n\nAnnouncements\n\u00b6\n\n\nTriage Duty\n\u00b6\n\n\n\n\nThis week: Carl\n\n\nNext week: Edgar\n\n\n8 (-4) open FreshDesk tickets\n\n\n1 (+1) open GGUS tickets\n\n\n\n\nJIRA\n\u00b6\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\u0394\n\n\nState\n\n\n\n\n\n\n\n\n\n\n171\n\n\n-2\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n-2\n\n\nIn Progress\n\n\n\n\n\n\n17\n\n\n-2\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-4\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\u00b6\n\n\n\n\nVO client  \n\n\nNeed to release update to voms1.fnal.gov tomorrow\n\n\nWould be nice to include updated GLOW VO cert data but not required\n\n\n\n\n\n\n3.4.29  \n\n\nIs HTCondor 8.8 ready to be moved into release?\n\n\nXCache 1.1  \n\n\ncmsd fix\n\n\nATLAS/CMS binary packages\n\n\nosg-xrootd metapackage\n\n\n\n\n\n\nHosted-CE improvements  \n\n\nosg-configure fixes\n\n\nWN client updating service on the CE\n\n\n\n\n\n\n\n\n\n\nDoc Focus 2019-04-18 1:30pm CDT\n\n\nDefault Python containers in Travis-CI will from 2.7 -> 3.6 tomorrow\n\n\nlibrary and ingwe will be retired and replaced by moria.cs.wisc.edu\n\n\n\n\nDiscussion\n\u00b6\n\n\n\n\nLeave 8.8 in upcoming because of the empty daemon list may affect central managers that also run a submit host and as an execute node\n\n\nMarco expects to release a GlideinWMS 3.4.5 bug-fix by the end of this week\n\n\n\n\nSupport Update\n\u00b6\n\n\n\n\nAGLT2 (BrianL): They're using \n/tmp\n for their \nOSG_WN_TMP\n and HTCondor execute directories and this is causing issues since HTCondor and user jobs fight for space.\n\n    Recommended that they move EXECUTE off of \n/tmp\n, clean \n/tmp\n periodically, and look into Docker universe jobs or cgroups.\n\n\nGlueX (Edgar): Their GlideinWMS pool is fixed; the admin updated the cert but not the key so HTCondor couldn't obtain its necessary credentials.\n\n\nLIGO (Edgar): Interested in using GPUs, we're looking to find opportunistic resources\n\n\nSWT2 (BrianL): the blahp does not appear to be refreshing proxies after 24h on WNs and this has bitten ATLAS.\n\n    Trying to determine if this is a configuration issue or a bug.\n\n\nUFL (Carl, Derek): The Jan-Feb records have been uploaded to the GRACC but we still need to resend the records to APEL.\n\n\n\n\nOSG Release Team\n\u00b6\n\n\n\n\n\n\n\n\n3.4.28\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n17\n\n\n+17\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n+0\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\nClosed\n\n\n\n\n\n\n20\n\n\n+20\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.28 - Tomorrow\n\n\nReady for Testing  \n\n\nXRootD 4.9.1\n\n\nStashCache/XCache (13 tickets)\n\n\nMyProxy using GCT\n\n\nosg-flock 1.1: flock host DN\n\n\n\n\n\n\nReady for Release  \n\n\nNothing\n\n\n\n\n\n\n\n\n\n\nData  \n\n\nNew DN for OSG VO?\n\n\n\n\n\n\nOperations  \n\n\nNothing\n\n\n\n\n\n\nContrib  \n\n\nNothing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.4.27\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n-2\n\n\nOpen\n\n\n\n\n\n\n0\n\n\n-5\n\n\nIn Progress\n\n\n\n\n\n\n0\n\n\n-19\n\n\nReady for Testing\n\n\n\n\n\n\n0\n\n\n-4\n\n\nReady for Release\n\n\n\n\n\n\n13\n\n\n+13\n\n\nClosed\n\n\n\n\n\n\n13\n\n\n-17\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.27 - Last week\n\n\nRelease\n\n\nGridFTP using GCT\n\n\nHTCondor CE 3.2.2\n\n\nCVMFS 2.6.0\n\n\nkoji 1.11.1-1.1\n\n\nosg-pki-tools 3.2.2\n\n\ncctools 7.0.11\n\n\nosg-build 1.14.2\n\n\nUpcoming: Singularity 3.1.1\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\nWe promote approximately 180 packages to testing over the year. That works out to roughly 3 packages every 4 working days.\n\n\nOSG Investigations Team\n\u00b6\n\n\n\n\nDerek is busy preparing for a presentation at UNL about using the OSG as a research platform\n\n\nXRootD workshop will be held in France in 6-8 weeks\n\n\nSome resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers.\n    We have opened tickets with the relevant site admins.\n\n\n\n\nFuture\n\u00b6\n\n\n\n\nLots of GRACC questions: \nhttps://opensciencegrid.atlassian.net/browse/SOFTWARE-3642\n\n\nWhat would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.\n\n\n\n\nOngoing\n\u00b6\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\u00b6\n\n\nNone this week",
             "title": "April 15, 2019"
