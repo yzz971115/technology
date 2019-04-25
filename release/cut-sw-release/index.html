@@ -2323,8 +2323,16 @@ git clone --depth <span class="m">1</span> file:///p/vdt/workspace/git/repo/tarb
 
 <p>The script will automatically ssh you to oasis-login.opensciencegrid.org and give you instructions to complete the process.</p>
 <h3 id="step-5-remove-old-uw-afs-installations-of-the-tarball-client">Step 5: Remove old UW AFS installations of the tarball client<a class="headerlink" href="#step-5-remove-old-uw-afs-installations-of-the-tarball-client" title="Permanent link">&para;</a></h3>
-<p>To keep space usage down, remove tarball client installations and symlinks under <code>/p/vdt/workspace/tarball-client</code> on UW's AFS that are more than 2 months old. The following command will remove them:</p>
-<div class="codehilite"><pre><span></span>find /p/vdt/workspace/tarball-client -maxdepth <span class="m">1</span> -mtime +60 -name <span class="m">3</span><span class="se">\*</span> -ls -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
+<p>To keep space usage down, remove tarball client installations and symlinks under <code>/p/vdt/workspace/tarball-client</code> on UW's AFS that are more than 2 months old.
+To remove them, first check the list:</p>
+<div class="codehilite"><pre><span></span>find /p/vdt/workspace/tarball-client -maxdepth <span class="m">1</span> -mtime +60 -name <span class="m">3</span><span class="se">\*</span> -ls <span class="o">{}</span> +
+</pre></div>
+
+
+<p>Then if the output looks reasonable
+(contains at least one installation, but does not contain recent installations),
+remove them:</p>
+<div class="codehilite"><pre><span></span>find /p/vdt/workspace/tarball-client -maxdepth <span class="m">1</span> -mtime +60 -name <span class="m">3</span><span class="se">\*</span> -exec rm -rf <span class="o">{}</span> +
 </pre></div>
 
 
