@@ -2431,6 +2431,76 @@
             "title": "Reviewing pull requests"
         },
         {
+            "location": "/meetings/2019/TechArea20190429/",
+            "text": "OSG Technology Area Meeting, 29 April 2019\n\u00b6\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n Mat, \n\n\nAnnouncements\n\u00b6\n\n\nTriage Duty\n\u00b6\n\n\n\n\nThis week: Mat\n\n\nNext week: Tim T\n\n\n6 (+3) open FreshDesk tickets\n\n\n1 (+0) open GGUS ticket\n\n\n\n\nJIRA\n\u00b6\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\u0394\n\n\nState\n\n\n\n\n\n\n\n\n\n\n165\n\n\n+1\n\n\nOpen\n\n\n\n\n\n\n29\n\n\n+3\n\n\nIn Progress\n\n\n\n\n\n\n10\n\n\n-2\n\n\nReady for Testing\n\n\n\n\n\n\n4\n\n\n-3\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\u00b6\n\n\nDiscussion\n\u00b6\n\n\nSupport Update\n\u00b6\n\n\nOSG Release Team\n\u00b6\n\n\n\n\n\n\n\n\n3.4.28\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n12\n\n\n-5\n\n\nReady for Testing\n\n\n\n\n\n\n7\n\n\n+7\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\nClosed\n\n\n\n\n\n\n22\n\n\n+2\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.28 - This Week\n\n\nReady for Testing\n\n\nXRootD 4.9.1\n\n\nStashCache/XCache (13 tickets)\n\n\nMyProxy using GCT\n\n\nGlideinWMS 3.4.5\n\n\n\n\n\n\nReady for Release\n\n\nosg-flock 1.1: flock host DN\n\n\nUpcoming: HTCondor 8.8.2\n\n\n\n\n\n\n\n\n\n\nData\n\n\nNothing\n\n\n\n\n\n\nOperations\n\n\nNothing\n\n\n\n\n\n\nContrib\n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\n\n\nAI (Marian, John T): Should be able to test XCache by noon Wed\n\n\nAI (Edgar): Help Diego test GlideinWMS 3.4.5\n\n\nAI (TimT): Request a mailing list for community testing, populate it with Topology admin contacts, and write an introductory email\n\n\n\n\nOSG Investigations Team\n\u00b6\n\n\n\n\nXRootD workshop will be held in France in 6-8 weeks\n\n\nSome resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers.\n\n    We have opened tickets with the relevant site admins.\n\n\nAccounting audit is beginning in collaboration with ATLAS.\n\n\n\n\nFuture\n\u00b6\n\n\n\n\nI would like the investigations team to make a thrust helping Ops with monitoring.  Lots of issues with things that are failing.  And who is watching the watchers (GRACC alert email wasn't being sent... watch the watchers)?\n\n\nLots of GRACC questions: \nhttps://opensciencegrid.atlassian.net/browse/SOFTWARE-3642\n\n\nWhat would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.\n\n\n\n\nOngoing\n\u00b6\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\u00b6\n\n\nNone this week",
+            "title": "April 29, 2019"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#osg-technology-area-meeting-29-april-2019",
+            "text": "Coordinates:  Conference: 719-284-5267, PIN: 57363;  https://www.uberconference.com/osgblin  Attending:  Mat,",
+            "title": "OSG Technology Area Meeting, 29 April 2019"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#announcements",
+            "text": "",
+            "title": "Announcements"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#triage-duty",
+            "text": "This week: Mat  Next week: Tim T  6 (+3) open FreshDesk tickets  1 (+0) open GGUS ticket",
+            "title": "Triage Duty"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#jira",
+            "text": "# of tickets  \u0394  State      165  +1  Open    29  +3  In Progress    10  -2  Ready for Testing    4  -3  Ready for Release",
+            "title": "JIRA"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#osg-software-team",
+            "text": "",
+            "title": "OSG Software Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#discussion",
+            "text": "",
+            "title": "Discussion"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#support-update",
+            "text": "",
+            "title": "Support Update"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#osg-release-team",
+            "text": "3.4.28  \u0394  Status      0  +0  Open    3  +0  In Progress    12  -5  Ready for Testing    7  +7  Ready for Release    0  +0  Closed    22  +2  Total      OSG 3.4.28 - This Week  Ready for Testing  XRootD 4.9.1  StashCache/XCache (13 tickets)  MyProxy using GCT  GlideinWMS 3.4.5    Ready for Release  osg-flock 1.1: flock host DN  Upcoming: HTCondor 8.8.2      Data  Nothing    Operations  Nothing    Contrib  Nothing",
+            "title": "OSG Release Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#discussion_1",
+            "text": "AI (Marian, John T): Should be able to test XCache by noon Wed  AI (Edgar): Help Diego test GlideinWMS 3.4.5  AI (TimT): Request a mailing list for community testing, populate it with Topology admin contacts, and write an introductory email",
+            "title": "Discussion"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#osg-investigations-team",
+            "text": "XRootD workshop will be held in France in 6-8 weeks  Some resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers. \n    We have opened tickets with the relevant site admins.  Accounting audit is beginning in collaboration with ATLAS.",
+            "title": "OSG Investigations Team"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#future",
+            "text": "I would like the investigations team to make a thrust helping Ops with monitoring.  Lots of issues with things that are failing.  And who is watching the watchers (GRACC alert email wasn't being sent... watch the watchers)?  Lots of GRACC questions:  https://opensciencegrid.atlassian.net/browse/SOFTWARE-3642  What would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.",
+            "title": "Future"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#ongoing",
+            "text": "GRACC Project  StashCache Project",
+            "title": "Ongoing"
+        },
+        {
+            "location": "/meetings/2019/TechArea20190429/#discussions",
+            "text": "None this week",
+            "title": "Discussions"
+        },
+        {
             "location": "/meetings/2019/TechArea20190422/",
             "text": "OSG Technology Area Meeting, 22 April 2019\n\u00b6\n\n\nCoordinates:\n Conference: 719-284-5267, PIN: 57363; \nhttps://www.uberconference.com/osgblin\n\n\nAttending:\n BrianL, Carl, Derek, Edgar, Marian, TimT\n\n\nAnnouncements\n\u00b6\n\n\nBrianL out next week 4/29 - 5/1\n\n\nTriage Duty\n\u00b6\n\n\n\n\nThis week: Edgar\n\n\nNext week: Mat\n\n\n9 (+1) open FreshDesk tickets\n\n\n1 (+0) open GGUS ticket\n\n\n\n\nJIRA\n\u00b6\n\n\n\n\n\n\n\n\n# of tickets\n\n\n\u0394\n\n\nState\n\n\n\n\n\n\n\n\n\n\n164\n\n\n-7\n\n\nOpen\n\n\n\n\n\n\n26\n\n\n-3\n\n\nIn Progress\n\n\n\n\n\n\n12\n\n\n-5\n\n\nReady for Testing\n\n\n\n\n\n\n7\n\n\n+7\n\n\nReady for Release\n\n\n\n\n\n\n\n\nOSG Software Team\n\u00b6\n\n\n\n\nNew GLOW VO certificate?\n\n\nTPC tests have been failing since 4/12 (\nhttp://vdt.cs.wisc.edu/tests/20190412-0423/results.html\n)\n\n\nBlahp updates  \n\n\nMerging relevant HTCondor patches\n\n\nAI (Carl): Use the \"new\" condor env format\n\n\nAI (BrianL): Proxies on WNs fail to renew\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\n\n\nAI (Carl): will request GLOW certificate\n\n\nAI (Edgar): will look into XRootD TPC tests failing, BrianL will create a ticket\n\n\nAI (BrianL): Review the status of doc tickets labeled for 3.4.28\n\n\nAI (BrianL): Add Diego to the software mailing list and JIRA\n\n\n\n\nSupport Update\n\u00b6\n\n\n\n\nCMS (Marian): XRootD SAM tests are segfaulting for some sites.\n    Still investigating xrootd-python and xrootd-client.\n\n\nLIGO (Edgar): are interested in opportunistic GPU usage.\n    They're configured to use PRP GPUs and we're working on getting them access to QB2E and CalTech GPUs.\n\n\nNET2 (Carl, Derek): They had an issue similar to Florida but they have all of their accounting records from SGE.\n    This means that we can run a probe locally, \"faking\" any local configuration, and send records off to the GRACC.\n\n\nSWT2 (BrianL): the blahp does not refresh proxies after 24h on WNs and this has bitten ATLAS.\n    Investigating potential fixes.\n\n\nUFL (Carl, Derek): Records have been sent to APEL and now the WLCG needs to regenerate the reports. Out of OSG hands now.\n\n\n\n\nOSG Release Team\n\u00b6\n\n\n\n\n\n\n\n\n3.4.28\n\n\n\u0394\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n0\n\n\n+0\n\n\nOpen\n\n\n\n\n\n\n3\n\n\n+0\n\n\nIn Progress\n\n\n\n\n\n\n12\n\n\n-5\n\n\nReady for Testing\n\n\n\n\n\n\n7\n\n\n+7\n\n\nReady for Release\n\n\n\n\n\n\n0\n\n\n+0\n\n\nClosed\n\n\n\n\n\n\n22\n\n\n+2\n\n\nTotal\n\n\n\n\n\n\n\n\n\n\nOSG 3.4.28 - This Week\n\n\nReady for Testing\n\n\nXRootD 4.9.1\n\n\nStashCache/XCache (13 tickets)\n\n\nMyProxy using GCT\n\n\nGlideinWMS 3.4.5\n\n\n\n\n\n\nReady for Release\n\n\nosg-flock 1.1: flock host DN\n\n\nUpcoming: HTCondor 8.8.2\n\n\n\n\n\n\n\n\n\n\nData\n\n\nNothing\n\n\n\n\n\n\nOperations\n\n\nNothing\n\n\n\n\n\n\nContrib\n\n\nNothing\n\n\n\n\n\n\n\n\nDiscussion\n\u00b6\n\n\n\n\nAI (Marian, John T): Should be able to test XCache by noon Wed\n\n\nAI (Edgar): Help Diego test GlideinWMS 3.4.5\n\n\nAI (TimT): Request a mailing list for community testing, populate it with Topology admin contacts, and write an introductory email\n\n\n\n\nOSG Investigations Team\n\u00b6\n\n\n\n\nXRootD workshop will be held in France in 6-8 weeks\n\n\nSome resources in topology don't have an APEL normalization factor set in topology, causing issues with APEL numbers.\n\n    We have opened tickets with the relevant site admins.\n\n\nAccounting audit is beginning in collaboration with ATLAS.\n\n\n\n\nFuture\n\u00b6\n\n\n\n\nI would like the investigations team to make a thrust helping Ops with monitoring.  Lots of issues with things that are failing.  And who is watching the watchers (GRACC alert email wasn't being sent... watch the watchers)?\n\n\nLots of GRACC questions: \nhttps://opensciencegrid.atlassian.net/browse/SOFTWARE-3642\n\n\nWhat would it take to run HTCondor-CE gratia probe on a slurm cluster?  Will start investigating with Nebraska, next week.\n\n\n\n\nOngoing\n\u00b6\n\n\n\n\nGRACC Project\n\n\nStashCache Project\n\n\n\n\nDiscussions\n\u00b6\n\n\nNone this week",
             "title": "April 22, 2019"
