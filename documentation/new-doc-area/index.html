@@ -1806,15 +1806,15 @@ Before starting, make sure that you have the <code>git</code> and <code>gem</cod
 </li>
 <li>
 <p>Clone the repository and <code>cd</code> into the directory:</p>
-<div class="codehilite"><pre><span></span>git clone https://github.com/opensciencegrid/&lt;REPO NAME&gt;.git
-cd &lt;REPO NAME&gt;
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">opensciencegrid</span><span class="o">/&lt;</span><span class="n">REPO</span> <span class="n">NAME</span><span class="o">&gt;</span><span class="p">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="o">&lt;</span><span class="n">REPO</span> <span class="n">NAME</span><span class="o">&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Create a <code>gh-pages</code> branch in the GitHub repository:</p>
-<div class="codehilite"><pre><span></span>git push origin master:gh-pages
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span><span class="p">:</span><span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
 </pre></div>
 
 
@@ -1822,7 +1822,7 @@ cd &lt;REPO NAME&gt;
 <li>
 <p>Update the contents of <code>README.md</code> and populate the <code>LICENSE</code> file with a
    <a href="https://creativecommons.org/licenses/by/4.0/legalcode.txt">Creative Commons Attribution 4.0 license</a>:</p>
-<div class="codehilite"><pre><span></span>wget https://creativecommons.org/licenses/by/4.0/legalcode.txt &gt; LICENSE
+<div class="codehilite"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">creativecommons</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">licenses</span><span class="o">/</span><span class="k">by</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="o">/</span><span class="n">legalcode</span><span class="p">.</span><span class="n">txt</span> <span class="o">&gt;</span> <span class="n">LICENSE</span>
 </pre></div>
 
 
@@ -1832,43 +1832,43 @@ cd &lt;REPO NAME&gt;
 <ol>
 <li>
 <p>Generate the repository deploy key:</p>
-<div class="codehilite"><pre><span></span>ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-key -N &#39;&#39;
+<div class="codehilite"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="n">rsa</span><span class="w"> </span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="mi">4096</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="ss">&quot;help@opensciencegrid.org&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="n">deploy</span><span class="o">-</span><span class="k">key</span><span class="w"> </span><span class="o">-</span><span class="n">N</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Install the <code>travis</code> gem:</p>
-<div class="codehilite"><pre><span></span>gem install travis
+<div class="codehilite"><pre><span></span><span class="n">gem</span> <span class="n">install</span> <span class="n">travis</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Login using your GitHub credentials:</p>
-<div class="codehilite"><pre><span></span>travis login
+<div class="codehilite"><pre><span></span><span class="n">travis</span> <span class="n">login</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Enable the repository in Travis:</p>
-<div class="codehilite"><pre><span></span>travis enable opensciencegrid/&lt;REPO NAME&gt;
+<div class="codehilite"><pre><span></span><span class="n">travis</span> <span class="n">enable</span> <span class="n">opensciencegrid</span><span class="o">/&lt;</span><span class="n">REPO</span> <span class="n">NAME</span><span class="o">&gt;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Encrypt the deploy key:</p>
-<div class="codehilite"><pre><span></span>travis encrypt-file deploy-key
+<div class="codehilite"><pre><span></span><span class="n">travis</span> <span class="n">encrypt</span><span class="o">-</span><span class="n">file</span> <span class="n">deploy</span><span class="o">-</span><span class="k">key</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Stage and commit your files:</p>
-<div class="codehilite"><pre><span></span>git add LICENSE README.md deploy-key.enc
-git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
+<div class="codehilite"><pre><span></span><span class="nv">git</span> <span class="nv">add</span> <span class="nv">LICENSE</span> <span class="nv">README</span>.<span class="nv">md</span> <span class="nv">deploy</span><span class="o">-</span><span class="nv">key</span>.<span class="nv">enc</span>
+<span class="nv">git</span> <span class="nv">commit</span> <span class="o">-</span><span class="nv">m</span> <span class="s2">&quot;</span><span class="s">Prepare the repository for Travis-CI deployment</span><span class="s2">&quot;</span>
 </pre></div>
 
 
@@ -1890,19 +1890,19 @@ git commit -m &quot;Prepare the repository for Travis-CI deployment&quot;
 </li>
 <li>
 <p>Create <code>mkdocs.yml</code> containing the following:</p>
-<div class="codehilite"><pre><span></span>site_name: &lt;TITLE OF YOUR SITE&gt;
-site_url: https://opensciencegrid.org/&lt;REPO NAME&gt;
-repo_name: https://github.com/opensciencegrid/&lt;REPO NAME&gt;
+<div class="codehilite"><pre><span></span><span class="n">site_name</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">TITLE</span> <span class="k">OF</span> <span class="n">YOUR</span> <span class="n">SITE</span><span class="o">&gt;</span>
+<span class="n">site_url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">opensciencegrid</span><span class="p">.</span><span class="n">org</span><span class="o">/&lt;</span><span class="n">REPO</span> <span class="n">NAME</span><span class="o">&gt;</span>
+<span class="n">repo_name</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">opensciencegrid</span><span class="o">/&lt;</span><span class="n">REPO</span> <span class="n">NAME</span><span class="o">&gt;</span>
 
-pages:
-  - Home: &#39;index.md&#39;
+<span class="n">pages</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">Home</span><span class="p">:</span> <span class="s1">&#39;index.md&#39;</span>
 
-markdown_extensions:
-  - admonition
-  - codehilite
-  - toc(permalink=true)
-  - toc:
-      permalink: True
+<span class="n">markdown_extensions</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">admonition</span>
+  <span class="o">-</span> <span class="n">codehilite</span>
+  <span class="o">-</span> <span class="n">toc</span><span class="p">(</span><span class="n">permalink</span><span class="o">=</span><span class="k">true</span><span class="p">)</span>
+  <span class="o">-</span> <span class="n">toc</span><span class="p">:</span>
+      <span class="n">permalink</span><span class="p">:</span> <span class="k">True</span>
 </pre></div>
 
 
@@ -1912,15 +1912,15 @@ markdown_extensions:
 </li>
 <li>
 <p>Stage and commit these changes:</p>
-<div class="codehilite"><pre><span></span>git add mkdocs.yml docs/index.md
-git commit -m &quot;Staging initial web page contents&quot;
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="k">add</span> <span class="n">mkdocs</span><span class="p">.</span><span class="n">yml</span> <span class="n">docs</span><span class="o">/</span><span class="k">index</span><span class="p">.</span><span class="n">md</span>
+<span class="n">git</span> <span class="k">commit</span> <span class="o">-</span><span class="n">m</span> <span class="ss">&quot;Staging initial web page contents&quot;</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Push local changes to the GitHub repository:</p>
-<div class="codehilite"><pre><span></span>git push origin master
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 
 
@@ -1941,15 +1941,15 @@ git commit -m &quot;Staging initial web page contents&quot;
 </li>
 <li>
 <p>Clone the repository and <code>cd</code> into the directory:</p>
-<div class="codehilite"><pre><span></span>git clone git@github.com:opensciencegrid/&lt;ITB REPO NAME&gt;
-cd &lt;ITB REPO NAME&gt;
+<div class="codehilite"><pre><span></span><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">opensciencegrid</span><span class="o">/&lt;</span><span class="n">ITB</span><span class="w"> </span><span class="n">REPO</span><span class="w"> </span><span class="n">NAME</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">ITB</span><span class="w"> </span><span class="n">REPO</span><span class="w"> </span><span class="n">NAME</span><span class="o">&gt;</span><span class="w"></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Create a <code>gh-pages</code> branch in the GitHub repository:</p>
-<div class="codehilite"><pre><span></span>git push origin master:gh-pages
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span><span class="p">:</span><span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
 </pre></div>
 
 
@@ -1962,22 +1962,22 @@ cd &lt;ITB REPO NAME&gt;
 <ol>
 <li>
 <p><code>cd</code> into the non-ITB repository and generate the ITB deploy key</p>
-<div class="codehilite"><pre><span></span>cd &lt;REPO NAME&gt;
-ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-itb
+<div class="codehilite"><pre><span></span><span class="n">cd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">REPO</span><span class="w"> </span><span class="n">NAME</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="n">rsa</span><span class="w"> </span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="mi">4096</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="ss">&quot;help@opensciencegrid.org&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="n">deploy</span><span class="o">-</span><span class="n">itb</span><span class="w"></span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Install the <code>travis</code> gem:</p>
-<div class="codehilite"><pre><span></span>gem install travis
+<div class="codehilite"><pre><span></span><span class="n">gem</span> <span class="n">install</span> <span class="n">travis</span>
 </pre></div>
 
 
 </li>
 <li>
 <p>Encrypt the deploy key:</p>
-<div class="codehilite"><pre><span></span>travis encrypt-file deploy-itb
+<div class="codehilite"><pre><span></span><span class="n">travis</span> <span class="n">encrypt</span><span class="o">-</span><span class="n">file</span> <span class="n">deploy</span><span class="o">-</span><span class="n">itb</span>
 </pre></div>
 
 
@@ -1987,8 +1987,8 @@ ssh-keygen -t rsa -b 4096 -C &quot;help@opensciencegrid.org&quot; -f deploy-itb
 </li>
 <li>
 <p>Add and commit your files:</p>
-<div class="codehilite"><pre><span></span>git add .travis.env deploy-itb.enc
-git commit -m &quot;Add ITB deployment&quot;
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="k">add</span> <span class="p">.</span><span class="n">travis</span><span class="p">.</span><span class="n">env</span> <span class="n">deploy</span><span class="o">-</span><span class="n">itb</span><span class="p">.</span><span class="n">enc</span>
+<span class="n">git</span> <span class="k">commit</span> <span class="o">-</span><span class="n">m</span> <span class="ss">&quot;Add ITB deployment&quot;</span>
 </pre></div>
 
 
@@ -2005,7 +2005,7 @@ git commit -m &quot;Add ITB deployment&quot;
 </li>
 <li>
 <p>Still in the non-ITB repository, push your local changes to the GitHub repository</p>
-<div class="codehilite"><pre><span></span>git push origin master
+<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 
 
